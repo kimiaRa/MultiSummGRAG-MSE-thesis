@@ -1,0 +1,83 @@
+{
+  "total": 76,
+  "approx_coord_count": 0,
+  "approx_coord_pct": 0.0,
+  "district_count": 3,
+  "district_counts": {
+    "BN2": 46,
+    "BN1": 22,
+    "BN3": 8
+  },
+  "top_districts": [
+    [
+      "BN2",
+      46
+    ],
+    [
+      "BN1",
+      22
+    ],
+    [
+      "BN3",
+      8
+    ]
+  ],
+  "sparse_districts": [],
+  "type_counts": {
+    "food_sharing": 51,
+    "food_bank": 8,
+    "community_garden": 8,
+    "unknown": 4,
+    "food_gifting": 2,
+    "food_education": 2,
+    "other": 1
+  },
+  "type_pct": {
+    "food_sharing": 67.1,
+    "food_bank": 10.5,
+    "community_garden": 10.5,
+    "unknown": 5.3,
+    "food_gifting": 2.6,
+    "food_education": 2.6,
+    "other": 1.3
+  },
+  "level_counts": {
+    "community_led": 63,
+    "council_supported": 6,
+    "unknown": 4,
+    "government_funded": 2,
+    "ngo_led": 1
+  },
+  "n_govt": 2,
+  "n_council": 6,
+  "n_ngo": 1,
+  "n_community": 63,
+  "n_commercial": 0,
+  "n_volunteer": 29,
+  "n_coop": 9,
+  "n_crowdfund": 27,
+  "n_ngo_formal": 18,
+  "n_informal": 14,
+  "n_network": 15,
+  "pop_counts": {
+    "high": 20,
+    "low": 29,
+    "medium": 27
+  },
+  "total_volume": 7214,
+  "max_volume": 6400,
+  "n_online": 35,
+  "n_physical": 35,
+  "n_hours_listed": 15,
+  "audience_counts": {
+    "low-income": 18,
+    "students": 18,
+    "general": 47,
+    "elderly": 38,
+    "children": 26
+  },
+  "n_sustainability": 34,
+  "n_collab": 46,
+  "n_education": 36,
+  "n_events": 40
+}

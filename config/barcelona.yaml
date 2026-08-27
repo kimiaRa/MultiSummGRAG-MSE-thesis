@@ -1,0 +1,7 @@
+city: Barcelona
+country: Spain
+language: es
+data_dir: data/barcelona
+raw_urls_file: data/barcelona/raw_urls.csv
+urls_file: data/barcelona/urls_cleaned.csv
+districts_file: data/barcelona/districts.geojson

@@ -1,0 +1,101 @@
+{
+  "total": 69,
+  "approx_coord_count": 0,
+  "approx_coord_pct": 0.0,
+  "district_count": 18,
+  "district_counts": {
+    "Dublin 2": 15,
+    "Dublin 1": 12,
+    "Dublin 12": 5,
+    "Dublin 8": 5,
+    "Dublin 11": 5,
+    "Dublin 7": 4,
+    "Dublin 16": 3,
+    "Dublin 9": 3,
+    "Dublin 4": 3,
+    "Dublin 5": 3,
+    "Dublin 10": 2,
+    "Dublin 24": 2,
+    "Dublin 6W": 1,
+    "Glenageary": 1,
+    "Dublin 22": 1,
+    "Dublin 15": 1,
+    "Swords": 1,
+    "Dublin 3": 1
+  },
+  "top_districts": [
+    [
+      "Dublin 2",
+      15
+    ],
+    [
+      "Dublin 1",
+      12
+    ],
+    [
+      "Dublin 12",
+      5
+    ]
+  ],
+  "sparse_districts": [
+    "Dublin 6W",
+    "Glenageary",
+    "Dublin 22"
+  ],
+  "type_counts": {
+    "food_sharing": 34,
+    "community_garden": 25,
+    "food_bank": 5,
+    "food_education": 2,
+    "food_gifting": 1,
+    "food_service": 1,
+    "other": 1
+  },
+  "type_pct": {
+    "food_sharing": 49.3,
+    "community_garden": 36.2,
+    "food_bank": 7.2,
+    "food_education": 2.9,
+    "food_gifting": 1.4,
+    "food_service": 1.4,
+    "other": 1.4
+  },
+  "level_counts": {
+    "community_led": 46,
+    "government_funded": 10,
+    "council_supported": 7,
+    "unknown": 6
+  },
+  "n_govt": 10,
+  "n_council": 7,
+  "n_ngo": 0,
+  "n_community": 46,
+  "n_commercial": 0,
+  "n_volunteer": 22,
+  "n_coop": 7,
+  "n_crowdfund": 15,
+  "n_ngo_formal": 13,
+  "n_informal": 21,
+  "n_network": 3,
+  "pop_counts": {
+    "medium": 20,
+    "low": 27,
+    "high": 22
+  },
+  "total_volume": 1718,
+  "max_volume": 700,
+  "n_online": 27,
+  "n_physical": 39,
+  "n_hours_listed": 4,
+  "audience_counts": {
+    "low-income": 7,
+    "students": 15,
+    "general": 42,
+    "elderly": 43,
+    "children": 19
+  },
+  "n_sustainability": 33,
+  "n_collab": 28,
+  "n_education": 31,
+  "n_events": 37
+}

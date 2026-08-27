@@ -1,0 +1,6 @@
+city,input_documents,text_chunks,nodes,edges,isolated_nodes,isolated_node_pct,connected_components,largest_component_nodes,largest_component_pct,average_degree,self_loops,community_reports,nonempty_community_reports,edges_per_chunk,nodes_per_chunk
+barcelona,196,220,2235,2412,301,13.47,348,1654,74.0,2.1584,0,324,324,10.9636,10.1591
+brighton,73,78,596,42,560,93.96,563,25,4.19,0.1409,0,5,5,0.5385,7.641
+dublin,58,64,747,26,719,96.25,723,10,1.34,0.0696,0,3,3,0.4062,11.6719
+london,106,128,1905,2486,245,12.86,303,1356,71.18,2.61,6,248,248,19.4219,14.8828
+milan,142,180,2274,3006,202,8.88,244,1902,83.64,2.6438,1,376,376,16.7,12.6333

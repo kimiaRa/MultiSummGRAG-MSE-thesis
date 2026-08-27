@@ -1,0 +1,7 @@
+city,n_kept_but_ledger_discarded,n_discarded_but_ledger_retained,n_disagreements,pct_disagreements_kept_but_ledger_discarded,ci95_lower,ci95_upper
+barcelona,191,1,192,99.5,,
+brighton,52,0,52,100.0,,
+dublin,33,0,33,100.0,,
+london,73,0,73,100.0,,
+milan,113,0,113,100.0,,
+ALL_POOLED,462,1,463,99.8,0.9956,1.0

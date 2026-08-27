@@ -1,0 +1,199 @@
+{
+  "1": {
+    "report_string": "# Report\n\n\n\n",
+    "report_json": {},
+    "level": 0,
+    "title": "Cluster 1",
+    "edges": [
+      [
+        "\"IRELAND\"",
+        "\"MUSTARD SEED SOUP RUN\""
+      ],
+      [
+        "\"IRELAND\"",
+        "\"OURTABLE.IE\""
+      ],
+      [
+        "\"DUBLIN 4\"",
+        "\"OURTABLE.IE\""
+      ],
+      [
+        "\"FOOD NOT BOMBS CONTACTS IN EUROPE\"",
+        "\"IRELAND\""
+      ]
+    ],
+    "nodes": [
+      "\"FOOD NOT BOMBS CONTACTS IN EUROPE\"",
+      "\"DUBLIN 4\"",
+      "\"OURTABLE.IE\"",
+      "\"IRELAND\""
+    ],
+    "chunk_ids": [
+      "chunk-aa5643eb851fd2c0755c50dc35b199f0",
+      "chunk-94d01e3785472d66543a1cf1c9d2877d",
+      "chunk-45e8ae751a2726253bc278d12f16ef0d",
+      "chunk-cfb5696fbd1c559d78f8be47d006da80",
+      "chunk-760c5d2435ca62a5f5f42471be0693ff",
+      "chunk-5862129b77fd4ae8287e9a5c73dae754",
+      "chunk-771fd5d0cac233b67fb896bb13490cd6",
+      "chunk-cff4f56b089912c4a9188cff3621ddb9",
+      "chunk-f284e626aca64bc569bbeccb9b22dc9a",
+      "chunk-c1b021d35192f7db95bf21473fd1b984",
+      "chunk-a2f9393546a3c3dc87539e1ca86ea34e",
+      "chunk-ef6b4ea04a75712b900ff5faccad383c",
+      "chunk-dddbf10dfda014f7cb7a102401160b4f",
+      "chunk-22b5c818af007b53f1de0d91ee9a895f",
+      "chunk-bda97256ce60f9981a7b8f931940a20a",
+      "chunk-1d2fb9caff66ba5965940060ffa29be5",
+      "chunk-8009f4996b22c7a02a042798e6b1acd0",
+      "chunk-1e7ba777f4a28be18d5fd78a9aaf4cb6",
+      "chunk-524884ade7ce4687443c08b814fe51a1",
+      "chunk-6608dead124a6a67f647defce544969f",
+      "chunk-713af5c1c10fc689401be04fbc129902",
+      "chunk-4a75c3fff373cf00cbc699950fc42696",
+      "chunk-114bb0a44d342df1bcb2c44a12b2c549",
+      "chunk-1249744e046550e58035335a7ef679b2",
+      "chunk-527cbd64fd6e304cb0e095e8624ec019",
+      "chunk-f27e268ddb22300814c797455371df1d",
+      "chunk-2e8e016cd40cce893f424da4dba07cd4",
+      "chunk-c2da0412b618dfb7a5fe12d341d0dd27",
+      "chunk-422cecde2b5a87e688ce31f9e799eec4",
+      "chunk-955eadddf3f81757c92eb7d5d65907e0",
+      "chunk-d170a0937703c2ef7dbd31e06bf31d5c",
+      "chunk-3363916b3ef87b9dd448e5566cd27ab7",
+      "chunk-cbf3a212b153170b813c335af7752c88",
+      "chunk-d14977eddb325a95c827f957f18fbc69",
+      "chunk-e746c3d3d2a714b2934abcd81c128c1b"
+    ],
+    "occurrence": 1.0,
+    "sub_communities": []
+  },
+  "0": {
+    "report_string": "# St. Andrews Resource Centre and Adult Education Department\n\nThe community revolves around St. Andrews Resource Centre, which is a community-led organization offering free courses and training. The centre has relationships with the Adult Education Department, Construction Industry, and UNESCO Learning Neighbourhood, all of which are associated with its activities.\n\n## St. Andrews Resource Centre as the central organization\n\nSt. Andrews Resource Centre is the central entity in this community, serving as a hub for community-led initiatives and training programs. The centre's association with various organizations and events suggests its significance in the community. However, without more information on the centre's specific impact, it is difficult to assess its full potential.\n\n## Adult Education Department's role\n\nThe Adult Education Department is a part of St. Andrews Resource Centre, suggesting that the department plays a crucial role in the community's educational initiatives. However, without more information on the department's specific activities and impact, it is difficult to assess its full significance.\n\n## Construction Industry's involvement\n\nThe Construction Industry is an organization that St. Andrews Resource Centre is hiring from, suggesting a potential link between the industry and the centre's community-led initiatives. However, without more information on the nature of this relationship, it is difficult to assess its full impact.\n\n## UNESCO Learning Neighbourhood event\n\nThe UNESCO Learning Neighbourhood event is an announcement made by St. Andrews Resource Centre, suggesting that the centre is actively engaging with educational initiatives and community development projects. However, without more information on the specific details of the event, it is difficult to assess its full significance.\n\n## Community-led initiatives\n\nSt. Andrews Resource Centre's community-led initiatives suggest a potential for positive social change in the community. The centre's focus on free courses and training programs could have a significant impact on local residents, particularly those with limited access to educational resources.\n\n## Potential for collaboration\n\nThe relationships between St. Andrews Resource Centre and other organizations suggest potential opportunities for collaboration and partnership. However, without more information on the specifics of these relationships, it is difficult to assess their full potential.",
+    "report_json": {
+      "title": "St. Andrews Resource Centre and Adult Education Department",
+      "summary": "The community revolves around St. Andrews Resource Centre, which is a community-led organization offering free courses and training. The centre has relationships with the Adult Education Department, Construction Industry, and UNESCO Learning Neighbourhood, all of which are associated with its activities.",
+      "rating": 4.0,
+      "rating_explanation": "The impact severity rating is moderate due to the potential for positive social change through the centre's community-led initiatives.",
+      "findings": [
+        {
+          "summary": "St. Andrews Resource Centre as the central organization",
+          "explanation": "St. Andrews Resource Centre is the central entity in this community, serving as a hub for community-led initiatives and training programs. The centre's association with various organizations and events suggests its significance in the community. However, without more information on the centre's specific impact, it is difficult to assess its full potential."
+        },
+        {
+          "summary": "Adult Education Department's role",
+          "explanation": "The Adult Education Department is a part of St. Andrews Resource Centre, suggesting that the department plays a crucial role in the community's educational initiatives. However, without more information on the department's specific activities and impact, it is difficult to assess its full significance."
+        },
+        {
+          "summary": "Construction Industry's involvement",
+          "explanation": "The Construction Industry is an organization that St. Andrews Resource Centre is hiring from, suggesting a potential link between the industry and the centre's community-led initiatives. However, without more information on the nature of this relationship, it is difficult to assess its full impact."
+        },
+        {
+          "summary": "UNESCO Learning Neighbourhood event",
+          "explanation": "The UNESCO Learning Neighbourhood event is an announcement made by St. Andrews Resource Centre, suggesting that the centre is actively engaging with educational initiatives and community development projects. However, without more information on the specific details of the event, it is difficult to assess its full significance."
+        },
+        {
+          "summary": "Community-led initiatives",
+          "explanation": "St. Andrews Resource Centre's community-led initiatives suggest a potential for positive social change in the community. The centre's focus on free courses and training programs could have a significant impact on local residents, particularly those with limited access to educational resources."
+        },
+        {
+          "summary": "Potential for collaboration",
+          "explanation": "The relationships between St. Andrews Resource Centre and other organizations suggest potential opportunities for collaboration and partnership. However, without more information on the specifics of these relationships, it is difficult to assess their full potential."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 0",
+    "edges": [
+      [
+        "\"ST. ANDREWS RESOURCE CENTRE\"",
+        "\"UNESCO LEARNING NEIGHBOURHOOD\""
+      ],
+      [
+        "\"DUBLIN\"",
+        "\"ST. ANDREWS RESOURCE CENTRE\""
+      ],
+      [
+        "\"ADULT EDUCATION DEPARTMENT\"",
+        "\"UNESCO LEARNING NEIGHBOURHOOD\""
+      ],
+      [
+        "\"CONSTRUCTION INDUSTRY\"",
+        "\"ST. ANDREWS RESOURCE CENTRE\""
+      ]
+    ],
+    "nodes": [
+      "\"ADULT EDUCATION DEPARTMENT\"",
+      "\"CONSTRUCTION INDUSTRY\"",
+      "\"ST. ANDREWS RESOURCE CENTRE\"",
+      "\"UNESCO LEARNING NEIGHBOURHOOD\""
+    ],
+    "chunk_ids": [
+      "chunk-f08ea52465654e67855aac4ccbc59501"
+    ],
+    "occurrence": 0.02857142857142857,
+    "sub_communities": []
+  },
+  "2": {
+    "report_string": "# Dublin Community Report\n\nThe Dublin community revolves around various entities, including family resource centers, community gardens, social services, and cooperatives. These entities are interconnected through relationships that highlight the city's commitment to sustainability, healthy eating, and social justice.\n\n",
+    "report_json": {
+      "title": "Dublin Community Report",
+      "summary": "The Dublin community revolves around various entities, including family resource centers, community gardens, social services, and cooperatives. These entities are interconnected through relationships that highlight the city's commitment to sustainability, healthy eating, and social justice.",
+      "rating": 8.0,
+      "rating_explanation": "The impact severity rating is moderate to high due to Dublin's strong presence of social services, community initiatives, and cultural significance."
+    },
+    "level": 0,
+    "title": "Cluster 2",
+    "edges": [
+      [
+        "\"DUBLIN\"",
+        "\"MUSTARD SEED SOUP RUN\""
+      ],
+      [
+        "\"DUBLIN\"",
+        "\"ST. ANDREWS RESOURCE CENTRE\""
+      ],
+      [
+        "\"IRELAND\"",
+        "\"MUSTARD SEED SOUP RUN\""
+      ]
+    ],
+    "nodes": [
+      "\"MUSTARD SEED SOUP RUN\"",
+      "\"DUBLIN\""
+    ],
+    "chunk_ids": [
+      "chunk-aa5643eb851fd2c0755c50dc35b199f0",
+      "chunk-94d01e3785472d66543a1cf1c9d2877d",
+      "chunk-45e8ae751a2726253bc278d12f16ef0d",
+      "chunk-cfb5696fbd1c559d78f8be47d006da80",
+      "chunk-1086151ac35b6cda492ce04018ef8cc4",
+      "chunk-760c5d2435ca62a5f5f42471be0693ff",
+      "chunk-5862129b77fd4ae8287e9a5c73dae754",
+      "chunk-771fd5d0cac233b67fb896bb13490cd6",
+      "chunk-f284e626aca64bc569bbeccb9b22dc9a",
+      "chunk-ef6b4ea04a75712b900ff5faccad383c",
+      "chunk-22b5c818af007b53f1de0d91ee9a895f",
+      "chunk-bda97256ce60f9981a7b8f931940a20a",
+      "chunk-77407f80485a9b4638b3b3201f0f662b",
+      "chunk-1d2fb9caff66ba5965940060ffa29be5",
+      "chunk-8009f4996b22c7a02a042798e6b1acd0",
+      "chunk-524884ade7ce4687443c08b814fe51a1",
+      "chunk-4a75c3fff373cf00cbc699950fc42696",
+      "chunk-edf963adf2df835961a7e63543a8450c",
+      "chunk-1249744e046550e58035335a7ef679b2",
+      "chunk-2e8e016cd40cce893f424da4dba07cd4",
+      "chunk-c2da0412b618dfb7a5fe12d341d0dd27",
+      "chunk-422cecde2b5a87e688ce31f9e799eec4",
+      "chunk-955eadddf3f81757c92eb7d5d65907e0",
+      "chunk-f08ea52465654e67855aac4ccbc59501",
+      "chunk-d170a0937703c2ef7dbd31e06bf31d5c",
+      "chunk-3363916b3ef87b9dd448e5566cd27ab7",
+      "chunk-cbf3a212b153170b813c335af7752c88",
+      "chunk-d14977eddb325a95c827f957f18fbc69",
+      "chunk-e746c3d3d2a714b2934abcd81c128c1b"
+    ],
+    "occurrence": 0.8285714285714286,
+    "sub_communities": []
+  }
+}

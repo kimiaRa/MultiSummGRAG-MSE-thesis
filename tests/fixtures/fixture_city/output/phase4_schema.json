@@ -1,0 +1,40 @@
+{
+  "meta": {"city": "Fixtureville"},
+  "city_overview": {
+    "stats": {
+      "total_fsi_count": 4,
+      "district_count": 2,
+      "fsi_type_breakdown": {"food_bank": 3},
+      "operational_breakdown": {"ngo_led": 3},
+      "popularity_breakdown": {"high": 3}
+    },
+    "analytics": {
+      "counts": {
+        "sustainability": 5,
+        "volunteer_model": 0
+      },
+      "languages": {"fr": 2, "en": 1}
+    },
+    "representative_images": [],
+    "geographic_distribution": "Some districts have more FSIs than others.",
+    "fsi_types_summary": "Food banks dominate.",
+    "operational_summary": "Mostly NGO-led.",
+    "popularity_summary": "Popularity is high overall.",
+    "notable_initiatives": "Fixture Food Bank is notable.",
+    "hotspots_and_deserts": "District A is a hotspot.",
+    "digital_presence": "",
+    "network_affiliations": "None recorded.",
+    "activity_volume": "Moderate.",
+    "operating_hours": "Weekdays.",
+    "physical_vs_online": "Mostly physical.",
+    "target_audiences": "General public.",
+    "sustainability": "Some initiatives are sustainability-focused.",
+    "collaborations": "None recorded.",
+    "education_and_engagement": "Some workshops held.",
+    "events_and_workshops": "Monthly events."
+  },
+  "districts": {
+    "A": {"fsi_count": 99},
+    "B": {"fsi_count": 1}
+  }
+}

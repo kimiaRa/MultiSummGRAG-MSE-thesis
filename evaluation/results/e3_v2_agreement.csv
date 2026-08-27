@@ -1,0 +1,7 @@
+city,a_kept_retained,b_kept_discarded,c_discarded_retained,d_discarded_discarded,n,raw_agreement,cohens_kappa,ci95_lower_agreement,ci95_upper_agreement,ci95_lower_kappa,ci95_upper_kappa
+barcelona,46,191,1,23,261,0.2644,0.0334,,,,
+brighton,24,52,0,5,81,0.358,0.0539,,,,
+dublin,36,33,0,14,83,0.6024,0.269,,,,
+london,33,73,0,9,115,0.3652,0.0661,,,,
+milan,34,113,0,16,163,0.3067,0.0558,,,,
+ALL_POOLED,173,462,1,67,703,0.3414,0.064,0.284,0.4592,0.0403,0.135

@@ -1,0 +1,20 @@
+# 
+
+URL: https://foodforall.charity/
+Location: Italy, Milan, Municipio 2
+Coordinates: 45.59, 9.33
+
+Type: food_bank
+Operational level: ngo_led
+Popularity: high (score: 1)
+
+Description: None
+
+Full text:
+Da oltre 15 anni, FoodForAll è al fianco di chi vive in difficoltà, con un impegno fatto di gesti concreti e presenza autentica. Siamo un’organizzazione di volontariato laica, apartitica e apolitica che ogni giorno, grazie a una rete di volontari, porta aiuto dove ce n’è più bisogno.
+Sosteniamo famiglie in stato di disagio, persone migranti e senza fissa dimora, offrendo assistenza alimentare, sociale e sanitaria. Ma il nostro impegno va oltre: non consegniamo soltanto cibo o beni essenziali, costruiamo relazioni. Ascoltiamo, accogliamo e camminiamo accanto alle persone, aiutandole a ritrovare il proprio posto nella società, con rispetto e dignità.
+Siamo presenti anche nelle emergenze umanitarie, perché la solidarietà non conosce confini. Dall’intervento durante il terremoto in Emilia Romagna al sostegno alle popolazioni colpite dalla guerra in Ucraina, fino all’impegno costante, da oltre un anno, a favore della causa palestinese.
+Oggi supportiamo direttamente famiglie e bambini arrivati in Italia per ricevere cure mediche, spesso segnati da ferite di guerra e gravi condizioni di denutrizione. In questi percorsi, offriamo non solo aiuto materiale, ma anche vicinanza, accoglienza e speranza.
+FoodForAll è tutto questo: persone che aiutano altre persone, ogni giorno.
+
+Images: 10 image(s) available.

@@ -1,0 +1,29 @@
+# Servicio de comidas | Fundació Catalunya La Pedrera
+
+URL: https://www.fundaciocatalunya-lapedrera.com/es/comer-compania
+Location: Spain, Barcelona, Eixample
+Coordinates: 41.39, 2.16
+
+Type: meals_service
+Operational level: ngo_led
+Popularity: low (score: 0)
+
+Description: None
+
+Full text:
+Servicio de comidas
+Comidas saludables en compañía para personas mayores con problemas cognitivos leves o moderados que tienen dificultades en la gestión de las comidas diarias y que forman parte de nuestro programa de Refuerzo de la Memoria.
+Comidas saludables en un espacio de relación y encuentro
+Menús supervisados para garantizar que les personas mayores tengan acceso a una comida diaria saludable y equilibrada, adaptada a sus necesidades alimentarias.
+Ofrece un espacio de relación y encuentro, en un ambiente amable donde se personaliza la atención. Pensado para revertir situaciones de soledad y aislamiento.
+Promueve los valores solidarios y la buena vecindad, por ello fomenta la participación activa de persones voluntarias.
+
+--- Additional page: https://www.fundaciocatalunya-lapedrera.com/ca/dina-companyia ---
+Servei de dinars
+Oferim àpats saludables a persones amb problemes cognitius lleus o moderats que tenen dificultats en la gestió dels àpats diaris i que formen part del nostre programa de Reforç de la Memòria.
+Àpats saludables en un espai de relació i trobada
+Menús supervisats per garantir que les persones grans tinguin accés a un àpat diari saludable i equilibrat, adaptat a les seves necessitats alimentàries.
+Ofereix un espai de relació i trobada, un ambient amable on es personalitza l’atenció. Pensat per revertir situacions de soledat i aïllament.
+Promou els valors solidaris i el bon veïnatge, per això fomenta la participació activa de persones voluntàries.
+
+Images: 20 image(s) available.

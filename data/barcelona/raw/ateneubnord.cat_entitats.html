@@ -1,0 +1,861 @@
+<!DOCTYPE html><html lang="ca"><head><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.4}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 90%;transform-origin:0 90%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,25%);transform:scale(6) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -90%;transform-origin:0 -90%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,-125%);transform:scale(6) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(40%,-50%);transform:scale(6) translate(40%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(40%,-50%);transform:scale(1.5) translate(40%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-140%,-50%);transform:scale(6) translate(-140%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-140%,-50%);transform:scale(1.5) translate(-140%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 0 50%);clip-path:ellipse(40% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 100% 50%);clip-path:ellipse(40% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entitats de l’Ateneu – Ateneu Cooperatiu del Barcelonès Nord</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//unpkg.com">
+<link rel="dns-prefetch" href="//s7.addthis.com">
+<link rel="alternate" type="application/rss+xml" title="Ateneu Cooperatiu del Barcelonès Nord » Canal d'informació" href="https://ateneubnord.cat/feed/">
+<link rel="alternate" type="application/rss+xml" title="Ateneu Cooperatiu del Barcelonès Nord » Canal dels comentaris" href="https://ateneubnord.cat/comments/feed/">
+<link rel="alternate" type="text/calendar" title="Ateneu Cooperatiu del Barcelonès Nord » Canal iCal" href="https://ateneubnord.cat/agenda/?ical=1">
+<script async="" src="https://cdn.matomo.cloud/ateneubnordcat.matomo.cloud/matomo.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ateneubnord.cat\/wp2\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.5"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="codepeople-search-in-place-style-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/search-in-place/css/codepeople_shearch_in_place.min.css?ver=1.5.0" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://ateneubnord.cat/wp2/wp-includes/css/dist/block-library/style.min.css?ver=6.8.5" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--groc-1: #FFCD1C;--wp--preset--color--llima-1: #95C23D;--wp--preset--color--maragda-1: #00AB97;--wp--preset--color--groc-2: #FFE6A1;--wp--preset--color--llima-2: #CFE1A6;--wp--preset--color--maragda-2: #A6D6CC;--wp--preset--color--blau-1: #009FE3;--wp--preset--color--blau-2: #83D0F5;--wp--preset--color--blau-3: #C9E8FB;--wp--preset--color--blanc: #ffffff;--wp--preset--color--gris: #757575;--wp--preset--color--negre: #000000;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="ctf_styles-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="easingslider-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/easing-slider/assets/css/public.min.css?ver=3.0.8" type="text/css" media="all">
+<link rel="stylesheet" id="pamapam-punts-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pamapam_punts/css/mapa.css?ver=27" type="text/css" media="all">
+<link rel="stylesheet" id="tippy-css-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pamapam_punts/css/tippy.css?ver=27" type="text/css" media="all">
+<link rel="stylesheet" id="owl-css-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/vendor/owl/assets/owl.carousel.css?ver=27" type="text/css" media="all">
+<link rel="stylesheet" id="owl-theme-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/vendor/owl/assets/owl.theme.default.min.css?ver=27" type="text/css" media="all">
+<link rel="stylesheet" id="pimpampum-style-css" href="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/style.css?ver=6.8.5" type="text/css" media="all">
+<link rel="stylesheet" id="general-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/resources/general/general.css?ver=6.8.5" type="text/css" media="all">
+<link rel="stylesheet" id="cookies-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/vendor/cookies/cookietool.css?ver=6.8.5" type="text/css" media="all">
+<link rel="stylesheet" id="pppcookies-css" href="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/resources/cookies/cookies.css?ver=6.8.5" type="text/css" media="all">
+<link rel="stylesheet" id="logos-css-child-css" href="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/css/logos.css?ver=6.8.5" type="text/css" media="all">
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="codepeople-search-in-place-js-extra">
+/* <![CDATA[ */
+var codepeople_search_in_place = {"screen_reader_alert":"Search results pop-up.","screen_reader_alert_instructions":"Press the Tab key to navigate through the search results.","screen_reader_alert_result_single":"result","screen_reader_alert_result_multiple":"results","own_only":"0","result_number":"10","more":"More Results","empty":"0 results","char_number":"3","root":"Ly9hdGVuZXVibm9yZC5jYXQvd3AyL3dwLWFkbWluLw==","home":"https:\/\/ateneubnord.cat","summary_length":"20","operator":"or","highlight_resulting_page":"1","lang":"ca","highlight_colors":["#B5DCE1","#F4E0E9","#D7E0B1","#F4D9D0","#D6CDC8","#F4E3C9","#CFDAF0","#F4EFEC"],"areas":["div.hentry","#content","#main","div.content","#middle","#container","#wrapper","article",".elementor","body"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/search-in-place/js/codepeople_shearch_in_place.min.js?ver=1.5.0" id="codepeople-search-in-place-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/easing-slider/assets/js/public.min.js?ver=3.0.8" id="easingslider-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pamapam_punts/js/highlight.js" id="highlight-js"></script>
+<script type="text/javascript" src="//unpkg.com/@popperjs/core@2" id="popper-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pamapam_punts/js/tippy.js" id="tippy-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pamapam_punts/js/punts.js" id="pamapam-punts-js"></script>
+<script type="text/javascript" id="pamapam-filtres-js-extra">
+/* <![CDATA[ */
+var PAMAPAM_CONFIG = {"filters":{"town":"Municipis","sector":"Sector","legal-form":"Forma jur\u00eddica","social":"Pertinen\u00e7a","tag":"Etiquetes"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pamapam_punts/js/filtres.js" id="pamapam-filtres-js"></script>
+<script type="text/javascript" id="pimpampum-js-extra">
+/* <![CDATA[ */
+var wp_ajax_vars = {"ajaxurl":"https:\/\/ateneubnord.cat\/wp2\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools//js/ppp.js?ver=6.8.5" id="pimpampum-js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js?ver=6.8.5#pubid=danilon" id="addthis-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/js/ppp.js?273&amp;ver=6.8.5" id="ppp-js"></script>
+<link rel="https://api.w.org/" href="https://ateneubnord.cat/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://ateneubnord.cat/wp-json/wp/v2/pages/659"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ateneubnord.cat/wp2/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.5">
+<link rel="canonical" href="https://ateneubnord.cat/entitats/">
+<link rel="shortlink" href="https://ateneubnord.cat/?p=659">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://ateneubnord.cat/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fateneubnord.cat%2Fentitats%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://ateneubnord.cat/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fateneubnord.cat%2Fentitats%2F&amp;format=xml">
+<style>
+.search-in-place {background-color: #F9F9F9;}
+.search-in-place {border: 1px solid #DDDDDD;}
+.search-in-place .item{border-bottom: 1px solid #DDDDDD;}.search-in-place .label{color:#333333;}
+.search-in-place .label{text-shadow: 0 1px 0 #FFFFFF;}
+.search-in-place .label{
+				background: #ECECEC;
+				background: -moz-linear-gradient(top,  #F9F9F9 0%, #ECECEC 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#ECECEC));
+				background: -webkit-linear-gradient(top,  #F9F9F9 0%,#ECECEC 100%);
+				background: -o-linear-gradient(top,  #F9F9F9 0%,#ECECEC 100%);
+				background: -ms-linear-gradient(top,  #F9F9F9 0%,#ECECEC 100%);
+				background: linear-gradient(to bottom,  #F9F9F9 0%,#ECECEC 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#ECECEC',GradientType=0 );
+			}
+.search-in-place .item.active{background-color:#FFFFFF;}
+</style><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://ateneubnord.cat"><link rel="alternate" href="https://ateneubnord.cat/wp-json/tribe/events/v1/"><noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><link rel="icon" href="https://ateneubnord.cat/wp2/wp-content/uploads/cropped-Mesa-de-trabajo-1-2-100x100.png" sizes="32x32">
+<link rel="icon" href="https://ateneubnord.cat/wp2/wp-content/uploads/cropped-Mesa-de-trabajo-1-2-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://ateneubnord.cat/wp2/wp-content/uploads/cropped-Mesa-de-trabajo-1-2-300x300.png">
+<meta name="msapplication-TileImage" content="https://ateneubnord.cat/wp2/wp-content/uploads/cropped-Mesa-de-trabajo-1-2-300x300.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<script src="https://ateneubnord.cat/wp2/wp-includes/js/wp-emoji-release.min.js?ver=6.8.5" defer=""></script></head>
+
+
+
+<body class="wp-singular page-template-default page page-id-659 wp-theme-pimpampum_theme tribe-js cookietool">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+
+		<div class="header_container wrap">
+						<p class="site-title"><a href="https://ateneubnord.cat/" rel="home">Ateneu Cooperatiu del Barcelonès Nord</a></p>
+							<div class="header_nav">
+				<div id="menu1">
+					<nav id="site-navigation-superior" class="menu_ppp" role="navigation">
+
+						<div class="menu-superior-container"><ul id="menu-superior" class="menu"><li id="menu-item-13459" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-13459"><a href="#">Qui som</a>
+<ul class="sub-menu">
+	<li id="menu-item-13461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13461"><a href="https://ateneubnord.cat/lateneubnord/">L’AteneuBNord</a></li>
+	<li id="menu-item-13462" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-659 current_page_item menu-item-13462"><a href="https://ateneubnord.cat/entitats/" aria-current="page">Entitats de l’Ateneu</a></li>
+	<li id="menu-item-13466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13466"><a href="https://www.periferica.cat">Perifèrica (cercle de cultura)</a></li>
+	<li id="menu-item-13464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13464"><a href="https://ateneubnord.cat/ateneus-cooperatius/">Xarxa d’Ateneus Cooperatius (XAC)</a></li>
+</ul>
+</li>
+<li id="menu-item-13467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13467"><a href="#">Què fem</a>
+<ul class="sub-menu">
+	<li id="menu-item-13468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13468"><a href="https://ateneubnord.cat/mapatge-i-diagnosi/">Mapatge i diagnosi</a></li>
+	<li id="menu-item-13469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13469"><a href="https://ateneubnord.cat/divulgacio-sensibilitzacio-i-generacio-de-coneixement/">Divulgació, sensibilització i generació de coneixement</a></li>
+	<li id="menu-item-13470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13470"><a href="https://ateneubnord.cat/formacions/">Formació per la creació i consolidació</a></li>
+	<li id="menu-item-13473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13473"><a href="https://ateneubnord.cat/segell-aqui-assessorem-leconomia-social/">Formació a gestories</a></li>
+	<li id="menu-item-13474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13474"><a href="https://ateneubnord.cat/mon-educatiu/">Activitats a centres educatius</a></li>
+	<li id="menu-item-13471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13471"><a href="https://ateneubnord.cat/assessorament/">Acompanyament i assessorament</a></li>
+	<li id="menu-item-13472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13472"><a href="https://ateneubnord.cat/intercooperacio/">Intercooperació</a></li>
+	<li id="menu-item-13477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13477"><a href="https://ateneubnord.cat/contacte/#punts">Punts d’informació COOP</a></li>
+	<li id="menu-item-13465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13465"><a href="https://ateneubnord.cat/eines-i-recursos/">Eines i recursos</a></li>
+</ul>
+</li>
+<li id="menu-item-13958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13958"><a href="https://ateneubnord.cat/guies/">Guies</a></li>
+<li id="menu-item-3646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3646"><a href="https://serveis.ateneubnord.cat/program">Agenda</a></li>
+<li id="menu-item-13478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13478"><a href="https://ateneubnord.cat/noticies/">Actualitat</a>
+<ul class="sub-menu">
+	<li id="menu-item-13479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13479"><a href="https://ateneubnord.cat/noticies/">Notícies</a></li>
+	<li id="menu-item-15888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15888"><a href="https://ateneubnord.cat/butlleti/">Butlletí</a></li>
+	<li id="menu-item-13482" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13482"><a href="https://ateneubnord.cat/cat/practiques/">Bones pràctiques</a></li>
+	<li id="menu-item-13983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13983"><a href="https://ateneubnord.cat/convocatories/">Convocatòries</a></li>
+	<li id="menu-item-13480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13480"><a href="https://ateneubnord.cat/treball/">Treballa a l’ESS</a></li>
+	<li id="menu-item-16388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16388"><a href="https://ateneubnord.cat/suport/">Suport al cooperativisme i l’ESS</a></li>
+</ul>
+</li>
+<li id="menu-item-3649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649"><a href="https://ateneubnord.cat/contacte/">Contacte</a></li>
+<li id="menu-item-13485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13485"><a href="https://serveis.ateneubnord.cat/users/loginsignup/">Registra’t</a></li>
+</ul></div>											</nav>
+				</div>
+
+				<div id="cercador">
+					<form method="get" id="searchform" action="https://ateneubnord.cat/">
+						<input type="text" class="field" name="s" id="s">
+						<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu2">
+				<nav id="site-navigation" class="menu_ppp" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menú</button>
+					<div class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-13457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13457"><a href="https://ateneubnord.cat/creacio/">Creació</a></li>
+<li id="menu-item-13926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13926"><a href="https://ateneubnord.cat/transformacio-i-relleu-cooperatiu/">Transformació i relleu</a></li>
+<li id="menu-item-13458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13458"><a href="https://ateneubnord.cat/consolidacio/">Consolidació</a></li>
+<li id="menu-item-12160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12160"><a href="https://ateneubnord.cat/mapa/">Mapa de l’ESS</a></li>
+<li id="menu-item-3748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3748"><a href="https://serveis.ateneubnord.cat/project/info/">Sol·licita acompanyament</a></li>
+<li id="menu-item-16276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16276"><a href="https://ateneubnord.cat/festcoop-gramenet/">FestCoop Gramenet</a></li>
+<li id="menu-item-16277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16277"><a href="https://ateneubnord.cat/badacoop/">Badacoop</a></li>
+<li id="menu-item-13104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13104"><a href="https://www.periferica.cat">Perifèrica</a></li>
+<li id="menu-item-11280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11280"><a href="https://ateneubnord.cat/125anyscoopbdn/">1898CoopBDN</a></li>
+<li class="search_hamb"><form role="search" method="get" id="searchform" action="https://ateneubnord.cat/"><input type="text" placeholder="cercar..." value="" name="s" id="s"><input type="submit" id="searchsubmit" value="Cerca"></form></li><li class="superior"><a href="#">Qui som</a>
+<ul class="sub-menu">
+	<li id="menu-item-13461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13461"><a href="https://ateneubnord.cat/lateneubnord/">L’AteneuBNord</a></li>
+	<li id="menu-item-13462" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-659 current_page_item menu-item-13462"><a href="https://ateneubnord.cat/entitats/" aria-current="page">Entitats de l’Ateneu</a></li>
+	<li id="menu-item-13466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13466"><a href="https://www.periferica.cat">Perifèrica (cercle de cultura)</a></li>
+	<li id="menu-item-13464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13464"><a href="https://ateneubnord.cat/ateneus-cooperatius/">Xarxa d’Ateneus Cooperatius (XAC)</a></li>
+</ul>
+</li><li class="superior"><a href="https://ateneubnord.cat/lateneubnord/">L’AteneuBNord</a></li><li class="superior"><a href="https://ateneubnord.cat/entitats/" aria-current="page">Entitats de l’Ateneu</a></li><li class="superior"><a href="https://www.periferica.cat">Perifèrica (cercle de cultura)</a></li><li class="superior"><a href="https://ateneubnord.cat/ateneus-cooperatius/">Xarxa d’Ateneus Cooperatius (XAC)</a></li><li class="superior"><a href="#">Què fem</a>
+<ul class="sub-menu">
+	<li id="menu-item-13468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13468"><a href="https://ateneubnord.cat/mapatge-i-diagnosi/">Mapatge i diagnosi</a></li>
+	<li id="menu-item-13469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13469"><a href="https://ateneubnord.cat/divulgacio-sensibilitzacio-i-generacio-de-coneixement/">Divulgació, sensibilització i generació de coneixement</a></li>
+	<li id="menu-item-13470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13470"><a href="https://ateneubnord.cat/formacions/">Formació per la creació i consolidació</a></li>
+	<li id="menu-item-13473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13473"><a href="https://ateneubnord.cat/segell-aqui-assessorem-leconomia-social/">Formació a gestories</a></li>
+	<li id="menu-item-13474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13474"><a href="https://ateneubnord.cat/mon-educatiu/">Activitats a centres educatius</a></li>
+	<li id="menu-item-13471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13471"><a href="https://ateneubnord.cat/assessorament/">Acompanyament i assessorament</a></li>
+	<li id="menu-item-13472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13472"><a href="https://ateneubnord.cat/intercooperacio/">Intercooperació</a></li>
+	<li id="menu-item-13477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13477"><a href="https://ateneubnord.cat/contacte/#punts">Punts d’informació COOP</a></li>
+	<li id="menu-item-13465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13465"><a href="https://ateneubnord.cat/eines-i-recursos/">Eines i recursos</a></li>
+</ul>
+</li><li class="superior"><a href="https://ateneubnord.cat/mapatge-i-diagnosi/">Mapatge i diagnosi</a></li><li class="superior"><a href="https://ateneubnord.cat/divulgacio-sensibilitzacio-i-generacio-de-coneixement/">Divulgació, sensibilització i generació de coneixement</a></li><li class="superior"><a href="https://ateneubnord.cat/formacions/">Formació per la creació i consolidació</a></li><li class="superior"><a href="https://ateneubnord.cat/segell-aqui-assessorem-leconomia-social/">Formació a gestories</a></li><li class="superior"><a href="https://ateneubnord.cat/mon-educatiu/">Activitats a centres educatius</a></li><li class="superior"><a href="https://ateneubnord.cat/assessorament/">Acompanyament i assessorament</a></li><li class="superior"><a href="https://ateneubnord.cat/intercooperacio/">Intercooperació</a></li><li class="superior"><a href="https://ateneubnord.cat/contacte/#punts">Punts d’informació COOP</a></li><li class="superior"><a href="https://ateneubnord.cat/eines-i-recursos/">Eines i recursos</a></li><li class="superior"><a href="https://ateneubnord.cat/guies/">Guies</a></li><li class="superior"><a href="https://serveis.ateneubnord.cat/program">Agenda</a></li><li class="superior"><a href="https://ateneubnord.cat/noticies/">Actualitat</a>
+<ul class="sub-menu">
+	<li id="menu-item-13479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13479"><a href="https://ateneubnord.cat/noticies/">Notícies</a></li>
+	<li id="menu-item-15888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15888"><a href="https://ateneubnord.cat/butlleti/">Butlletí</a></li>
+	<li id="menu-item-13482" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13482"><a href="https://ateneubnord.cat/cat/practiques/">Bones pràctiques</a></li>
+	<li id="menu-item-13983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13983"><a href="https://ateneubnord.cat/convocatories/">Convocatòries</a></li>
+	<li id="menu-item-13480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13480"><a href="https://ateneubnord.cat/treball/">Treballa a l’ESS</a></li>
+	<li id="menu-item-16388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16388"><a href="https://ateneubnord.cat/suport/">Suport al cooperativisme i l’ESS</a></li>
+</ul>
+</li><li class="superior"><a href="https://ateneubnord.cat/noticies/">Notícies</a></li><li class="superior"><a href="https://ateneubnord.cat/butlleti/">Butlletí</a></li><li class="superior"><a href="https://ateneubnord.cat/cat/practiques/">Bones pràctiques</a></li><li class="superior"><a href="https://ateneubnord.cat/convocatories/">Convocatòries</a></li><li class="superior"><a href="https://ateneubnord.cat/treball/">Treballa a l’ESS</a></li><li class="superior"><a href="https://ateneubnord.cat/suport/">Suport al cooperativisme i l’ESS</a></li><li class="superior"><a href="https://ateneubnord.cat/contacte/">Contacte</a></li><li class="superior"><a href="https://serveis.ateneubnord.cat/users/loginsignup/">Registra’t</a></li></ul></div>									</nav>
+		</div>
+	</header>
+
+		<main id="main" class="wrap page_basica" role="main">
+
+		<article id="post-659" class="post-659 page type-page status-publish hentry">
+
+
+
+
+		<header class="entry-header">
+		<h1 class="page_title">Entitats de l’Ateneu</h1>		</header>
+
+		<div class="entry-content">
+
+			
+<div style="height:44px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>L’<strong>Ateneu Cooperatiu del Barcelonès Nord</strong> el conformen un conjunt d’entitats <strong>promotores</strong> i d’altres que <strong>participen</strong> i doten de serveis a l’ateneu amb la finalitat de difondre i donar a conèixer els valors propis del cooperativisme i l’economia social i solidària.<br></p>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="496" src="https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-1024x496.jpeg" alt="2025. Persones de les entitats promotores i participants al Consell Estratègic de l'AteneuBNord" class="wp-image-15833 lazyautosizes lazyloaded" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-1024x496.jpeg" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-1024x496.jpeg 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-300x145.jpeg 300w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-768x372.jpeg 768w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic.jpeg 1076w" data-sizes="auto" data-eio-rwidth="1024" data-eio-rheight="496" sizes="930px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-1024x496.jpeg 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-300x145.jpeg 300w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-768x372.jpeg 768w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic.jpeg 1076w"><noscript><img fetchpriority="high" decoding="async" width="1024" height="496" src="https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-1024x496.jpeg" alt="2025. Persones de les entitats promotores i participants al Consell Estratègic de l'AteneuBNord" class="wp-image-15833" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-1024x496.jpeg 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-300x145.jpeg 300w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic-768x372.jpeg 768w, https://ateneubnord.cat/wp2/wp-content/uploads/2025-03-11_AteneuBNord_ConsellEstrategic.jpeg 1076w" sizes="(max-width: 1024px) 100vw, 1024px" data-eio="l" /></noscript></figure>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-css-opacity">
+
+
+
+<h2 class="wp-block-heading has-text-align-left">Entitats promotores:</h2>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7.png" alt="" class="wp-image-15781 lazyautosizes lazyloaded" style="width:400px" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644" sizes="400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-600x600.png 600w"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7.png" alt="" class="wp-image-15781" style="width:400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats7-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://www.lasargantana.org/" target="_blank" rel="noreferrer noopener">La Sargantana</a></strong></figcaption></figure></div>
+
+
+<p>La <strong>Sargantana</strong>, amb seu a <strong>Badalona</strong>, és una cooperativa de treball sense afany de lucre i d’iniciativa social amb expertesa en la restauració, la dinamització cultural, i la viticultura, en aquests moments recuperant el conreu de la vinya a la Vall de Betlem. Té una sòlida experiència en el desenvolupament i formació de programes per a l’ESS, l’acompanyament de la creació i consolidació de projectes, i coneixement profund del teixit socioeconòmic del Barcelonès Nord.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15783 lazyload" style="width:400px" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3.png" alt="" class="wp-image-15783" style="width:400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats3-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><strong><a href="http://dipcoop.org/" target="_blank" rel="noreferrer noopener">DIP Coop</a></strong></strong>.</figcaption></figure></div>
+
+
+<p><strong>DIP</strong> <strong>SCCL, </strong>amb seu a <strong>Badalona</strong>, és una cooperativa de treball sense ànim de lucre, dedicada a la consultoria i co-producció de polítiques públiques des d’una perspectiva de les diversitats, antiracista, intercultural, feminista, interseccional i el més innovadora possible. Entre les iniciatives impulsades, destaquen projectes d’acollida i gestió de les diversitats, l’assessorament en polítiques d’igualtat, la creació i dinamització d’un pol cooperatiu cultural a Osona i l’acompanyament a la Comunalitat Urbana de Badalona Sud. Ens uneix la voluntat de transformació social, el compromís amb l’entorn i uns valors comuns amb el món de l’Economia Social i Solidària.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15786 lazyload" style="width:407px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6.png" alt="" class="wp-image-15786" style="width:407px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats6-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://www.coopelafabrica.cat/ca/inici/" target="_blank" rel="noreferrer noopener">La Fàbrica</a></strong></figcaption></figure></div>
+
+
+<p>
+La <strong>Fàbric@</strong> és una cooperativa de treball amb seu a <strong>Barcelona</strong> que impulsa, dinamitza i gestiona processos comunitaris, serveis i/o equipaments públics que tinguin voluntat d’esdevenir eines per al desenvolupament o l’acció comunitària. És una cooperativa de treball associat especialitzada en treball comunitari en barris amb alta complexitat socioeconòmica com La Marina i Bon Pastor. Destaca l’acompanyament a projectes de reallotjament de les Cases Barates, creació de la primera Comunitat Energètica Local al Bon Pastor, la gestió d’un menjador comunitari a Sant Martí i la reducció de l’escletxa digital amb el projecte «smart barris».
+</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15788 lazyload" style="width:378px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24.png" alt="" class="wp-image-15788" style="width:378px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats24-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.conreusereny.cat" target="_blank" rel="noreferrer noopener"></a><a href="https://conreusereny.cat/ps/ca/" target="_blank" rel="noreferrer noopener"><strong>Conreu Sereny</strong></a></figcaption></figure></div>
+
+
+<p><br><strong>Conreu Sereny</strong> és un projecte d’agroecologia dedicat a la producció i comercialització de verdura i fruita ecològica a la zona del Barcelonès Nord. Aporta l’expertesa en la recuperació i transformació d’espais agraris periurbans abandonats, col·laborant amb grups de consum ecològic, comercialitzant producció pròpia i d’altres productors locals, i desenvolupant projectes comunitaris amb col·lectius vulnerables i centres educatius. Ha participat en la creació de la cooperativa de segon grau Ecomaresme, en el projecte europeu FoodClic i ofereix espais divulgatius sobre agroecologia a la Ràdio Ciutat de Badalona</p>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats.png" alt="" class="wp-image-15782 lazyautosizes lazyloaded" style="width:400px" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644" sizes="400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-600x600.png 600w"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats.png" alt="" class="wp-image-15782" style="width:400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://www.capfoguer.cat/es/inicio/" target="_blank" rel="noreferrer noopener">Cooperativa Capfoguer</a></strong></figcaption></figure></div>
+
+
+<p><strong>Capfoguer</strong>, amb seu a <strong>Santa Coloma de Gramenet</strong>, és cooperativa de treball sense ànim de lucre. Porta un restaurant cooperatiu i un obrador de producció i distribució de cervesa artesana utilitzant ingredients de proximitat i ecològics i especialitzada en el servei integral de barres per a esdeveniments culturals. Ha contribuït a impulsar l’ecosistema cooperatiu de Gramenet, així com l’enGRAMAtge, la comunalitat urbana de Santa Coloma, entre altres projectes i iniciatives dirigides a l’organització territorial.&nbsp;</p>
+
+
+<div class="wp-block-image is-resized">
+<figure class="aligncenter size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15792 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1.png" alt="" class="wp-image-15792" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats4-1-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://femprocomuns.coop/" target="_blank" rel="noreferrer noopener">femPROCOMUNS</a></strong></figcaption></figure></div>
+
+
+<p><strong>femProcomuns</strong>, amb seu a <strong>Barcelona</strong> i delegació a <strong>Badalona</strong>,es defineix com una eina social estratègica per fer viable l’activitat procomuna. És una cooperativa integral de treball i consum, sense afany de lucre i d’iniciativa social, en l’àmbit de les tecnologies lliures, el cooperativisme obert, la comunicació social i l’autogestió comunitària. Impulsa diversos projectes, com SomNúvol, que proveeix entitats i persones de l’economia solidària, d’eines tecnoètiques per a treballar. Té una sòlida expertesa en la coordinació de programes d’acompanyament de projectes i disposa d’eines i models per la sostenibilitat d’iniciatives col·lectives i comunitàries.</p>
+
+
+<div class="wp-block-image is-resized">
+<figure class="aligncenter size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15787 lazyload" style="width:384px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1.png" alt="" class="wp-image-15787" style="width:384px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats5-1-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.gracer.coop/" target="_blank" rel="noreferrer noopener"><strong>GRACER</strong></a></figcaption></figure></div>
+
+
+<p><strong>Gracer Coop</strong> és una cooperativa de treball associat sense ànim de lucre especialitzada en l’assessorament a entitats de l’Economia Social, acompanyant i enfortint el model cooperativista en totes les seves etapes. Des de 2020, participa com a entitat promotora a l’Ateneu Cooperatiu de l’Hospitalet de Llobregat, La Col·lectiva, i actualment, és la referent territorial de la Federació de Cooperatives de Treball de Catalunya (FCTC) al Vallès Occidental.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15789 lazyload" style="width:400px" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8.png" alt="" class="wp-image-15789" style="width:400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats8-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.sapsque.com" target="_blank" rel="noreferrer noopener"><strong>Saps Què</strong></a></figcaption></figure></div>
+
+
+<p><br><strong>SapsQuè</strong> és una associació cultural sense afany de lucre, arrelada en el teixit cultural del Barcelonès Nord, i dedicada a la promoció i gestió cultural, l’animació sociocultural i l’acompanyament d’emprenedoria cultural, comunicació, i creació de continguts audiovisuals.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15790 lazyload" style="width:350px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2.png" alt="" class="wp-image-15790" style="width:350px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats2-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.cangrauanigami.cat/" target="_blank" rel="noreferrer noopener"><strong>Cardant Cultura</strong></a></figcaption></figure></div>
+
+
+<p><strong>Cardant Cultura</strong>, és una cooperativa de treball associat especialitzada en gestió cultural i suport a iniciatives creatives. Gestiona l’espai Filatures Can Grau (a Roda de Ter), punt de suport logístic per a iniciatives de producció cultural, on proporciona serveis a companyies i artistes. Aporta l’expertesa en fàbriques de creació. Ha organitzat 60 activitats públiques i 45 privades, amb la participació de 50 entitats i 350 socis. En són impulsores entitats amb vincle a <strong>Badalona</strong>, com la cooperativa DIP i la Fundació Èpica.</p>
+</div>
+</div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-css-opacity">
+
+
+
+<h2 class="wp-block-heading">Entitats participants:</h2>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image is-resized">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15793 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17.png" alt="" class="wp-image-15793" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats17-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://www.isil.cat/" target="_blank" rel="noreferrer noopener">Associació ISIL</a></strong></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15795 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19.png" alt="" class="wp-image-15795" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats19-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://es-la.facebook.com/ObradorCoop/" target="_blank" rel="noreferrer noopener">L’obrador de Gramenet</a></strong></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15797 lazyload" style="width:400px" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13.png" alt="" class="wp-image-15797" style="width:400px" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats13-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://laconstelacio.org/" target="_blank" rel="noreferrer noopener"><strong>La Constel·lació del Gorg</strong></a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15804 lazyload" style="width:330px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1.png" alt="" class="wp-image-15804" style="width:330px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats11-1-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.badalona.cat/ca/serveis-ajuntament/cultura" target="_blank" rel="noreferrer noopener"><strong>Badalona Cultura</strong></a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15806 lazyload" style="width:293px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9.png" alt="" class="wp-image-15806" style="width:293px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats9-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.gramenet.cat/" target="_blank" rel="noreferrer noopener"><strong>Ajuntament de Santa Coloma de Gramenet</strong></a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15807 lazyload" style="width:355px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10.png" alt="" class="wp-image-15807" style="width:355px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats10-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://www.badalona.cat/" target="_blank" rel="noreferrer noopener"><strong>Ajuntament de Badalona</strong></a></figcaption></figure></div>
+
+<div class="wp-block-image is-resized is-style-default">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15809 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16.png" alt="" class="wp-image-15809" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats16-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://ca.gramagraf.com" target="_blank" rel="noreferrer noopener">Gramagraf</a></strong></figcaption></figure></div>
+
+<div class="wp-block-image is-style-default">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15810 lazyload" style="width:345px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22.png" alt="" class="wp-image-15810" style="width:345px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats22-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong>Te Creativa</strong></figcaption></figure></div>
+
+<div class="wp-block-image is-resized">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15811 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18.png" alt="" class="wp-image-15811" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats18-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="http://lapageoriginal.com/ca/" target="_blank" rel="noreferrer noopener">La Page Original</a></strong></figcaption></figure></div></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image is-resized">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15794 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14.png" alt="" class="wp-image-15794" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats14-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://fundaciotallers.org" target="_blank" rel="noreferrer noopener"><strong>Fundació Tallers</strong></a></figcaption></figure></div>
+
+<div class="wp-block-image is-resized">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15796 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20.png" alt="" class="wp-image-15796" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats20-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="https://www.sommobilitat.coop/" target="_blank" rel="noreferrer noopener">Som mobilitat</a></strong></figcaption></figure></div>
+
+<div class="wp-block-image is-resized">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15798 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21.png" alt="" class="wp-image-15798" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats21-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong><a href="http://www.tallersguinardo.com/index.php/ca/" target="_blank" rel="noreferrer noopener">Tallers Guinardó</a></strong></figcaption></figure></div>
+
+<div class="wp-block-image is-resized">
+<figure class="alignleft size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15805 lazyload" style="width:339px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1.png" alt="" class="wp-image-15805" style="width:339px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats12-1-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://caliuhabitatge.cat/" target="_blank" rel="noreferrer noopener"><strong>Caliu Habitatge Cooperatiu</strong></a></figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="421" height="421" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaUAAAGlAQAAAAByqdQDAAAAAnRSTlMAAHaTzTgAAAAtSURBVHja7cGBAAAAAMOg+VPf4ARVAQAAAAAAAAAAAAAAAAAAAAAAAAAAADwDWM4AAYIbUpwAAAAASUVORK5CYII=" alt="" class="wp-image-15581 lazyload" style="width:328px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1.jpeg" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1.jpeg 421w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-300x300.jpeg 300w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-350x350.jpeg 350w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-100x100.jpeg 100w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-1024x1024.jpeg 1024w" data-sizes="auto" data-eio-rwidth="421" data-eio-rheight="421"><noscript><img decoding="async" width="421" height="421" src="https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1.jpeg" alt="" class="wp-image-15581" style="width:328px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1.jpeg 421w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-300x300.jpeg 300w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-350x350.jpeg 350w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-100x100.jpeg 100w, https://ateneubnord.cat/wp2/wp-content/uploads/RodaliesCultural-1-1024x1024.jpeg 1024w" sizes="(max-width: 421px) 100vw, 421px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><strong>Rodalies Cultural</strong></figcaption></figure></div>
+
+
+<p></p>
+
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15808 lazyload" style="width:335px;height:auto" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23.png" alt="" class="wp-image-15808" style="width:335px;height:auto" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats23-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript><figcaption class="wp-element-caption"><a href="https://uniosegonesoportunitats.com/" target="_blank" rel="noreferrer noopener"><strong>Unió Segones Oportunitats</strong></a></figcaption></figure></div>
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="644" height="644" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoQAAAKEAQAAAAC2zBbiAAAAAnRSTlMAAHaTzTgAAABKSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgzOSAAB52btngAAAABJRU5ErkJggg==" alt="" class="wp-image-15812 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-600x600.png 600w" data-sizes="auto" data-eio-rwidth="644" data-eio-rheight="644"><noscript><img decoding="async" width="644" height="644" src="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15.png" alt="" class="wp-image-15812" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15.png 644w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/miniatura_logos_entitats15-600x600.png 600w" sizes="(max-width: 644px) 100vw, 644px" data-eio="l" /></noscript></figure>
+
+
+
+<p class="has-small-font-size"><a href="https://gedi.org/" target="_blank" rel="noreferrer noopener"><strong><strong></strong></strong></a><strong><strong><a href="https://gedi.org/" target="_blank" rel="noreferrer noopener">Gedi cooperativa</a></strong></strong></p>
+
+
+
+<figure class="wp-block-gallery alignleft has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="1024" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQAAQAAAABXZhYuAAAAAnRSTlMAAHaTzTgAAACWSURBVHja7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GBB4AAQ3eOGQAAAAASUVORK5CYII=" alt="" class="wp-image-15819 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-1024x1024.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-768x768.png 768w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-600x600.png 600w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo.png 1080w" data-sizes="auto" data-eio-rwidth="1024" data-eio-rheight="1024"><noscript><img decoding="async" width="1024" height="1024" src="https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-1024x1024.png" alt="" class="wp-image-15819" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-1024x1024.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-300x300.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-350x350.png 350w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-768x768.png 768w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-100x100.png 100w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo-600x600.png 600w, https://ateneubnord.cat/wp2/wp-content/uploads/agora-logo.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" data-eio="l" /></noscript></figure>
+
+
+
+<p class="has-small-font-size"><a href="https://www.somagora.com/" target="_blank" rel="noreferrer noopener"><strong><strong></strong></strong></a><strong><strong><a href="https://www.somagora.com/" target="_blank" rel="noreferrer noopener">Agora Desenvolupament personal</a></strong></strong></p>
+
+
+
+<figure class="wp-block-gallery alignleft has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex"></figure>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="1024" height="656" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAKQAQAAAAAp0DVXAAAAAnRSTlMAAHaTzTgAAABoSURBVHja7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7wZKnwABHSfi+QAAAABJRU5ErkJggg==" alt="" class="wp-image-15829 lazyload" data-src="https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata.png" data-srcset="https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-300x192.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-768x492.png 768w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-650x415.png 650w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-937x600.png 937w" data-sizes="auto" data-eio-rwidth="1024" data-eio-rheight="656"><noscript><img decoding="async" width="1024" height="656" src="https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata.png" alt="" class="wp-image-15829" srcset="https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata.png 1024w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-300x192.png 300w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-768x492.png 768w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-650x415.png 650w, https://ateneubnord.cat/wp2/wp-content/uploads/Menta-i-xocolata-937x600.png 937w" sizes="(max-width: 1024px) 100vw, 1024px" data-eio="l" /></noscript></figure>
+
+
+
+<p class="has-small-font-size"><a href="https://gedi.org/" target="_blank" rel="noreferrer noopener"><strong><strong></strong></strong></a><strong><strong><a href="https://mentaixocolata.com/" target="_blank" rel="noreferrer noopener">Menta i xocolata</a></strong></strong></p>
+</div>
+</div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
+</div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-black-color has-css-opacity has-black-background-color has-background is-style-wide">
+
+
+
+<p>Coneix més sobre nosaltres i la nostra xarxa cooperativa:</p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h4 class="wp-block-heading"><a href="https://ateneubnord.cat/lateneubnord/" target="_blank" rel="noreferrer noopener">L’AteneuBNord</a> / <a rel="noreferrer noopener" href="https://ateneubnord.cat/ateneus-cooperatius/" target="_blank">Xarxa d’Ateneus Cooperatius</a> / <a rel="noreferrer noopener" href="https://ateneubnord.cat/contacte/" target="_blank">Contacta’ns!</a></h4>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+	</div><!-- .entry-content -->
+
+	</article><!-- #post-## -->
+
+		</main>
+<footer class="site-footer" role="contentinfo">
+	<div class="wrap">
+		<p id="segell_125anys"><a href="https://ateneubnord.cat/125anyscoopbdn/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAAAAnRSTlMAAHaTzTgAAABDSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAFbm/qRAAAAAElFTkSuQmCC" alt="Segell 125 anys coop BDN. Transformant l'economia" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/segell_125_anys.png" decoding="async" class="lazyload" data-eio-rwidth="600" data-eio-rheight="600"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/segell_125_anys.png" alt="Segell 125 anys coop BDN. Transformant l'economia" data-eio="l" /></noscript></a></p>
+		<div id="newsletter">
+			<h2>Si vols estar informat</h2>
+			<p><a href="https://ateneubnord.cat/butlleti/">Subscriu-te</a> al nostre butlletí</p>
+		</div>
+		<p id="contacte_peu">
+			<a href="mailto:info@ateneubnord.cat">info@ateneubnord.cat</a><br>
+			T. <a href="tel:+34610381771">610 381 771</a>
+		</p>
+
+		<div id="menu_peu">
+			<div class="menu-peu-container"><ul id="menu-peu" class="menu"><li id="menu-item-9470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9470"><a href="https://ateneubnord.cat/lateneubnord/">Qui som</a></li>
+<li id="menu-item-9471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9471"><a href="https://ateneubnord.cat/que-fem/">Què fem</a></li>
+<li id="menu-item-9472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9472"><a href="https://ateneubnord.cat/eines-i-recursos/">Eines i recursos</a></li>
+<li id="menu-item-9476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9476"><a href="https://ateneubnord.cat/agenda/">Agenda</a></li>
+<li id="menu-item-9474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9474"><a href="https://ateneubnord.cat/noticies/">Notícies</a></li>
+<li id="menu-item-9475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9475"><a href="https://ateneubnord.cat/contacte/">Contacte</a></li>
+</ul></div>		</div>
+	
+		<ul id="xxss">	
+
+				<li><a href="https://mastodon.economiasocial.org/@ateneubnord" target="_blank" rel="nofollow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARYAAAEtAQAAAADli3KMAAAAAnRSTlMAAHaTzTgAAAAgSURBVGje7cEBAQAAAIIg/69uSEABAAAAAAAAAAAA8G4qVAABbcRaAgAAAABJRU5ErkJggg==" alt="Mastodon" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_mast.png" decoding="async" class="lazyload" data-eio-rwidth="278" data-eio-rheight="301"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_mast.png" alt="Mastodon" data-eio="l"></noscript></a></li>
+	
+				<li><a href="https://t.me/AtCoopBNord" target="_blank" rel="nofollow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAEtAQAAAADolQLLAAAAAnRSTlMAAHaTzTgAAAAhSURBVGje7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAwKUBKScAAU1dFKcAAAAASUVORK5CYII=" alt="Telegram" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_tg.png" decoding="async" class="lazyload" data-eio-rwidth="272" data-eio-rheight="301"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_tg.png" alt="Telegram" data-eio="l"></noscript></a></li>
+
+								<li><a href="https://twitter.com/ateneubnord/" target="_blank" rel="nofollow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPcAAAEtAQAAAAD8JcsDAAAAAnRSTlMAAHaTzTgAAAAgSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAeBgloAABuoznwwAAAABJRU5ErkJggg==" alt="Twitter" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_tw.png" decoding="async" class="lazyload" data-eio-rwidth="247" data-eio-rheight="301"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_tw.png" alt="Twitter" data-eio="l"></noscript></a></li>
+				
+								<li><a href="https://www.facebook.com/AteneuBNord" target="_blank" rel="nofollow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAEtAQAAAADVIjSEAAAAAnRSTlMAAHaTzTgAAAAdSURBVFjD7cExAQAAAMKg9U9tDB+gAAAAAAAAzgYYsQABknCU5AAAAABJRU5ErkJggg==" alt="Facebook" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_fb.png" decoding="async" class="lazyload" data-eio-rwidth="156" data-eio-rheight="301"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_fb.png" alt="Facebook" data-eio="l"></noscript></a></li>
+					
+								<li><a href="https://www.instagram.com/ateneubnord/" target="_blank" rel="nofollow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAAEtAQAAAAANLpCOAAAAAnRSTlMAAHaTzTgAAAAgSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAeBgloAABuoznwwAAAABJRU5ErkJggg==" alt="Instagram" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_ig.png" decoding="async" class="lazyload" data-eio-rwidth="248" data-eio-rheight="301"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_ig.png" alt="Instagram" data-eio="l"></noscript></a></li>
+				
+								<li><a href="https://www.youtube.com/channel/UCdW9uCqk5NHha0kjjqfj-SA?view_as=subscriber" target="_blank" rel="nofollow"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATQAAAEtAQAAAACuI6FhAAAAAnRSTlMAAHaTzTgAAAAjSURBVGje7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAADgxwAvCAABuY87eQAAAABJRU5ErkJggg==" alt="Youtube" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_yt.png" decoding="async" class="lazyload" data-eio-rwidth="308" data-eio-rheight="301"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/ico_yt.png" alt="Youtube" data-eio="l"></noscript></a></li>
+				
+
+		</ul>
+
+		<div id="twitter_timeline">
+		
+<!-- Custom Twitter Feeds by Smash Balloon -->
+<div id="ctf" class="ctf ctf-type-usertimeline ctf-rebranded ctf-feed-1 ctf-styles ctf-list ctf-regular-style ctf-fixed-height ctf_palette_dark ctf-narrow ctf-super-narrow ctf_is_initialized" data-ctfshortcode="{&quot;feed&quot;:&quot;1&quot;}" data-ctfdisablelinks="false" data-ctflinktextcolor="#" data-header-size="small" data-feedid="1" data-postid="659" data-feed="1" data-ctfintents="1" data-ctfneeded="-136">
+        <div class="ctf-tweets">
+   		
+<div class="ctf-item ctf-author-ateneubnord ctf-new ctf-retweet" id="2054104250431504521">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=AteneuBNord" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/ateneubnord" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text" style="color: rgb(255, 255, 255);">AteneuBNord Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link" style="color: rgb(255, 255, 255);">
+	        									<a href="https://twitter.com/coopolis_bcn" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAQAAAAB/ecQqAAAAAnRSTlMAAHaTzTgAAAANSURBVBjTY2AYBdQEAAFQAAGn4toWAAAAAElFTkSuQmCC" alt="coopolis_bcn" width="48" height="48" data-src="https://pbs.twimg.com/profile_images/2026615944949223424/3Xdbxm1u_normal.jpg" decoding="async" class="lazyload" data-eio-rwidth="48" data-eio-rheight="48"><noscript><img src="https://pbs.twimg.com/profile_images/2026615944949223424/3Xdbxm1u_normal.jpg" alt="coopolis_bcn" width="48" height="48" data-eio="l"></noscript>
+											</a>
+				
+									<a href="https://twitter.com/coopolis_bcn" target="_blank" rel="noopener noreferrer" class="ctf-author-name" style="color: rgb(255, 255, 255);">Coòpolis Barcelona</a>
+										<a href="https://twitter.com/coopolis_bcn" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">@coopolis_bcn</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/coopolis_bcn/status/2054104250431504521" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">12 maig</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">3a sessió de Tramar la Metròpoli! <br> 
+<br> 
+🗣️Pot la reindustrialització del territori passar pel cooperativisme? Com podem construir les infraestructures tecnològiques del futur?<br> 
+<br> 
+🗓️ 21/5<br> 
+🕕 11 a 14 h <br> 
+📍Ateneu Sant Feliuenc <br> 
+<br> 
+Inscripcions: <a href="https://www.bcn.coop/formacio/tramar-la-metropoli-2026/" title="https://www.bcn.coop/formacio/tramar-la-metropoli-2026/" target="_blank">https://www.bcn.coop/formacio/tramar-la-metropoli-2026/</a><br> 
+<br>  <a href="https://twitter.com/hashtag/ESS" target="_blank" rel="nofollow noopener">#ESS</a> <a href="https://twitter.com/hashtag/Cooperativisme" target="_blank" rel="nofollow noopener">#Cooperativisme</a></p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2054104250431504521&amp;related=coopolis_bcn" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2054104250431504521</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2054104250431504521&amp;related=coopolis_bcn" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2054104250431504521</span>
+			<span class="ctf-action-count ctf-retweet-count">1</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2054104250431504521&amp;related=coopolis_bcn" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2054104250431504521</span>
+			<span class="ctf-action-count ctf-favorite-count">2</span>
+		</a>
+		
+					<a href="https://twitter.com/coopolis_bcn/status/2054104250431504521" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer" style="color: rgb(255, 255, 255);">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2054104250431504521</span>
+			</a>
+			</div>
+</div>
+<div class="ctf-item ctf-author-ateneubnord ctf-new ctf-retweet" id="2046834637243081117">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=AteneuBNord" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/ateneubnord" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text" style="color: rgb(255, 255, 255);">AteneuBNord Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link" style="color: rgb(255, 255, 255);">
+	        									<a href="https://twitter.com/infogramenet" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAQAAAAB/ecQqAAAAAnRSTlMAAHaTzTgAAAANSURBVBjTY2AYBdQEAAFQAAGn4toWAAAAAElFTkSuQmCC" alt="infogramenet" width="48" height="48" data-src="https://pbs.twimg.com/profile_images/1929256088987123712/O8SbuWyT_normal.jpg" decoding="async" class="lazyload" data-eio-rwidth="48" data-eio-rheight="48"><noscript><img src="https://pbs.twimg.com/profile_images/1929256088987123712/O8SbuWyT_normal.jpg" alt="infogramenet" width="48" height="48" data-eio="l"></noscript>
+											</a>
+				
+									<a href="https://twitter.com/infogramenet" target="_blank" rel="noopener noreferrer" class="ctf-author-name" style="color: rgb(255, 255, 255);"><img draggable="false" role="img" class="emoji" alt="🇵🇸" src="https://s.w.org/images/core/emoji/16.0.1/svg/1f1f5-1f1f8.svg"> InfoGrama</a>
+										<a href="https://twitter.com/infogramenet" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">@infogramenet</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/infogramenet/status/2046834637243081117" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">22 abr.</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">Presentació del llibre “Economia solidària d’emergència. Fer front a l’edat bàrbara"<br> 
+<br> 
+La Llibreria del <a href="https://twitter.com/carrermajor" target="_blank" rel="nofollow noopener">@carrermajor</a> va acollir la presentació del darrer llibre del colomenc, Jordi Garcia Jané, <a href="https://twitter.com/adeucapitalisme" target="_blank" rel="nofollow noopener">@adeucapitalisme</a>, organitzat per l’@Ateneubnord i Santakoopera<br></p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2046834637243081117&amp;related=infogramenet" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2046834637243081117</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2046834637243081117&amp;related=infogramenet" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2046834637243081117</span>
+			<span class="ctf-action-count ctf-retweet-count">6</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2046834637243081117&amp;related=infogramenet" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2046834637243081117</span>
+			<span class="ctf-action-count ctf-favorite-count">10</span>
+		</a>
+		
+					<a href="https://twitter.com/infogramenet/status/2046834637243081117" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer" style="color: rgb(255, 255, 255);">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2046834637243081117</span>
+			</a>
+			</div>
+</div>
+<div class="ctf-item ctf-author-ateneubnord ctf-new" id="2056411998062010611">
+
+	
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link" style="color: rgb(255, 255, 255);">
+	        									<a href="https://twitter.com/ateneubnord" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAQAAAAB/ecQqAAAAAnRSTlMAAHaTzTgAAAANSURBVBjTY2AYBdQEAAFQAAGn4toWAAAAAElFTkSuQmCC" alt="ateneubnord" width="48" height="48" data-src="https://pbs.twimg.com/profile_images/1372869921298911235/2yZdylW-_normal.jpg" decoding="async" class="lazyload" data-eio-rwidth="48" data-eio-rheight="48"><noscript><img src="https://pbs.twimg.com/profile_images/1372869921298911235/2yZdylW-_normal.jpg" alt="ateneubnord" width="48" height="48" data-eio="l"></noscript>
+											</a>
+				
+									<a href="https://twitter.com/ateneubnord" target="_blank" rel="noopener noreferrer" class="ctf-author-name" style="color: rgb(255, 255, 255);">AteneuBNord</a>
+										<a href="https://twitter.com/ateneubnord" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">@ateneubnord</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/ateneubnord/status/2056411998062010611" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">18 maig</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">📢 Sessió informativa sobre la Subvenció per a la incorporació de sòcies treballadores a cooperatives i societats laborals  <br> 
+<br> 
+Vols conèixer aquests ajuts i com aprofitar-los? <br> 
+<br> 
+🗓 22/05<br> 
+🕧 12.30 h a 14.00 h<br> 
+<br> 
+✍️ Inscriute al teu Ateneu de referència: <a href="https://serveis.ateneubnord.cat/program/itinerari-a-la-consolidacio-1" title="https://serveis.ateneubnord.cat/program/itinerari-a-la-consolidacio-1" target="_blank">https://serveis.ateneubnord.cat/program/itinerari-a-la-conso...</a><a href="https://twitter.com/AteneuBNord/status/2056411998062010611" target="_blank" rel="noopener noreferrer" class="ctf-tweet-text-media-wrap"><svg aria-hidden="true" aria-label="images in tweet" focusable="false" data-prefix="far" data-icon="image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-image fa-w-16 fa-9x ctf-tweet-text-media"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z" class=""></path></svg></a></p>                <p></p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2056411998062010611&amp;related=ateneubnord" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2056411998062010611</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2056411998062010611&amp;related=ateneubnord" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2056411998062010611</span>
+			<span class="ctf-action-count ctf-retweet-count">1</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2056411998062010611&amp;related=ateneubnord" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2056411998062010611</span>
+			<span class="ctf-action-count ctf-favorite-count"></span>
+		</a>
+		
+					<a href="https://twitter.com/ateneubnord/status/2056411998062010611" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer" style="color: rgb(255, 255, 255);">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2056411998062010611</span>
+			</a>
+			</div>
+</div>
+<div class="ctf-item ctf-author-ateneubnord ctf-new ctf-retweet" id="2051955033227333795">
+
+		<div class="ctf-context">
+	    <a href="https://twitter.com/intent/user?screen_name=AteneuBNord" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/ateneubnord" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text" style="color: rgb(255, 255, 255);">AteneuBNord Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link" style="color: rgb(255, 255, 255);">
+	        									<a href="https://twitter.com/econ_socialcat" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAQAAAAB/ecQqAAAAAnRSTlMAAHaTzTgAAAANSURBVBjTY2AYBdQEAAFQAAGn4toWAAAAAElFTkSuQmCC" alt="econ_socialcat" width="48" height="48" data-src="https://pbs.twimg.com/profile_images/884345271085391872/rtUJlA4S_normal.jpg" decoding="async" class="lazyload" data-eio-rwidth="48" data-eio-rheight="48"><noscript><img src="https://pbs.twimg.com/profile_images/884345271085391872/rtUJlA4S_normal.jpg" alt="econ_socialcat" width="48" height="48" data-eio="l"></noscript>
+											</a>
+				
+									<a href="https://twitter.com/econ_socialcat" target="_blank" rel="noopener noreferrer" class="ctf-author-name" style="color: rgb(255, 255, 255);">Economia social</a>
+										<a href="https://twitter.com/econ_socialcat" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">@econ_socialcat</a>
+					<span class="ctf-screename-sep">·</span>
+					        
+							<div class="ctf-tweet-meta">
+					<a href="https://twitter.com/econ_socialcat/status/2051955033227333795" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">6 maig</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.1161 6.27344H24.2289L17.4284 14.0459L25.4286 24.6225H19.1645L14.2583 18.2079L8.6444 24.6225H5.52976L12.8035 16.309L5.12891 6.27344H11.552L15.9868 12.1367L21.1161 6.27344ZM20.0236 22.7594H21.7484L10.6148 8.03871H8.7639L20.0236 22.7594Z" fill="black"></path>
+			</svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">📢 <a href="https://twitter.com/rtvenoticies" target="_blank" rel="nofollow noopener">@rtvenoticies</a> ha dedicat un reportatge a l’informatiu als ateneus cooperatius i les empreses que han ajudat a crear. Fa una dècada que s'impulsa l’economia social des del territori, des d’@econ_socialcat i <a href="https://twitter.com/AteneusCoopCat" target="_blank" rel="nofollow noopener">@AteneusCoopCat</a> <a href="https://twitter.com/hashtag/cooperatives" target="_blank" rel="nofollow noopener">#cooperatives</a></p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions">
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=2051955033227333795&amp;related=econ_socialcat" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 2051955033227333795</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=2051955033227333795&amp;related=econ_socialcat" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 2051955033227333795</span>
+			<span class="ctf-action-count ctf-retweet-count">6</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=2051955033227333795&amp;related=econ_socialcat" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 2051955033227333795</span>
+			<span class="ctf-action-count ctf-favorite-count">8</span>
+		</a>
+		
+					<a href="https://twitter.com/econ_socialcat/status/2051955033227333795" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer" style="color: rgb(255, 255, 255);">
+				<span>Twitter</span>
+				<span class="ctf-screenreader">2051955033227333795</span>
+			</a>
+			</div>
+</div>    </div>
+    
+
+
+</div>
+		</div>
+	
+		<div id="logos_peu">
+			<figure>
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Economia social i Departament d'Empresa i Treball de la Generalitat de Catalunya" style="max-width: 300px;" data-src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/logo_ess_gencat.svg" decoding="async" class="lazyload"><noscript><img src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/img/logo_ess_gencat.svg" alt="Economia social i Departament d'Empresa i Treball de la Generalitat de Catalunya" / style="max-width: 300px;" data-eio="l"></noscript>
+			</figure>
+		</div>
+
+	</div>
+</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp2\/wp-*.php","\/wp2\/wp-admin\/*","\/wp2\/wp-content\/uploads\/*","\/wp2\/wp-content\/*","\/wp2\/wp-content\/plugins\/*","\/wp2\/wp-content\/themes\/pimpampum_theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+_paq.push(['trackAllContentImpressions']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ateneubnordcat.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/ateneubnordcat.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Diumenge","Dilluns","Dimarts","Dimecres","Dijous","Divendres","Dissabte"],"dayNamesShort":["Dg","Dl","Dt","Dc","Dj","Dv","Ds"],"dayNamesMin":["Dg","Dl","Dt","Dc","Dj","Dv","Ds"],"monthNames":["gener","febrer","mar\u00e7","abril","maig","juny","juliol","agost","setembre","octubre","novembre","desembre"],"monthNamesShort":["gener","febrer","mar\u00e7","abril","maig","juny","juliol","agost","setembre","octubre","novembre","desembre"],"monthNamesMin":["gen.","febr.","mar\u00e7","abr.","maig","juny","jul.","ag.","set.","oct.","nov.","des."],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><style type="text/css" data-ctf-style="1">.ctf-feed-1.ctf-fixed-height{height:300px!important;}.ctf-feed-1.ctf-regular-style .ctf-item, .ctf-feed-1 .ctf-header{border-bottom:1px solid #444!important;}</style><style id="core-block-supports-inline-css" type="text/css">
+.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}.wp-block-gallery.wp-block-gallery-1{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}.wp-block-gallery.wp-block-gallery-2{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+</style>
+<script type="text/javascript" id="eio-lazy-load-js-before">
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_dpr":1};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=821" id="eio-lazy-load-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df" id="tec-user-agent-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-04-11 11:03:18+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"ca"},"This contact form is placed in the wrong place.":["Aquest formulari de contacte est\u00e0 col\u00b7locat en el lloc equivocat."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/ateneubnord.cat\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/resources/menu-responsive/menu-responsive.js?" id="navigation-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/vendor/owl/owl.carousel.min.js" id="owl-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/resources/slideshow/slideshow.js" id="slideshow-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/themes/pimpampum_theme/js/skip-link-focus-fix.js?ver=20151215" id="pimpampum-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/pimpampum_tools/vendor/cookies/cookietool.js?ver=1.0.0" id="cookies-js"></script>
+<script type="text/javascript" id="ctf_scripts-js-extra">
+/* <![CDATA[ */
+var ctf = {"ajax_url":"https:\/\/ateneubnord.cat\/wp2\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ateneubnord.cat/wp2/wp-content/plugins/custom-twitter-feeds/js/ctf-scripts.min.js?ver=2.3.1" id="ctf_scripts-js"></script>
+
+	<script>
+		var langs={'ca':0,'es':1,'en':2};
+		var msg='En aquest lloc es fan servir galetes per oferir una experiència més personalitzada. <a href="{{link}}" target="_blank"> Més informació </a>. <br> Ens consent utilitzar galetes?';
+		var polylang=false;
+
+		    var lang="ca";
+    
+		if(polylang){
+			msg=msg.split("|");
+			msg=msg[langs[lang]];
+		}
+
+	  CookieTool.Config.set('link', 'https://ateneubnord.cat//cookies-'+lang);
+		CookieTool.Config.set('message',msg);
+
+		if(lang=="en")
+			CookieTool.Config.set('agreetext', 'Yes');
+			CookieTool.Config.set('declinetext', '');
+			CookieTool.API.ask();
+	</script><div class="cookietool-message cookietool-message-top"><p>En aquest lloc es fan servir galetes per oferir una experiència més personalitzada. <a href="https://ateneubnord.cat//cookies-ca" target="_blank"> Més informació </a>. <br> Ens consent utilitzar galetes?</p><button data-action="agree" onclick="">Sí</button> </div>
+
+	
+
+</body></html>

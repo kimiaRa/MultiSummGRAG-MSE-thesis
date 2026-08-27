@@ -1,0 +1,6 @@
+city,n_ledger_urls_extracted,n_matched_normalised_to_raw_seed,match_rate_pct
+barcelona,261,261,100.0
+brighton,81,81,100.0
+dublin,83,83,100.0
+london,115,115,100.0
+milan,163,163,100.0

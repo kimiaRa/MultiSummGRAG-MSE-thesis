@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.typekit.net/ytg8gjw.css">
+	<title>North Paddington Foodbank</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Banner / Hero -->
+	<header id="banner">
+		<div id="site-title"><h1>North Paddington Foodbank</h1></div>
+		<div id="site-strapline">The UK's First &amp; Only Cash First Foodbank</div>
+	</header>
+
+	<!-- Main content -->
+	<main id="main-content">
+
+		<!-- Introduction -->
+		<section id="introduction" class="outer">
+			<div id="introduction-text" class="inner"><p>We stopped giving out food parcels — and started giving people cash, choice and control.</p><p><small><strong>Read</strong> the <strong>Cash First</strong> Impact <strong>Report</strong><br><strong>Watch</strong> the <strong>Campaign</strong> Film</small></p></div>
+		</section>
+		<section id="video" class="outer">
+		
+		
+			<div class="video-wrapper">
+			  <video id="npfb-video" preload="metadata" playsinline="" poster="NPFB_poster.jpg">
+				<source src="NPFB_Web.mp4" type="video/mp4">
+			  </video>
+		
+			  <button class="video-play-button" aria-label="Play video" type="button">
+				▶
+			  </button>
+			</div>
+		
+		  
+		</section>
+		<section class="outer">
+			<div class="columns-4 inner">
+				<div class="column tile"><h3>Need Help</h3><p><a class="button" href="mailto:info@npfoodbank.org.uk"><span>Get in Touch</span></a></p></div>
+				<div class="column tile"><h3>Download Cash First Report</h3><p><a class="button" target="_blank" href="NPFBCashFirstReport2026Westminster.pdf"><span>Click Here</span></a></p></div>
+				<div class="column text"><h4>Contact</h4><p>Find us. Call us. Work with us.</p><p>North Paddington Foodbank<br><em>57 Goldney Road, W9 2AR<br><a href="mailto:info@npfoodbank.org.uk">info@npfoodbank.org.uk</a></em><br>+44 7932 623443</p><p>The Exchange<br><em>Ernest Harriss House, W9 2DB<br><a href="mailto:hello@thexchange.org.uk">hello@thexchange.org.uk</a></em></p></div>
+				<div class="column text no-title"><p>Whether you need help, want to refer someone, or are exploring how to work with us - we'd love to hear from you.</p></div>
+			</div>
+		</section>
+		
+
+	</main>
+
+	<!-- Footer -->
+	<footer id="footer" class="outer">
+		<div id="footer-text" class="inner"><h2>North Paddington Food Bank</h2></div>
+	</footer>
+<script>
+	  (function() {
+		var video = document.getElementById('npfb-video');
+		var playButton = document.querySelector('.video-play-button');
+	
+		if (!video || !playButton) return;
+	
+		playButton.addEventListener('click', function() {
+		  // Show native controls
+		  video.setAttribute('controls', 'controls');
+	
+		  // Start playback
+		  video.play();
+	
+		  // Hide custom button
+		  playButton.style.display = 'none';
+		});
+	
+		// If user pauses, keep controls visible
+		video.addEventListener('pause', function() {
+		  // optional: could show custom button again if you want
+		  // playButton.style.display = '';
+		});
+	  })();
+	</script>
+
+
+
+
+</body></html>

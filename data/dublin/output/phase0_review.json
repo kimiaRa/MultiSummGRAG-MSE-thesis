@@ -1,0 +1,25 @@
+{
+  "city": "Dublin",
+  "total_missing": 6,
+  "resolved_strategy1": 0,
+  "resolved_strategy2": 0,
+  "unresolved": 3,
+  "needs_manual_review": [
+    {
+      "url": "https://www.facebook.com/caringissharingdublin/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.ecocongregationireland.com/2022/08/07/cherry-orchard-community-garden-by-fran-brady",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://communityroots.ie/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    }
+  ],
+  "resolved": []
+}

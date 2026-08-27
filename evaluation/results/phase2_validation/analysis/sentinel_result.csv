@@ -1,0 +1,2 @@
+sample_id,sample_group,url,human_fsi_status,human_fsi_type,human_operational_level,human_confidence,model_fsi_type,model_operational_level,fsi_type_match,operational_level_match
+P2-041,stress,https://www.mendicity.org/services/food-service/,genuine_fsi,food_gifting,unknown,high,food_service,government_funded,False,False

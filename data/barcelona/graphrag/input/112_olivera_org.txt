@@ -1,0 +1,68 @@
+# Age Verification - L'Olivera
+
+URL: https://olivera.org/ca/
+Location: Spain, Barcelona, Ciutat Vella
+Coordinates: 41.38, 2.17
+
+Type: unknown
+Operational level: unknown
+Popularity: high (score: 1)
+
+Description: None
+
+Full text:
+Aquest lloc web utilitza cookies
+Utilitzem galetes per personalitzar el contingut i els anuncis, oferir funcions de mitjans socials i analitzar el trànsit del lloc. També compartim la informació sobre com feu servir el nostre lloc amb els partners de mitjans socials, de publicitat i d'anàlisis amb qui col·laborem. Al seu torn, ells la poden combinar amb altres dades que els hàgiu proporcionat o hagin recopilat a partir de l'ús que heu fet dels seus serveis.
+Selecció de consentiment
+Detalls
+- Les cookies necessàries ajuden a fer els llocs web més accessibles i permeten les funcions bàsiques com la navegació o l’accés a les àrees segures del lloc web. El lloc web no pot funcionar sense aquestes cookies.
+- Cookiebot1Més informació sobre aquest proveïdorCookieConsentStores the user's cookie consent state for the current domain
+- Cover Manager2Més informació sobre aquest proveïdordebugThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.PHPSESSIDPreserves user session state across page requests.
+- Stripe3Més informació sobre aquest proveïdormDetermines the device used to access the website. This allows the website to be formatted accordingly.__stripe_midThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.__stripe_sidThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+- WordPress.com1Més informació sobre aquest proveïdort.gifEnsures that product pictures are presented correctly on website.
+- hcaptcha.com1__cf_bmThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+- m.stripe.com3Més informació sobre aquest proveïdor_abThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information._mfThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.idPendent
+- olivera.org3cookies.jsDetermines whether the visitor has accepted the cookie consent box. This ensures that the cookie consent box will not be presented again upon re-entry.elementorUsed in context with the website's WordPress theme. The cookie allows the website owner to implement or change the website's content in real-time.wordpress_test_cookieUsed to check if the user's browser supports cookies.
+- Cookiebot
+- Les cookies de preferència permeten recordar al lloc web tota aquella informació relacionada amb la forma en la que canvia; la manera en què es comporta la pàgina web o el seu aspecte, com ara l’idioma o la regió on es troba.
+- m.stripe.com1Més informació sobre aquest proveïdor1This cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.
+- m.stripe.com
+- Les cookies d’anàlisi ajuden a entendre als propietaris de llocs web com interactuen els visitants amb els llocs web mitjançant la recopilació i notificació d'informació de forma anònima.
+- Cover Manager1Més informació sobre aquest proveïdorNRBA_SESSIONCollects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+- Google8Més informació sobre aquest proveïdor
+Algunes de les dades recopilades per aquest proveïdor tenen fins de personalització i mesura de l'efectivitat de la publicitat.
+_ga [x3]Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels._ga_# [x3]Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels._gatUsed by Google Analytics to throttle request rate_gidRegisters a unique ID that is used to generate statistical data on how the visitor uses the website. - WordPress.com4Més informació sobre aquest proveïdortk_qsRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.tk_rlRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.tk_roRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.g.gifRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.
+- olivera.org1tk_aiRegisters data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+- Cover Manager
+- Les cookies de màrqueting s'utilitzen per rastrejar els visitants a través dels llocs web que visita. La intenció és mostrar anuncis que podrien ser rellevants i atractius per a l'usuari i per tant, valuosos per editors i anunciants tercers.
+- Meta Platforms, Inc.3Més informació sobre aquest proveïdorlastExternalReferrerDetects how the user reached the website by registering their last URL-address.lastExternalReferrerTimeDetects how the user reached the website by registering their last URL-address._fbpUsed by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+- WordPress.com4Més informació sobre aquest proveïdortk_lrCollects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.tk_orCollects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.tk_r3dCollects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.tk_tcCollects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+- YouTube11Més informació sobre aquest proveïdor__Secure-ROLLOUT_TOKENUsed to track user’s interaction with embedded content.__Secure-YECStores the user's video player preferences using embedded YouTube video__Secure-YNIDUsed to track user’s interaction with embedded content.LAST_RESULT_ENTRY_KEYUsed to track user’s interaction with embedded content.LogsDatabaseV2:V#||LogsRequestsStoreUsed to track user’s interaction with embedded content.TESTCOOKIESENABLEDUsed to track user’s interaction with embedded content.VISITOR_INFO1_LIVETries to estimate the users' bandwidth on pages with integrated YouTube videos.YSCRegisters a unique ID to keep statistics of what videos from YouTube the user has seen.yt-icons-last-purgedNecessary for the implementation and functionality of YouTube video-content on the website.ytidb::LAST_RESULT_ENTRY_KEYUsed to track user’s interaction with embedded content.YtIdbMeta#databasesUsed to track user’s interaction with embedded content.
+- olivera.org7sbjs_currentCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.sbjs_current_addCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.sbjs_firstCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.sbjs_first_addCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.sbjs_migrationsCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.sbjs_sessionCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.sbjs_udataCollects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+- Meta Platforms, Inc.
+- Les cookies sense classificar són les que es troben en el procés de classificació, junt a proveïdors de cookies individuals.
+- Mailchimp8Més informació sobre aquest proveïdormcforms_event_7462209Pendentmcforms-7462209-experienceConfigVersionPendentmcforms-7462209-lastEventsPendentmcforms-7462209-pageviewsPendentmcforms-7462209-sessionPendentmcforms-7462209-statePendentmcforms-7462209-timeQueueEventsPendentmcforms-7462209-sessionIdPendent
+- Mailchimp
+[#IABV2_TITLE#]
+[#IABV2_BODY_INTRO#][#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#]
+[#IABV2_BODY_PREFERENCE_INTRO#]
+[#IABV2_BODY_PURPOSES_INTRO#]
+[#IABV2_BODY_PURPOSES#]
+[#IABV2_BODY_FEATURES_INTRO#]
+[#IABV2_BODY_FEATURES#]
+[#IABV2_BODY_PARTNERS_INTRO#]
+[#IABV2_BODY_PARTNERS#]
+Informació
+Les cookies són petits arxius de text que els llocs web poden utilitzar perquè l’usuari en pugui fer un ús més eficient.
+La llei estableix que podem emmagatzemar cookies al vostre dispositiu si són estrictament necessàries per al funcionament d'aquest lloc. Per a tots els altres tipus de cookies ens cal el vostre permís.
+Aquest lloc web utilitza diferents tipus de cookies. En alguna ocasió, les cookies que apareixen a les nostres pàgines provenen de serveis de tercers.
+En qualsevol moment, vostè podrà canviar o retirar el seu consentiment de la Declaració sobre ús de cookies al nostre lloc web.
+Pot obtenir més informació sobre nosaltres, sobre cóm contactar-nos i sobre la nostra forma de processar dates personals a la nostra Política de privacitat.
+Si us plau, en el moment de contactar amb nosaltres en relació al vostre consentiment, feu-ne constar la identificació i la data.
+La llei estableix que podem emmagatzemar cookies al vostre dispositiu si són estrictament necessàries per al funcionament d'aquest lloc. Per a tots els altres tipus de cookies ens cal el vostre permís.
+Aquest lloc web utilitza diferents tipus de cookies. En alguna ocasió, les cookies que apareixen a les nostres pàgines provenen de serveis de tercers.
+En qualsevol moment, vostè podrà canviar o retirar el seu consentiment de la Declaració sobre ús de cookies al nostre lloc web.
+Pot obtenir més informació sobre nosaltres, sobre cóm contactar-nos i sobre la nostra forma de processar dates personals a la nostra Política de privacitat.
+Si us plau, en el moment de contactar amb nosaltres en relació al vostre consentiment, feu-ne constar la identificació i la data.
+
+Images: 10 image(s) available.

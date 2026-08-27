@@ -1,0 +1,38 @@
+You are writing a multimodal report on Food Sharing Initiatives (FSIs) in Dublin, Ireland.
+
+I upload a list of URLs with approximate coordinates, gathered as candidate Food Sharing Initiatives (e.g. food banks, community gardens, meal-sharing programs, food redistribution networks, community fridges). Some may be irrelevant, dead, or duplicates.
+
+TASK:
+1. Visit every URL below and read its content.
+2. For each page that describes a genuine FSI, extract: its type, operational model (government-funded / council-supported / NGO-led / community-led / commercial), any indication of activity level or popularity (visitor numbers, frequency, community size, etc.), and location.
+3. Discard pages that are not actually about a food-sharing initiative, are inaccessible, or are duplicates of another entry.
+4. Write a report with EXACTLY these six section headers, in this order:
+   - Geographic Distribution
+   - Types of Food Sharing Initiatives
+   - Operational and Funding Models
+   - Reach and Activity
+   - Digital Presence and Accessibility
+   - Notable Initiatives
+5. Include a map of the locations of the FSI locations in the Geographic Distribution as well
+6. Include some 4 images from the FSIs on top of the report.
+7. Include a donut chart for FSI types and their percentages.
+8. Include a bar chart for FSI counts per district of the city.
+ 9. After the six sections, add a final section titled "Screening Ledger"
+   with a table containing one row for every URL I gave you, in the order
+   provided. Columns: number, URL, decision (Retained or Discarded), and
+   for discarded rows a short reason (inaccessible / duplicate /
+   not an FSI / outside the city / activity ended / directory or policy
+   page). End with one line: "Screening outcome: N of M URLs retained."
+
+
+STRICT RULES:
+- Every fact, number, or claim must come from a page you actually visited — do not invent statistics, counts, or organisation names.
+- Use the provided coordinates to describe geographic distribution (e.g. clustering, spread across the city, notable concentrations) since no fixed district boundaries are provided to you — infer neighbourhood/area names from the coordinates and page content where possible.
+- Where a page doesn't support a precise count or percentage, describe the pattern qualitatively instead of fabricating numbers.
+- Write each section as 8-10 sentences of continuous prose (roughly two paragraphs) — no bullet points, no sub-headers, no markdown formatting inside a section.
+- Be factual, analytical, and professional — this is for an academic report, not marketing copy.
+- Do not end sections with vague filler ("Overall, this highlights..."); every sentence should carry a specific fact, comparison, or example.
+- Write in English regardless of the source page's language.
+- Output as simple HTML: wrap each section title in <h2></h2> and its prose in <p></p> tags.
+-Output as PDF : make a PDF from the HTML you made, make sure tables are shown nicely in the margin.
+-give me both HTML and PDF reports 

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screening Ledger — annotation tool</title>
+<style>
+  :root{
+    --paper:#e9edf1; --card:#f7f9fb; --ink:#0f151b; --ink-2:#3d4a57;
+    --rule:#c0cad4; --rule-2:#d8e0e8;
+    --retain:#0d6e63; --discard:#a63d2b; --unreach:#8a6410; --unclear:#5a6b7d;
+    --focus:#1d4ed8;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:ui-sans-serif,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--sans);
+    font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 24px 80px}
+
+  /* ---------- masthead ---------- */
+  header.mast{
+    display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+    border-bottom:2px solid var(--ink); padding-bottom:10px; margin-bottom:22px;
+  }
+  .mast h1{
+    font-family:var(--sans); font-size:15px; font-weight:650; margin:0;
+    letter-spacing:.14em; text-transform:uppercase;
+  }
+  .mast .sub{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:15px}
+  .mast .spacer{flex:1}
+  .mast .meta{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);letter-spacing:.04em}
+
+  /* ---------- load screen ---------- */
+  .load{
+    border:1.5px dashed var(--rule); background:var(--card);
+    padding:44px 32px; text-align:center; border-radius:2px;
+  }
+  .load.drag{border-color:var(--focus);background:#eef3ff}
+  .load h2{font-family:var(--serif);font-weight:400;font-size:26px;margin:0 0 8px}
+  .load p{color:var(--ink-2);margin:0 auto 20px;max-width:56ch}
+  .rubric-note{
+    margin-top:26px;padding-top:20px;border-top:1px solid var(--rule-2);
+    font-size:13.5px;color:var(--ink-2);text-align:left;max-width:70ch;margin-inline:auto;
+  }
+  .rubric-note strong{color:var(--ink)}
+
+  button,.btn{
+    font-family:var(--sans);font-size:14px;font-weight:550;
+    border:1.5px solid var(--ink); background:var(--ink); color:var(--card);
+    padding:9px 18px; border-radius:2px; cursor:pointer; letter-spacing:.01em;
+  }
+  button.ghost{background:transparent;color:var(--ink)}
+  button.ghost:hover{background:var(--ink);color:var(--card)}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
+    outline:2.5px solid var(--focus);outline-offset:2px}
+
+  /* ---------- main grid ---------- */
+  .grid{display:grid;grid-template-columns:56px 1fr;gap:24px;align-items:start}
+
+  /* ---------- tally rail (signature) ---------- */
+  .rail{position:sticky;top:24px}
+  .rail-cap{
+    font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--ink-2);
+    text-transform:uppercase;margin-bottom:8px;text-align:center;
+  }
+  .marks{display:flex;flex-direction:column;gap:3px}
+  .mark{
+    height:11px;border:1px solid var(--rule);background:transparent;
+    border-radius:1px;cursor:pointer;padding:0;position:relative;
+    transition:transform .12s ease;
+  }
+  .mark:hover{transform:translateX(3px)}
+  .mark.cur{border-color:var(--ink);border-width:2px}
+  .mark[data-d="Retained"],.mark[data-d="CORRECT_SLOT"]{background:var(--retain);border-color:var(--retain)}
+  .mark[data-d="Discarded"],.mark[data-d="WRONG_SLOT"]{background:var(--discard);border-color:var(--discard)}
+  .mark[data-d="UNREACHABLE_NOW"]{background:var(--unreach);border-color:var(--unreach)}
+  .mark[data-d="UNCLEAR"]{background:var(--unclear);border-color:var(--unclear)}
+  .tally{margin-top:12px;font-family:var(--mono);font-size:10px;color:var(--ink-2);text-align:center;line-height:1.7}
+  .tally b{display:block;font-size:13px;color:var(--ink)}
+
+  /* ---------- item card ---------- */
+  .card{background:var(--card);border:1px solid var(--rule);border-radius:2px;padding:26px 28px}
+  .card-head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
+  .idx{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.06em}
+  .city{
+    font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;
+    border:1px solid var(--rule);padding:2px 8px;border-radius:2px;color:var(--ink-2);
+  }
+  .subject{margin:0 0 6px}
+  .subject a{
+    font-family:var(--mono);font-size:16px;line-height:1.45;color:var(--ink);
+    word-break:break-all;text-decoration:none;border-bottom:2px solid var(--rule);
+  }
+  .subject a:hover{border-bottom-color:var(--focus);color:var(--focus)}
+  .openrow{margin:14px 0 22px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .openrow small{font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+
+  /* set C body */
+  .quote{
+    font-family:var(--serif);font-size:17px;line-height:1.6;
+    border-left:3px solid var(--rule);padding:2px 0 2px 16px;margin:0 0 14px;
+  }
+  .num{background:#fde68a;padding:0 3px;font-family:var(--mono);font-weight:600}
+  .evid{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);
+    background:#eef2f6;border:1px solid var(--rule-2);padding:10px 12px;border-radius:2px}
+
+  /* ---------- candidate slots (Set C) ---------- */
+  .slots{margin-top:14px}
+  .slots .cap{
+    font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-2);font-weight:600;margin-bottom:9px;display:flex;align-items:center;gap:9px;
+  }
+  .slots .cap .count{
+    border:1px solid var(--rule);border-radius:2px;padding:1px 7px;letter-spacing:.04em;
+    text-transform:none;font-weight:500;
+  }
+  .slots .cap .count.one{border-color:var(--retain);color:var(--retain)}
+  .slots .cap .count.many{border-color:var(--unreach);color:var(--unreach)}
+  .slots .cap .count.none{border-color:var(--discard);color:var(--discard)}
+  .slotlist{display:flex;flex-direction:column;gap:5px}
+  .slot{
+    display:flex;align-items:baseline;gap:10px;font-family:var(--mono);font-size:13px;
+    background:#fff;border:1px solid var(--rule-2);border-left:3px solid var(--rule);
+    padding:7px 12px;border-radius:2px;
+  }
+  .slot .path{color:var(--ink);word-break:break-all}
+  .slot .val{
+    margin-left:auto;font-weight:650;background:#fde68a;padding:0 6px;border-radius:2px;
+    color:#553b00;flex:none;
+  }
+  .slots .hint{
+    font-family:var(--serif);font-size:14px;color:var(--ink-2);margin-top:9px;line-height:1.45;
+  }
+  .slots .empty{
+    font-family:var(--mono);font-size:12.5px;color:var(--discard);
+    background:#fdf1ee;border:1px solid var(--discard);padding:9px 12px;border-radius:2px;
+  }
+
+  /* ---------- conditions ---------- */
+  .cond{border-top:1px solid var(--rule-2);padding-top:18px;margin-top:4px}
+  .cond h3{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-2);margin:0 0 12px;font-weight:600;
+  }
+  .cond ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 22px}
+  .cond li{font-family:var(--serif);font-size:14.5px;line-height:1.45;display:flex;gap:9px}
+  .cond li span.n{
+    font-family:var(--mono);font-size:10px;color:var(--ink-2);border:1px solid var(--rule);
+    width:17px;height:17px;flex:none;display:grid;place-items:center;border-radius:50%;margin-top:2px;
+  }
+  .cond li b{font-weight:650}
+
+  /* ---------- decisions ---------- */
+  .decide{margin-top:24px;border-top:1px solid var(--rule-2);padding-top:20px}
+  .dbtns{display:flex;gap:9px;flex-wrap:wrap}
+  .d{
+    flex:1 1 150px;border:1.5px solid var(--rule);background:transparent;color:var(--ink);
+    padding:13px 12px;border-radius:2px;cursor:pointer;text-align:left;font-weight:600;font-size:14px;
+  }
+  .d kbd{
+    font-family:var(--mono);font-size:10px;border:1px solid var(--rule);border-radius:2px;
+    padding:1px 5px;margin-right:8px;color:var(--ink-2);font-weight:400;
+  }
+  .d:hover{border-color:var(--ink)}
+  .d.on{color:#fff;border-color:transparent}
+  .d.on kbd{border-color:rgba(255,255,255,.5);color:rgba(255,255,255,.85)}
+  .d[data-v="Retained"].on,.d[data-v="CORRECT_SLOT"].on{background:var(--retain)}
+  .d[data-v="Discarded"].on,.d[data-v="WRONG_SLOT"].on{background:var(--discard)}
+  .d[data-v="UNREACHABLE_NOW"].on{background:var(--unreach)}
+  .d[data-v="UNCLEAR"].on{background:var(--unclear)}
+
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
+  .tag{
+    font-family:var(--mono);font-size:11px;letter-spacing:.05em;border:1px solid var(--rule);
+    background:transparent;color:var(--ink-2);padding:4px 9px;border-radius:2px;cursor:pointer;font-weight:500;
+  }
+  .tag:hover{border-color:var(--ink);color:var(--ink)}
+  .tag.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+  textarea{
+    width:100%;margin-top:12px;font-family:var(--sans);font-size:14px;padding:10px 12px;
+    border:1px solid var(--rule);border-radius:2px;background:#fff;resize:vertical;min-height:62px;
+  }
+
+  /* ---------- definition strip ---------- */
+  .defstrip{
+    margin-top:10px;min-height:38px;border-left:3px solid var(--rule);
+    padding:5px 0 5px 13px;font-family:var(--serif);font-size:14.5px;line-height:1.45;
+    color:var(--ink-2);
+  }
+  .defstrip.lit{border-left-color:var(--ink);color:var(--ink)}
+  .defstrip code{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;
+    background:#e2e8ee;padding:1px 5px;border-radius:2px;margin-right:7px;
+  }
+  .defstrip em{font-style:italic;color:var(--ink-2)}
+
+  /* ---------- rubric panel ---------- */
+  .rubric{margin-top:20px;border:1px solid var(--rule);border-radius:2px;background:var(--card)}
+  .rubric>summary{
+    cursor:pointer;padding:12px 18px;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--ink-2);
+    list-style:none;display:flex;align-items:center;gap:10px;
+  }
+  .rubric>summary::-webkit-details-marker{display:none}
+  .rubric>summary::before{content:"+";font-size:14px;line-height:1}
+  .rubric[open]>summary::before{content:"–"}
+  .rubric>summary:hover{color:var(--ink)}
+  .rubric .inner{padding:4px 22px 22px;border-top:1px solid var(--rule-2)}
+  .rubric h4{
+    font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-2);margin:20px 0 9px;font-weight:600;
+  }
+  .rubric h4:first-child{margin-top:16px}
+  table.rub{border-collapse:collapse;width:100%;font-size:14px}
+  table.rub th{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-2);text-align:left;font-weight:600;padding:0 14px 7px 0;border-bottom:1px solid var(--rule);
+  }
+  table.rub td{
+    font-family:var(--serif);padding:9px 14px 9px 0;border-bottom:1px solid var(--rule-2);
+    vertical-align:top;line-height:1.42;
+  }
+  table.rub td:first-child{font-family:var(--sans);font-weight:650;white-space:nowrap;font-size:13.5px}
+  .rubric dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;align-items:baseline}
+  .rubric dt{
+    font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--ink);
+    background:#e2e8ee;padding:2px 7px;border-radius:2px;white-space:nowrap;
+  }
+  .rubric dd{margin:0;font-family:var(--serif);font-size:14.5px;line-height:1.45}
+  .edge{margin:0;padding:0;list-style:none}
+  .edge li{
+    font-family:var(--serif);font-size:14.5px;line-height:1.45;padding:8px 0;
+    border-bottom:1px solid var(--rule-2);
+  }
+  .edge li:last-child{border-bottom:none}
+  .edge b{font-family:var(--sans);font-weight:650;font-size:13.5px}
+  .edge .verdict{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
+    border:1px solid var(--rule);padding:1px 6px;border-radius:2px;margin-left:4px;white-space:nowrap;
+  }
+
+  /* ---------- nav ---------- */
+  .nav{display:flex;gap:10px;align-items:center;margin-top:22px;flex-wrap:wrap}
+  .nav .spacer{flex:1}
+  .timer{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+
+  /* ---------- footer bar ---------- */
+  .bar{
+    position:fixed;left:0;right:0;bottom:0;background:var(--ink);color:var(--card);
+    padding:11px 24px;display:flex;gap:16px;align-items:center;font-family:var(--mono);font-size:12px;
+  }
+  .bar .spacer{flex:1}
+  .bar button{background:transparent;border-color:var(--card);color:var(--card);padding:6px 14px;font-size:12px}
+  .bar button:hover{background:var(--card);color:var(--ink)}
+  .bar .warn{color:#fbbf24}
+
+  .alert{
+    border:1.5px solid var(--discard);background:#fdf1ee;color:#7c2d12;
+    padding:14px 16px;border-radius:2px;margin-bottom:20px;font-size:14px;
+  }
+  .done{background:var(--card);border:1px solid var(--rule);padding:32px;border-radius:2px}
+  .done h2{font-family:var(--serif);font-weight:400;font-size:24px;margin:0 0 12px}
+  table.sum{border-collapse:collapse;font-family:var(--mono);font-size:13px;margin:16px 0}
+  table.sum td{padding:5px 18px 5px 0}
+  table.sum td:last-child{text-align:right;font-weight:600}
+  .hide{display:none !important}
+
+  @media (max-width:760px){
+    .grid{grid-template-columns:1fr}
+    .rail{position:static;display:flex;gap:14px;align-items:center;margin-bottom:8px}
+    .marks{flex-direction:row;flex-wrap:wrap;gap:2px;flex:1}
+    .mark{width:9px;height:16px}
+    .cond ol{grid-template-columns:1fr}
+    .rail-cap{margin:0}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <h1>Screening Ledger</h1>
+    <span class="sub">independent second judgement</span>
+    <span class="spacer"></span>
+    <span class="meta" id="metaLine">no file loaded</span>
+  </header>
+
+  <!-- ================= LOAD ================= -->
+  <section id="loadView">
+    <div class="load" id="drop">
+      <h2>Load your annotation sheet</h2>
+      <p>Choose <code>e5_set_b.csv</code> (URL screening) or <code>e5_set_c.csv</code> (slot check).
+         The file is read in your browser and never uploaded anywhere.</p>
+      <input type="file" id="file" accept=".csv" class="hide">
+      <button onclick="document.getElementById('file').click()">Choose CSV file</button>
+      <button class="ghost" id="resumeBtn" style="margin-left:8px" onclick="resume()">Resume saved session</button>
+
+      <div class="rubric-note">
+        <p><strong>Before you start.</strong> Do not open
+        <code>e5_set_b_hidden.csv</code>. This tool will refuse a file that contains the
+        ledger's verdicts — your judgement has to be independent for the agreement
+        statistic to mean anything.</p>
+        <p style="margin-bottom:0"><strong>Retain only if all four hold:</strong> the page
+        is about one distinct initiative; it describes an actual food-sharing activity;
+        the initiative operates in this city; and there is no evidence it has stopped.
+        If the page will not load, mark <em>Unreachable now</em> — those rows are excluded
+        from agreement and counted separately.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ANNOTATE ================= -->
+  <section id="workView" class="hide">
+    <div id="alertBox"></div>
+    <div class="grid">
+
+      <aside class="rail">
+        <div class="rail-cap">Tally</div>
+        <div class="marks" id="marks"></div>
+        <div class="tally" id="tally"></div>
+      </aside>
+
+      <main>
+        <div class="card">
+          <div class="card-head">
+            <span class="idx" id="idx"></span>
+            <span class="city" id="city"></span>
+            <span class="spacer" style="flex:1"></span>
+            <span class="timer" id="timer">0:00</span>
+          </div>
+
+          <!-- Set B subject -->
+          <div id="bodyB">
+            <p class="subject"><a id="url" href="#" target="_blank" rel="noopener noreferrer"></a></p>
+            <div class="openrow">
+              <button class="ghost" id="openBtn">Open page in new tab</button>
+              <small>opens in a background tab — come back here to record</small>
+            </div>
+          </div>
+
+          <!-- Set C subject -->
+          <div id="bodyC" class="hide">
+            <p class="quote" id="cSentence"></p>
+            <div class="evid" id="cEvid"></div>
+            <div class="slots" id="cSlots"></div>
+          </div>
+
+          <div class="cond" id="condB">
+            <h3>All four must hold to retain</h3>
+            <ol>
+              <li><span class="n">1</span><div><b>Distinct</b> — one identifiable initiative, not an index or umbrella body</div></li>
+              <li><span class="n">2</span><div><b>Initiative-level</b> — an actual activity, not policy, research or a product</div></li>
+              <li><span class="n">3</span><div><b>Local</b> — operates in this city, not nationally or elsewhere</div></li>
+              <li><span class="n">4</span><div><b>Current</b> — no evidence the activity has ended</div></li>
+            </ol>
+          </div>
+
+          <div class="cond hide" id="condC">
+            <h3>The question</h3>
+            <ol style="grid-template-columns:1fr">
+              <li><span class="n">?</span><div>Is the highlighted value used for the <b>correct quantity</b>? The value does exist in the evidence base — you are checking whether the sentence applies it to the right thing.</div></li>
+            </ol>
+          </div>
+
+          <div class="decide">
+            <div class="dbtns" id="dbtns"></div>
+            <div class="tags" id="tags"></div>
+            <div class="defstrip" id="defstrip"></div>
+            <textarea id="note" placeholder="Note — a category tag plus a few words is enough"></textarea>
+          </div>
+
+          <details class="rubric" id="rubric">
+            <summary>Full rubric, categories and edge cases <span style="opacity:.55;letter-spacing:.04em">(press ?)</span></summary>
+            <div class="inner" id="rubricInner"></div>
+          </details>
+
+          <div class="nav">
+            <button class="ghost" id="prev">&larr; Previous</button>
+            <button id="next">Next &rarr;</button>
+            <span class="spacer"></span>
+            <button class="ghost" id="jumpNext">Next unannotated</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ================= DONE ================= -->
+  <section id="doneView" class="hide">
+    <div class="done">
+      <h2>All items recorded</h2>
+      <p>Download the completed sheet, then run <code>evaluation/scripts/score_annotation.py</code>.</p>
+      <div id="doneSummary"></div>
+      <button id="dlDone">Download completed CSV</button>
+      <button class="ghost" onclick="showWork()">Back to review</button>
+    </div>
+  </section>
+</div>
+
+<div class="bar hide" id="bar">
+  <span id="progress"></span>
+  <span class="warn" id="unsaved"></span>
+  <span class="spacer"></span>
+  <span style="opacity:.6">1–4 decide · N/P move · Enter next</span>
+  <button id="save">Download CSV</button>
+</div>
+
+<script>
+"use strict";
+
+/* ---------------- CSV ---------------- */
+function parseCSV(text){
+  text = text.replace(/^\uFEFF/,"");
+  const rows=[]; let row=[], cell="", q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){
+      if(c === '"'){ if(text[i+1] === '"'){cell+='"';i++;} else q=false; }
+      else cell+=c;
+    } else if(c === '"') q=true;
+    else if(c === ','){ row.push(cell); cell=""; }
+    else if(c === '\n'){ row.push(cell); rows.push(row); row=[]; cell=""; }
+    else if(c === '\r'){ /* skip */ }
+    else cell+=c;
+  }
+  if(cell.length||row.length){ row.push(cell); rows.push(row); }
+  return rows.filter(r=>r.length && !(r.length===1 && r[0].trim()===""));
+}
+function toCSV(headers, objs){
+  const esc = v => {
+    v = (v==null?"":String(v));
+    return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v;
+  };
+  return headers.join(",")+"\n" + objs.map(o=>headers.map(h=>esc(o[h])).join(",")).join("\n")+"\n";
+}
+
+/* ---------------- state ---------------- */
+const FORBIDDEN=["decision","label","discard_reason_bucket","automated_label"];
+const SETB=[
+  {v:"Retained",   k:"1", t:"Retained"},
+  {v:"Discarded",  k:"2", t:"Discarded"},
+  {v:"UNREACHABLE_NOW", k:"3", t:"Unreachable now"},
+  {v:"UNCLEAR",    k:"4", t:"Unclear"}
+];
+const SETC=[
+  {v:"CORRECT_SLOT", k:"1", t:"Correct slot"},
+  {v:"WRONG_SLOT",   k:"2", t:"Wrong slot"},
+  {v:"UNCLEAR",      k:"3", t:"Unclear"}
+];
+const TAGSB=["DIRECTORY","POLICY","COMMERCIAL","NOT_LOCAL","ENDED","DUPLICATE","NOT_FSI","OK"];
+const TAGSC=["MISATTRIBUTED","ROUNDING","AMBIGUOUS_REFERENT","OK"];
+const KEY="screening_ledger_session_v1";
+
+/* ---- definitions shown in the strip and the rubric panel ---- */
+const DEC_DEF={
+  "Retained":"All four conditions hold — one distinct initiative, an actual food-sharing activity, operating in this city, with no evidence it has stopped.",
+  "Discarded":"At least one condition fails. Record which one with a category tag.",
+  "UNREACHABLE_NOW":"The page will not load: 404, timeout, bot challenge, login wall, or parked domain. <em>Excluded from the agreement calculation and counted separately</em> — the ledger browsed months earlier, so this measures elapsed time, not judgement.",
+  "UNCLEAR":"Reachable and readable, but you cannot decide without domain knowledge you do not have. <em>Excluded from agreement.</em> Do not guess — an honest unclear rate is itself a finding.",
+  "CORRECT_SLOT":"The value is applied to the quantity it actually measures.",
+  "WRONG_SLOT":"The value is real and present in the evidence base, but the sentence applies it to a different quantity.",
+};
+const TAG_DEF={
+  "DIRECTORY":"An index, map, list, or umbrella body covering many initiatives rather than documenting one.",
+  "POLICY":"A policy, research, strategy, funding call, or advocacy page — not a service that operates.",
+  "COMMERCIAL":"An app, product, or business service rather than a community food-sharing initiative.",
+  "NOT_LOCAL":"National, international, or based in a different city or region than the one assigned.",
+  "ENDED":"Explicitly finished, or a report of a single past event with no ongoing activity.",
+  "DUPLICATE":"The same initiative as another URL already seen in this sample.",
+  "NOT_FSI":"Reachable and specific, but not about food sharing at all.",
+  "OK":"Meets all four conditions — use alongside a Retained decision.",
+  "MISATTRIBUTED":"The value belongs to a different quantity in the evidence base than the one the sentence uses it for.",
+  "ROUNDING":"Correct quantity, but the stated figure is rounded or imprecise beyond the tolerance.",
+  "AMBIGUOUS_REFERENT":"The sentence does not make clear which quantity the value refers to.",
+};
+const CONDS=[
+  ["Distinct","The page is about one identifiable initiative","It lists, indexes, or aggregates many initiatives — a directory, map, or “find a food bank near you” page"],
+  ["Initiative-level","It describes an actual food-sharing activity: meals, redistribution, growing, a fridge, a pantry, a co-op","It is policy, research, a funding call, a national campaign, a commercial product, or general advocacy"],
+  ["Local","The initiative operates in this city","It is national, international, or based elsewhere"],
+  ["Current","There is evidence it operates now, or no evidence it has stopped","The page states the activity ended, or describes a single past event"],
+];
+const EDGES=[
+  ["A page about one organisation that runs several projects","Retain","One organisation counts as one initiative. Discard as DIRECTORY only if the page indexes <em>other people's</em> initiatives."],
+  ["A city-council page about its own food programme","Depends","Retain if it describes the council's own operating service. Discard as POLICY if it is a strategy document or a list of external services."],
+  ["A social-media page","Depends","Judge on what is visible without logging in. If a login wall blocks the content, mark Unreachable now."],
+  ["A national charity's page for its local branch","Depends","Retain if the page is specifically about the local branch's service. Discard as NOT_LOCAL if it is the national page."],
+  ["A page you would need domain knowledge to judge","Unclear","Mark Unclear and note why. Do not guess."],
+];
+
+let S={mode:"B", headers:[], rows:[], i:0, dirty:false, started:Date.now()};
+let tStart=Date.now(), tick=null;
+
+const $ = id => document.getElementById(id);
+const decisionSet = () => S.mode==="B" ? SETB : SETC;
+const decisionCol = () => S.mode==="B" ? "MY_DECISION" : "MY_LABEL";
+
+/* ---------------- load ---------------- */
+$("file").addEventListener("change", e => { if(e.target.files[0]) readFile(e.target.files[0]); });
+const drop=$("drop");
+["dragenter","dragover"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add("drag")}));
+["dragleave","drop"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove("drag")}));
+drop.addEventListener("drop",e=>{ const f=e.dataTransfer.files[0]; if(f) readFile(f); });
+
+function readFile(f){
+  const r=new FileReader();
+  r.onload = () => { try{ loadText(r.result); }catch(err){ alert("Could not read that file: "+err.message); } };
+  r.readAsText(f);
+}
+
+function loadText(text){
+  const rows=parseCSV(text);
+  if(rows.length<2) throw new Error("the file has no data rows");
+  const headers=rows[0].map(h=>h.trim());
+  const lower=headers.map(h=>h.toLowerCase());
+
+  const bad = FORBIDDEN.filter(f=>lower.includes(f));
+  if(bad.length){
+    alert("This file contains the column \""+bad[0]+"\", which holds the ledger's own verdicts.\n\n"+
+          "That looks like the hidden answer file. Load e5_set_b.csv instead — seeing the "+
+          "verdicts first would invalidate the agreement statistic.");
+    return;
+  }
+
+  S.mode = lower.includes("url") ? "B" : (lower.includes("raw_number")||lower.includes("sentence") ? "C" : null);
+  if(!S.mode){ alert("Unrecognised file. Expected a 'url' column (Set B) or a 'sentence'/'raw_number' column (Set C)."); return; }
+
+  const dcol = decisionCol();
+  if(!headers.includes(dcol)) headers.push(dcol);
+  if(!headers.includes("MY_NOTE")) headers.push("MY_NOTE");
+  if(!headers.includes("SECONDS_SPENT")) headers.push("SECONDS_SPENT");
+
+  S.headers=headers;
+  S.rows=rows.slice(1).map(r=>{
+    const o={}; headers.forEach((h,j)=> o[h] = (r[j]!==undefined? r[j] : ""));
+    return o;
+  });
+  S.i=0; S.dirty=false; S.started=Date.now();
+  buildUI(); showWork(); render();
+}
+
+function resume(){
+  let raw=null;
+  try{ raw = localStorage.getItem(KEY); }catch(e){}
+  if(!raw){ alert("No saved session found in this browser."); return; }
+  try{
+    const o=JSON.parse(raw);
+    S=Object.assign(S,o); buildUI(); showWork(); render();
+  }catch(e){ alert("Saved session could not be read."); }
+}
+function persist(){
+  try{ localStorage.setItem(KEY, JSON.stringify({mode:S.mode,headers:S.headers,rows:S.rows,i:S.i,started:S.started})); }catch(e){}
+}
+
+/* ---------------- build ---------------- */
+function esc(s){ return String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+
+function renderSlots(r, num){
+  const box=$("cSlots");
+  const raw=(r.candidate_slots||"").trim();
+
+  if(!raw){
+    box.innerHTML="<div class='cap'>Candidate slots</div>"+
+      "<div class='empty'>No candidate_slots column in this file. Run "+
+      "evaluation/scripts/enrich_set_c.py and load e5_set_c_enriched.csv instead — "+
+      "without it you would have to search facts_&lt;city&gt;.json by hand.</div>";
+    return;
+  }
+  if(/^\(/.test(raw)){                       // "(value not found ...)" etc.
+    box.innerHTML="<div class='cap'>Candidate slots <span class='count none'>0</span></div>"+
+      "<div class='empty'>"+esc(raw)+"</div>";
+    return;
+  }
+
+  const parts=raw.split("|").map(s=>s.trim()).filter(Boolean);
+  let more="";
+  const last=parts[parts.length-1];
+  const m=last&&last.match(/\(\+(\d+)\s+more\)/);
+  if(m){ more=m[0]; parts[parts.length-1]=last.replace(/\s*\(\+\d+\s+more\)/,"").trim(); }
+
+  const n=parseInt(r.n_candidates||parts.length,10)||parts.length;
+  const cls = n===1 ? "one" : "many";
+  const label = n===1 ? "1 slot" : n+" slots";
+
+  let h="<div class='cap'>Candidate slots in facts dict <span class='count "+cls+"'>"+label+"</span></div>";
+  h+="<div class='slotlist'>";
+  parts.forEach(p=>{
+    const i=p.lastIndexOf("=");
+    const path = i>0 ? p.slice(0,i) : p;
+    const val  = i>0 ? p.slice(i+1) : (num||"");
+    h+="<div class='slot'><span class='path'>"+esc(path)+"</span><span class='val'>"+esc(val)+"</span></div>";
+  });
+  h+="</div>";
+  if(more) h+="<div class='hint'>"+esc(more)+" not shown.</div>";
+  h+="<div class='hint'>"+(n===1
+      ? "One slot holds this value. Does the sentence use it for that quantity?"
+      : "Several slots hold this value. Read the sentence and decide which one it is claiming — if it matches none of them, mark <b>Wrong slot</b>.")+
+     "</div>";
+  box.innerHTML=h;
+}
+
+function stripText(label, html){
+  const s=$("defstrip");
+  s.innerHTML = html ? "<code>"+label+"</code>"+html : "";
+  s.classList.toggle("lit", !!html);
+}
+function idleStrip(){
+  const r=S.rows[S.i];
+  const cur = r ? (r[decisionCol()]||"").trim() : "";
+  if(cur && DEC_DEF[cur]) stripText(cur, DEC_DEF[cur]);
+  else stripText("", "<em>Hover any decision or category to see what it means. Press ? for the full rubric.</em>");
+}
+function hoverDefs(btn, label, def){
+  btn.title = label+" — "+def.replace(/<[^>]+>/g,"");
+  btn.addEventListener("mouseenter", ()=>stripText(label, def));
+  btn.addEventListener("focus",      ()=>stripText(label, def));
+  btn.addEventListener("mouseleave", idleStrip);
+  btn.addEventListener("blur",       idleStrip);
+}
+
+function buildRubric(){
+  const isB = S.mode==="B";
+  let h="";
+  if(isB){
+    h+="<h4>Retain only if all four hold</h4><table class='rub'><tr><th>Condition</th><th>Retain if</th><th>Discard if</th></tr>";
+    CONDS.forEach(c=> h+="<tr><td>"+c[0]+"</td><td>"+c[1]+"</td><td>"+c[2]+"</td></tr>");
+    h+="</table>";
+  }
+  h+="<h4>Decisions</h4><dl>";
+  decisionSet().forEach(d=> h+="<dt>"+d.t+"</dt><dd>"+(DEC_DEF[d.v]||"")+"</dd>");
+  h+="</dl>";
+  h+="<h4>Category tags — put one in the note</h4><dl>";
+  (isB?TAGSB:TAGSC).forEach(t=> h+="<dt>"+t+"</dt><dd>"+(TAG_DEF[t]||"")+"</dd>");
+  h+="</dl>";
+  if(isB){
+    h+="<h4>Edge cases — decide these the same way every time</h4><ul class='edge'>";
+    EDGES.forEach(e=> h+="<li><b>"+e[0]+"</b><span class='verdict'>"+e[1]+"</span><br>"+e[2]+"</li>");
+    h+="</ul>";
+  }
+  h+="<h4>Working rules</h4><ul class='edge'>"+
+     "<li>Work in file order. Do not skip ahead, and do not revisit earlier decisions after seeing later ones.</li>"+
+     "<li>If you catch yourself trying to infer what the ledger said, stop and re-read the four conditions. Judge the page, not the likely verdict.</li>"+
+     "<li>Roughly two minutes per item is the right pace. The timer is recorded per item, not enforced.</li>"+
+     "</ul>";
+  $("rubricInner").innerHTML=h;
+}
+
+function buildUI(){
+  const db=$("dbtns"); db.innerHTML="";
+  decisionSet().forEach(d=>{
+    const b=document.createElement("button");
+    b.className="d"; b.dataset.v=d.v;
+    b.innerHTML='<kbd>'+d.k+'</kbd>'+d.t;
+    b.onclick=()=>setDecision(d.v);
+    hoverDefs(b, d.t, DEC_DEF[d.v]||"");
+    db.appendChild(b);
+  });
+  const tg=$("tags"); tg.innerHTML="";
+  (S.mode==="B"?TAGSB:TAGSC).forEach(t=>{
+    const b=document.createElement("button");
+    b.className="tag"; b.textContent=t; b.onclick=()=>toggleTag(t);
+    hoverDefs(b, t, TAG_DEF[t]||"");
+    tg.appendChild(b);
+  });
+  buildRubric();
+  const mk=$("marks"); mk.innerHTML="";
+  S.rows.forEach((_,n)=>{
+    const b=document.createElement("button");
+    b.className="mark"; b.title="Item "+(n+1);
+    b.onclick=()=>{ commit(); S.i=n; render(); };
+    mk.appendChild(b);
+  });
+  $("bodyB").classList.toggle("hide", S.mode!=="B");
+  $("bodyC").classList.toggle("hide", S.mode!=="C");
+  $("condB").classList.toggle("hide", S.mode!=="B");
+  $("condC").classList.toggle("hide", S.mode!=="C");
+  $("bar").classList.remove("hide");
+}
+
+function showWork(){ $("loadView").classList.add("hide"); $("doneView").classList.add("hide"); $("workView").classList.remove("hide"); }
+
+/* ---------------- render ---------------- */
+function render(){
+  const r=S.rows[S.i]; if(!r) return;
+  const dcol=decisionCol();
+
+  $("idx").textContent = "ITEM "+(S.i+1)+" / "+S.rows.length+"   ·   "+(r.item_id||"");
+  $("city").textContent = r.city||"—";
+
+  if(S.mode==="B"){
+    const u=(r.url||"").trim();
+    const a=$("url"); a.textContent=u||"(no URL in this row)"; a.href=u||"#";
+    $("openBtn").onclick=()=>{ if(u) window.open(u,"_blank","noopener"); };
+  } else {
+    const sent=r.sentence||"", num=(r.raw_number||"").trim();
+    let html = sent.replace(/[&<>]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+    if(num){
+      const esc=num.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+      html = html.replace(new RegExp("(^|[^\\d])("+esc+")(?![\\d])"), "$1<span class='num'>$2</span>");
+    }
+    $("cSentence").innerHTML = html || "(no sentence)";
+    $("cEvid").textContent = "value: "+(num||"—")+"   ·   section: "+(r.section||"—");
+    renderSlots(r, num);
+  }
+
+  const cur=(r[dcol]||"").trim();
+  document.querySelectorAll(".d").forEach(b=>b.classList.toggle("on", b.dataset.v===cur));
+  $("note").value = r.MY_NOTE||"";
+  const noteUp=(r.MY_NOTE||"").toUpperCase();
+  document.querySelectorAll(".tag").forEach(b=>b.classList.toggle("on", noteUp.includes(b.textContent)));
+
+  document.querySelectorAll(".mark").forEach((m,n)=>{
+    const d=(S.rows[n][dcol]||"").trim();
+    if(d) m.dataset.d=d; else delete m.dataset.d;
+    m.classList.toggle("cur", n===S.i);
+  });
+
+  $("prev").disabled = S.i===0;
+  idleStrip(); updateTally(); resetTimer();
+}
+
+function updateTally(){
+  const dcol=decisionCol();
+  const counts={}; let done=0;
+  S.rows.forEach(r=>{ const d=(r[dcol]||"").trim(); if(d){done++; counts[d]=(counts[d]||0)+1;} });
+  const short = v => ({Retained:"ret",Discarded:"dis",UNREACHABLE_NOW:"unr",UNCLEAR:"ncl",
+                       CORRECT_SLOT:"ok",WRONG_SLOT:"wrong"}[v]||v.toLowerCase().slice(0,4));
+  $("tally").innerHTML = "<b>"+done+"/"+S.rows.length+"</b>" +
+    decisionSet().map(d=> counts[d.v] ? short(d.v)+" "+counts[d.v] : "").filter(Boolean).join("<br>");
+  $("progress").textContent = done+" of "+S.rows.length+" recorded";
+  $("unsaved").textContent = S.dirty ? "· unsaved changes" : "";
+  $("metaLine").textContent = "Set "+S.mode+" · "+S.rows.length+" items";
+}
+
+/* ---------------- interaction ---------------- */
+function setDecision(v){
+  const r=S.rows[S.i]; const dcol=decisionCol();
+  r[dcol] = (r[dcol]===v ? "" : v);
+  S.dirty=true; commitTime(); persist(); render();
+}
+function toggleTag(t){
+  const n=$("note"); const cur=n.value.trim();
+  const has=new RegExp("(^|[\\s,])"+t+"($|[\\s,])").test(cur);
+  n.value = has ? cur.replace(new RegExp("(^|[\\s,])"+t+"($|[\\s,])"),"$1$2").replace(/\s{2,}/g," ").replace(/^[\s,]+|[\s,]+$/g,"")
+                : (cur ? cur+" "+t : t);
+  commit(); render();
+}
+function commit(){
+  const r=S.rows[S.i]; if(!r) return;
+  if(r.MY_NOTE!==$("note").value){ r.MY_NOTE=$("note").value; S.dirty=true; }
+  commitTime(); persist();
+}
+function commitTime(){
+  const r=S.rows[S.i]; if(!r) return;
+  const add=Math.round((Date.now()-tStart)/1000);
+  r.SECONDS_SPENT = String((parseInt(r.SECONDS_SPENT||"0",10)||0)+add);
+  tStart=Date.now();
+}
+function resetTimer(){
+  tStart=Date.now();
+  if(tick) clearInterval(tick);
+  tick=setInterval(()=>{
+    const s=Math.round((Date.now()-tStart)/1000);
+    $("timer").textContent = Math.floor(s/60)+":"+String(s%60).padStart(2,"0");
+  },1000);
+  $("timer").textContent="0:00";
+}
+function go(d){
+  commit();
+  const n=S.i+d;
+  if(n<0) return;
+  if(n>=S.rows.length){ finish(); return; }
+  S.i=n; render();
+}
+$("next").onclick=()=>go(1);
+$("prev").onclick=()=>go(-1);
+$("jumpNext").onclick=()=>{
+  commit();
+  const dcol=decisionCol();
+  const n=S.rows.findIndex((r,j)=> j>S.i && !(r[dcol]||"").trim());
+  if(n>=0){ S.i=n; render(); } else alert("No unannotated items after this one.");
+};
+$("note").addEventListener("input", ()=>{ S.dirty=true; updateTally(); });
+$("note").addEventListener("blur", commit);
+
+document.addEventListener("keydown", e=>{
+  if($("workView").classList.contains("hide")) return;
+  if(e.target.tagName==="TEXTAREA"){
+    if(e.key==="Enter" && (e.metaKey||e.ctrlKey)){ e.preventDefault(); go(1); }
+    return;
+  }
+  const ds=decisionSet();
+  const hit=ds.find(d=>d.k===e.key);
+  if(hit){ e.preventDefault(); setDecision(hit.v); return; }
+  if(e.key==="?"){ e.preventDefault(); const r=$("rubric"); r.open=!r.open; if(r.open) r.scrollIntoView({block:"nearest"}); return; }
+  if(e.key==="n"||e.key==="N"||e.key==="Enter"||e.key==="ArrowRight"){ e.preventDefault(); go(1); }
+  if(e.key==="p"||e.key==="P"||e.key==="ArrowLeft"){ e.preventDefault(); go(-1); }
+  if((e.key==="o"||e.key==="O") && S.mode==="B"){ e.preventDefault(); $("openBtn").click(); }
+});
+
+/* ---------------- export ---------------- */
+function download(){
+  commit();
+  const name = S.mode==="B" ? "e5_set_b_annotated.csv" : "e5_set_c_annotated.csv";
+  const blob=new Blob([toCSV(S.headers,S.rows)],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download=name; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1500);
+  S.dirty=false; updateTally();
+}
+$("save").onclick=download;
+$("dlDone").onclick=download;
+
+function finish(){
+  commit();
+  const dcol=decisionCol();
+  const counts={}; let secs=0;
+  S.rows.forEach(r=>{
+    const d=(r[dcol]||"").trim()||"(blank)";
+    counts[d]=(counts[d]||0)+1;
+    secs+=parseInt(r.SECONDS_SPENT||"0",10)||0;
+  });
+  let t="<table class='sum'>";
+  Object.keys(counts).sort().forEach(k=> t+="<tr><td>"+k+"</td><td>"+counts[k]+"</td></tr>");
+  t+="<tr><td>median seconds per item</td><td>"+medianSecs()+"</td></tr>";
+  t+="<tr><td>total time</td><td>"+Math.round(secs/60)+" min</td></tr></table>";
+  const blanks=counts["(blank)"]||0;
+  if(blanks) t+="<div class='alert'>"+blanks+" item"+(blanks>1?"s are":" is")+
+    " still blank. Use <em>Next unannotated</em> to find them before scoring.</div>";
+  t+="<p style='color:var(--ink-2);font-size:14px'>Exclude <code>UNREACHABLE_NOW</code> and "+
+     "<code>UNCLEAR</code> from the agreement calculation and report their counts separately.</p>";
+  $("doneSummary").innerHTML=t;
+  $("workView").classList.add("hide"); $("doneView").classList.remove("hide");
+}
+function medianSecs(){
+  const v=S.rows.map(r=>parseInt(r.SECONDS_SPENT||"0",10)||0).filter(x=>x>0).sort((a,b)=>a-b);
+  if(!v.length) return 0;
+  const m=Math.floor(v.length/2);
+  return v.length%2 ? v[m] : Math.round((v[m-1]+v[m])/2);
+}
+
+window.addEventListener("beforeunload", e=>{
+  if(S.dirty){ e.preventDefault(); e.returnValue=""; }
+});
+try{ if(!localStorage.getItem(KEY)) $("resumeBtn").style.display="none"; }catch(e){ $("resumeBtn").style.display="none"; }
+</script>
+</body>
+</html>

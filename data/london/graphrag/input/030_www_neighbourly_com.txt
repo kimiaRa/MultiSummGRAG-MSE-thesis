@@ -1,0 +1,151 @@
+# Surplus Food & Product Redistribution Platform for Businesses | Neighbourly
+
+URL: https://www.neighbourly.com/solution/product-surplus
+Location: United Kingdom, London, Hillingdon
+Coordinates: 51.44, -2.58
+
+Type: food_sharing
+Operational level: commercial
+Popularity: high (score: 15)
+
+Description: Turn surplus food & products into community impact. Automated collections from 40,000+ UK charities. Real-time tracking & social value reporting.
+
+Full text:
+Save time & money
+Cut CSR programme costs and admin time while multiplying your community impact
+This website stores cookies on your computer. These cookies are used to improve your website experience and provide more personalized services to you, both on this website and through other media. To find out more about the cookies we use, see our Privacy Policy.
+We won't track your information when you visit our site. But in order to comply with your preferences, we'll have to use just one tiny cookie so that you're not asked to make this choice again.
+Your extra food, products or supplies can make a real difference. Neighbourly helps you get them straight to the communities that need them - quickly, safely and without the fuss. No waste, just real support where it matters, with clear data to show the impact.
+Cut CSR programme costs and admin time while multiplying your community impact
+Charities typically collect during the day, while community champions step in to collect at closing time
+Store teams and charity partners confirm when collections take place - so you always know what’s been picked up and when
+Neighbourly connects your surplus products, including food, toiletries, books and household goods, with over 45,000 vetted place-based charities, food banks and schools across the UK & Ireland.
+Thousands of locations, daily collections, and everything running smoothly through one easy system.
+45,000+ vetted charity network across every postcode region of the UK. Your surplus finds its perfect match anywhere.
+Our system achieves a high rate of successful collections, helping ensure your surplus supports communities instead of going to waste.
+Every charity partner comes ready-vetted and food safety certified, meaning you donate with confidence from day one.
+CSV uploads. Scanner data. Manual entries. Your existing systems connect with ours for maximum efficiency.
+Day collections through charity partners and evening pickups through our community champions - equalling complete coverage.
+Collectors scan codes and you get instant confirmation. Complete confidence in every pickup.
+Every donation is tracked automatically, and your impact reporting includes place-based metrics - so you can see not only total benefit, but how each neighbourhood is being impacted
+Our reporting goes deeper; we quantify the social value to society based on the charity type, your donation and their mission.
+The difference between waste and impact lies in smart redistribution. Our platform transforms your excess inventory into strategic community investment. Real partnerships. Real impact.
+270m
+meals donated
+Product catalogues, store locations and management tools connect seamlessly to our platform. Operations continue exactly as before while community partnerships scale across every location.
+Our intelligent system matches your locations with trusted local charities and builds weekly collection schedules that run without intervention. Each store gets consistent, reliable pickups while you focus on core business priorities.
+Every location is scheduled with multiple primary and backup collectors on standby. When collectors can't make it, our system instantly activates backup charities.
+Your surplus extends far beyond food. DIY supplies become resources for community workshops. End-of-line furniture transforms into essential household items for families in need. Through our charity network we can match every type of physical product with organisations that can put them to immediate use.
+121k tonnes
+non-food surplus donated
+We establish consistent collection schedules with charities arriving on specified dates, creating dependable cycles that match your business processes.
+We can activate our network on demand - no ongoing schedules or commitments required. Your surplus reaches charities when it makes sense for your operations and their needs.
+Our Surplus Saviours scheme turns surplus into direct family support. Local residents sign up for donations via our website, while store teams use staff-friendly tools for immediate distribution. Direct community impact, complementing existing charity partnerships with personal, household giving.
+When your partner charities can't collect, or you can only donate at store closing time, our community network steps in. Registered Surplus Saviours receive instant notifications and handle collections that would otherwise go to waste.
+Surplus Saviours provide direct assistance by collecting donations and delivering them straight to households facing urgent food insecurity.
+When unexpected events create large surplus volumes with tight deadlines, our Surplus Saviours network mobilises instantly.
+Store closing times can often be too late for charity availability, leaving late-night surplus stranded. Surplus Saviours collect during evening hours when traditional charities can't commit.
+Basic donation tracking tells you what you gave—our reports reveal what you achieved. Extract comprehensive environmental and social metrics across all locations in formats ready for board presentations. Carbon reduction, community benefits, and operational efficiencies that prove surplus strategy delivers measurable business value.
+-
+PowerBI dashboards
+-
+Quarterly reports
+See your programme performance as it happens with live social impact calculations that demonstrate ROI, environmental savings, and community benefits simultaneously.
+Understand exactly which charity types receive your donations and how they address specific impact themes like food poverty, education support, and community development.
+All metrics align with UN Sustainable Development Goal frameworks, ensuring your impact reporting meets international corporate responsibility standards.
+Store staff & popular food collection app-style collection codes confirm completed donations with simple one-click verification, creating audit-quality data trails.
+Launch
+You provide your store locations, product catalogues and donation requirements. Our development team will integrate your infrastructure into our food surplus application.
+Match
+Our platform finds suitable, place-based charities based on geography, collection capacity and local need. Vetted organisations are plugged into your weekly donation schedule.
+Mark items
+Store staff can send files or use scanner tools to mark surplus products for donation. Items can include both food (bakery, frozen, tinned, fresh etc) and non-food items (DIY, paint, flowers, gardening equipment etc).
+Donate
+Scheduled charities collect surplus products during their allocated slots. When charities aren't available, community Surplus Saviours handle ad-hoc collections at store closing time.
+Verify
+Charities confirm pickups via the platform, with backup options if needed. Store staff verify collections using optional Collection Codes to ensure donations reach the correct charity.
+Impact
+Our system automatically tracks donated resources, calculates financial value, CO2e savings and social impact. See how donations help charities focus on their missions while saving important resources.
+Step 1
+Step 2
+Step 3
+Step 4
+Step 5
+Step 6
+What sets us apart is over 10 years of lasting support for local communities, backed by award-winning service and the ability to deliver national programmes that make a real difference at scale.
+More than 45,000 carefully vetted good causes are ready to receive support, with smart matching technology connecting businesses to the causes that matter most to their teams and customers.
+Our unique calculation engine reveals detailed insights into the social value generated by resource donations, helping to highlight the real impact being made.
+Neighbourly is the only platform that brings together three vital ways for businesses to give - employee volunteering, financial donations and surplus product redistribution - all in one solution.
+Good causes receive every bit of the resources donated by businesses, with no fees or charges to use the platform.
+We’re proud to be a sustainable and responsible company, backed by industry-recognised ISO 27001 accreditation for tech security.
+Our team brings years worth of expertise in managing large-scale giving programmes, supporting charities and connecting with communities in meaningful ways.
+Every year we organise multi-company giving campaigns with everything taken care of - all you have to do is join in!
+Over a decade of proven impact delivery to vulnerable communities nationwide. Here's the evidence:
+£2 billion
+Total social value
+The calculated social value for society based on improving outcomes for people in communities.
+10892.00 (41%)
+12927.00 (48%)
+3069.00 (11%)
+Surplus
+Financial
+Volunteering
+We’re on a mission to unlock £10 billion of social value across the UK and Northern Ireland by 2030 - helping more people, strengthening communities and creating a fairer future for everyone.
+£10 billion
+by 2030
+Stats provided are accurate up to 20/04/2025.
+9000+
+The number of company offices and branches delivering impact into every postcode region across the UK & Ireland
+45,000+
+The number of vetted local charities, community groups, CICs and schools in the Neighbourly network
+523k tonnes
+The amount of emissions prevented through our food donation programmes
+323m
+5k tonnes
+£44 million
+323k hrs
+We support charities and community organisations nationwide with the help of our UK-based corporate partners.
+| Rank | Location | Social impact value |
+|---|---|---|
+| 1 | Greater London | £81,874,843 |
+| 2 | South West | £74,888,801 |
+| 3 | North West | £63,991,073 |
+| 4 | South East | £59,643,699 |
+| 5 | East Midlands | £45,168,561 |
+| 6 | Scotland | £44,896,262 |
+| 7 | West Midlands | £41,037,711 |
+| 8 | North East | £36,981,378 |
+| 9 | East of England | £34,353,024 |
+| 10 | Wales | £23,583,668 |
+| 11 | Northern Ireland | £10,477,860 |
+| 12 | East England | £6,523,040 |
+| 13 | Republic of Ireland | £922,866 |
+We aren't only focused on quantitative feedback, we also collect impact stories to showcase the successes of our different programmes.
+Corporate donor case study
+Corporate donor case study
+Good cause impact story
+Good cause impact story
+Employee volunteer testimonial
+Ready to launch? Book a call with our team to explore license options and build your custom programme.
+Make a meaningful difference in the places you care about. Support volunteering, manage donations and share surplus - all while keeping track of the impact.
+Free, no obligation exploratory conversation
+Can't find what you're looking for? Make an enquiry with our friendly team!
+Neighbourly’s place-based surplus redistribution connects businesses that have excess food and non-food products to local charities and community groups who can put these items to good use. Our platform manages the entire process - from identifying surplus stock and matching it with suitable local causes to coordinating collections, ensuring compliance and reporting on impact. This service helps reduce waste while supporting communities.
+Once your business is set up on the platform, store or warehouse staff log available surplus using our simple app or web interface. The system automatically matches these donations with pre-approved local charities and community groups based on their needs and collection capabilities. Charities receive notifications about available donations and confirm collections. After collection, the system tracks what has been donated and generates impact reports for your business.
+Neighbourly maintains strict food safety standards throughout the redistribution process. All charity partners must provide current Level 2 Food Hygiene Certification before being approved for food collections. Our system includes comprehensive traceability, with timestamps for donations and collections. We provide guidance on Natasha's Law compliance for prepared foods and allergen information. The platform includes functionality for product recalls, ensuring end-to-end safety and compliance.
+All charities and community groups complete a thorough vetting process before being approved for surplus collections. This includes verification of their organisational status, confirmation of appropriate food handling procedures and assessment of their distribution capabilities. For food donations, organisations must provide current Food Hygiene Certification or FSA ratings. Our team also conducts periodic reviews to ensure ongoing compliance with food safety and redistribution guidelines.
+Neighbourly's surplus redistribution service helps businesses comply with evolving waste reduction regulations by prioritising redistribution over disposal, in line with the waste hierarchy principles mandated in many jurisdictions. Our platform provides the documentation and reporting needed to demonstrate compliance with food waste reduction targets and corporate social responsibility requirements. By tracking all donations, we help you quantify your waste diversion efforts for regulatory reporting.
+Our platform accommodates a wide range of surplus items including food such as fresh produce, bakery items, chilled and frozen foods, ambient goods and prepared meals; non-food items like toiletries, cleaning products, clothing, homewares, seasonal items, discontinued lines, and end-of-range stock; returned goods that are undamaged customer returns which cannot be resold; and products with packaging imperfections but remain safe and suitable for use.
+Benefits include waste reduction and associated cost savings on disposal, enhanced sustainability metrics and ESG reporting, reduced environmental impact and CO2 emissions, positive local community relationships and brand reputation, positive employee engagement, regulatory compliance with food waste hierarchies and reduction targets, and detailed reporting for internal and external stakeholders.
+Your reports include volume and value of products donated, carbon savings from avoided waste, number of beneficiaries supported, charity type breakdowns, store/location performance comparisons and SDG alignment and social impact metrics. Reports can be customised to your specific KPIs and are available at company, region or individual store/site level.
+Implementation timelines vary based on the size and complexity of operation. For single sites or small businesses, programmes can be set up within a few weeks. For larger retail or manufacturing operations with multiple sites, a phased roll-out typically takes a minimum of 2-3 months. Our team provides comprehensive onboarding, including staff training, system integration support and charity partner scheduling to ensure a smooth implementation process.
+word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word
+mmMwWLliI0fiflO&1
+mmMwWLliI0fiflO&1
+mmMwWLliI0fiflO&1
+mmMwWLliI0fiflO&1
+mmMwWLliI0fiflO&1
+mmMwWLliI0fiflO&1
+mmMwWLliI0fiflO&1
+
+Images: 5 image(s) available.

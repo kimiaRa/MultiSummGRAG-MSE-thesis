@@ -1,0 +1,6 @@
+city,1_raw_seed,2_cleaned,3_usable_coords,4_scraped_files,5_graphrag_docs,6_fsi_enriched,7_reported_fsi_total,pct_raw_to_cleaned,pct_cleaned_to_coords,pct_cleaned_to_scraped,pct_cleaned_to_graphrag,pct_cleaned_to_enriched,pct_end_to_end_raw_to_enriched,pct_end_to_end_raw_to_reported
+barcelona,261,237,237,912,196,237,237,90.8,100.0,384.8,82.7,100.0,90.8,90.8
+brighton,81,76,76,0,73,76,76,93.8,100.0,0.0,96.1,100.0,93.8,93.8
+dublin,83,69,69,0,58,69,69,83.1,100.0,0.0,84.1,100.0,83.1,83.1
+london,115,106,106,540,106,106,106,92.2,100.0,509.4,100.0,100.0,92.2,92.2
+milan,163,147,147,0,142,147,147,90.2,100.0,0.0,96.6,100.0,90.2,90.2

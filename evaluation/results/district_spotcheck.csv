@@ -1,0 +1,26 @@
+item_id,city,url,initiative_name,pipeline_lat,pipeline_lng,pipeline_district,address_on_page,district_from_address,MATCH,NOTE
+D01,barcelona,https://laescocesa.org/ca/programa/casa%20de%20llavors,The Scottish,41.41,2.2,Sant Martí,"Carrer Pere IV 345, 08020 Barcelona",Sant Martí,yes,district checked on google maps
+D02,barcelona,https://xarxalimentsgracia.wordpress.com/,Gracia Food Network,41.4,2.16,Gràcia,"C/ Quevedo 13-15, Barcelona","Gràcia
+",yes,district checked on google maps
+D03,barcelona,https://comtal.org/que-fem/que-fem/participacio-i-accio-comunitaria/benet-corner/,Benet Corner,41.39,2.17,Eixample,not found,not found,unclear,
+D04,brighton,https://fitzherbertcommunityhub.org.uk/,Fitzherbert Community Hub,50.8191905,-0.1256383,BN2,"Fitzherbert Community Hub
+2 Bristol Road
+Brighton
+East Sussex
+BN2 1AP",BN2,yes,district mentioned on address
+D05,brighton,https://mepbrighton.com/horticultural-skills,The MEP Community Garden,50.8225,-0.1372,BN2,not found,not found,unclear,
+D06,brighton,https://womenscentre.org.uk/bwcs-foodbank-moves-location,Brighton Women’s Centre’s foodbank,50.82,-0.13,BN2,"BWC (Brighton Women's Centre), Globe House, 3 Morley Street, Brighton, BN2 9RA",BN2,yes,district mentioned on address
+D07,dublin,https://dublinfood.coop/,Dublin Food Co-op,53.34,-6.24,Dublin 2,"Unit 1, Building 1, The Old Chocolate Factory, Kilmainham Square, Inchicore Rd, Kilmainham, Dublin 8, D08 Y447
+",Dublin 8,no,district mentioned on address
+D08,dublin,https://food.cloud/about,FoodCloud,53.34,-6.25,Dublin 2,"Unit 8 Broomhill Business Park,   Broomhill Road,Tallaght, Dublin 24 Ireland D24 CD32",Dublin 24,no,district mentioned on address
+D09,dublin,https://communityroots.ie/,Community Roots,53.3411249,-6.2545,Dublin 2,"Community Roots, Guinness Enterprise Centre, Taylor's Lane, Dublin 8, D08 ET2R",Dublin 8,no,district mentioned on address
+D10,london,https://www.thedoctorskitchen.com/podcasts/bonus-episode-why-community-kitchens-are-essential-with-sarah-bentley-from,not found,51.5074,-0.1278,Westminster,not found,not found,unclear,
+D11,london,https://www.growingkitchen.org,The Growing Kitchen,51.53,-0.09,Hackney,"
+The Growing Kitchen
+
+Community garden, allotment and nature reserve",Hackney,yes,
+D12,london,https://planzheroes.org,Plan Zheroes,51.5074,-0.1278,Westminster,not found,not found,unclear,
+D13,milan,https://www.operacardinalferrari.it/,Opera Cardinal Ferrari,45.44,9.18,Municipio 5,"Via GB Boeri 3
+20141 Milan",Municipio 5,yes,district found with google search
+D14,milan,https://www.eufemiaemporio.it/,Eufemia,45.52,9.17,Municipio 9," Via Scherillo 4, Milan ",Municipio 9,yes,district found with google search
+D15,milan,https://chiesaturrogorla.it/caritas,La Caritas della Parrocchia di S. Maria Assunta ,45.4642,9.19,Municipio 1,"Piazza Giacomo Anelli, 4, Milano",Municipio 2,no,district found on text in website

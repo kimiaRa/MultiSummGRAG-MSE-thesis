@@ -1,0 +1,6 @@
+city,n_geocoded_points,n_districts_in_geojson,n_distinct_districts_hit_recomputed,n_points_outside_all_districts,n_districts_in_final_report,matches_report
+barcelona,237,10,10,35,10,True
+brighton,76,30,3,0,3,True
+dublin,69,35,18,1,18,True
+london,106,33,22,9,22,True
+milan,147,9,9,12,9,True

@@ -1,0 +1,26 @@
+# Coronavirus. AMAT a sostegno del dispositivo di aiuto alimentare sviluppato da "Milano Aiuta" - Agenzia Mobilità Ambiente Territorio
+
+URL: https://www.amat-mi.it/it/notizie/27
+Location: Italy, Milan, Municipio 5
+Coordinates: 45.38, 9.15
+
+Type: food_bank
+Operational level: government_funded
+Popularity: high (score: 1)
+
+Description: AMAT, Agenzia Mobilità Ambiente e Territorio supporta il Comune di Milano nella gestione della logistica del piano straordinario di consegna degli aiuti alimentari a domicilio, promosso dalla rete
+
+Full text:
+15/04/2020
+AMAT, Agenzia Mobilità Ambiente e Territorio supporta il Comune di Milano nella gestione della logistica del piano straordinario di consegna degli aiuti alimentari a domicilio, promosso dalla rete "Milano Aiuta" che consta di centocinquanta persone, tra dipendenti comunali, operatori e volontari, operativi su otto hub temporanei di smistamento.
+AMAT ha sviluppato un progetto dedicato all’ottimizzazione della logistica per individuare i percorsi più efficienti per la consegna degli aiuti alimentari alle famiglie, fornendo in questo modo un sostegno tempestivo all’operatività del piano attivato dal Comune tramite la sinergia tra politiche sociali, food policy e protezione civile per portare gli aiuti alimentari a casa ai cittadini milanesi meno abbienti, più in difficoltà nell’emergenza Coronavirus.
+Il piano di consegne degli aiuti alimentari a domicilio del Comune raggiunge in questo momento quasi quattromila famiglie, pari a più di dodicimila persone. Le consegne vengono effettuate utilizzando venticinque pulmini prima utilizzati per il trasporto di persone con particolari esigenze di mobilità e ora adattati nell’allestimento per poter trasportare le spese.
+I piani logistici sono sviluppati da AMAT con l’ausilio di software e algoritmi di ottimizzazione, impiegando il grafo stradale OSM (Open Street Map) e rispettando i vincoli di approvvigionamento delle derrate alimentari degli hub, in modo da permettere di effettuare tutte le consegne e limitare al contempo percorrenze ed emissioni atmosferiche. Inoltre grazie ai bassi livelli di traffico veicolare di queste ultime settimane, i piani logistici vengono effettuati in modo più veloce ed efficiente.
+Ogni giorno dal centro logistico del Banco alimentare della Lombardia e della Croce Rossa di Milano vengono trasportati, tramite furgoncini coibentati, oltre una tonnellata di cibo per ogni hub. Seguendo il piano logistico delle consegne, in ogni hub, nel rispetto delle norme di sicurezza, pulizia, gestione e privacy, viene preparato un aiuto con generi alimentari di prima necessità per ogni famiglia in base alla sua numerosità.
+“Poter mettere a disposizione competenze tecniche molto specialistiche alle attività di alto valore sociale in atto da parte del Comune, ci riempie di soddisfazione – afferma Gloria Zavatta, Amministratore Unico AMAT - Con l’emergenza di oggi stiamo maturando esperienze che serviranno per favorire la transizione ambientale”.
+"Sono felice della squadra che AMAT ha messo in campo per supportare il sistema degli hub all'interno del Dispositivo Aiuto Alimentare – afferma Anna Scavuzzo, Vicesindaco di Milano delegata alla Food Policy - stiamo valorizzando molte competenze del Comune e delle sue partecipate per rendere sempre più efficiente la distribuzione dei pacchi viveri alle famiglie più fragili, particolarmente colpite dagli effetti dell'emergenza Covid19."
+“Milano Aiuta” è il messaggio di solidarietà che tende la mano a chi in questo momento è più fragile: pensionati, famiglie, studenti fuorisede e precari. Il progetto nasce dalla collaborazione tra l’Assessorato alle Politiche sociali e abitative, gli uffici della Food Policy e la Protezione Civile del Comune di Milano, Banco Alimentare della Lombardia, Caritas Ambrosiana, Croce Rossa Italiana-Comitato di Milano, Fondazione Cariplo, Fondazione Comunitaria di Milano, Programma QuBì - La ricetta contro la povertà infantile, Milano Ristorazione, SoGeMi e AMAT.
+Maggiori informazioni:
+http://www.foodpolicymilano.org/dispositivo-aiuto-alimentare/
+
+Images: 10 image(s) available.

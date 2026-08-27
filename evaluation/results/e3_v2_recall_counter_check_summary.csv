@@ -1,0 +1,4 @@
+city,n_eligible_old_e3_baseline_v1,n_eligible_baseline_v2,eligible_count_changed,n_raw_file_exists,n_captured_over_500_chars,pct_file_exists,pct_captured_over_500_chars,ci95_lower_pct,ci95_upper_pct
+barcelona,183,94,True,51.0,49,54.3,52.1,,
+london,24,27,True,19.0,17,70.4,63.0,,
+"ALL_POOLED (barcelona+london only, 2 clusters)",207,121,,,66,,54.5,52.1,63.0

@@ -1,0 +1,45 @@
+set,metric,group,n,d,value,note
+A,pipeline_derived_agreement,AUDITABLE_DERIVED,5,6,83.3,valid result -- only validly-annotated Set A subset
+A,pipeline_disagreement,A003,,,,city=dublin auto=AUDITABLE_DERIVED mine=UNCLEAR note=(no note)
+A,baseline_not_validly_annotated,A010,,,,city=london stratum=AUDITABLE_DERIVED first_pass_label=UNCLEAR redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A033,,,,city=brighton stratum=AUDITABLE_DERIVED first_pass_label=NOT_MACHINE_AUDITABLE redo_label=NOT_MACHINE_AUDITABLE reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A043,,,,city=barcelona stratum=AUDITABLE_DERIVED first_pass_label=NOT_MACHINE_AUDITABLE redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A045,,,,city=london stratum=AUDITABLE_DERIVED first_pass_label=NOT_MACHINE_AUDITABLE redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A007,,,,city=milan stratum=AUDITABLE_DIRECT first_pass_label=NOT_MACHINE_AUDITABLE redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A019,,,,city=brighton stratum=AUDITABLE_DIRECT first_pass_label=NOT_MACHINE_AUDITABLE redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A028,,,,city=dublin stratum=AUDITABLE_DIRECT first_pass_label=UNCLEAR redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A034,,,,city=milan stratum=AUDITABLE_DIRECT first_pass_label=UNCLEAR redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A005,,,,city=brighton stratum=NOT_MACHINE_AUDITABLE first_pass_label=NOT_MACHINE_AUDITABLE redo_label=NOT_MACHINE_AUDITABLE reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A011,,,,city=london stratum=NOT_MACHINE_AUDITABLE first_pass_label=NOT_MACHINE_AUDITABLE redo_label=NOT_MACHINE_AUDITABLE reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A022,,,,city=barcelona stratum=NOT_MACHINE_AUDITABLE first_pass_label=UNCLEAR redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A024,,,,city=milan stratum=NOT_MACHINE_AUDITABLE first_pass_label=UNCLEAR redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A035,,,,city=barcelona stratum=NOT_MACHINE_AUDITABLE first_pass_label=UNCLEAR redo_label=UNCLEAR reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,baseline_not_validly_annotated,A036,,,,city=milan stratum=NOT_MACHINE_AUDITABLE first_pass_label=NOT_MACHINE_AUDITABLE redo_label=NOT_MACHINE_AUDITABLE reason=evidence_base(screening_ledger)_never_shown_to_annotator
+A,stratum_agreement_first_pass_SUPERSEDED,AUDITABLE_DIRECT,0,4,0.0,SUPERSEDED -- baseline rows in this stratum were scored against an evidence-base description (facts_<city>.json) the annotator was wrongly pointed at; not the ledger. Do not cite.
+A,stratum_agreement_second_pass_SUPERSEDED,AUDITABLE_DIRECT,0,4,0.0,SUPERSEDED -- baseline rows in this stratum were re-annotated against a redo file whose ledger evidence_base column was never shown in the annotation interface; annotator still could not see it. Do not cite.
+A,stratum_agreement_first_pass_SUPERSEDED,AUDITABLE_DERIVED,5,10,50.0,SUPERSEDED -- baseline rows in this stratum were scored against an evidence-base description (facts_<city>.json) the annotator was wrongly pointed at; not the ledger. Do not cite.
+A,stratum_agreement_second_pass_SUPERSEDED,AUDITABLE_DERIVED,5,10,50.0,SUPERSEDED -- baseline rows in this stratum were re-annotated against a redo file whose ledger evidence_base column was never shown in the annotation interface; annotator still could not see it. Do not cite.
+A,stratum_agreement_first_pass_SUPERSEDED,NOT_MACHINE_AUDITABLE,3,6,50.0,SUPERSEDED -- baseline rows in this stratum were scored against an evidence-base description (facts_<city>.json) the annotator was wrongly pointed at; not the ledger. Do not cite.
+A,stratum_agreement_second_pass_SUPERSEDED,NOT_MACHINE_AUDITABLE,3,6,50.0,SUPERSEDED -- baseline rows in this stratum were re-annotated against a redo file whose ledger evidence_base column was never shown in the annotation interface; annotator still could not see it. Do not cite.
+B,n_included,,35,40,,
+B,excluded_count,UNREACHABLE_NOW,3,40,,
+B,excluded_count,UNCLEAR,2,40,,
+B,confusion_cell,mine=Retained|ledger=Retained,14,35,,
+B,confusion_cell,mine=Retained|ledger=Discarded,7,35,,
+B,confusion_cell,mine=Discarded|ledger=Retained,4,35,,
+B,confusion_cell,mine=Discarded|ledger=Discarded,10,35,,
+B,raw_agreement,,24,35,0.6857,
+B,cohens_kappa,,,,0.3678,
+B,directionality,mine_retained_ledger_discarded,7,35,,
+B,directionality,mine_discarded_ledger_retained,4,35,,
+B,per_city_agreement,barcelona,5,7,71.4,
+B,per_city_agreement,brighton,6,7,85.7,
+B,per_city_agreement,dublin,4,6,66.7,
+B,per_city_agreement,london,5,8,62.5,
+B,per_city_agreement,milan,4,7,57.1,
+C,label_count,CORRECT_SLOT,25,25,,
+C,label_count,WRONG_SLOT,0,25,,
+C,label_count,UNCLEAR,0,25,,
+C,misattribution_rate,,0,25,0.0,"95% CI [0.0000, 0.1372]"
+C,wrong_slot_by_candidates,1,0,11,0.0,
+C,wrong_slot_by_candidates,>1,0,14,0.0,

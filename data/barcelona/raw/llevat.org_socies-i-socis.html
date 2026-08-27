@@ -1,0 +1,453 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",e=>{this.persisted=e.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(e){if(document.hidden){e._triggerListener();return}this.triggerEvents.forEach(t=>window.addEventListener(t,e.userEventHandler,{passive:!0})),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(e=>window.removeEventListener(e,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(e=>{this._isClickPending?this._pendingClickFinished=e:e()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(e,t,i){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(i,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{if(t.hasAttribute("src")){let i=new URL(t.src).origin;i!==location.origin&&e.push({src:i,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}}),e=[...new Map(e.map(e=>[JSON.stringify(e),e])).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){console.error(e)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{e.hasAttribute("data-rocket-src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)})}async _transformScript(e){return await this._littleBreath(),new Promise(t=>{function i(){e.setAttribute("data-rocket-status","executed"),t()}function r(){e.setAttribute("data-rocket-status","failed"),t()}try{let n=e.getAttribute("data-rocket-type"),s=e.getAttribute("data-rocket-src");if(n?(e.type=n,e.removeAttribute("data-rocket-type")):e.removeAttribute("type"),e.addEventListener("load",i),e.addEventListener("error",r),s)e.src=s,e.removeAttribute("data-rocket-src");else if(navigator.userAgent.indexOf("Firefox/")>0){var a=document.createElement("script");[...e.attributes].forEach(e=>{"type"!==e.nodeName&&a.setAttribute("data-rocket-type"===e.nodeName?"type":e.nodeName,e.nodeValue)}),a.text=e.text,e.parentNode.replaceChild(a,e),i()}else e.src="data:text/javascript;base64,"+btoa(e.text)}catch(o){r()}})}async _loadScriptsFromList(e){let t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var i=document.createDocumentFragment();e.forEach(e=>{let r=e.getAttribute&&e.getAttribute("data-rocket-src")||e.src;if(r){let n=document.createElement("link");n.href=r,n.rel=t,"preconnect"!==t&&(n.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),e.crossOrigin&&(n.crossOrigin=e.crossOrigin),e.integrity&&(n.integrity=e.integrity),i.appendChild(n),this.trash.push(n)}}),document.head.appendChild(i)}_delayEventListeners(e){let t={};function i(e,i){!function e(i){!t[i]&&(t[i]={originalFunctions:{add:i.addEventListener,remove:i.removeEventListener},eventsToRewrite:[]},i.addEventListener=function(){arguments[0]=r(arguments[0]),t[i].originalFunctions.add.apply(i,arguments)},i.removeEventListener=function(){arguments[0]=r(arguments[0]),t[i].originalFunctions.remove.apply(i,arguments)});function r(e){return t[i].eventsToRewrite.indexOf(e)>=0?"rocket-"+e:e}}(e),t[e].eventsToRewrite.push(i)}function r(e,t){let i=e[t];Object.defineProperty(e,t,{get:()=>i||function(){},set(r){e["rocket"+t]=i=r}})}i(document,"DOMContentLoaded"),i(window,"DOMContentLoaded"),i(window,"load"),i(window,"pageshow"),i(document,"readystatechange"),r(document,"onreadystatechange"),r(window,"onload"),r(window,"onpageshow"),Object.defineProperty(document,"readyState",{get:()=>e.rocketReadyState,set(t){e.rocketReadyState=t}}),document.readyState="loading"}_delayJQueryReady(e){let t;function i(i){if(i&&i.fn&&!e.allJQueries.includes(i)){i.fn.ready=i.fn.init.prototype.ready=function(t){return e.domReadyFired?t.bind(document)(i):document.addEventListener("rocket-DOMContentLoaded",()=>t.bind(document)(i)),i([])};let r=i.fn.on;i.fn.on=i.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map(e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]})}return r.apply(this,arguments),this},e.allJQueries.push(i)}t=i}i(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>t,set(e){i(e)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,document.readyState="interactive",await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){document.readyState="complete",await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(e=>e(window).trigger("rocket-jquery-load")),await this._littleBreath();let e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let e=new Map;document.write=document.writeln=function(t){let i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+t);let r=document.createRange(),n=i.parentElement,s=e.get(i);void 0===s&&(s=i.nextSibling,e.set(i,s));let a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(e=>setTimeout(e)):new Promise(e=>requestAnimationFrame(e))}_emptyTrash(){this.trash.forEach(e=>e.remove())}static run(){let e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Fes-te'n soci/sòcia! - El Llevat</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&amp;display=swap" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&#038;display=swap" /></noscript>
+		
+	<!-- This site is optimized with the Yoast SEO plugin v15.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Participa d'un consum responsable i amb consciència mediambiental fent-te soci/sòcia de l'associació El Llevat.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://llevat.org/socies-i-socis/">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Fes-te'n soci/sòcia! - El Llevat">
+	<meta property="og:description" content="Participa d'un consum responsable i amb consciència mediambiental fent-te soci/sòcia de l'associació El Llevat.">
+	<meta property="og:url" content="https://llevat.org/socies-i-socis/">
+	<meta property="og:site_name" content="El Llevat">
+	<meta property="article:modified_time" content="2024-05-15T14:20:30+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Tiempo de lectura">
+	<meta name="twitter:data1" content="1 minuto">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+
+<link rel="stylesheet" id="bootstrap-css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css?ver=5.6.17" type="text/css" media="all">
+
+<link rel="stylesheet" id="font-awesome-css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css?ver=5.6.17" type="text/css" media="all">
+<link rel="stylesheet" id="labstrap-style-css" href="https://llevat.org/wp-content/themes/labstrap/style.css?ver=5.6.17" type="text/css" media="all">
+<link rel="stylesheet" id="labstrap-child-style-css" href="https://llevat.org/wp-content/themes/labstrap-child/style.css?ver=1.0.0" type="text/css" media="all">
+<link rel="shortlink" href="https://llevat.org/?p=305">
+	</head>
+	<body class="page-template-default page page-id-305 page-parent">
+		<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3">
+			<div class="container">
+				<a class="navbar-brand" href="https://llevat.org/">
+					
+															<img class="brand mr-1" src="https://llevat.org/wp-content/uploads/2020/11/llevat-logotip-150x150-1.jpg" alt="">
+															
+				</a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto"><li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6"><a title="Inici" href="https://llevat.org/">Inici</a></li>
+<li id="menu-item-723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-723 dropdown"><a title="Sobre nosaltres" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Sobre nosaltres <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a title="El Llevat" href="https://llevat.org/sobre-nosaltres/">El Llevat</a></li>
+	<li id="menu-item-724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724"><a title="Transparència" href="https://llevat.org/transparencia/">Transparència</a></li>
+	<li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a title="Projectes" href="https://llevat.org/projectes/">Projectes</a></li>
+</ul>
+</li>
+<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a title="Els nostres productes" href="https://llevat.org/els-nostres-productes/">Els nostres productes</a></li>
+<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-305 current_page_item menu-item-307 active"><a title="Fes-te’n soci/sòcia!" href="https://llevat.org/socies-i-socis/">Fes-te’n soci/sòcia!</a></li>
+<li id="menu-item-909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-909"><a title="Campanya #9BarrisEcològic" href="https://llevat.org/socies-i-socis/engeguem-la-campanya-9barrisecologic/">Campanya #9BarrisEcològic</a></li>
+<li id="menu-item-800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800"><a title="Receptes" href="https://llevat.org/receptes-de-cuina/">Receptes</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a title="Contacte" href="https://llevat.org/contacte/">Contacte</a></li>
+</ul></div>			</div>
+		
+	</nav>
+<header>
+
+
+
+<div class="container">
+
+
+	
+
+<div class="d-md-flex align-items-center flex-md-row">
+	
+
+
+
+
+
+<div class="col-md-4 offset-md-0">
+
+<h1 class="title mb-4">Fes-te’n soci/sòcia!</h1>
+<h6 class="text-primary introheader mb-3">Prova un mes sense compromís</h6>
+<p>Participa d’un consum responsable, crític, amb criteris socials i laborals dignes i amb consciència mediambiental fent-te soci/sòcia de l’associació (en tràmits d’esdevenir cooperativa) El Llevat. Rebràs cada setmana un full de comanda en excel amb una varietat de <strong>fins a 400 productes de temporada</strong>, des de fruites i verdures, fins a detergents i productes de cura corporal, carns o plats preparats com croquetes o canelons. Si vols fer comanda, afegeix la quantitat de cada producte que vols al full, on podràs veure el total, ho rebràs a domicili el que has demanat, i podràs pagar per transferència bancària. Recorda que no és necessari demanar cada setmana.</p>
+<p>Tasta els productes de l’associació durant <strong>un mes sense compromís</strong>. Ja no podràs tornar a consumir d’una altra manera!</p>
+<p><a class="btn btn-primary mt-4" href="http://llevat.org/socies-i-socis/#p305s4">Vull provar-ho!</a></p>
+</div>
+
+
+ 
+
+
+<div class="col-md-8">
+
+<img src="https://llevat.org/wp-content/uploads/2020/11/muntatge-full-comanda.png">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</header>
+
+
+<!-- #5 Items (Items) -->
+
+
+<section id="p305s1" class="p305s1 s1  items">
+	<div class="container">
+				<h6 class="introheader">Abans pots provar els productes sense associar-te!</h6>
+						<h3>Fer-se soci de El Llevat és molt fàcil, són només <span class="text-primary">2 passos</span></h3>
+				
+						
+
+
+				<div class="row mt-5 d-md-flex align-items-md-stretch">
+												
+			<div class="col-lg-4 col-md-6 item">
+									<!-- Imagen -->
+										
+										<img src="https://llevat.org/wp-content/uploads/2020/11/icono-1.png" alt="">
+															<!-- FINAL Imagen -->
+																													<h3>Aportes un capital de 30€ al projecte</h3>
+												
+												<p>Com a qualsevol associació o cooperativa, fas una aportació inicial al capital social, en aquest cas de 30€, que se't retornarà si un dia decideixes marxar.</p>
+																</div>
+							
+			<div class="col-lg-4 col-md-6 item">
+									<!-- Imagen -->
+										
+										<img src="https://llevat.org/wp-content/uploads/2020/11/icono-2.png" alt="">
+															<!-- FINAL Imagen -->
+																													<h3>Fes les comandes que vulguis</h3>
+												
+												<p>Un dels serveis que podràs gaudir és rebre cada divendres la fulla de productes disponibles per poder comprar els productes de l'associació.</p>
+																</div>
+							
+			<div class="col-lg-4 col-md-6 item">
+									<!-- Imagen -->
+										<!-- FINAL Imagen -->
+																													
+																</div>
+											</div>
+			
+
+
+
+<div class="text-center mt-5">
+	
+	<a href="http://llevat.org/socies-i-socis/#p305s4" class="btn btn-lg btn-primary">Pots provar de franc!</a>
+</div>
+
+
+
+
+		</div>
+	</section>
+
+<!-- #5 Items (Items) -->
+
+
+<section id="p305s2" class="p305s2 s2  items">
+	<div class="container">
+						<h3>Què ens diferencia a El Llevat?</h3>
+				
+						
+
+
+				<div class="row mt-5 d-md-flex align-items-md-stretch">
+												
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-carrot"></i></h4>
+																														<h3>Gran varietat de productes</h3>
+												
+												<p>Actualment la major part de cooperatives de consum es centren en la producció i distribució de fruites i verdures. A El Llevat disposem d'un full de comanda de centenars productes per a un canvi substancial de patrons de consum, <strong>des de fruites i verdures fins a detergents</strong>, passant per carns, o precuinats, així com productes de comerç just.</p>
+												</div></div>				</div>
+							
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-seedling"></i></h4>
+																														<h3>Ecològic i de proximitat</h3>
+												
+												<p>Tot i que cada cop van més de la mà, no tots els productes de proximitat són ecològics ni tots els productes ecològics són de proximitat. A El Llevat <strong>apostem per aquests dos models de consum alhora</strong>, ja que conjuguen el respecte pel medi ambient, la preservació del territori, el valor nutricional i el sabor del menjar i el suport a l'economia local.
+</p>
+												</div></div>				</div>
+							
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-house-user"></i></h4>
+																														<h3>Distribució a domicili</h3>
+												
+												<p>A diferència d'altres associacions, El Llevat ofereix un servei de distribució a domicili setmanal de les comandes que fan les sòcies, 
+oferint una <strong>major comoditat</strong> i evitant desplaçaments innecesari. Només has de triar l'hora que millor et vagi i t'ho portarem a casa.</p>
+												</div></div>				</div>
+							
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-shopping-basket"></i></h4>
+																														<h3>Compres quan vols i el que vols</h3>
+												
+												<p>Essent soci/sòcia de El Llevat, cada setmana rebràs el teu full de comanda en excel a on hi tindràs indicades totes les novetats de temporada.  Podràs <strong>demanar tot el que vulguis</strong> i veuràs el total. Tot i així, no tindràs cap obligació de fer comanda totes les setmanes. Ens adaptem en tot moment a les teves necessitats.</p>
+												</div></div>				</div>
+											</div>
+			
+
+
+
+<div class="text-center mt-5">
+	
+	<a href="http://llevat.org/els-nostres-productes/" class="btn btn-lg btn-primary">Els nostres productes</a>
+</div>
+
+
+
+
+		</div>
+	</section>
+
+<!-- #3 Full Width (full_width) -->
+
+<section id="p305s3" class="p305s3 s3  full_width  " style=" ">
+
+<div class="container">
+<div class="d-md-flex align-items-center flex-md-row row">
+	
+	<div class="col-md-8 offset-md-2">
+		
+				<h3 class="mb-3">
+		Quines activitats podràs fer com a sòcia?		</h3>
+		<p>
+			Per tal d’apropar a les consumidores tot allò que no es veu del que posem a taula i, alhora, enfortir el lligam entre les sòcies, organitzem diferents activitats, com per exemple:
+</p><ul class="list-unstyled">
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Poder fer comandes dels nostres productes ecològics, de proximitat i/o de comerç just</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Visites a productors/es locals</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Sortides per conèixer el dia a dia de les nostres pageses</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Participar en l’Assemblea General de Sòcies</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Projectes dels horts urbans i escoles</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Tast de vins o cerveses</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Calçotada</li>
+<li class="mb-2"><i class="far fa-check-square text-primary mr-2"></i> Xerrades sobre diferents aspectes de la sobirania alimentària.</li>
+</ul>		<p></p>
+		
+		
+	</div>
+</div>	
+</div>
+</section><section id="p305s4" class="p305s4 s4  codigo">
+
+		<div class="container">
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			<h5 class="mb-3 introheader">Forma part d'un canvi d'hàbits de consum</h5>
+          <h3 class="mb-3">Fes-te soci/sòcia de l'<span class="text-primary">associació de consum</span> del teu barri</h3>
+			<div class="row">
+				<div class="col-lg-4">
+					<h6 class="mt-3"><span class="font-weight-bold text-primary">1.</span> T'enviarem el full de comanda de la setmana</h6>
+					<p class="small" style="line-height: 1.3rem;">Cada setmana tindràs productes diferents segons temporada, que podràs rebre a domicili o recollir a un dels nuclis del barri, i pagar per transferència bancària.</p>
+				</div>
+				<div class="col-lg-4">
+					<h6 class="mt-3"><span class="font-weight-bold text-primary">2.</span> Si et convenç, et dónes d'alta com a soci/sòcia</h6>
+					<p class="small" style="line-height: 1.3rem;">Com a qualsevol associació, hauràs de fer una aportació inicial al capital social, en aquest cas de 30€, que se't retornarà si algun dia en vols marxar.</p>
+				</div>
+				<div class="col-lg-4">
+					<h6 class="mt-3"><span class="font-weight-bold text-primary">3.</span> Pagaràs una quota semestral</h6>
+					<p class="small" style="line-height: 1.3rem;">Amb l'alta hauràs de facilitar el teu compte per domiciliar el pagament de 36€ cada 6 mesos i podràs gaudir de tots els serveis de l'associació.</p>
+				</div>
+			</div>
+			
+		<form accept-charset="UTF-8" action="https://www.formbackend.com/f/d47f52b0d0e11b0f" method="POST">				<div class="form-group mt-4">
+					<label>Nom i cognoms</label>
+					<input type="text" class="form-control" name="Nom" id="Nom" required=""></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" class="form-control" name="Email" id="Email" required=""></div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Telèfon </label>
+									<input type="text" class="form-control" name="Telèfon" id="Telèfon"></div>
+								</div>
+							</div>
+							<div class="form-check mt-3">
+								<input class="form-check-input" type="radio" name="soci/socia" id="exampleRadios1" value="option1" checked="">
+								<label class="form-check-label small" for="exampleRadios1">
+									Em vull fer soci/sòcia de El Llevat 
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="soci/socia" id="exampleRadios2" value="option2">
+								<label class="form-check-label small" for="exampleRadios2">
+									No tinc clar si em vull associar, vull poder comprar productes durant un mes per decidir-me
+								</label>
+							</div>
+							<div class="form-group mt-3">
+								<div class="form-group">
+									<label for="Missatge">Missatge</label>
+									<textarea class="form-control" id="Missatge" rows="3" name="Missatge"></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck" name="Política de privacitat">
+									<label class="form-check-label" for="gridCheck">
+										He llegit i accepto la <span class="text-primary"><a href="http://www.llevat.org/politica-de-galetes/">política de privacitat</a></span>
+									</label>
+								</div>
+							</div>
+							<div class="text-center text-md-left">
+								<button type="submit" class="btn btn-success mt-3"><i class="fa fa-envelope mr-2"></i> Enviar</button>
+								
+								
+								
+							</div>
+         <h6 class="mt-4">O truca'ns al <a onclick="return gtag_report_conversion('tel:+34676057072');" href="tel:+34676057072">+34 676 057 072</a></h6>
+						</form>
+					</div>
+				</div>
+			</div>	
+</section>
+
+
+
+
+
+<footer class="pt-4 pt-md-5 pb-4 pb-md-5 border-top" style="background-color: var(--primary); color: #fff!important;">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mb-3">Sobre El Llevat</h5>
+        <p class="small">Som una associació de consum agroecològic de proximitat que té per objectiu apropar a la població de Barcelona productes ecològics, de comerç just i de proximitat, entre d'altres.</p>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://llevat.org/sobre-nosaltres/">Sobre la cooperativa</a></li>
+          <li class="mb-1"><a href="https://llevat.org/socies-i-socis/">Transparència</a></li>
+          <li class="mb-1"><a href="https://llevat.org/socies-i-socis/">Política de privacitat</a></li>
+          <li class="mb-4"><a href="https://llevat.org/socies-i-socis/">Avís legal i política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Membres de El Llevat</h5>
+       <p class="small">Tasta els productes de l'associació durant un mes sense compromís, i si t'agrada, t'hi associes. Ja no podràs tornar a consumir d’una altra manera!</p>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://llevat.org/socies-i-socis/">Prova un mes sense compromís!</a></li>
+          <li class="mb-1"><a href="https://llevat.org/els-nostres-productes/">Els nostres productes</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Contacta'ns!</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-1">Miguel Hernandez 6, Local 2</li>
+          <li class="mb-1">Canyelles, Nou Barris (08042 Barcelona)</li>
+          <li class="mb-1">Telèfon <a onclick="return gtag_report_conversion('tel:+34676057072');" href="tel:+34676057072">+34 676 057 072</a></li>
+        </ul>
+        <p class="mb-0"><strong><a href="mailto:info@llevat.org">info@llevat.org</a></strong></p>
+      </div>
+    </div>
+<hr>
+
+        <div class="row">
+          <div class="col-5 col-md">
+            <small class="d-block mb-3 text-light">© El Llevat - 2026</small>
+          </div>
+           <div class="col-7 col-md text-md-right">
+			<img src="image002" style="width: 309px; height: 67px" alt="Ajuntament de Barcelona: Economia cooperativa, social i solidaria i consum">
+          </div>
+
+        </div>
+        </div>
+  
+      </footer>
+<script type="rocketlazyloadscript" data-rocket-src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+ <script type="rocketlazyloadscript" data-rocket-src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="rocketlazyloadscript">
+var el = document.querySelector('.navbar-toggler');
+var menu = document.querySelector('#navbarCollapse');
+el.onclick = function() {
+menu.classList.toggle('show');
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 460646320 -->
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-460646320"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-460646320');
+</script>
+
+  
+
+<!-- Event snippet for Trucada conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script type="rocketlazyloadscript">
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-460646320/7wwZCLeDn-4BELDP09sB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+<!-- Facebook Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1044199606093230');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1044199606093230&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+</body></html>

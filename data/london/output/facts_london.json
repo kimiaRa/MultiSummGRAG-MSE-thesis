@@ -1,0 +1,111 @@
+{
+  "total": 106,
+  "approx_coord_count": 0,
+  "approx_coord_pct": 0.0,
+  "district_count": 22,
+  "district_counts": {
+    "Westminster": 33,
+    "Tower Hamlets": 10,
+    "Lambeth": 7,
+    "Hackney": 6,
+    "Kensington and Chelsea": 5,
+    "Camden": 5,
+    "Southwark": 5,
+    "Islington": 4,
+    "Haringey": 3,
+    "City of London": 3,
+    "Waltham Forest": 2,
+    "Merton": 2,
+    "Brent": 2,
+    "Lewisham": 1,
+    "Barnet": 1,
+    "Sutton": 1,
+    "Wandsworth": 1,
+    "Hammersmith and Fulham": 1,
+    "Newham": 1,
+    "Redbridge": 1,
+    "Enfield": 1,
+    "Ealing": 1
+  },
+  "top_districts": [
+    [
+      "Westminster",
+      33
+    ],
+    [
+      "Tower Hamlets",
+      10
+    ],
+    [
+      "Lambeth",
+      7
+    ]
+  ],
+  "sparse_districts": [
+    "Lewisham",
+    "Barnet",
+    "Sutton"
+  ],
+  "type_counts": {
+    "unknown": 22,
+    "community_garden": 18,
+    "food_bank": 17,
+    "food_sharing": 12,
+    "other": 11,
+    "meals_service": 8,
+    "food_education": 7,
+    "food_gifting": 6,
+    "food_swapping": 5
+  },
+  "type_pct": {
+    "unknown": 20.8,
+    "community_garden": 17.0,
+    "food_bank": 16.0,
+    "food_sharing": 11.3,
+    "other": 10.4,
+    "meals_service": 7.5,
+    "food_education": 6.6,
+    "food_gifting": 5.7,
+    "food_swapping": 4.7
+  },
+  "level_counts": {
+    "community_led": 43,
+    "unknown": 35,
+    "ngo_led": 17,
+    "government_funded": 5,
+    "council_supported": 4,
+    "commercial": 2
+  },
+  "n_govt": 5,
+  "n_council": 4,
+  "n_ngo": 17,
+  "n_community": 43,
+  "n_commercial": 2,
+  "n_volunteer": 39,
+  "n_coop": 18,
+  "n_crowdfund": 33,
+  "n_ngo_formal": 26,
+  "n_informal": 28,
+  "n_network": 15,
+  "pop_counts": {
+    "medium": 46,
+    "high": 27,
+    "low": 33
+  },
+  "total_volume": 14896,
+  "max_volume": 9000,
+  "n_online": 45,
+  "n_physical": 52,
+  "n_hours_listed": 16,
+  "audience_counts": {
+    "low-income": 27,
+    "students": 29,
+    "general": 72,
+    "elderly": 62,
+    "children": 25
+  },
+  "n_sustainability": 56,
+  "n_collab": 63,
+  "n_education": 52,
+  "n_events": 63
+}

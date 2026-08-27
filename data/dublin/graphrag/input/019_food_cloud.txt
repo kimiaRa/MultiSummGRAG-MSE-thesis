@@ -1,0 +1,18 @@
+# About us
+
+URL: https://food.cloud/about
+Location: Ireland, Dublin, Dublin 2
+Coordinates: 53.34, -6.25
+
+Type: food_sharing
+Operational level: community_led
+Popularity: low (score: 0)
+
+Description: What started in Dublin has become a global movement, powered by local people and partners who choose to work together to build stronger, healthier communities by ensuring food is shared, not wasted.
+
+Full text:
+It started with a conversation.
+At an Enactus event in Trinity College Dublin, a group of students first began exploring a simple but powerful question: how can good food go to waste when people in our communities are going hungry?
+That early idea was soon carried forward by Iseult Ward and Aoibheann O’Brien, who turned it into action. By June, this idea becomes reality when surplus food from the Honest 2 Goodness farmers market in Glasnevin is donated to Don Bosco Teenage Care. One thing quickly becomes clear - to scale this solution, technology has to be the engine.
+
+Images: 10 image(s) available.

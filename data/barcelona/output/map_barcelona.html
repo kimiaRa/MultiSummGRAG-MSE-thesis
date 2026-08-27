@@ -1,0 +1,4239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0d5385fe53c31262d030792debd9a02 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:1000;background:white;
+                padding:12px 16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.2);
+                font-family:sans-serif;font-size:12px">
+      <b>FSI Type</b><br>
+    <span style="background:#e74c3c;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Food Sharing<br><span style="background:#e67e22;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Food Swapping<br><span style="background:#f1c40f;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Food Gifting<br><span style="background:#2ecc71;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Community Garden<br><span style="background:#3498db;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Food Bank<br><span style="background:#9b59b6;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Meals Service<br><span style="background:#1abc9c;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Food Education<br><span style="background:#95a5a6;display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px"></span>Other<br></div>
+    
+            <div class="folium-map" id="map_e0d5385fe53c31262d030792debd9a02" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e0d5385fe53c31262d030792debd9a02 = L.map(
+                "map_e0d5385fe53c31262d030792debd9a02",
+                {
+                    center: [41.39623284050632, 2.1565945810126586],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85af66855992320b8eeeb3cd0adc5ce7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_85af66855992320b8eeeb3cd0adc5ce7.addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var rectangle_02be2132532cfb55f466b0ed2270e282 = L.rectangle(
+                [[41.376, 2.165], [41.392, 2.185]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_02be2132532cfb55f466b0ed2270e282.bindTooltip(
+                `<div>
+                     Ciutat Vella
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d986ec1bc170de9ec9489f40ef3efc27 = L.marker(
+                [41.384, 2.175],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_5dcd1bb2c88e127950cae0b863b7855d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eCiutat Vella\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_d986ec1bc170de9ec9489f40ef3efc27.setIcon(div_icon_5dcd1bb2c88e127950cae0b863b7855d);
+            
+    
+            var rectangle_f8d2746801a41b338c27e37c4482ba0a = L.rectangle(
+                [[41.382, 2.143], [41.41, 2.185]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_f8d2746801a41b338c27e37c4482ba0a.bindTooltip(
+                `<div>
+                     Eixample
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5c0b66c8edf1a100b548bcc4ef627da9 = L.marker(
+                [41.396, 2.1639999999999997],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_bb2d6ad35046abf97925668c4e5cede7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eEixample\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_5c0b66c8edf1a100b548bcc4ef627da9.setIcon(div_icon_bb2d6ad35046abf97925668c4e5cede7);
+            
+    
+            var rectangle_804f0ad3ec6f16bc664e9790d7fecb0e = L.rectangle(
+                [[41.352, 2.12], [41.39, 2.175]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_804f0ad3ec6f16bc664e9790d7fecb0e.bindTooltip(
+                `<div>
+                     Sants-Montjuic
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52d78ad0e4a7479a55477cd1176bdf43 = L.marker(
+                [41.370999999999995, 2.1475],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_4dc701c40fac176e1c5e2af0910d18b8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eSants-Montjuic\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_52d78ad0e4a7479a55477cd1176bdf43.setIcon(div_icon_4dc701c40fac176e1c5e2af0910d18b8);
+            
+    
+            var rectangle_192b1471352f766bbcee9b7f7e1f244f = L.rectangle(
+                [[41.38, 2.105], [41.405, 2.145]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_192b1471352f766bbcee9b7f7e1f244f.bindTooltip(
+                `<div>
+                     Les Corts
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_411dab31b620ff9e58b2f0235c1e61a9 = L.marker(
+                [41.3925, 2.125],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_ea30532b4d2a58291d5233817dfedaff = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eLes Corts\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_411dab31b620ff9e58b2f0235c1e61a9.setIcon(div_icon_ea30532b4d2a58291d5233817dfedaff);
+            
+    
+            var rectangle_76f1e53bfd0795ca429f9b9e8d4cd8b0 = L.rectangle(
+                [[41.39, 2.085], [41.445, 2.155]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_76f1e53bfd0795ca429f9b9e8d4cd8b0.bindTooltip(
+                `<div>
+                     Sarria-Sant Gervasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30d8ba864a2d98b06eef1d05195ad71a = L.marker(
+                [41.417500000000004, 2.12],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_1405c1ef4db6b1ceb953bd2086defdf3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eSarria-Sant Gervasi\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_30d8ba864a2d98b06eef1d05195ad71a.setIcon(div_icon_1405c1ef4db6b1ceb953bd2086defdf3);
+            
+    
+            var rectangle_80d93a438914397da77afaa18b0b1357 = L.rectangle(
+                [[41.4, 2.145], [41.425, 2.18]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_80d93a438914397da77afaa18b0b1357.bindTooltip(
+                `<div>
+                     Gracia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c36b6ab0804d8e413848bef5f3736b3b = L.marker(
+                [41.412499999999994, 2.1625],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_6c398a42b04e854bae00a379a18cedd1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eGracia\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_c36b6ab0804d8e413848bef5f3736b3b.setIcon(div_icon_6c398a42b04e854bae00a379a18cedd1);
+            
+    
+            var rectangle_bdc239c63baf774ee6987fd6ed03e5e6 = L.rectangle(
+                [[41.415, 2.145], [41.455, 2.2]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_bdc239c63baf774ee6987fd6ed03e5e6.bindTooltip(
+                `<div>
+                     Horta-Guinardo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d2d159b2f51a24e3a6afe9fb916d4dd = L.marker(
+                [41.435, 2.1725000000000003],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_9f5f456720d727964f285bd60feda019 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eHorta-Guinardo\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_1d2d159b2f51a24e3a6afe9fb916d4dd.setIcon(div_icon_9f5f456720d727964f285bd60feda019);
+            
+    
+            var rectangle_e395469b41d1e4df8256308ee57eaf39 = L.rectangle(
+                [[41.43, 2.16], [41.475, 2.205]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_e395469b41d1e4df8256308ee57eaf39.bindTooltip(
+                `<div>
+                     Nou Barris
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a924bf81659877b163150feed1c75f4 = L.marker(
+                [41.4525, 2.1825],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_dafe8f643e3ada8c2bea5ea113a7c389 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eNou Barris\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_9a924bf81659877b163150feed1c75f4.setIcon(div_icon_dafe8f643e3ada8c2bea5ea113a7c389);
+            
+    
+            var rectangle_4bc17c231c05d36d4d0c3164fea0fe1f = L.rectangle(
+                [[41.42, 2.175], [41.455, 2.215]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_4bc17c231c05d36d4d0c3164fea0fe1f.bindTooltip(
+                `<div>
+                     Sant Andreu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f89c8b16a26ee20b0926759c5d70200e = L.marker(
+                [41.4375, 2.195],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_6adbef70e8f5954cef5dc1b9f130ac7c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eSant Andreu\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_f89c8b16a26ee20b0926759c5d70200e.setIcon(div_icon_6adbef70e8f5954cef5dc1b9f130ac7c);
+            
+    
+            var rectangle_ff834f427bb4c7069956f090ee9982ea = L.rectangle(
+                [[41.385, 2.175], [41.43, 2.225]],
+                {"bubblingMouseEvents": true, "color": "#2c3e50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf0f1", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            rectangle_ff834f427bb4c7069956f090ee9982ea.bindTooltip(
+                `<div>
+                     Sant Marti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11431f39a09b8b3d15a0ebc3944fde7a = L.marker(
+                [41.4075, 2.2],
+                {
+}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            var div_icon_df69434f4687ae206a33f99e2862d5a0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px;color:#2c3e50;font-weight:bold;white-space:nowrap\"\u003eSant Marti\u003c/div\u003e",
+  "iconSize": [150, 20],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_11431f39a09b8b3d15a0ebc3944fde7a.setIcon(div_icon_df69434f4687ae206a33f99e2862d5a0);
+            
+    
+            var circle_marker_2ab936408f8578fbd6866e014ec1a0a9 = L.circleMarker(
+                [41.42, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2ab936408f8578fbd6866e014ec1a0a9.bindTooltip(
+                `<div>
+                     La Delegación de Cataluña organiza la Campaña de Navidad 201 (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c148c85e5550317a490b6297d446668 = L.circleMarker(
+                [41.42, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2c148c85e5550317a490b6297d446668.bindTooltip(
+                `<div>
+                     30 panxes | Cooperativa de consum ecològic de La Sagrera (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82143d6418a23ac2574abf1e5c158a9a = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_82143d6418a23ac2574abf1e5c158a9a.bindTooltip(
+                `<div>
+                     A taula! Cicle de cultura i gastronomia | Centre Cívic El So (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c4cd0619fcce56604d93daeb04b73ab = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9c4cd0619fcce56604d93daeb04b73ab.bindTooltip(
+                `<div>
+                     Asociación Ágape Intercultural de Barcelona (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efbc27ee98ae3a2e7a6d3297c62047fd = L.circleMarker(
+                [41.37, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_efbc27ee98ae3a2e7a6d3297c62047fd.bindTooltip(
+                `<div>
+                     Voight-Kampff Browser Test (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bcc4fcd8c53b8f5f60ca5a41cc1415b = L.circleMarker(
+                [41.37, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_1bcc4fcd8c53b8f5f60ca5a41cc1415b.bindTooltip(
+                `<div>
+                     Carrito - Abarka Coop. (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd68b59bba6f9ad720811fc089fffa32 = L.circleMarker(
+                [41.39, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_dd68b59bba6f9ad720811fc089fffa32.bindTooltip(
+                `<div>
+                     Adiós a la vergüenza de pedir las sobras de la comida - AECO (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2201bcdc1f72dc27d88cefb7e631c4e = L.circleMarker(
+                [41.35, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a2201bcdc1f72dc27d88cefb7e631c4e.bindTooltip(
+                `<div>
+                     ERROR: The request could not be satisfied (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8402093e57831c53bd35860b6ad959c = L.circleMarker(
+                [41.35, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d8402093e57831c53bd35860b6ad959c.bindTooltip(
+                `<div>
+                     Alimentaria | A unique Food, Drinks and Gastronomy Experienc (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7988af0fd8112828182168d331f7062 = L.circleMarker(
+                [41.39, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c7988af0fd8112828182168d331f7062.bindTooltip(
+                `<div>
+                     All Those Food Market Barcelona (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bdc8dc7c7649ef610f751d737e1d3bd5 = L.circleMarker(
+                [41.42, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_bdc8dc7c7649ef610f751d737e1d3bd5.bindTooltip(
+                `<div>
+                     Arran de Terra | Transició agroecològica (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe109bafd16c29731f8137e5900b55d6 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_fe109bafd16c29731f8137e5900b55d6.bindTooltip(
+                `<div>
+                     #A cubierto: una iniciativa para colaborar desde casa con la (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5496461d6b585f586469d730fab320b = L.circleMarker(
+                [41.4, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e5496461d6b585f586469d730fab320b.bindTooltip(
+                `<div>
+                     Directori article – Pam a Pam (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f882850cd25514b8901bfec3a68e5da8 = L.circleMarker(
+                [41.38, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f882850cd25514b8901bfec3a68e5da8.bindTooltip(
+                `<div>
+                     Associació Cuinant Cultures - Centre Cívic PATI LLIMONA (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f9ce1b0e078f8816179ac9317186df1 = L.circleMarker(
+                [41.42, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_8f9ce1b0e078f8816179ac9317186df1.bindTooltip(
+                `<div>
+                     La Sagrera Es Mou (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bf3e97ee0613cfee3e942402004b14f = L.circleMarker(
+                [41.36, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5bf3e97ee0613cfee3e942402004b14f.bindTooltip(
+                `<div>
+                     Home - ASSOCIACIÓ VEGANA DE CATALUNYA ASSOCIACIÓ VEGANA DE C (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f160e520bda9b6dc0aabb11dcc737065 = L.circleMarker(
+                [41.36, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f160e520bda9b6dc0aabb11dcc737065.bindTooltip(
+                `<div>
+                     Amics del Jardí Botànic de Barcelona - Amics del Jardí Botàn (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c73c6f7ff3a07087d1b5cc7ed88133f = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4c73c6f7ff3a07087d1b5cc7ed88133f.bindTooltip(
+                `<div>
+                      (unknown) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e9781c304ca3b90d843de329dea05d6 = L.circleMarker(
+                [41.4005663, 2.1500063],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9e9781c304ca3b90d843de329dea05d6.bindTooltip(
+                `<div>
+                     Cooperativa Germinal - Mapa Barcelona + Sostenible (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5fb43f1d841645217f5eb07272f21c49 = L.circleMarker(
+                [41.35, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5fb43f1d841645217f5eb07272f21c49.bindTooltip(
+                `<div>
+                     Banc de Llavors FMA-UPC (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8138f9ff9eaea0166f240255f24879e7 = L.circleMarker(
+                [41.35, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_8138f9ff9eaea0166f240255f24879e7.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb910c7b296717cff2fea37bcca72afc = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_eb910c7b296717cff2fea37bcca72afc.bindTooltip(
+                `<div>
+                      (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38c4e696dc9b16700ad7be6f5c2c6ce1 = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_38c4e696dc9b16700ad7be6f5c2c6ce1.bindTooltip(
+                `<div>
+                     BORN STREET FOOD - BORN DISTRICTE GASTRONÒMIC (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b79aeab6d296e299660e682093c63460 = L.circleMarker(
+                [41.37, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b79aeab6d296e299660e682093c63460.bindTooltip(
+                `<div>
+                     Solucions Socials Sostenibles (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_397a1a58e0fdbd8d794d85a1da7d33c5 = L.circleMarker(
+                [41.39, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_397a1a58e0fdbd8d794d85a1da7d33c5.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3106668884633d1080dfc09e2f730620 = L.circleMarker(
+                [41.38, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3106668884633d1080dfc09e2f730620.bindTooltip(
+                `<div>
+                     Día de la Primavera - CCCB (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5dc33065930f383d25e915c16658e46 = L.circleMarker(
+                [41.47, 2.08],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f5dc33065930f383d25e915c16658e46.bindTooltip(
+                `<div>
+                     RECOGIDA DE ALIMENTOS 2025  | CEM Can Ricart (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43fecf0f974547a649185cb25bf3371c = L.circleMarker(
+                [41.47, 2.08],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_43fecf0f974547a649185cb25bf3371c.bindTooltip(
+                `<div>
+                     Cal Temerari | Equipament cultural, social i cooperatiu de S (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee5fa676765392bdb62d4aabb92bcccb = L.circleMarker(
+                [41.44, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ee5fa676765392bdb62d4aabb92bcccb.bindTooltip(
+                `<div>
+                     Vall de Can Masdeu – Espacio de cooperación comunitaria (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_085fafd1d001a3a6ce390fc6a68dc3cc = L.circleMarker(
+                [41.41, 2.09],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_085fafd1d001a3a6ce390fc6a68dc3cc.bindTooltip(
+                `<div>
+                     Can Pujades – Cooperativa de consum ecològic i de proximitat (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19bf5b2c157edb162528c707731c16f2 = L.circleMarker(
+                [41.43, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_19bf5b2c157edb162528c707731c16f2.bindTooltip(
+                `<div>
+                     Can Valent – Hort comunitari d'autogestió veinal al barri de (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8720ce8923ad2aca268524dbcbbde50 = L.circleMarker(
+                [41.41, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b8720ce8923ad2aca268524dbcbbde50.bindTooltip(
+                `<div>
+                     casa de llavors (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e2de811f92d29100f82b337081a2148 = L.circleMarker(
+                [41.41, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_1e2de811f92d29100f82b337081a2148.bindTooltip(
+                `<div>
+                     Benvolguts/des | Casal Ca l'Isidret (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9769e4b4e420a142f12000a334f2153 = L.circleMarker(
+                [41.39, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c9769e4b4e420a142f12000a334f2153.bindTooltip(
+                `<div>
+                     Home — Cityplot (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9329bd5bbcf278bb4ac37515a4e4c5c = L.circleMarker(
+                [41.39, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d9329bd5bbcf278bb4ac37515a4e4c5c.bindTooltip(
+                `<div>
+                     Pam a Pam – El teu mapa d'Economia Solidària (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_109394b800b6f29678475ddf8f7ffd8c = L.circleMarker(
+                [41.38, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_109394b800b6f29678475ddf8f7ffd8c.bindTooltip(
+                `<div>
+                     Horts - Xarxa de ciutats i pobles cap a la sostenibilitat -  (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c656a3da92e38e02d358a0966ea739c = L.circleMarker(
+                [41.38, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_0c656a3da92e38e02d358a0966ea739c.bindTooltip(
+                `<div>
+                     COOCCIŌ — Lloguer i assessoria cuines compartides a Barcelon (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbeda4c95e9696799f6d2476e7e52e8d = L.circleMarker(
+                [41.41, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_bbeda4c95e9696799f6d2476e7e52e8d.bindTooltip(
+                `<div>
+                     CoopeClot – Grup de consum ecològic del Clot-Camp de l'Arpa (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a880209904cac1b5c5915f943a8e92cc = L.circleMarker(
+                [41.43, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a880209904cac1b5c5915f943a8e92cc.bindTooltip(
+                `<div>
+                     Cooperativa Borronets (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_463eb8714004fb8c132ca6a08b4e1dc7 = L.circleMarker(
+                [41.41, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_463eb8714004fb8c132ca6a08b4e1dc7.bindTooltip(
+                `<div>
+                     Directori article – Pam a Pam (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c3fe09a9a31a4e1a84ec023dbd33458 = L.circleMarker(
+                [41.41, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_0c3fe09a9a31a4e1a84ec023dbd33458.bindTooltip(
+                `<div>
+                     Associació de Consumidors Gira-sol (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9127b3478263a1cc9a0dbae2a70d2b82 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9127b3478263a1cc9a0dbae2a70d2b82.bindTooltip(
+                `<div>
+                     La Seca – Cooperativa de consum agroecològic (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87b3f9c34132e9b4749894bdd523814b = L.circleMarker(
+                [41.39, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_87b3f9c34132e9b4749894bdd523814b.bindTooltip(
+                `<div>
+                     cooppamapam | GRUP DE CONSUM RESPONSABLE (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edc8b4ff42dbca45a71e9dec6e6a59ed = L.circleMarker(
+                [41.41, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_edc8b4ff42dbca45a71e9dec6e6a59ed.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_498cb087a6f339f82c82c8d59163a003 = L.circleMarker(
+                [41.41, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_498cb087a6f339f82c82c8d59163a003.bindTooltip(
+                `<div>
+                     Les Trementinaires del Coll-Vallcarca – Una cooperativa de c (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db7cda93fb9c99d959665ceef592d5a1 = L.circleMarker(
+                [41.43, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_db7cda93fb9c99d959665ceef592d5a1.bindTooltip(
+                `<div>
+                     Cooperativa el Borró (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0bf028f1c3e8d6e2f5a61261ab24e47 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b0bf028f1c3e8d6e2f5a61261ab24e47.bindTooltip(
+                `<div>
+                     La Senalla. Cooperativa de consum: Inici (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ea5dc435abf0652106f12a6bb44fb4d = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_7ea5dc435abf0652106f12a6bb44fb4d.bindTooltip(
+                `<div>
+                     Coòpolis - Ateneu Cooperatiu de Barcelona (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba4d8cab862e5986d74109e6ece7f172 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ba4d8cab862e5986d74109e6ece7f172.bindTooltip(
+                `<div>
+                     Directori article – Pam a Pam (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_376ce049f8ed4183c1d68ca5703badb9 = L.circleMarker(
+                [41.43, 2.22],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_376ce049f8ed4183c1d68ca5703badb9.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a74f9251ed77d7a924742f9c3914d549 = L.circleMarker(
+                [41.43, 2.22],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a74f9251ed77d7a924742f9c3914d549.bindTooltip(
+                `<div>
+                     Cuchara (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46d3aae17df6823028329bfa1da292f0 = L.circleMarker(
+                [41.43, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_46d3aae17df6823028329bfa1da292f0.bindTooltip(
+                `<div>
+                     Ateneu L'Harmonia | Gestió comunitària a Sant Andreu de Palo (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a441599d4e3cffcfd8dfada88653cb1f = L.circleMarker(
+                [41.41, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a441599d4e3cffcfd8dfada88653cb1f.bindTooltip(
+                `<div>
+                     Can Carol - Can Carol (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6579787358f829b8958a9a8abde7d660 = L.circleMarker(
+                [41.47, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_6579787358f829b8958a9a8abde7d660.bindTooltip(
+                `<div>
+                     Calàbria 66 - Espai veïnal per la transformació social a San (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69dada9f05c5841e660baa6015d21ca5 = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_69dada9f05c5841e660baa6015d21ca5.bindTooltip(
+                `<div>
+                     Cuina - Can Batlló (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45b50bb63e71d4bd893cc7e37a87856a = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_45b50bb63e71d4bd893cc7e37a87856a.bindTooltip(
+                `<div>
+                     Cuinem el canvi – Somlaclau (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8139f0baf0eb81f832f480189c7787c = L.circleMarker(
+                [41.4, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f8139f0baf0eb81f832f480189c7787c.bindTooltip(
+                `<div>
+                     Benvinguts a Cydonia (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a98905c9df65f8d8e9dd616d9d3a31c4 = L.circleMarker(
+                [41.37, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a98905c9df65f8d8e9dd616d9d3a31c4.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed263ffe3d98cef7d49175410ff0c687 = L.circleMarker(
+                [41.41, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ed263ffe3d98cef7d49175410ff0c687.bindTooltip(
+                `<div>
+                     Desenruna (@desenruna) • Instagram photos and videos (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63c091de0be2b2d5521dc4f9cecddd40 = L.circleMarker(
+                [41.41, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_63c091de0be2b2d5521dc4f9cecddd40.bindTooltip(
+                `<div>
+                     DiSA Sagrada Família (Barcelona) | Hijas de la Caridad Españ (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e51a7d7d4907e162185ddab6a73b8d3c = L.circleMarker(
+                [41.41, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e51a7d7d4907e162185ddab6a73b8d3c.bindTooltip(
+                `<div>
+                     Directori article – Pam a Pam (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ef28a980923219c2053a881a943c05d = L.circleMarker(
+                [41.46, 2.08],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4ef28a980923219c2053a881a943c05d.bindTooltip(
+                `<div>
+                     EcoAteneu - Ateneu Santcugatenc (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_289425471687dda84961bb38aceae22a = L.circleMarker(
+                [41.43, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_289425471687dda84961bb38aceae22a.bindTooltip(
+                `<div>
+                     Huerto Ecovincles | Espacios Verdes | Ayuntamiento de Barcel (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24a851696e78602e5d015fe0d41a0127 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_24a851696e78602e5d015fe0d41a0127.bindTooltip(
+                `<div>
+                     Ejército de Salvación // The Salvation Army - España - Nuest (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb7618ea33ecd46f2388f02e2d26e69c = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_bb7618ea33ecd46f2388f02e2d26e69c.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_592aa1318fc0f64113843dbdd33e11e3 = L.circleMarker(
+                [41.37, 2.11],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_592aa1318fc0f64113843dbdd33e11e3.bindTooltip(
+                `<div>
+                     jardi del fenix (@jardidelfenix) • Instagram photos and vide (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c0a92c8d34e2e977ae9419700bdeb1c = L.circleMarker(
+                [41.4, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4c0a92c8d34e2e977ae9419700bdeb1c.bindTooltip(
+                `<div>
+                     Associació de consum ecològic i de proximitat - El Llevat (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7852fcd4ba95b9400e568e7e283942d2 = L.circleMarker(
+                [41.38, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_7852fcd4ba95b9400e568e7e283942d2.bindTooltip(
+                `<div>
+                     Emmaús Menjador Social (meals service)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37adaeea14b20308afff726c5204ed43 = L.circleMarker(
+                [41.31, 2.08],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_37adaeea14b20308afff726c5204ed43.bindTooltip(
+                `<div>
+                     es im-perfect | Verdures imperfectes contra el malbaratament (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1be3b29fd10553acad4ca25d525c0bb = L.circleMarker(
+                [41.39, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d1be3b29fd10553acad4ca25d525c0bb.bindTooltip(
+                `<div>
+                     ESPAI AMBIENTAL COOPERATIVA (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c0c74f6f328d2f59113f39752aa4a71 = L.circleMarker(
+                [41.39, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9c0c74f6f328d2f59113f39752aa4a71.bindTooltip(
+                `<div>
+                     Fundació Comtal Benet Corner - Fundació Comtal (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ff85a0afa32edb1104c76f946b029e9 = L.circleMarker(
+                [41.38, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4ff85a0afa32edb1104c76f946b029e9.bindTooltip(
+                `<div>
+                     Recreant cruïlles | Fem nostre l'espai públic!!! (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2af7e7e94dc7e5994e1fe6a2ff4f9e89 = L.circleMarker(
+                [41.3819988, 2.1765456],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2af7e7e94dc7e5994e1fe6a2ff4f9e89.bindTooltip(
+                `<div>
+                     Comida para gente sin hogar - Esperança Barcelona (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b6841e643bdd4b908c9e0fbc253215b = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5b6841e643bdd4b908c9e0fbc253215b.bindTooltip(
+                `<div>
+                     Fundació Espigoladors © Tots els drets reservats | Fotos: ©  (food education) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f4f9147cfd30ae3617aa0ebc5ff134c = L.circleMarker(
+                [41.38, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_6f4f9147cfd30ae3617aa0ebc5ff134c.bindTooltip(
+                `<div>
+                     FOODCOOP BCN | Supermercat cooperatiu i participatiu a Barce (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68151b8c09686ec9e1a80dc3c28d7fd4 = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_68151b8c09686ec9e1a80dc3c28d7fd4.bindTooltip(
+                `<div>
+                     ERROR: The request could not be satisfied (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7893156b835802053e20cd78fbc4ec6 = L.circleMarker(
+                [41.44, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b7893156b835802053e20cd78fbc4ec6.bindTooltip(
+                `<div>
+                     Festival de Sopes del Món Mundial (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42bd6baa1090061511c52f9af78da218 = L.circleMarker(
+                [41.36, 2.1],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_42bd6baa1090061511c52f9af78da218.bindTooltip(
+                `<div>
+                     Fira ÀPAT BARCELONA - Impulsem entre tots els productes Cata (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa66d60ee351c8b4f943ace0f2b05a32 = L.circleMarker(
+                [41.39, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_aa66d60ee351c8b4f943ace0f2b05a32.bindTooltip(
+                `<div>
+                     Food Relations – Iniciativa europea que pretende fomentar el (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7e13aedcc6deca79eaf2e5a1bddd9f8 = L.circleMarker(
+                [41.39, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d7e13aedcc6deca79eaf2e5a1bddd9f8.bindTooltip(
+                `<div>
+                     WordPress › Error (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1d0c7445b81a9cb052b7852529e62e8 = L.circleMarker(
+                [41.423335, 2.1612909],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d1d0c7445b81a9cb052b7852529e62e8.bindTooltip(
+                `<div>
+                     Huerto y jardinería Archivos - Fundació Els Tres Turons (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68ddab817cbc6414cc19e6e291b9cfd5 = L.circleMarker(
+                [41.51, 2.36],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_68ddab817cbc6414cc19e6e291b9cfd5.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a1851be2fd0000d792b89a57dbc888a = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2a1851be2fd0000d792b89a57dbc888a.bindTooltip(
+                `<div>
+                     Primera experiencia del proyecto de soberania alimentaria ‘V (food education) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aea86a20d66a360524ede0fa03fe5bff = L.circleMarker(
+                [41.39, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_aea86a20d66a360524ede0fa03fe5bff.bindTooltip(
+                `<div>
+                     Home - Fundación Áurea (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_baa5106bb5b3194b1435e0acb012cf1b = L.circleMarker(
+                [41.37, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_baa5106bb5b3194b1435e0acb012cf1b.bindTooltip(
+                `<div>
+                     Fundació Canpedró | (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0b034267acb732fdf30be26691e64fe = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a0b034267acb732fdf30be26691e64fe.bindTooltip(
+                `<div>
+                     Servicio de comidas | Fundació Catalunya La Pedrera (meals service)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81bdecd4e0a6e0668bb4a2667a185815 = L.circleMarker(
+                [41.38, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_81bdecd4e0a6e0668bb4a2667a185815.bindTooltip(
+                `<div>
+                     Mescladís - 20 años creando oportunidades (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3821999cd14034a23cce0803f5d0f85 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f3821999cd14034a23cce0803f5d0f85.bindTooltip(
+                `<div>
+                     Fundació Roure - Acción social de proximidad en Barcelona (food bank) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07b46b867b4d6f5ee712918c5d842fbb = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_07b46b867b4d6f5ee712918c5d842fbb.bindTooltip(
+                `<div>
+                     Llamamiento URGENTE desde Altius Barcelona para donaciones e (meals service) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce8d91660751ded37a308942e69bb41a = L.circleMarker(
+                [41.28, 1.98],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ce8d91660751ded37a308942e69bb41a.bindTooltip(
+                `<div>
+                     Stop Hambre - Fundación Ausolan (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97148a212669687b0e8d840c502ccdb2 = L.circleMarker(
+                [41.37, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_97148a212669687b0e8d840c502ccdb2.bindTooltip(
+                `<div>
+                     Gastronomic Forum Barcelona | El mayor evento gastronómico d (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09ea1bef5c3d57717a28641a428573b1 = L.circleMarker(
+                [41.39, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_09ea1bef5c3d57717a28641a428573b1.bindTooltip(
+                `<div>
+                     Rebost Solidari - Gràcia participa (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_742d432d4a7a9f599f255fb0de0e7176 = L.circleMarker(
+                [41.39, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_742d432d4a7a9f599f255fb0de0e7176.bindTooltip(
+                `<div>
+                     Grup de Consum Pixapins (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_006b1ac5ccd06c9cbfddb119551601cc = L.circleMarker(
+                [41.4, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_006b1ac5ccd06c9cbfddb119551601cc.bindTooltip(
+                `<div>
+                     Grup de consum ecològic "El Guaret" (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3bb451fb5e735481fe8d5fbd5b2f964b = L.circleMarker(
+                [41.38, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3bb451fb5e735481fe8d5fbd5b2f964b.bindTooltip(
+                `<div>
+                     Directori article – Pam a Pam (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed68eb3e5d812feec4c751d535bd0186 = L.circleMarker(
+                [41.37, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ed68eb3e5d812feec4c751d535bd0186.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bbc31d3ae49425f6baade05cecea977 = L.circleMarker(
+                [41.37, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2bbc31d3ae49425f6baade05cecea977.bindTooltip(
+                `<div>
+                     KASKUS288 | Link Login Portal Daftar Bebas Hambatan & Anti R (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32427342db4c397c4729db5eca00a618 = L.circleMarker(
+                [41.42, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_32427342db4c397c4729db5eca00a618.bindTooltip(
+                `<div>
+                     Horstik - Nau Bostik (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c93a29fef586afc8b616864aaab6f66e = L.circleMarker(
+                [41.43, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c93a29fef586afc8b616864aaab6f66e.bindTooltip(
+                `<div>
+                     Xarxa d’Horts Municipals (XHM) | Espais Verds | Ajuntament d (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e5c30cc051c928e29427bcf77a88cb1 = L.circleMarker(
+                [41.41, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2e5c30cc051c928e29427bcf77a88cb1.bindTooltip(
+                `<div>
+                     Hort Comunitari Pla i Armengol - Un Hort Urbà de tota i per  (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_201e0e02453fbfaeb9465e05b73936a1 = L.circleMarker(
+                [41.46, 2.04],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_201e0e02453fbfaeb9465e05b73936a1.bindTooltip(
+                `<div>
+                     Hort Comunitari de Mira-sol – Un espai d'aprenentge, convivè (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_952e397a93829dc57a079ab30440f1f9 = L.circleMarker(
+                [41.38, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_952e397a93829dc57a079ab30440f1f9.bindTooltip(
+                `<div>
+                     Hort Comunitari de La Barceloneta (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a0e61d4e44fd6108c3e2b4a5d19d124 = L.circleMarker(
+                [41.41, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2a0e61d4e44fd6108c3e2b4a5d19d124.bindTooltip(
+                `<div>
+                     Hort Fortalesa (@hort_fortalesa) • Instagram photos and vide (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87c2230aece2cf4f7a8dcdd7fb7961cb = L.circleMarker(
+                [41.4, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_87c2230aece2cf4f7a8dcdd7fb7961cb.bindTooltip(
+                `<div>
+                     Centre Heura (meals service)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b1a789b4bbbf6486bb81d03caf2b04b = L.circleMarker(
+                [41.38, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4b1a789b4bbbf6486bb81d03caf2b04b.bindTooltip(
+                `<div>
+                     Hort Urbà Espai Colònia Castells (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e93b810a3b1afa55c44fe153e6e40c56 = L.circleMarker(
+                [41.38, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e93b810a3b1afa55c44fe153e6e40c56.bindTooltip(
+                `<div>
+                     Hort de Ca la Dona - Ca la Dona, un espai d'acció feminista  (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3224c9ca4d31f10549b419aa765ab95 = L.circleMarker(
+                [41.41, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e3224c9ca4d31f10549b419aa765ab95.bindTooltip(
+                `<div>
+                     Hort de la Farigola - Ruralitzem (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9dc0a14875e2adc677217c11940fbf90 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9dc0a14875e2adc677217c11940fbf90.bindTooltip(
+                `<div>
+                     Hort de la Font Trobada (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d28a2bec5bab8b4bb64821342f63e00 = L.circleMarker(
+                [41.43, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3d28a2bec5bab8b4bb64821342f63e00.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbd495ab4319902942fa90f10fe772c0 = L.circleMarker(
+                [41.43, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_cbd495ab4319902942fa90f10fe772c0.bindTooltip(
+                `<div>
+                     Hort del Caliu - Mapa Barcelona + Sostenible (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b6c96bbf5d0ddcd8e9cfa852af78972 = L.circleMarker(
+                [41.41, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5b6c96bbf5d0ddcd8e9cfa852af78972.bindTooltip(
+                `<div>
+                     Hort del Clot - Projecte participatiu per l'espai verd comun (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1008d41bcf68596da8d560d2cd1e98ca = L.circleMarker(
+                [41.39, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_1008d41bcf68596da8d560d2cd1e98ca.bindTooltip(
+                `<div>
+                     Hort del Cànem | Espais Verds | Ajuntament de Barcelona (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b90acb191888f0ba8c51e5c9b9ead288 = L.circleMarker(
+                [41.42, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b90acb191888f0ba8c51e5c9b9ead288.bindTooltip(
+                `<div>
+                     Presentació - Hort del Mercat (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_024e14f02a187a80565684679486eab3 = L.circleMarker(
+                [41.44, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_024e14f02a187a80565684679486eab3.bindTooltip(
+                `<div>
+                     Programa "Horta amb Gràcia" | Grup ATRA (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc06c916d0ae2e803f3d7b5ec07b9f0d = L.circleMarker(
+                [41.38, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_bc06c916d0ae2e803f3d7b5ec07b9f0d.bindTooltip(
+                `<div>
+                     Hortet del Forat (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d91173cb44bb95e98610ad1323ed641 = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_7d91173cb44bb95e98610ad1323ed641.bindTooltip(
+                `<div>
+                     Horts i Jardins comunitaris - Can Batlló (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7e2001c192614e7e71311513fc649c8 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e7e2001c192614e7e71311513fc649c8.bindTooltip(
+                `<div>
+                     HORTSEC (@hortsec_bcn) • Instagram photos and videos (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2186057dfa20f3eb362965be4c90fd5e = L.circleMarker(
+                [41.41, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2186057dfa20f3eb362965be4c90fd5e.bindTooltip(
+                `<div>
+                     Alquiler de huertos urbanos en Barcelona ※ Huerto360 (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_667342254f631ae06e87d7a31b25e890 = L.circleMarker(
+                [41.41, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_667342254f631ae06e87d7a31b25e890.bindTooltip(
+                `<div>
+                     INICIO - Huertocity.com Jardinería (commercial)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3784185bcc8ca285cf62b46027bed2c = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e3784185bcc8ca285cf62b46027bed2c.bindTooltip(
+                `<div>
+                     Can Masdeu | Huertos Urbanos (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2f6e1d8233b6656e7ee09acdfeb6a59 = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d2f6e1d8233b6656e7ee09acdfeb6a59.bindTooltip(
+                `<div>
+                     home - HuertosintheSky (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_645e1434d1e4eba71c8c034b1ced580c = L.circleMarker(
+                [41.39, 2.1],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_645e1434d1e4eba71c8c034b1ced580c.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_668329b94a2a3dfd970c3be4139cfde4 = L.circleMarker(
+                [41.71, 2.42],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_668329b94a2a3dfd970c3be4139cfde4.bindTooltip(
+                `<div>
+                     El huerto, diseñando un proceso comunitario de permacultura (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ed95e9d8aa75aa469ee80d5bd04b382 = L.circleMarker(
+                [41.41, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_6ed95e9d8aa75aa469ee80d5bd04b382.bindTooltip(
+                `<div>
+                     Karli – Asociación y Restaurante (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6d2b821e9318474b24a500929e285cd = L.circleMarker(
+                [41.35, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a6d2b821e9318474b24a500929e285cd.bindTooltip(
+                `<div>
+                     Home | Keras Buti (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3155b555a4bbd836626c4c890b9c7a50 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3155b555a4bbd836626c4c890b9c7a50.bindTooltip(
+                `<div>
+                     Qui som? | L'Aixada (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fdd9ceebffb5f969b3b164684267109 = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_6fdd9ceebffb5f969b3b164684267109.bindTooltip(
+                `<div>
+                     L'Economat Social – Cooperativa de comerç agroecològic (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d26f747b3daf669b387166f2b714ccd = L.circleMarker(
+                [41.43, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5d26f747b3daf669b387166f2b714ccd.bindTooltip(
+                `<div>
+                     L'hort d'en Tomàs – Espai autogestionat a Collserola (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42779eb9fad8b76d9023070cec6d5adb = L.circleMarker(
+                [41.42, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_42779eb9fad8b76d9023070cec6d5adb.bindTooltip(
+                `<div>
+                     L’Hortet de les Neus - Ruralitzem (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7abf91d6b6fc39cbb8e4af3b2b34f06 = L.circleMarker(
+                [41.38, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b7abf91d6b6fc39cbb8e4af3b2b34f06.bindTooltip(
+                `<div>
+                     L'Olivera (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3f789632b622334a9532e3b4d78db21 = L.circleMarker(
+                [41.45, 2.03],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e3f789632b622334a9532e3b4d78db21.bindTooltip(
+                `<div>
+                     L'Ortiga Cooperativa - Agricultura ecològica - Educació (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3411b24624492dfbd669d7560e88a9b8 = L.circleMarker(
+                [41.39, 2.11],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3411b24624492dfbd669d7560e88a9b8.bindTooltip(
+                `<div>
+                     L'Hort Medieval del monestir | Monestir de Pedralbes (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7dc1becf81bd56bffd2d8c7ac76f301 = L.circleMarker(
+                [41.32, 2.08],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d7dc1becf81bd56bffd2d8c7ac76f301.bindTooltip(
+                `<div>
+                     La Botiga (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17007be183bc9571a5f4e53406929b4a = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_17007be183bc9571a5f4e53406929b4a.bindTooltip(
+                `<div>
+                     La Cantina Lab - Can Batlló (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1a05bb259b8fb7c9514a431ca1bc45e = L.circleMarker(
+                [41.42, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d1a05bb259b8fb7c9514a431ca1bc45e.bindTooltip(
+                `<div>
+                     lacarmelaverdulera – web del grup de consum La Carmela Verdu (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a70ecf6c310aff55c15ce8c415fdda0 = L.circleMarker(
+                [41.43, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9a70ecf6c310aff55c15ce8c415fdda0.bindTooltip(
+                `<div>
+                     La Cebolla Roja | Grup de consum ecològic, autogestionat i a (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_693adce89e211731af4262d6a8cbb555 = L.circleMarker(
+                [41.38, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_693adce89e211731af4262d6a8cbb555.bindTooltip(
+                `<div>
+                     NinjaFirewall 403 Forbidden (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2fc94ccd13812db2e0f93eb06373f69 = L.circleMarker(
+                [41.37, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d2fc94ccd13812db2e0f93eb06373f69.bindTooltip(
+                `<div>
+                     la deskomunal - La Deskomunal (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67bcaae9b9c5f219ff7aa4dfa9fc450e = L.circleMarker(
+                [41.41, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_67bcaae9b9c5f219ff7aa4dfa9fc450e.bindTooltip(
+                `<div>
+                     casa de semillas (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51c96e528920a0e52ebbb0ad9ab69558 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_51c96e528920a0e52ebbb0ad9ab69558.bindTooltip(
+                `<div>
+                     la FEIXA supermercat cooperatiu (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34eef35c41a418ece20f0eda538a2e16 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_34eef35c41a418ece20f0eda538a2e16.bindTooltip(
+                `<div>
+                     La Fresca (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad8470fa86c639193747f5fa93ce614f = L.circleMarker(
+                [41.4, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ad8470fa86c639193747f5fa93ce614f.bindTooltip(
+                `<div>
+                     La Garangola | Grup de Consum Ecològic de la Sagrada Familia (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5423498bc65c0bc718476ef0cf3faa06 = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5423498bc65c0bc718476ef0cf3faa06.bindTooltip(
+                `<div>
+                     La Garrofera de Sants S.C.C.L. - La Garrofera de Sants (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cede01f38424c8072cb18420354f2c3 = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_7cede01f38424c8072cb18420354f2c3.bindTooltip(
+                `<div>
+                     La Merienda - Ayudamos a personas en situación de exclusión (meals service)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea2eec6a9cb4c0f3ff409bf766902af5 = L.circleMarker(
+                [41.4, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ea2eec6a9cb4c0f3ff409bf766902af5.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a37d73c7d9b2813d983514f277585d1 = L.circleMarker(
+                [41.45, 2.05],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5a37d73c7d9b2813d983514f277585d1.bindTooltip(
+                `<div>
+                     La Rural de Collserola - La Rural de Collserola (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78b43789e6ca7ab6f8b413a6e36a3cec = L.circleMarker(
+                [41.38, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_78b43789e6ca7ab6f8b413a6e36a3cec.bindTooltip(
+                `<div>
+                     Grup d'ecoconsum al barri de La Barceloneta (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d376ad7eb5474ab0ff77c876f277714a = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d376ad7eb5474ab0ff77c876f277714a.bindTooltip(
+                `<div>
+                     La Tavella - Cistelles de fruita i verdura ecològiques 100%  (food gifting) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_877463d38f884568d9c5ba4d5f5e1377 = L.circleMarker(
+                [41.39, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_877463d38f884568d9c5ba4d5f5e1377.bindTooltip(
+                `<div>
+                     La Tòfona. Cooperativa de consum – Ateneu Rosa de Foc (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_796be869d1d109a452869263a01a83b5 = L.circleMarker(
+                [41.39, 2.2],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_796be869d1d109a452869263a01a83b5.bindTooltip(
+                `<div>
+                     La Unió de Poblenou - La Datzira | Cooperativa de Consum i P (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09365b585cc472bc4d2383bc98f23c4c = L.circleMarker(
+                [41.38, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_09365b585cc472bc4d2383bc98f23c4c.bindTooltip(
+                `<div>
+                     La Veganeria - La Veganeria (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a6507bc4883fb7a56e51c53c81592ce = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4a6507bc4883fb7a56e51c53c81592ce.bindTooltip(
+                `<div>
+                     Qui som Replantem? | les48h.cat (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae5a37b11b40ce84b4023d1e09381b0a = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ae5a37b11b40ce84b4023d1e09381b0a.bindTooltip(
+                `<div>
+                     les Horteres de la Ribera | Cooperativa de consum del barri  (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6e17b400086395008120960c8ca620e = L.circleMarker(
+                [41.69, 1.97],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a6e17b400086395008120960c8ca620e.bindTooltip(
+                `<div>
+                     SOMOS RED - Les Refardes (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9488eeeedd6dd889df227326123b705e = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9488eeeedd6dd889df227326123b705e.bindTooltip(
+                `<div>
+                     Les verdures de Roxanne (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cf379fe59b9ed3dff7cf5908750f781 = L.circleMarker(
+                [41.44, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5cf379fe59b9ed3dff7cf5908750f781.bindTooltip(
+                `<div>
+                     Les Vinyes de Can Roquetes (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eea784aacc033da7d73bf11add0f78c1 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_eea784aacc033da7d73bf11add0f78c1.bindTooltip(
+                `<div>
+                     Associació Cultural Manjaretti | Tallers i events de cocina (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db32730773aa1e6f1bec280c1249d4a1 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_db32730773aa1e6f1bec280c1249d4a1.bindTooltip(
+                `<div>
+                     Mans al verd | Espais Verds | Ajuntament de Barcelona (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75345c253524545da2afc36f052307e6 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_75345c253524545da2afc36f052307e6.bindTooltip(
+                `<div>
+                      (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc7b0aa192414bd5461e8056b39fabc2 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_dc7b0aa192414bd5461e8056b39fabc2.bindTooltip(
+                `<div>
+                     MASSA – Cocina Profesional Compartida (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66cfde9dece0ad12294a82d988b48896 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_66cfde9dece0ad12294a82d988b48896.bindTooltip(
+                `<div>
+                     Meals4Hope - Trabajamos codo a codo con comunidades y aliado (meals service) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1b55d98ad6505d8a66354f90608a469 = L.circleMarker(
+                [41.31, 2.08],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c1b55d98ad6505d8a66354f90608a469.bindTooltip(
+                `<div>
+                     MENJA, ACTUA, IMPACTA - Menja Actua Impacta (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5f51b0e74358aaf12ba73870eb33938 = L.circleMarker(
+                [41.42, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d5f51b0e74358aaf12ba73870eb33938.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8fe9c35bb3307916a8569b483001141 = L.circleMarker(
+                [41.41, 2.21],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d8fe9c35bb3307916a8569b483001141.bindTooltip(
+                `<div>
+                     Menjador solidari Gregal – Ateneu Cooperatiu del Barcelonès  (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72712c5bb19465b8169db3e99470903f = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_72712c5bb19465b8169db3e99470903f.bindTooltip(
+                `<div>
+                     Fundació Roure - Acció social de proximitat a Barcelona (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff865443ee08e7f18babfbf48569a223 = L.circleMarker(
+                [41.45, 2.24],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_ff865443ee08e7f18babfbf48569a223.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e384f714406f0df0f3413864db455c7b = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e384f714406f0df0f3413864db455c7b.bindTooltip(
+                `<div>
+                     Mi Huerta Ya! – Alquilá tu m2 de huerta (community garden) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d167567928d8f79fc09951806aa1b62b = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d167567928d8f79fc09951806aa1b62b.bindTooltip(
+                `<div>
+                      (unknown) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0240af77f4ba7fff54e2874137b9e4ad = L.circleMarker(
+                [41.4349237, 2.1916801],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_0240af77f4ba7fff54e2874137b9e4ad.bindTooltip(
+                `<div>
+                     Torna la Nevera Solidària | Ateneu L'Harmonia | Gestió comun (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d1864b27217927dcabe3a7d3f5c84a2 = L.circleMarker(
+                [41.38, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3d1864b27217927dcabe3a7d3f5c84a2.bindTooltip(
+                `<div>
+                     NEVERA SOLIDÀRIA - Espai Antoni Miró Peris (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26a303bc363270b56d62b6fa0dfe5dec = L.circleMarker(
+                [41.3864709, 2.1459602],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_26a303bc363270b56d62b6fa0dfe5dec.bindTooltip(
+                `<div>
+                     Ong | Nutrició Sense Fronteres | Catalunya (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5a47e3a587ca1699290afae27e74078 = L.circleMarker(
+                [41.38, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f5a47e3a587ca1699290afae27e74078.bindTooltip(
+                `<div>
+                     Olio - Tu app para compartir (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87d1302b0e176cd081daef9f527e25a0 = L.circleMarker(
+                [41.3915221, 2.1746289],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_87d1302b0e176cd081daef9f527e25a0.bindTooltip(
+                `<div>
+                     Compostar en comunidad | Opcions | Consumo consciente (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8e7011bc31124db7c276da40801b689 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a8e7011bc31124db7c276da40801b689.bindTooltip(
+                `<div>
+                     Soberana Orden de Malta (food bank) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f688dcff6db305a9326d40643776939d = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f688dcff6db305a9326d40643776939d.bindTooltip(
+                `<div>
+                     » Lineas de trabajo » Lujo comunal (other) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_234fd952918b990cff0dd2a072392447 = L.circleMarker(
+                [41.39, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_234fd952918b990cff0dd2a072392447.bindTooltip(
+                `<div>
+                     Pam a Pam – El teu mapa d'Economia Solidària (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9d5948f6cc767f4cbb461f1220bae76 = L.circleMarker(
+                [41.37, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d9d5948f6cc767f4cbb461f1220bae76.bindTooltip(
+                `<div>
+                     Panxacontenta | Grup de consum crític de Sants | Cooperativa (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58ff0a5ace94bcbfec642e9940bf568b = L.circleMarker(
+                [41.4, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_58ff0a5ace94bcbfec642e9940bf568b.bindTooltip(
+                `<div>
+                     Santa Agnes Barcelona (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9425ae77597450096948bbf2e8ca4f0f = L.circleMarker(
+                [41.4, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_9425ae77597450096948bbf2e8ca4f0f.bindTooltip(
+                `<div>
+                     DISA (Distribución solidaria de alimentos) - Parròquia Sagra (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1da10cd7418a5d1284c965bbaa11587d = L.circleMarker(
+                [41.39, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_1da10cd7418a5d1284c965bbaa11587d.bindTooltip(
+                `<div>
+                     Phenix España - Menos desperdicio, más beneficio. (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbd170a1d66a9147b04081d14caaf940 = L.circleMarker(
+                [41.39, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_cbd170a1d66a9147b04081d14caaf940.bindTooltip(
+                `<div>
+                     Pinyol Vermell | Cooperativa autogestionada de consum agroec (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4000531b90618422f60f145dc8c7e058 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4000531b90618422f60f145dc8c7e058.bindTooltip(
+                `<div>
+                     El Plan B de Banco de Alimentos - Plan B (food bank) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a8570903ad974c8e29cfe8755229375 = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2a8570903ad974c8e29cfe8755229375.bindTooltip(
+                `<div>
+                     Aprofitem els aliments | Junts contra el malbaratament (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_285bee167aabdfb779a7b255d6ed4c53 = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_285bee167aabdfb779a7b255d6ed4c53.bindTooltip(
+                `<div>
+                     Pont Alimentari — Aprofitem els excedents de supermercats i  (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_719a70baf263bb8bd77e436baa5de883 = L.circleMarker(
+                [41.43, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_719a70baf263bb8bd77e436baa5de883.bindTooltip(
+                `<div>
+                     Porta’m a l’hort | Espais Verds | Ajuntament de Barcelona (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47c800d41aa7f1eac5842a9367a3f6e4 = L.circleMarker(
+                [41.39, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_47c800d41aa7f1eac5842a9367a3f6e4.bindTooltip(
+                `<div>
+                     Just a moment... (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18baa2383198816c23928e046be8b01a = L.circleMarker(
+                [41.39, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_18baa2383198816c23928e046be8b01a.bindTooltip(
+                `<div>
+                     Servei de dinars | Fundació Catalunya La Pedrera (meals service)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb86af616e6eafdc3040ffbc7f6c893e = L.circleMarker(
+                [41.4, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_eb86af616e6eafdc3040ffbc7f6c893e.bindTooltip(
+                `<div>
+                     ERROR: The request could not be satisfied (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a765f20c7c6adfcfc7f177d8b754c071 = L.circleMarker(
+                [41.4, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a765f20c7c6adfcfc7f177d8b754c071.bindTooltip(
+                `<div>
+                     Jardí Fènix - ABD (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43bd5a8530a6ab74892c1c9458c4f3e1 = L.circleMarker(
+                [41.36, 2.11],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_43bd5a8530a6ab74892c1c9458c4f3e1.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_646394718b45cf4194a9222f242df2d7 = L.circleMarker(
+                [41.41, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_646394718b45cf4194a9222f242df2d7.bindTooltip(
+                `<div>
+                     403 Forbidden (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ab7682412da400aeff5c30f88f87323 = L.circleMarker(
+                [41.41, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4ab7682412da400aeff5c30f88f87323.bindTooltip(
+                `<div>
+                     Projecte obert d’agricultura urbana nomada i de comunitat or (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6874bb47b3f7da0fabcffba95109312 = L.circleMarker(
+                [41.38, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a6874bb47b3f7da0fabcffba95109312.bindTooltip(
+                `<div>
+                     Home - Gràcia participa (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1a23a3210268b13b18cf1ebd49927ca = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c1a23a3210268b13b18cf1ebd49927ca.bindTooltip(
+                `<div>
+                     Red de Huertos Municipales | Espacios Verdes | Ayuntamiento  (community garden) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4469e559404261374534b6b0f0db8a49 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4469e559404261374534b6b0f0db8a49.bindTooltip(
+                `<div>
+                     Remenat (food education) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38a241e7f3383efa2ace4683d4419034 = L.circleMarker(
+                [41.3819988, 2.1765456],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_38a241e7f3383efa2ace4683d4419034.bindTooltip(
+                `<div>
+                     Restaurant La Pau (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9509baac960d481bfedb0e92cff0ef4 = L.circleMarker(
+                [41.4, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d9509baac960d481bfedb0e92cff0ef4.bindTooltip(
+                `<div>
+                     Qué es Rauxa (other)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17c9ef036201baff2ecb381dce17e4a2 = L.circleMarker(
+                [41.4, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_17c9ef036201baff2ecb381dce17e4a2.bindTooltip(
+                `<div>
+                     revolta.cat – Fes que hi hagi una altra vida (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c98680258d2d5b61c5bc83dabbf38e42 = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c98680258d2d5b61c5bc83dabbf38e42.bindTooltip(
+                `<div>
+                     Coneixement i innovació cap a la societat Residu Zero - Reze (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7a02de7f72dc81b69fac6e2a86be74f = L.circleMarker(
+                [41.43, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_c7a02de7f72dc81b69fac6e2a86be74f.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_683cb569008ffcb071875c52f2523904 = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_683cb569008ffcb071875c52f2523904.bindTooltip(
+                `<div>
+                     Ruralitzem – EIX MUNTANYA (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e67b17f30b343b61f14abab930821fbf = L.circleMarker(
+                [41.37, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e67b17f30b343b61f14abab930821fbf.bindTooltip(
+                `<div>
+                     COMEDOR PARA LOS POBRES DE BARCELONA - COMUNIDAD DE SANT'EGI (meals service)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4eff818840f3ff1920ec04551eee7247 = L.circleMarker(
+                [41.38, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4eff818840f3ff1920ec04551eee7247.bindTooltip(
+                `<div>
+                     Science and Cooking World Congress | SCWC (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c031f02ffb824973d9598b3395fd5ff = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_4c031f02ffb824973d9598b3395fd5ff.bindTooltip(
+                `<div>
+                     Mans al verd | Espais Verds | Ajuntament de Barcelona (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b763b44ab7cb75ae98cf2c8fee39e5e4 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b763b44ab7cb75ae98cf2c8fee39e5e4.bindTooltip(
+                `<div>
+                     Comedores sociales | Servicios Sociales | (meals service) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3cff6ac82a3dc5f77edce1933845482d = L.circleMarker(
+                [41.37, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3cff6ac82a3dc5f77edce1933845482d.bindTooltip(
+                `<div>
+                     Slow Food Barcelona - Gastronomia sostenible i consum respon (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_072fe10d88ec4abe01854a6719f0a841 = L.circleMarker(
+                [41.39, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_072fe10d88ec4abe01854a6719f0a841.bindTooltip(
+                `<div>
+                     Social Fooding - Fundació per a reduir la fam a Barcelona (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85fb3d1cb442bed723cf84d4b5d207cb = L.circleMarker(
+                [41.39, 2.12],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_85fb3d1cb442bed723cf84d4b5d207cb.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d75ad201f08b00ea765429fd17cf3698 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d75ad201f08b00ea765429fd17cf3698.bindTooltip(
+                `<div>
+                     Contenedor solidario a favor de Banc d'Aliments de Barcelona (food bank) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a59ec716f9eb99274d069fa72b3941ce = L.circleMarker(
+                [41.4, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a59ec716f9eb99274d069fa72b3941ce.bindTooltip(
+                `<div>
+                     Frutas y verduras a domicilio | TALKUAL (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1e97ae6272232f069cba0dae58057fe = L.circleMarker(
+                [41.4, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f1e97ae6272232f069cba0dae58057fe.bindTooltip(
+                `<div>
+                     Tarpuna – Iniciatives sostenibles (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7dc7d039e5bc981fa5ed78d67f54643 = L.circleMarker(
+                [41.42, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f7dc7d039e5bc981fa5ed78d67f54643.bindTooltip(
+                `<div>
+                     Colabora - Temps i Compromís (food bank)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35355b914d23c4a71d3e1671c40398a5 = L.circleMarker(
+                [41.35, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_35355b914d23c4a71d3e1671c40398a5.bindTooltip(
+                `<div>
+                     Home | Terra Pagesa (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dca50e81d22be65ea109dac2ef2c32e = L.circleMarker(
+                [41.39, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_5dca50e81d22be65ea109dac2ef2c32e.bindTooltip(
+                `<div>
+                     Home THFC - The Honest Food Collective (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02b829842400e13011328e317ca4c4c2 = L.circleMarker(
+                [41.42, 2.19],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_02b829842400e13011328e317ca4c4c2.bindTooltip(
+                `<div>
+                     L'hort de la Torre - Torre de la Sagrera (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2eec81348d69aa5b67dba46a1b368441 = L.circleMarker(
+                [41.35, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_2eec81348d69aa5b67dba46a1b368441.bindTooltip(
+                `<div>
+                     Cada viernes, TrocaSec | Distrito de Sants-Montjuïc | Ajunta (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65e2c7565e6b2b3a9c22ca65b10e46e9 = L.circleMarker(
+                [41.41, 2.1],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_65e2c7565e6b2b3a9c22ca65b10e46e9.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_882c04d0f976612e3e1b486979362b86 = L.circleMarker(
+                [41.4, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_882c04d0f976612e3e1b486979362b86.bindTooltip(
+                `<div>
+                     URBAN BROTS - fundaciogune.org (community garden)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_011684d4567fd5d7cc4e92f5ca3b7579 = L.circleMarker(
+                [41.44, 2.18],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_011684d4567fd5d7cc4e92f5ca3b7579.bindTooltip(
+                `<div>
+                     Userda 9 (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5686773a8513a1404c8ec2f87f32c0e = L.circleMarker(
+                [41.41, 2.14],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_a5686773a8513a1404c8ec2f87f32c0e.bindTooltip(
+                `<div>
+                     Directori article – Pam a Pam (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3fd3f16c8cf09de3ec3992577b9d4c7 = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_f3fd3f16c8cf09de3ec3992577b9d4c7.bindTooltip(
+                `<div>
+                     Vidasana – 40 años defendiendo la producción ecológica (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e1e65cb8c87b1bb709f385780975cdb = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3e1e65cb8c87b1bb709f385780975cdb.bindTooltip(
+                `<div>
+                     Xaingra. Xarxa d'Intercanvi – Ateneu Rosa de Foc (food swapping)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdf9051b67cdeb85acb3967df4a09aa4 = L.circleMarker(
+                [41.36, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_fdf9051b67cdeb85acb3967df4a09aa4.bindTooltip(
+                `<div>
+                     Xarxa d'aliments - Can Batlló (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0019ac0ff8daa52d518f214cb17d802 = L.circleMarker(
+                [41.4, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_e0019ac0ff8daa52d518f214cb17d802.bindTooltip(
+                `<div>
+                     Xarxa d'aliments Gràcia – Una alternativa alimentaria de la  (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b61e4deed75749126852d9dce4f51ab5 = L.circleMarker(
+                [41.38, 2.13],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b61e4deed75749126852d9dce4f51ab5.bindTooltip(
+                `<div>
+                     Xarxa d'aliments de Les Corts (@xarxa.alimentslc) • Instagra (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_565a9ac5f4362525cec7d3478a7cf35d = L.circleMarker(
+                [41.4, 2.15],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_565a9ac5f4362525cec7d3478a7cf35d.bindTooltip(
+                `<div>
+                     Grups, Projectes i altres motivacions – Ateneu llibertari de (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97443f8ade2dfb7e419ecb51918eec0f = L.circleMarker(
+                [41.3992676, 2.1648581],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_97443f8ade2dfb7e419ecb51918eec0f.bindTooltip(
+                `<div>
+                     Mercados de campesinos - Xarxa de Consum Solidari (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa5d66d4f0f024134d3c018473c28421 = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_aa5d66d4f0f024134d3c018473c28421.bindTooltip(
+                `<div>
+                      (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1804194d390be964579d7507525a6e8 = L.circleMarker(
+                [41.39, 2.16],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1c40f", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d1804194d390be964579d7507525a6e8.bindTooltip(
+                `<div>
+                     Xarxa per la garantia del dret a una alimentació adequada a  (food gifting)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75d12b30f8f0699a78cad9150e681538 = L.circleMarker(
+                [41.4, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1abc9c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_75d12b30f8f0699a78cad9150e681538.bindTooltip(
+                `<div>
+                     Zero Waste BCN | Activitats sostenibles inclusives i creació (food education)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ba5c6f7162ed3e66f5df502e2556c8f = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_7ba5c6f7162ed3e66f5df502e2556c8f.bindTooltip(
+                `<div>
+                     Recuperar verduras ‘feas’ ayuda a combatir el cambio climáti (food sharing) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a1259ed12a774b9ff302eef9e503478 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_8a1259ed12a774b9ff302eef9e503478.bindTooltip(
+                `<div>
+                     Recogida de alimentos y productos básicos en catorce bibliot (food bank) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4d1dfef618b4655edf058e673459cc8 = L.circleMarker(
+                [41.38, 2.04],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_d4d1dfef618b4655edf058e673459cc8.bindTooltip(
+                `<div>
+                     Programa Profit. Gestión responsable de alimentos - Consum - (food sharing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_daa31f8e8fd1e42d858c572859130326 = L.circleMarker(
+                [41.39, 2.17],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_daa31f8e8fd1e42d858c572859130326.bindTooltip(
+                `<div>
+                     Serveis - Fem Compost - Compostatge Comunitari (unknown)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70bf59fb31792ff337042b7e93e36d9e = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_70bf59fb31792ff337042b7e93e36d9e.bindTooltip(
+                `<div>
+                     Huertos compartidos – huertos.org (community garden) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1c9825a57a0192a425732c86ac8d7b6 = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdc3c7", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_b1c9825a57a0192a425732c86ac8d7b6.bindTooltip(
+                `<div>
+                      (unknown) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b5db8f04a1bfa2f30017aa5755ee32a = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_e0d5385fe53c31262d030792debd9a02);
+        
+    
+            circle_marker_3b5db8f04a1bfa2f30017aa5755ee32a.bindTooltip(
+                `<div>
+                     Comidas en compañía | Servicios Sociales | (meals service) ⚠ approx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

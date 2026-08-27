@@ -1,0 +1,210 @@
+{
+  "city": "Brighton & Hove",
+  "total_missing": 80,
+  "resolved_strategy1": 0,
+  "resolved_strategy2": 0,
+  "unresolved": 40,
+  "needs_manual_review": [
+    {
+      "url": "https://restaurantsbrighton.co.uk/jobs/blog/the-real-junk-food-project",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://opendocs.ids.ac.uk/articles/report/Strengthening_Dignified_and_Equitable_Access_to_Affordable_and_Healthy_Food_in_the_City_of_Brighton_Hove/27255228",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.alliancefordignifiedfoodsupport.org.uk/glossary",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.balfourprimary.co.uk/page/?title=The+Pantry&pid=208",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://bouncebackfood.co.uk/brighton",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.bcw.org.uk/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://restaurantsbrighton.co.uk/brighton-hove-food-partnership",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://covidbrightonhove.org.uk/help-directory/food-and-shopping",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.meetup.com/brighton-and-hove-organic-gardening-group-bhogg",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://bhorganicgardeninggroup.org/2019/06/22/foraging-series-the-stanmer-scavenge",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.rottingdeanandsaltdeanlions.org.uk/coronavirus",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://forkanddigit.co.uk/csa-veg-share",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.compostclub.online/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://1space.eastsussex.gov.uk/Search?CategoryId=334&SM=ServiceSearch&UDG=True&SME=True",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.weareemmanuel.com/care",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.emmaus-international.org/en/membergroup/emmaus-brighton-hove",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://bmecp.org.uk/bmecp-food-bank",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.freshstartbrighton.org.uk/christmas-cheer.html",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://fitzherbertcommunityhub.org.uk/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.foodandfriendship.org.uk/food",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.gemogston.com/community/gems-community-kitchen",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.simpletix.com/e/get-growing-in-hollingdean-get-healthy-out-tickets-195862",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.hasl.org.uk/local-sustainable-food",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://hanover-action.org.uk/home/actions-and-events",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://impact-initiatives.org.uk/services/food-services",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.infinityfoodsretail.coop/seedy-sunday-2022",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.lovefoodsharefood.org/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://lunchpositive.org/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://moulsecoombforestgarden.org/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.plot22.org/who-we-are",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.phoenixfood.org/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://realfarming.org/programmes/food-justice/ready-healthy-eat",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.sharingskills.co.uk/food/community-food-growing",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.seedsovereignty.info/gathering-the-seed-community-a-conversation-with-seedy-sunday",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://emmaus-europe.org/language/en/emmaus-brighton-hove-a-botanical-wonderland-in-portslade",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://foodwastecollective.blogspot.com/",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://mepbrighton.com/horticultural-skills",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://www.tttb.org.uk/covid-19",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://togetherinsussex.org.uk/areas-of-work/food-poverty",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    },
+    {
+      "url": "https://womeninthefoodindustry.com/women-in-food-design-collaborate-to-support-nhs-lewes",
+      "reason": "coordinates could not be found automatically",
+      "action": "look up on Google Maps and add Lat/Lng to raw_urls.csv"
+    }
+  ],
+  "resolved": []
+}

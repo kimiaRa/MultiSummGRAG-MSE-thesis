@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-08-21T10:40:37.186555+00:00",
+  "finished_at": "2026-08-21T12:36:16.094942+00:00",
+  "python_version": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "git_commit": "30da8285dcd94a70b67061888230febb7c8d4dc3",
+  "ollama_version": "ollama version is 0.22.0",
+  "model": "qwen3:14b",
+  "model_digest": "bdbd181c33f2",
+  "num_ctx": 16384,
+  "temperature": 0,
+  "cities": [
+    "barcelona",
+    "brighton",
+    "dublin",
+    "london",
+    "milan"
+  ],
+  "n_replicates_per_condition": 3,
+  "conditions": [
+    "full",
+    "b1"
+  ],
+  "input_hashes_pre_generation": {
+    "barcelona": {
+      "fsi_enriched_sha256": "8080acd890f690756d54dddb7f9d97a3d9f7e5923fd2e03f40d616c0c399ba59",
+      "phase3_answers_sha256": "3e802b64b5d3453f388a0063d0b3246d3dbae11e1f42a108aaf714b89a55679f"
+    },
+    "brighton": {
+      "fsi_enriched_sha256": "59f8888cd03e3dbc87af58980872859e85b86778252a2315a63ef4702829f7cd",
+      "phase3_answers_sha256": "0fe2a9c293f97d3083bdf04a2e963b707a3d3b846d6600677eefa54fc41d52f7"
+    },
+    "dublin": {
+      "fsi_enriched_sha256": "0dc3865dbfbb319231175febd47eb40c946a54e8af356dd387dbed5e02007fbb",
+      "phase3_answers_sha256": "cef6d3ada38717736096514f2035d459da241f26920682dee0e2eab2a389546d"
+    },
+    "london": {
+      "fsi_enriched_sha256": "1207c8221b72f112fcc4179f9f561fec98b7bd68ec951fd8993099b3cfcb332a",
+      "phase3_answers_sha256": "bd185d55ae42ad03d9f998667ec2797aa44ce348381fb8ae1c6549c480c6019e"
+    },
+    "milan": {
+      "fsi_enriched_sha256": "6544f27b51e14ab433bb03afa8b2a21b8893e063160a2c6f0e3f58d2967bca26",
+      "phase3_answers_sha256": "b5552fc859e1336a8adb1890467c8c368b00cb6bdecc2c28085550a924905d79"
+    }
+  },
+  "input_hashes_post_generation": {
+    "barcelona": {
+      "fsi_enriched_sha256": "8080acd890f690756d54dddb7f9d97a3d9f7e5923fd2e03f40d616c0c399ba59",
+      "phase3_answers_sha256": "3e802b64b5d3453f388a0063d0b3246d3dbae11e1f42a108aaf714b89a55679f"
+    },
+    "brighton": {
+      "fsi_enriched_sha256": "59f8888cd03e3dbc87af58980872859e85b86778252a2315a63ef4702829f7cd",
+      "phase3_answers_sha256": "0fe2a9c293f97d3083bdf04a2e963b707a3d3b846d6600677eefa54fc41d52f7"
+    },
+    "dublin": {
+      "fsi_enriched_sha256": "0dc3865dbfbb319231175febd47eb40c946a54e8af356dd387dbed5e02007fbb",
+      "phase3_answers_sha256": "cef6d3ada38717736096514f2035d459da241f26920682dee0e2eab2a389546d"
+    },
+    "london": {
+      "fsi_enriched_sha256": "1207c8221b72f112fcc4179f9f561fec98b7bd68ec951fd8993099b3cfcb332a",
+      "phase3_answers_sha256": "bd185d55ae42ad03d9f998667ec2797aa44ce348381fb8ae1c6549c480c6019e"
+    },
+    "milan": {
+      "fsi_enriched_sha256": "6544f27b51e14ab433bb03afa8b2a21b8893e063160a2c6f0e3f58d2967bca26",
+      "phase3_answers_sha256": "b5552fc859e1336a8adb1890467c8c368b00cb6bdecc2c28085550a924905d79"
+    }
+  },
+  "integrity_check": "OK",
+  "integrity_changed_files": [],
+  "created_files": [
+    "evaluation/results/b1_replication/barcelona/full_rep1.json",
+    "evaluation/results/b1_replication/barcelona/full_rep2.json",
+    "evaluation/results/b1_replication/barcelona/full_rep3.json",
+    "evaluation/results/b1_replication/barcelona/b1_rep1.json",
+    "evaluation/results/b1_replication/barcelona/b1_rep2.json",
+    "evaluation/results/b1_replication/barcelona/b1_rep3.json",
+    "evaluation/results/b1_replication/brighton/full_rep1.json",
+    "evaluation/results/b1_replication/brighton/full_rep2.json",
+    "evaluation/results/b1_replication/brighton/full_rep3.json",
+    "evaluation/results/b1_replication/brighton/b1_rep1.json",
+    "evaluation/results/b1_replication/brighton/b1_rep2.json",
+    "evaluation/results/b1_replication/brighton/b1_rep3.json",
+    "evaluation/results/b1_replication/dublin/full_rep1.json",
+    "evaluation/results/b1_replication/dublin/full_rep2.json",
+    "evaluation/results/b1_replication/dublin/full_rep3.json",
+    "evaluation/results/b1_replication/dublin/b1_rep1.json",
+    "evaluation/results/b1_replication/dublin/b1_rep2.json",
+    "evaluation/results/b1_replication/dublin/b1_rep3.json",
+    "evaluation/results/b1_replication/london/full_rep1.json",
+    "evaluation/results/b1_replication/london/full_rep2.json",
+    "evaluation/results/b1_replication/london/full_rep3.json",
+    "evaluation/results/b1_replication/london/b1_rep1.json",
+    "evaluation/results/b1_replication/london/b1_rep2.json",
+    "evaluation/results/b1_replication/london/b1_rep3.json",
+    "evaluation/results/b1_replication/milan/full_rep1.json",
+    "evaluation/results/b1_replication/milan/full_rep2.json",
+    "evaluation/results/b1_replication/milan/full_rep3.json",
+    "evaluation/results/b1_replication/milan/b1_rep1.json",
+    "evaluation/results/b1_replication/milan/b1_rep2.json",
+    "evaluation/results/b1_replication/milan/b1_rep3.json"
+  ]
+}

@@ -1,0 +1,111 @@
+# Sean's story - gardening for connection - Thrive
+
+URL: https://www.thrive.org.uk/get-gardening/seans-story-gardening-for-connection
+Location: United Kingdom, London, Hillingdon
+Coordinates: 51.37, -1.0
+
+Type: community_garden
+Operational level: community_led
+Popularity: medium (score: 3)
+
+Description: Time spent helping others through community gardens and projects has in turn helped Sean connect with like-minded people. He shares his story and answers our questions here.
+
+Full text:
+Share your story
+We love hearing about how your gardens and our Thrive advice have helped support your wellbeing. If you would like to share your story, email info@thrive.org.uk
+This website uses cookies
+We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.
+Details
+- Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.
+- Amazon2Learn more about this providerbugsnag-anonymous-idThis cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.cookietestThis cookie is used to determine if the visitor has accepted the cookie consent box.
+- Cloudflare1Learn more about this providercf.turnstile.uThis cookie is used to distinguish between humans and bots.
+- Cookiebot1Learn more about this providerCookieConsentStores the user's cookie consent state for the current domain
+- Google1Learn more about this provider
+Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.
+test_cookieUsed to check if the user's browser supports cookies. - Paypal1Learn more about this provider__paypal_storage__Used in context with the PayPal payment-function on the website. The cookie is necessary for making a safe transaction through PayPal.
+- Stripe8Learn more about this providermDetermines the device used to access the website. This allows the website to be formatted accordingly._abThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information._mfThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.idPending__stripe_mid [x2]This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.__stripe_sid [x2]This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+- Vimeo1Learn more about this provider_cfuvidThis cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.
+- api2.hcaptcha.com1__cflbRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.
+- hcaptcha.com
+myfonts.net
+player.vimeo.com
+w.hcaptcha.com4__cf_bm [x4]This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website. - www.thrive.org.uk2#_commerce_cartPendingCRAFT_CSRF_TOKENEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.
+- Amazon
+- Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.
+- Stripe1Learn more about this provider1This cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.
+- Stripe
+- Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.
+- Hotjar6Learn more about this providerhjActiveViewportIdsThis cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters – this information is used to optimize the visitor's experience.hjViewportIdSaves the user's screen size in order to adjust the size of images on the website._hjTLDTest [x2]Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator._hjSession_#Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read._hjSessionUser_#Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.
+- Vimeo1Learn more about this providervuidCollects data on the user's visits to the website, such as which pages have been read.
+- Hotjar
+- Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.
+- Meta Platforms, Inc.5Learn more about this providerlastExternalReferrerDetects how the user reached the website by registering their last URL-address.lastExternalReferrerTimeDetects how the user reached the website by registering their last URL-address.log/errorUsed to detect and log potential tracking errors._fbp [x2]Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+- Google9Learn more about this provider
+Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.
+NIDRegisters a unique ID that identifies a returning user's device. The ID is used for targeted ads.pagead/1p-user-list/#Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites._ga [x2]Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels._ga_# [x2]Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels._gcl_au [x2]Used to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites._gcl_lsTracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. - Vimeo5Learn more about this providerorionV3#identityPendingpicox#eventsPendingLOCAL_STORAGE_ID_PICOX_IDPendingLOCAL_STORAGE_ID_VIMEO_PLAYERPendingPLAYER_PICOX_SAMPLING_SEEDPending
+- YouTube11Learn more about this provider__Secure-ROLLOUT_TOKENPending__Secure-YECStores the user's video player preferences using embedded YouTube video__Secure-YNIDUsed to track user’s interaction with embedded content.LAST_RESULT_ENTRY_KEYUsed to track user’s interaction with embedded content.LogsDatabaseV2:V#||LogsRequestsStoreUsed to track user’s interaction with embedded content.ServiceWorkerLogsDatabase#SWHealthLogNecessary for the implementation and functionality of YouTube video-content on the website.VISITOR_INFO1_LIVEPendingYSCPendingyt-icons-last-purgedNecessary for the implementation and functionality of YouTube video-content on the website.ytidb::LAST_RESULT_ENTRY_KEYUsed to track user’s interaction with embedded content.YtIdbMeta#databasesUsed to track user’s interaction with embedded content.
+- www.gstatic.com
+www.youtube.com2TESTCOOKIESENABLED [x2]Used to track user’s interaction with embedded content.
+- Meta Platforms, Inc.
+- Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.
+- static.beaconproducts.co.uk1beacon_vidPending
+- static.beaconproducts.co.uk
+[#IABV2_TITLE#]
+[#IABV2_BODY_INTRO#][#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#]
+[#IABV2_BODY_PREFERENCE_INTRO#]
+[#IABV2_BODY_PURPOSES_INTRO#]
+[#IABV2_BODY_PURPOSES#]
+[#IABV2_BODY_FEATURES_INTRO#]
+[#IABV2_BODY_FEATURES#]
+[#IABV2_BODY_PARTNERS_INTRO#]
+[#IABV2_BODY_PARTNERS#]
+About
+Cookies are small text files that can be used by websites to make a user's experience more efficient.
+The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.
+This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.
+You can at any time change or withdraw your consent from the Cookie Declaration on our website.
+Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy.
+Please state your consent ID and date when you contact us regarding your consent.
+The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.
+This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.
+You can at any time change or withdraw your consent from the Cookie Declaration on our website.
+Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy.
+Please state your consent ID and date when you contact us regarding your consent.
+Time spent helping others through community gardens and projects has in turn helped Sean connect with like-minded people. He shares his story and answers our questions here.
+When and why did your interest in gardening begin?
+I started gardening in primary school, when I was about 7 years old. But I really got into it when I was a bit older - around 21.
+I have always enjoyed growing plants. Seeing them grow brings a smile to my face. I tend to grow plants that are useful - vegetables, fruits, herbs and edible flowers. This has led me to cooking more healthy foods and trying out new recipes, as well as sharing my produce with others.
+What sort of garden space do you have at the moment?
+I live in a block of flats in White City, London. But I believe that 'every little space can grow'. My garden is my windowsills, which are full of herbs and small veg.
+I believe every little space can grow.
+Sean
+I have also done plenty of gardening in community spaces or helping others. For the last three years, I have been helping to run a local community garden. Before that, I spent eight years growing with the elderly in sheltered housing and using the produce to make weekly soups with them. Before that, I spent five years growing and running a plant nursery in Brentford, Acton and Hounslow.
+I treated all these sites as if they were my own personal gardens which I shared with local people.
+What do you most enjoy doing in the garden currently and why?
+I enjoy connecting with locals and like-minded people. It has been a great way to meet people that I can chat with. I get very lonely and depressed from time to time and getting out to the garden, in the fresh air and to have a coffee, a chat and grow with other people helps a lot.
+I do not mind gardening by myself. But it is much more fun gardening with others.
+Watching plants grow that I can then use for cooking warms the soul.
+Sean
+Growing and gardening in general is great. Watching plants grow that I can then use for cooking warms the soul.
+I also like that no one day is the same when gardening. Studying, finding out what is wrong with the plants, how to solve the issue and watching them recover is heart warming.
+What effect has gardening – or spending time in nature – had on your health & wellbeing?
+I am diabetic and suffer from mental health issues. Gardening has helped me control my blood sugar levels as well as lose quite a lot of weight over the years. It has also helped with my mental health by getting out in the fresh air as well as meeting people who understand these issues. It allows me to have a good time while gardening and making the gardens and community gardens look good.
+[gardening] has also helped with my mental health by getting out in the fresh air as well as meeting people who understand these issues.
+Sean
+There is also nothing quite as satisfying than taking a couple of veggies home to cook with for dinner at the end of the day!
+Do you feel that gardening / time in nature is something men take part in or talk about a lot or not? What do you think would encourage more men to spend time gardening?
+I have found more men getting involved in gardening over the last five to six years. This maybe in part due to being locked up during COVID or maybe due to gardening becoming more talked about on the news and doctors recommending it more now for people's physical and mental health and well being.
+But I still come across some men that think it is not a 'manly' thing to do. To overcome this in the past, I have run workshops (building polytunnels, planters, potting tables, sheds etc). Doing these workshops has sometimes brought men into the community garden or work space.
+How did you come across Thrive?
+I have been following you on social media and I am signed up to the Gardening Club newsletter.
+Have you discovered any helpful gardening tips along the way that you could share?
+Take lots and lots of cuttings. By doing this, you get lots of free plants! Trade them with other gardeners for plants that you are looking for - for example, geraniums, snapdragon (antirrhinum majus), aster (michaelmas), salvia and many, many more.
+Cut off flower heads when the flowers are finished and dry them out. Keep the seeds for next year.
+Feed plants like tomatoes, squash, peppers, beans, cucumbers every two weeks from June until mid August. I use seaweed and tomato feed.
+What’s your next garden project?
+Taking lots and lots of cuttings to share with family and friends is my main one at the moment. I might trade and sell some to save up money for seeds for next year.
+Keeping on top of the weeds and watering this time of the year (late spring) is a big project.
+Plus, I'll be doing lots of general maintenance like bambooing my runner beans and keeping plants that need a lot of feed well fed.
+We love hearing about how your gardens and our Thrive advice have helped support your wellbeing. If you would like to share your story, email info@thrive.org.uk
+
+Images: 10 image(s) available.

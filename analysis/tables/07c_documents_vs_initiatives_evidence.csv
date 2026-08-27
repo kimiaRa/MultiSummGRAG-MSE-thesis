@@ -1,0 +1,6 @@
+city,cleaned_urls,fsi_enriched_records,urls_equal_records_1to1,n_domains_contributing_gt1_url,n_urls_on_those_domains
+barcelona,237,237,True,17,84
+brighton,76,76,True,4,8
+dublin,69,69,True,3,15
+london,106,106,True,2,4
+milan,147,147,True,7,15

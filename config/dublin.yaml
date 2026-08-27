@@ -1,0 +1,7 @@
+city: Dublin
+country: Ireland
+language: en
+data_dir: data/dublin
+urls_file: data/dublin/urls_cleaned.csv
+raw_urls_file: data/dublin/raw_urls.csv
+districts_file: data/dublin/districts.geojson

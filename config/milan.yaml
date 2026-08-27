@@ -1,0 +1,7 @@
+city: Milan
+country: Italy
+language: it
+data_dir: data/milan
+raw_urls_file: data/milan/raw_urls.csv
+urls_file: data/milan/urls_cleaned.csv
+districts_file: data/milan/districts.geojson

@@ -1,0 +1,93 @@
+{
+  "total": 147,
+  "approx_coord_count": 0,
+  "approx_coord_pct": 0.0,
+  "district_count": 9,
+  "district_counts": {
+    "Municipio 1": 28,
+    "Municipio 5": 22,
+    "Municipio 9": 15,
+    "Municipio 3": 14,
+    "Municipio 2": 14,
+    "Municipio 6": 12,
+    "Municipio 8": 11,
+    "Municipio 7": 11,
+    "Municipio 4": 8
+  },
+  "top_districts": [
+    [
+      "Municipio 1",
+      28
+    ],
+    [
+      "Municipio 5",
+      22
+    ],
+    [
+      "Municipio 9",
+      15
+    ]
+  ],
+  "sparse_districts": [],
+  "type_counts": {
+    "other": 50,
+    "food_bank": 26,
+    "unknown": 19,
+    "community_garden": 17,
+    "food_sharing": 14,
+    "meals_service": 11,
+    "food_education": 7,
+    "food_gifting": 2,
+    "food_swapping": 1
+  },
+  "type_pct": {
+    "other": 34.0,
+    "food_bank": 17.7,
+    "unknown": 12.9,
+    "community_garden": 11.6,
+    "food_sharing": 9.5,
+    "meals_service": 7.5,
+    "food_education": 4.8,
+    "food_gifting": 1.4,
+    "food_swapping": 0.7
+  },
+  "level_counts": {
+    "ngo_led": 63,
+    "unknown": 40,
+    "community_led": 21,
+    "government_funded": 14,
+    "commercial": 6,
+    "council_supported": 3
+  },
+  "n_govt": 14,
+  "n_council": 3,
+  "n_ngo": 63,
+  "n_community": 21,
+  "n_commercial": 6,
+  "n_volunteer": 0,
+  "n_coop": 31,
+  "n_crowdfund": 5,
+  "n_ngo_formal": 48,
+  "n_informal": 3,
+  "n_network": 6,
+  "pop_counts": {
+    "high": 104,
+    "low": 43
+  },
+  "total_volume": 31308,
+  "max_volume": 15524,
+  "n_online": 70,
+  "n_physical": 19,
+  "n_hours_listed": 5,
+  "audience_counts": {
+    "low-income": 0,
+    "students": 14,
+    "general": 8,
+    "elderly": 32,
+    "children": 2
+  },
+  "n_sustainability": 71,
+  "n_collab": 42,
+  "n_education": 24,
+  "n_events": 92
+}

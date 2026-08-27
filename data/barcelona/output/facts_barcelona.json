@@ -1,0 +1,94 @@
+{
+  "total": 237,
+  "approx_coord_count": 0,
+  "approx_coord_pct": 0.0,
+  "district_count": 10,
+  "district_counts": {
+    "Ciutat Vella": 45,
+    "Sants-Montju\u00efc": 31,
+    "Eixample": 29,
+    "Sarri\u00e0-Sant Gervasi": 26,
+    "Sant Mart\u00ed": 17,
+    "Horta-Guinard\u00f3": 16,
+    "Gr\u00e0cia": 14,
+    "Les Corts": 11,
+    "Nou Barris": 7,
+    "Sant Andreu": 6
+  },
+  "top_districts": [
+    [
+      "Ciutat Vella",
+      45
+    ],
+    [
+      "Sants-Montju\u00efc",
+      31
+    ],
+    [
+      "Eixample",
+      29
+    ]
+  ],
+  "sparse_districts": [],
+  "type_counts": {
+    "other": 62,
+    "unknown": 49,
+    "community_garden": 41,
+    "food_sharing": 33,
+    "meals_service": 17,
+    "food_education": 13,
+    "food_bank": 11,
+    "food_swapping": 8,
+    "food_gifting": 3
+  },
+  "type_pct": {
+    "other": 26.2,
+    "unknown": 20.7,
+    "community_garden": 17.3,
+    "food_sharing": 13.9,
+    "meals_service": 7.2,
+    "food_education": 5.5,
+    "food_bank": 4.6,
+    "food_swapping": 3.4,
+    "food_gifting": 1.3
+  },
+  "level_counts": {
+    "unknown": 92,
+    "community_led": 74,
+    "ngo_led": 46,
+    "commercial": 10,
+    "government_funded": 9,
+    "council_supported": 6
+  },
+  "n_govt": 9,
+  "n_council": 6,
+  "n_ngo": 46,
+  "n_community": 74,
+  "n_commercial": 10,
+  "n_volunteer": 3,
+  "n_coop": 47,
+  "n_crowdfund": 0,
+  "n_ngo_formal": 8,
+  "n_informal": 2,
+  "n_network": 1,
+  "pop_counts": {
+    "high": 125,
+    "low": 112
+  },
+  "total_volume": 2087,
+  "max_volume": 807,
+  "n_online": 18,
+  "n_physical": 35,
+  "n_hours_listed": 0,
+  "audience_counts": {
+    "low-income": 8,
+    "students": 2,
+    "general": 23,
+    "elderly": 36,
+    "children": 3
+  },
+  "n_sustainability": 123,
+  "n_collab": 30,
+  "n_education": 12,
+  "n_events": 105
+}

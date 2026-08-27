@@ -1,0 +1,6 @@
+city,n_rows_extracted,n_retained,n_discarded,n_unknown,stated_retained_n,stated_total_m,rows_match_stated_total,retained_matches_stated_n,agree
+barcelona,261,47,214,0,47,261,True,True,True
+brighton,81,24,57,0,24,81,True,True,True
+dublin,83,36,47,0,36,83,True,True,True
+london,115,33,82,0,33,115,True,True,True
+milan,163,34,129,0,34,163,True,True,True

@@ -1,0 +1,7 @@
+city,n_rows,n_unique_urls_raw,n_unique_urls_normalised,duplicate_urls_raw,duplicate_urls_normalised,n_unique_domains,herfindahl_index_0_1,herfindahl_index_0_10000,domain_share_top1_pct,domain_share_top3_pct,domain_share_top10_pct,n_singleton_domains,social_platform_share_pct,pdf_or_nonhtml_share_pct,homepage_share_pct,median_path_depth
+barcelona,261,261,261,0,0,180,0.0192,192.5,8.0,19.9,31.4,161,6.1,0.0,39.8,1.0
+brighton,81,81,81,0,0,77,0.0136,135.7,2.5,7.4,17.3,73,0.0,0.0,21.0,1.0
+dublin,83,83,83,0,0,64,0.0367,367.3,13.3,25.3,34.9,60,10.8,0.0,28.9,1.0
+london,115,115,115,0,0,111,0.0093,93.0,1.7,5.2,12.2,107,1.7,0.0,20.9,1.0
+milan,163,163,163,0,0,149,0.0084,83.9,4.3,7.4,14.7,141,4.3,0.6,43.6,1.0
+ALL_CITIES_POOLED,703,703,703,0,0,563,0.0061,61.1,4.3,11.1,16.9,522,4.8,0.1,34.1,1.0

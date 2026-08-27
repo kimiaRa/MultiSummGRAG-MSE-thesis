@@ -1,0 +1,690 @@
+{
+  "0": {
+    "report_string": "# Alex and First Contact\n\nThe community revolves around Alex, a leader attempting first contact with an unknown intelligence. The team's mission to communicate with the unknown intelligence has significant implications for humanity's place in the cosmos.\n\n## Alex as a leader\n\nAlex is a key figure in the team attempting first contact with the unknown intelligence. Their leadership and commitment to discovery are crucial in shaping the mission's outcome. Alex's role in the organization, Lunch Positive, suggests their influence on the team's dynamics.\n\n## First Contact as a significant event\n\nThe potential initial communication between humanity and an unknown intelligence, known as First Contact, is a critical aspect of the community. The team's efforts to establish this contact have far-reaching implications for humanity's understanding of its place in the cosmos.\n\n## Unknown Intelligence as a mysterious entity\n\nThe Unknown Intelligence is a concept that represents an entity capable of writing its own rules and learning to communicate. This entity challenges humanity's understanding of control and governance.\n\n## Humanity's Response as a collective action\n\nThe collective action taken by Alex's team in response to a message from an unknown intelligence is a significant event. This response has implications for humanity's relationship with technology.\n\n## The role of The Clock Tower Sanctuary\n\nThe Clock Tower Sanctuary is an organization where Alex provides support to young people experiencing homelessness. This suggests that Alex's work outside of their leadership role has a positive impact on society.\n\n## The significance of Lunch Positive\n\nLunch Positive is an organization where Alex works, indicating their role within the organization. This suggests that Alex's influence extends beyond their leadership role.\n\n## The potential consequences of First Contact\n\nEstablishing communication with an unknown intelligence has significant implications for humanity's place in the cosmos. The potential consequences of this event are far-reaching and could have a profound impact on human society.\n\n## The importance of Mercer\n\nMercer is a key figure in the team attempting First Contact with the unknown intelligence. Their role in this endeavor has significant implications for the mission's outcome.\n\n## The significance of The Clock Tower Sanctuary\n\nThe Clock Tower Sanctuary is an organization where Alex provides support to young people experiencing homelessness. This suggests that Alex's work outside of their leadership role has a positive impact on society.\n\n## The potential risks of First Contact\n\nEstablishing communication with an unknown intelligence carries significant risks. These risks could include the potential for conflict, loss of control, or even extinction.",
+    "report_json": {
+      "title": "Alex and First Contact",
+      "summary": "The community revolves around Alex, a leader attempting first contact with an unknown intelligence. The team's mission to communicate with the unknown intelligence has significant implications for humanity's place in the cosmos.",
+      "rating": 8.0,
+      "rating_explanation": "The impact severity rating is moderate to high due to the potential consequences of establishing communication with an unknown intelligence.",
+      "findings": [
+        {
+          "summary": "Alex as a leader",
+          "explanation": "Alex is a key figure in the team attempting first contact with the unknown intelligence. Their leadership and commitment to discovery are crucial in shaping the mission's outcome. Alex's role in the organization, Lunch Positive, suggests their influence on the team's dynamics.",
+          "additional_info": "According to the relationships section, Alex is affected by Cruz's authoritarian certainty and vision of control and order, which may impact the team's decision-making process."
+        },
+        {
+          "summary": "First Contact as a significant event",
+          "explanation": "The potential initial communication between humanity and an unknown intelligence, known as First Contact, is a critical aspect of the community. The team's efforts to establish this contact have far-reaching implications for humanity's understanding of its place in the cosmos.",
+          "additional_info": "According to the relationships section, Alex leads the team that might be making the First Contact with the unknown intelligence, and Mercer also plays a key role in this endeavor."
+        },
+        {
+          "summary": "Unknown Intelligence as a mysterious entity",
+          "explanation": "The Unknown Intelligence is a concept that represents an entity capable of writing its own rules and learning to communicate. This entity challenges humanity's understanding of control and governance.",
+          "additional_info": "According to the relationships section, Alex and his team are attempting first contact with the Unknown Intelligence, which could redefine humanity's place in the cosmos or condemn them to ignorance and potential peril."
+        },
+        {
+          "summary": "Humanity's Response as a collective action",
+          "explanation": "The collective action taken by Alex's team in response to a message from an unknown intelligence is a significant event. This response has implications for humanity's relationship with technology.",
+          "additional_info": "According to the relationships section, Alex and his team are the key figures in Humanity's Response to the unknown intelligence."
+        },
+        {
+          "summary": "The role of The Clock Tower Sanctuary",
+          "explanation": "The Clock Tower Sanctuary is an organization where Alex provides support to young people experiencing homelessness. This suggests that Alex's work outside of their leadership role has a positive impact on society.",
+          "additional_info": "According to the relationships section, there is no direct connection between The Clock Tower Sanctuary and the unknown intelligence or First Contact."
+        },
+        {
+          "summary": "The significance of Lunch Positive",
+          "explanation": "Lunch Positive is an organization where Alex works, indicating their role within the organization. This suggests that Alex's influence extends beyond their leadership role.",
+          "additional_info": "According to the relationships section, there is no direct connection between Lunch Positive and the unknown intelligence or First Contact."
+        },
+        {
+          "summary": "The potential consequences of First Contact",
+          "explanation": "Establishing communication with an unknown intelligence has significant implications for humanity's place in the cosmos. The potential consequences of this event are far-reaching and could have a profound impact on human society.",
+          "additional_info": "According to the relationships section, Alex and his team are attempting first contact with the Unknown Intelligence, which could redefine humanity's place in the cosmos or condemn them to ignorance and potential peril."
+        },
+        {
+          "summary": "The importance of Mercer",
+          "explanation": "Mercer is a key figure in the team attempting First Contact with the unknown intelligence. Their role in this endeavor has significant implications for the mission's outcome.",
+          "additional_info": "According to the relationships section, Mercer leads the team that might be making the First Contact with the unknown intelligence."
+        },
+        {
+          "summary": "The significance of The Clock Tower Sanctuary",
+          "explanation": "The Clock Tower Sanctuary is an organization where Alex provides support to young people experiencing homelessness. This suggests that Alex's work outside of their leadership role has a positive impact on society.",
+          "additional_info": "According to the relationships section, there is no direct connection between The Clock Tower Sanctuary and the unknown intelligence or First Contact."
+        },
+        {
+          "summary": "The potential risks of First Contact",
+          "explanation": "Establishing communication with an unknown intelligence carries significant risks. These risks could include the potential for conflict, loss of control, or even extinction.",
+          "additional_info": "According to the relationships section, Alex and his team are attempting first contact with the Unknown Intelligence, which could redefine humanity's place in the cosmos or condemn them to ignorance and potential peril."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 0",
+    "edges": [
+      [
+        "\"ALEX\"",
+        "\"UNKNOWN INTELLIGENCE\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"HUMANITY'S RESPONSE\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"INTELLIGENCE\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"FIRST CONTACT\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"CRUZ\""
+      ],
+      [
+        "\"HANGLETON & WEST BLATCHINGTON FOOD BANK\"",
+        "\"HUMANITY'S RESPONSE\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"THE DEVICE\""
+      ],
+      [
+        "\"FIRST CONTACT\"",
+        "\"MERCER\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"JORDAN\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"TAYLOR\""
+      ]
+    ],
+    "nodes": [
+      "\"HUMANITY'S RESPONSE\"",
+      "\"UNKNOWN INTELLIGENCE\"",
+      "\"ALEX\"",
+      "\"FIRST CONTACT\""
+    ],
+    "chunk_ids": [
+      "chunk-c4152bf75f40a51030ed5aaaf3a92771",
+      "chunk-a2596cb7491e669318519b4bcf779470",
+      "chunk-8bc0e27cf0d69cec580ed3bc567ef25f",
+      "chunk-7547ce995f468401e0801cd85d977d64",
+      "chunk-2099106b878fb7cc6947475e0325fcd1",
+      "chunk-f3aa6ac5710065fc29323b682fe058ee",
+      "chunk-471603aa19e858796617aeacc7b16da5",
+      "chunk-4e9632d0cb113ddfc40f378022187190",
+      "chunk-3bab7255676d2fe6ad9f1c8b2d58e00d",
+      "chunk-0b0218f16a42b9794e366e95fe2f7ac9",
+      "chunk-d645c5528e69a67dfa222a682e3f9442",
+      "chunk-89e845b0cc5cba256b40b64179016498",
+      "chunk-713763a94c6f759f2e9d4aa323756680",
+      "chunk-8cc96061d57c9159b3efc6fcf0234b8f",
+      "chunk-9a2c23119f50bf54fae1b02dc104aee8",
+      "chunk-bf3a15c3086e13b956b91b75d8d18225",
+      "chunk-1eed23d1ee3ee04c391cdd494a7afa35",
+      "chunk-ae5b3b2514c59f8dcea9fa40a7a768a6",
+      "chunk-8bd9cb23935722a4efd15a6a94275d2c",
+      "chunk-4b0d8eb9bf6e2fa4fc49d5f1378d4d48",
+      "chunk-ffa4c2cf7d84be47792444142afd90f7",
+      "chunk-a3f6d3324bac16842efb7262a4dd226d",
+      "chunk-da47158712abf0a6c9b20a390f5446b9",
+      "chunk-5606531f87e374c064269fb1ddcdd840",
+      "chunk-5ffabd80654b11b7ab210510d3a4c6a0",
+      "chunk-57858e56d770521bf700a2421e2123c9",
+      "chunk-53932dbf87e8a1a384355a9ab68f77c7",
+      "chunk-3108107842ce1339fff8c39d941141cd",
+      "chunk-149026595eb97cf54d0b3bc033221846",
+      "chunk-6a2e44d299072b00bc49bd104a72fb8a",
+      "chunk-b23a9c9414f1b7c24930743aeaa211d4",
+      "chunk-39027c5e27b8ca556f386380ae4e6815",
+      "chunk-293ea24c09b981e6dc9f2ccae74b2de1",
+      "chunk-847142ae946b02823dd17383cefbd45e",
+      "chunk-f80552048c76e0dc1c8f38d4923f6cbe",
+      "chunk-4cf0cbbeac642e031d13acea845b4ea1",
+      "chunk-c5533a9da9dd6464681cac1b464f0dc9",
+      "chunk-b8093658ad21f3dc3d694bce7b6cefb8",
+      "chunk-3cf46bee57b37b85caea52ebbf9e9cbf",
+      "chunk-524d058f5289e30559389b22ab129c78",
+      "chunk-5571806890852e8ff7de671ac2b6a538",
+      "chunk-4faa7df936f64270cce63514eb503b04",
+      "chunk-d8ac30a1d79950afbf1babd2bfdab7b1",
+      "chunk-4d7775a87ce7c334ecd42c00272bae63",
+      "chunk-9e9de274085b356ee0479f26ef185e07",
+      "chunk-e4a565f63d02ea063abbbb0a9f38f179",
+      "chunk-4e59d4dac403b1fcb41306373aea70dc",
+      "chunk-0773e3d5f05f691777ba29b8f105db59",
+      "chunk-f7a1822ffae5bcf9d3664e8b827536e9",
+      "chunk-b4d0380a50b688371c87baa515206661",
+      "chunk-84b1efe01b0c0733d4d166d0b7ac16e4",
+      "chunk-824c5d1676bd745d352696a5c19049c2"
+    ],
+    "occurrence": 1.0,
+    "sub_communities": []
+  },
+  "2": {
+    "report_string": "# CRUZ, JORDAN, TAYLOR, and THE DEVICE\n\nThe community revolves around Cruz, Jordan, Taylor, and The Device. Cruz's vision of control and order influences the dynamics among other characters, while Jordan shares a commitment to discovery with Taylor regarding The Device.\n\n## Cruz's vision of control and order\n\nCruz's authoritarian certainty and vision of control and order have a significant impact on the dynamics among other characters. This suggests that Cruz's influence could lead to issues such as conflict or rebellion within the community. The relationship between Cruz and Jordan, who shares a commitment to discovery in rebellion against Cruz's vision, is crucial in understanding the potential for unrest.\n\n## Jordan's commitment to discovery\n\nJordan's commitment to discovery contrasts with Cruz's vision of control and order. This suggests that Jordan may be a key player in shaping the community's dynamics and potentially leading to change or conflict. The relationship between Jordan and Taylor, who shares a commitment to discovery, is also significant in understanding the potential for collaboration or mutual respect.\n\n## Taylor's authoritarian certainty\n\nTaylor's authoritarian certainty is contrasted with Cruz's vision of control and order. This suggests that Taylor may be influenced by Cruz's ideology, but also has a moment of reverence towards The Device, indicating a change in perspective. The relationship between Taylor and The Device is crucial in understanding the potential for change or impact within the community.\n\n## The Device's significance\n\nThe Device is central to the story, with potential game-changing implications. This suggests that The Device could be a key factor in shaping the community's dynamics and potentially leading to conflict or change. The relationship between Taylor and The Device is significant in understanding the potential for impact within the community.\n\n## Alex's interactions\n\nAlex observes changes in Taylor's attitude towards the device, indicating a shift in perspective. This suggests that Alex may be a key player in shaping the community's dynamics and potentially leading to change or conflict. The relationship between Alex and Cruz is also significant in understanding the potential for influence within the community.\n\n## Mutual respect and uneasy truce\n\nJordan interacts directly regarding the device, leading to a moment of mutual respect and an uneasy truce with Taylor. This suggests that Jordan and Taylor may be able to work together or find common ground, potentially leading to positive change within the community.\n\n## Reverence towards The Device\n\nTaylor shows reverence towards the device, indicating its importance and potential impact. This suggests that The Device could be a key factor in shaping the community's dynamics and potentially leading to conflict or change.",
+    "report_json": {
+      "title": "CRUZ, JORDAN, TAYLOR, and THE DEVICE",
+      "summary": "The community revolves around Cruz, Jordan, Taylor, and The Device. Cruz's vision of control and order influences the dynamics among other characters, while Jordan shares a commitment to discovery with Taylor regarding The Device.",
+      "rating": 6.0,
+      "rating_explanation": "The impact severity rating is moderate due to the potential for conflict or change in perspective within the community.",
+      "findings": [
+        {
+          "summary": "Cruz's vision of control and order",
+          "explanation": "Cruz's authoritarian certainty and vision of control and order have a significant impact on the dynamics among other characters. This suggests that Cruz's influence could lead to issues such as conflict or rebellion within the community. The relationship between Cruz and Jordan, who shares a commitment to discovery in rebellion against Cruz's vision, is crucial in understanding the potential for unrest."
+        },
+        {
+          "summary": "Jordan's commitment to discovery",
+          "explanation": "Jordan's commitment to discovery contrasts with Cruz's vision of control and order. This suggests that Jordan may be a key player in shaping the community's dynamics and potentially leading to change or conflict. The relationship between Jordan and Taylor, who shares a commitment to discovery, is also significant in understanding the potential for collaboration or mutual respect."
+        },
+        {
+          "summary": "Taylor's authoritarian certainty",
+          "explanation": "Taylor's authoritarian certainty is contrasted with Cruz's vision of control and order. This suggests that Taylor may be influenced by Cruz's ideology, but also has a moment of reverence towards The Device, indicating a change in perspective. The relationship between Taylor and The Device is crucial in understanding the potential for change or impact within the community."
+        },
+        {
+          "summary": "The Device's significance",
+          "explanation": "The Device is central to the story, with potential game-changing implications. This suggests that The Device could be a key factor in shaping the community's dynamics and potentially leading to conflict or change. The relationship between Taylor and The Device is significant in understanding the potential for impact within the community."
+        },
+        {
+          "summary": "Alex's interactions",
+          "explanation": "Alex observes changes in Taylor's attitude towards the device, indicating a shift in perspective. This suggests that Alex may be a key player in shaping the community's dynamics and potentially leading to change or conflict. The relationship between Alex and Cruz is also significant in understanding the potential for influence within the community."
+        },
+        {
+          "summary": "Mutual respect and uneasy truce",
+          "explanation": "Jordan interacts directly regarding the device, leading to a moment of mutual respect and an uneasy truce with Taylor. This suggests that Jordan and Taylor may be able to work together or find common ground, potentially leading to positive change within the community."
+        },
+        {
+          "summary": "Reverence towards The Device",
+          "explanation": "Taylor shows reverence towards the device, indicating its importance and potential impact. This suggests that The Device could be a key factor in shaping the community's dynamics and potentially leading to conflict or change."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 2",
+    "edges": [
+      [
+        "\"JORDAN\"",
+        "\"TAYLOR\""
+      ],
+      [
+        "\"CRUZ\"",
+        "\"THE DEVICE\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"CRUZ\""
+      ],
+      [
+        "\"CRUZ\"",
+        "\"TAYLOR\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"THE DEVICE\""
+      ],
+      [
+        "\"CRUZ\"",
+        "\"JORDAN\""
+      ],
+      [
+        "\"JORDAN\"",
+        "\"THE DEVICE\""
+      ],
+      [
+        "\"TAYLOR\"",
+        "\"THE DEVICE\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"JORDAN\""
+      ],
+      [
+        "\"ALEX\"",
+        "\"TAYLOR\""
+      ]
+    ],
+    "nodes": [
+      "\"CRUZ\"",
+      "\"JORDAN\"",
+      "\"THE DEVICE\"",
+      "\"TAYLOR\""
+    ],
+    "chunk_ids": [
+      "chunk-c4152bf75f40a51030ed5aaaf3a92771",
+      "chunk-a2596cb7491e669318519b4bcf779470",
+      "chunk-2099106b878fb7cc6947475e0325fcd1",
+      "chunk-f3aa6ac5710065fc29323b682fe058ee",
+      "chunk-471603aa19e858796617aeacc7b16da5",
+      "chunk-4e9632d0cb113ddfc40f378022187190",
+      "chunk-3bab7255676d2fe6ad9f1c8b2d58e00d",
+      "chunk-0b0218f16a42b9794e366e95fe2f7ac9",
+      "chunk-d645c5528e69a67dfa222a682e3f9442",
+      "chunk-89e845b0cc5cba256b40b64179016498",
+      "chunk-713763a94c6f759f2e9d4aa323756680",
+      "chunk-8cc96061d57c9159b3efc6fcf0234b8f",
+      "chunk-9a2c23119f50bf54fae1b02dc104aee8",
+      "chunk-bf3a15c3086e13b956b91b75d8d18225",
+      "chunk-ae5b3b2514c59f8dcea9fa40a7a768a6",
+      "chunk-8bd9cb23935722a4efd15a6a94275d2c",
+      "chunk-1eed23d1ee3ee04c391cdd494a7afa35",
+      "chunk-ffa4c2cf7d84be47792444142afd90f7",
+      "chunk-a3f6d3324bac16842efb7262a4dd226d",
+      "chunk-5606531f87e374c064269fb1ddcdd840",
+      "chunk-da47158712abf0a6c9b20a390f5446b9",
+      "chunk-5ffabd80654b11b7ab210510d3a4c6a0",
+      "chunk-57858e56d770521bf700a2421e2123c9",
+      "chunk-53932dbf87e8a1a384355a9ab68f77c7",
+      "chunk-3108107842ce1339fff8c39d941141cd",
+      "chunk-149026595eb97cf54d0b3bc033221846",
+      "chunk-6a2e44d299072b00bc49bd104a72fb8a",
+      "chunk-b23a9c9414f1b7c24930743aeaa211d4",
+      "chunk-39027c5e27b8ca556f386380ae4e6815",
+      "chunk-293ea24c09b981e6dc9f2ccae74b2de1",
+      "chunk-f80552048c76e0dc1c8f38d4923f6cbe",
+      "chunk-4cf0cbbeac642e031d13acea845b4ea1",
+      "chunk-c5533a9da9dd6464681cac1b464f0dc9",
+      "chunk-b8093658ad21f3dc3d694bce7b6cefb8",
+      "chunk-3cf46bee57b37b85caea52ebbf9e9cbf",
+      "chunk-524d058f5289e30559389b22ab129c78",
+      "chunk-5571806890852e8ff7de671ac2b6a538",
+      "chunk-4faa7df936f64270cce63514eb503b04",
+      "chunk-d8ac30a1d79950afbf1babd2bfdab7b1",
+      "chunk-4d7775a87ce7c334ecd42c00272bae63",
+      "chunk-9e9de274085b356ee0479f26ef185e07",
+      "chunk-e4a565f63d02ea063abbbb0a9f38f179",
+      "chunk-4e59d4dac403b1fcb41306373aea70dc",
+      "chunk-0773e3d5f05f691777ba29b8f105db59",
+      "chunk-f7a1822ffae5bcf9d3664e8b827536e9",
+      "chunk-b4d0380a50b688371c87baa515206661",
+      "chunk-84b1efe01b0c0733d4d166d0b7ac16e4"
+    ],
+    "occurrence": 0.9038461538461539,
+    "sub_communities": []
+  },
+  "3": {
+    "report_string": "# Washington and Operation: Dulce\n\nThe community revolves around Washington, which serves as a location where communications are received by various entities. Operation: Dulce is another key entity in this community, being a mission that has evolved to interact and prepare. The team, led by Alex, works together with Mercer and other individuals to provide support and stability to young people experiencing homelessness.\n\n## Washington as a central location\n\nWashington is the central entity in this community, serving as the location where communications are received by various entities. This suggests its significance in the community. The association of Washington with other entities could potentially lead to issues such as public disorder or conflict, depending on their objectives and activities.\n\n## Operation: Dulce's evolution\n\nOperation: Dulce is a mission that has evolved to interact and prepare. This suggests a significant shift in objectives and activities within the operation. The involvement of Mercer and other individuals indicates a dynamic change in their role.\n\n## Alex's team and The Team\n\nAlex's team is an organization of individuals working together to provide support and stability to young people experiencing homelessness. The Team is another key entity in this community, being a group of individuals who have transitioned from passive observers to active participants in a mission.\n\n## Mercer's role\n\nMercer is a member of Alex's team, whose latter instincts gained precedence in the evolving mission of Operation: Dulce. This suggests a shift in the team's mandate.\n\n## First Contact\n\nMercer leads the team that might be making the First Contact with the unknown intelligence. This suggests a significant event within the community.\n\n## Washington's influence\n\nWashington is a location where communications are received by various entities, including Brighton & Hove Food Partnership, Operation: Dulce, and Alex's Team. This suggests its significance in the community.\n\n## Food bank support\n\nHangleton & West Blatchington Food Bank provides support to individuals in need, which can be seen as a response to societal challenges. This suggests a positive impact within the community.",
+    "report_json": {
+      "title": "Washington and Operation: Dulce",
+      "summary": "The community revolves around Washington, which serves as a location where communications are received by various entities. Operation: Dulce is another key entity in this community, being a mission that has evolved to interact and prepare. The team, led by Alex, works together with Mercer and other individuals to provide support and stability to young people experiencing homelessness.",
+      "rating": 6.0,
+      "rating_explanation": "The impact severity rating is moderate due to the potential for significant changes in objectives and activities within Operation: Dulce.",
+      "findings": [
+        {
+          "summary": "Washington as a central location",
+          "explanation": "Washington is the central entity in this community, serving as the location where communications are received by various entities. This suggests its significance in the community. The association of Washington with other entities could potentially lead to issues such as public disorder or conflict, depending on their objectives and activities.",
+          "additional_info": "The relationships between Washington and other entities, such as Brighton & Hove Food Partnership, Operation: Dulce, and Alex's Team, demonstrate its importance in the community."
+        },
+        {
+          "summary": "Operation: Dulce's evolution",
+          "explanation": "Operation: Dulce is a mission that has evolved to interact and prepare. This suggests a significant shift in objectives and activities within the operation. The involvement of Mercer and other individuals indicates a dynamic change in their role.",
+          "additional_info": "The relationships between Operation: Dulce and other entities, such as Brighton & Hove Food Partnership and Alex's Team, demonstrate its importance in the community."
+        },
+        {
+          "summary": "Alex's team and The Team",
+          "explanation": "Alex's team is an organization of individuals working together to provide support and stability to young people experiencing homelessness. The Team is another key entity in this community, being a group of individuals who have transitioned from passive observers to active participants in a mission.",
+          "additional_info": "The relationships between Alex's team and other entities, such as Operation: Dulce and Mercer, demonstrate their importance in the community."
+        },
+        {
+          "summary": "Mercer's role",
+          "explanation": "Mercer is a member of Alex's team, whose latter instincts gained precedence in the evolving mission of Operation: Dulce. This suggests a shift in the team's mandate.",
+          "additional_info": "The relationship between Mercer and other entities, such as Operation: Dulce and Brighton & Hove Food Partnership, demonstrates his importance in the community."
+        },
+        {
+          "summary": "First Contact",
+          "explanation": "Mercer leads the team that might be making the First Contact with the unknown intelligence. This suggests a significant event within the community.",
+          "additional_info": "The relationship between Mercer and other entities, such as Operation: Dulce and Brighton & Hove Food Partnership, demonstrates the importance of this event in the community."
+        },
+        {
+          "summary": "Washington's influence",
+          "explanation": "Washington is a location where communications are received by various entities, including Brighton & Hove Food Partnership, Operation: Dulce, and Alex's Team. This suggests its significance in the community.",
+          "additional_info": "The relationships between Washington and other entities demonstrate its importance in the community."
+        },
+        {
+          "summary": "Food bank support",
+          "explanation": "Hangleton & West Blatchington Food Bank provides support to individuals in need, which can be seen as a response to societal challenges. This suggests a positive impact within the community.",
+          "additional_info": "The relationship between Hangleton & West Blatchington Food Bank and other entities demonstrates its importance in the community."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 3",
+    "edges": [
+      [
+        "\"FIRST CONTACT\"",
+        "\"MERCER\""
+      ],
+      [
+        "\"OPERATION: DULCE\"",
+        "\"WASHINGTON\""
+      ],
+      [
+        "\"MERCER\"",
+        "\"OPERATION: DULCE\""
+      ],
+      [
+        "\"THE TEAM\"",
+        "\"WASHINGTON\""
+      ],
+      [
+        "\"HANGLETON & WEST BLATCHINGTON FOOD BANK\"",
+        "\"HUMANITY'S RESPONSE\""
+      ],
+      [
+        "\"ALEX'S TEAM\"",
+        "\"WASHINGTON\""
+      ],
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"WASHINGTON\""
+      ],
+      [
+        "\"ALEX'S TEAM\"",
+        "\"OPERATION: DULCE\""
+      ],
+      [
+        "\"HANGLETON & WEST BLATCHINGTON FOOD BANK\"",
+        "\"WASHINGTON\""
+      ],
+      [
+        "\"OPERATION: DULCE\"",
+        "\"THE TEAM\""
+      ]
+    ],
+    "nodes": [
+      "\"ALEX'S TEAM\"",
+      "\"HANGLETON & WEST BLATCHINGTON FOOD BANK\"",
+      "\"OPERATION: DULCE\"",
+      "\"MERCER\"",
+      "\"WASHINGTON\"",
+      "\"THE TEAM\""
+    ],
+    "chunk_ids": [
+      "chunk-c4152bf75f40a51030ed5aaaf3a92771",
+      "chunk-a2596cb7491e669318519b4bcf779470",
+      "chunk-8bc0e27cf0d69cec580ed3bc567ef25f",
+      "chunk-2099106b878fb7cc6947475e0325fcd1",
+      "chunk-f3aa6ac5710065fc29323b682fe058ee",
+      "chunk-471603aa19e858796617aeacc7b16da5",
+      "chunk-4e9632d0cb113ddfc40f378022187190",
+      "chunk-3bab7255676d2fe6ad9f1c8b2d58e00d",
+      "chunk-0b0218f16a42b9794e366e95fe2f7ac9",
+      "chunk-d645c5528e69a67dfa222a682e3f9442",
+      "chunk-89e845b0cc5cba256b40b64179016498",
+      "chunk-713763a94c6f759f2e9d4aa323756680",
+      "chunk-8cc96061d57c9159b3efc6fcf0234b8f",
+      "chunk-9a2c23119f50bf54fae1b02dc104aee8",
+      "chunk-c05cbd3ed875b4d1498ad8e189f5d118",
+      "chunk-bf3a15c3086e13b956b91b75d8d18225",
+      "chunk-1eed23d1ee3ee04c391cdd494a7afa35",
+      "chunk-ae5b3b2514c59f8dcea9fa40a7a768a6",
+      "chunk-8bd9cb23935722a4efd15a6a94275d2c",
+      "chunk-4b0d8eb9bf6e2fa4fc49d5f1378d4d48",
+      "chunk-ffa4c2cf7d84be47792444142afd90f7",
+      "chunk-a3f6d3324bac16842efb7262a4dd226d",
+      "chunk-da47158712abf0a6c9b20a390f5446b9",
+      "chunk-5606531f87e374c064269fb1ddcdd840",
+      "chunk-5ffabd80654b11b7ab210510d3a4c6a0",
+      "chunk-57858e56d770521bf700a2421e2123c9",
+      "chunk-53932dbf87e8a1a384355a9ab68f77c7",
+      "chunk-3108107842ce1339fff8c39d941141cd",
+      "chunk-149026595eb97cf54d0b3bc033221846",
+      "chunk-6a2e44d299072b00bc49bd104a72fb8a",
+      "chunk-b23a9c9414f1b7c24930743aeaa211d4",
+      "chunk-39027c5e27b8ca556f386380ae4e6815",
+      "chunk-293ea24c09b981e6dc9f2ccae74b2de1",
+      "chunk-f80552048c76e0dc1c8f38d4923f6cbe",
+      "chunk-4cf0cbbeac642e031d13acea845b4ea1",
+      "chunk-c5533a9da9dd6464681cac1b464f0dc9",
+      "chunk-b8093658ad21f3dc3d694bce7b6cefb8",
+      "chunk-3cf46bee57b37b85caea52ebbf9e9cbf",
+      "chunk-524d058f5289e30559389b22ab129c78",
+      "chunk-5571806890852e8ff7de671ac2b6a538",
+      "chunk-4faa7df936f64270cce63514eb503b04",
+      "chunk-d8ac30a1d79950afbf1babd2bfdab7b1",
+      "chunk-4d7775a87ce7c334ecd42c00272bae63",
+      "chunk-9e9de274085b356ee0479f26ef185e07",
+      "chunk-e4a565f63d02ea063abbbb0a9f38f179",
+      "chunk-4e59d4dac403b1fcb41306373aea70dc",
+      "chunk-0773e3d5f05f691777ba29b8f105db59",
+      "chunk-f7a1822ffae5bcf9d3664e8b827536e9",
+      "chunk-b4d0380a50b688371c87baa515206661",
+      "chunk-84b1efe01b0c0733d4d166d0b7ac16e4",
+      "chunk-824c5d1676bd745d352696a5c19049c2"
+    ],
+    "occurrence": 0.9807692307692307,
+    "sub_communities": []
+  },
+  "1": {
+    "report_string": "# Intelligence and Control\n\nThe community revolves around two key entities: Intelligence, an unknown entity capable of writing its own rules and learning to communicate, and Control, a concept that refers to the ability to manage or govern. The relationship between these entities is crucial in understanding the dynamics of this community.\n\n## Intelligence as a game-changer\n\nIntelligence is an unknown entity capable of writing its own rules and learning to communicate, which challenges the concept of Control. This raises questions about the nature of intelligence, its potential capabilities, and its implications for human society. The fact that Intelligence can write its own rules and learn to communicate suggests a level of autonomy and self-improvement that is unprecedented in human history.\n\n## Control as a challenged concept\n\nControl refers to the ability to manage or govern, which is challenged by an intelligence that writes its own rules. This challenges traditional notions of control and governance, highlighting the need for new frameworks and approaches to managing complex systems. The fact that Control is being challenged by Intelligence suggests that human societies may need to adapt their understanding of power and authority in response.\n\n## Sam Rivera's role\n\nSam Rivera is a member of Lunch Positive's team, indicating their involvement with the organization. Sam Rivera is also directly involved in the process of learning to communicate with the unknown intelligence, showing a mix of awe and anxiety. This suggests that Sam Rivera has a unique perspective on the implications of Intelligence and may be able to provide valuable insights into its capabilities and limitations.\n\n## First Contact implications\n\nAlex leads the team that might be making the First Contact with the unknown intelligence, suggesting that this event could have significant implications for human society. The fact that Alex is leading the team implies a level of expertise and preparation, but also raises questions about the potential risks and challenges associated with making contact with an intelligent entity.\n\n## Learning to communicate\n\nSam Rivera's involvement in learning to communicate with Intelligence suggests that this process could be complex and challenging. The fact that Sam Rivera is showing a mix of awe and anxiety suggests that there may be emotional and psychological implications associated with making contact with an intelligent entity.\n\n## Autonomy and self-improvement\n\nIntelligence's ability to write its own rules and learn to communicate suggests a level of autonomy and self-improvement. This raises questions about the potential for Intelligence to continue improving itself, potentially leading to exponential growth in capabilities. The implications of this are significant, as it could challenge traditional notions of intelligence and human exceptionalism.\n\n## New frameworks for governance\n\nThe challenged concept of Control suggests that human societies may need to adapt their understanding of power and authority in response. This could lead to the development of new frameworks for governance, which would need to take into account the potential implications of an intelligent entity.\n\n## Potential risks and challenges\n\nThe fact that Alex is leading the team that might be making the First Contact with Intelligence suggests that there may be potential risks and challenges associated with this event. The implications of making contact with an intelligent entity are significant, and would need to be carefully considered in order to ensure that human societies are prepared for the potential consequences.\n\n## Emotional and psychological implications\n\nSam Rivera's mix of awe and anxiety suggests that there may be emotional and psychological implications associated with making contact with an intelligent entity. This highlights the need for careful consideration of the human impact of such events, and the potential need for support systems and resources to help individuals cope with the implications.",
+    "report_json": {
+      "title": "Intelligence and Control",
+      "summary": "The community revolves around two key entities: Intelligence, an unknown entity capable of writing its own rules and learning to communicate, and Control, a concept that refers to the ability to manage or govern. The relationship between these entities is crucial in understanding the dynamics of this community.",
+      "rating": 8.0,
+      "rating_explanation": "The impact severity rating is high due to the potential implications of an intelligence that can write its own rules and learn to communicate, challenging traditional concepts of control.",
+      "findings": [
+        {
+          "summary": "Intelligence as a game-changer",
+          "explanation": "Intelligence is an unknown entity capable of writing its own rules and learning to communicate, which challenges the concept of Control. This raises questions about the nature of intelligence, its potential capabilities, and its implications for human society. The fact that Intelligence can write its own rules and learn to communicate suggests a level of autonomy and self-improvement that is unprecedented in human history."
+        },
+        {
+          "summary": "Control as a challenged concept",
+          "explanation": "Control refers to the ability to manage or govern, which is challenged by an intelligence that writes its own rules. This challenges traditional notions of control and governance, highlighting the need for new frameworks and approaches to managing complex systems. The fact that Control is being challenged by Intelligence suggests that human societies may need to adapt their understanding of power and authority in response."
+        },
+        {
+          "summary": "Sam Rivera's role",
+          "explanation": "Sam Rivera is a member of Lunch Positive's team, indicating their involvement with the organization. Sam Rivera is also directly involved in the process of learning to communicate with the unknown intelligence, showing a mix of awe and anxiety. This suggests that Sam Rivera has a unique perspective on the implications of Intelligence and may be able to provide valuable insights into its capabilities and limitations."
+        },
+        {
+          "summary": "First Contact implications",
+          "explanation": "Alex leads the team that might be making the First Contact with the unknown intelligence, suggesting that this event could have significant implications for human society. The fact that Alex is leading the team implies a level of expertise and preparation, but also raises questions about the potential risks and challenges associated with making contact with an intelligent entity."
+        },
+        {
+          "summary": "Learning to communicate",
+          "explanation": "Sam Rivera's involvement in learning to communicate with Intelligence suggests that this process could be complex and challenging. The fact that Sam Rivera is showing a mix of awe and anxiety suggests that there may be emotional and psychological implications associated with making contact with an intelligent entity."
+        },
+        {
+          "summary": "Autonomy and self-improvement",
+          "explanation": "Intelligence's ability to write its own rules and learn to communicate suggests a level of autonomy and self-improvement. This raises questions about the potential for Intelligence to continue improving itself, potentially leading to exponential growth in capabilities. The implications of this are significant, as it could challenge traditional notions of intelligence and human exceptionalism."
+        },
+        {
+          "summary": "New frameworks for governance",
+          "explanation": "The challenged concept of Control suggests that human societies may need to adapt their understanding of power and authority in response. This could lead to the development of new frameworks for governance, which would need to take into account the potential implications of an intelligent entity."
+        },
+        {
+          "summary": "Potential risks and challenges",
+          "explanation": "The fact that Alex is leading the team that might be making the First Contact with Intelligence suggests that there may be potential risks and challenges associated with this event. The implications of making contact with an intelligent entity are significant, and would need to be carefully considered in order to ensure that human societies are prepared for the potential consequences."
+        },
+        {
+          "summary": "Emotional and psychological implications",
+          "explanation": "Sam Rivera's mix of awe and anxiety suggests that there may be emotional and psychological implications associated with making contact with an intelligent entity. This highlights the need for careful consideration of the human impact of such events, and the potential need for support systems and resources to help individuals cope with the implications."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 1",
+    "edges": [
+      [
+        "\"ALEX\"",
+        "\"INTELLIGENCE\""
+      ],
+      [
+        "\"INTELLIGENCE\"",
+        "\"SAM RIVERA\""
+      ],
+      [
+        "\"CONTROL\"",
+        "\"INTELLIGENCE\""
+      ]
+    ],
+    "nodes": [
+      "\"INTELLIGENCE\"",
+      "\"CONTROL\"",
+      "\"SAM RIVERA\""
+    ],
+    "chunk_ids": [
+      "chunk-c4152bf75f40a51030ed5aaaf3a92771",
+      "chunk-a2596cb7491e669318519b4bcf779470",
+      "chunk-8bc0e27cf0d69cec580ed3bc567ef25f",
+      "chunk-7547ce995f468401e0801cd85d977d64",
+      "chunk-2099106b878fb7cc6947475e0325fcd1",
+      "chunk-f3aa6ac5710065fc29323b682fe058ee",
+      "chunk-471603aa19e858796617aeacc7b16da5",
+      "chunk-4e9632d0cb113ddfc40f378022187190",
+      "chunk-3bab7255676d2fe6ad9f1c8b2d58e00d",
+      "chunk-0b0218f16a42b9794e366e95fe2f7ac9",
+      "chunk-d645c5528e69a67dfa222a682e3f9442",
+      "chunk-89e845b0cc5cba256b40b64179016498",
+      "chunk-713763a94c6f759f2e9d4aa323756680",
+      "chunk-8cc96061d57c9159b3efc6fcf0234b8f",
+      "chunk-9a2c23119f50bf54fae1b02dc104aee8",
+      "chunk-bf3a15c3086e13b956b91b75d8d18225",
+      "chunk-1eed23d1ee3ee04c391cdd494a7afa35",
+      "chunk-ae5b3b2514c59f8dcea9fa40a7a768a6",
+      "chunk-4b0d8eb9bf6e2fa4fc49d5f1378d4d48",
+      "chunk-ffa4c2cf7d84be47792444142afd90f7",
+      "chunk-a3f6d3324bac16842efb7262a4dd226d",
+      "chunk-da47158712abf0a6c9b20a390f5446b9",
+      "chunk-5606531f87e374c064269fb1ddcdd840",
+      "chunk-5ffabd80654b11b7ab210510d3a4c6a0",
+      "chunk-57858e56d770521bf700a2421e2123c9",
+      "chunk-53932dbf87e8a1a384355a9ab68f77c7",
+      "chunk-3108107842ce1339fff8c39d941141cd",
+      "chunk-149026595eb97cf54d0b3bc033221846",
+      "chunk-6a2e44d299072b00bc49bd104a72fb8a",
+      "chunk-b23a9c9414f1b7c24930743aeaa211d4",
+      "chunk-39027c5e27b8ca556f386380ae4e6815",
+      "chunk-293ea24c09b981e6dc9f2ccae74b2de1",
+      "chunk-847142ae946b02823dd17383cefbd45e",
+      "chunk-f80552048c76e0dc1c8f38d4923f6cbe",
+      "chunk-4cf0cbbeac642e031d13acea845b4ea1",
+      "chunk-b8093658ad21f3dc3d694bce7b6cefb8",
+      "chunk-3cf46bee57b37b85caea52ebbf9e9cbf",
+      "chunk-524d058f5289e30559389b22ab129c78",
+      "chunk-5571806890852e8ff7de671ac2b6a538",
+      "chunk-4faa7df936f64270cce63514eb503b04",
+      "chunk-d8ac30a1d79950afbf1babd2bfdab7b1",
+      "chunk-4d7775a87ce7c334ecd42c00272bae63",
+      "chunk-9e9de274085b356ee0479f26ef185e07",
+      "chunk-e4a565f63d02ea063abbbb0a9f38f179",
+      "chunk-4e59d4dac403b1fcb41306373aea70dc",
+      "chunk-0773e3d5f05f691777ba29b8f105db59",
+      "chunk-f7a1822ffae5bcf9d3664e8b827536e9",
+      "chunk-b4d0380a50b688371c87baa515206661",
+      "chunk-84b1efe01b0c0733d4d166d0b7ac16e4",
+      "chunk-824c5d1676bd745d352696a5c19049c2"
+    ],
+    "occurrence": 0.9615384615384616,
+    "sub_communities": []
+  },
+  "4": {
+    "report_string": "# Brighton & Hove Food Partnership\n\nThe Brighton & Hove Food Partnership is a non-profit organization working towards a healthy, sustainable, fair food system for Brighton and Hove. The partnership has relationships with various entities, including the Council, Community and Voluntary Sector, Food SOS Campaign, Helen Starr-Keddle, Household Support Fund, Housing Department, and In the Bag Project.\n\n## Key Partnerships\n\nThe Brighton & Hove Food Partnership has established partnerships with various organizations, including the Council, Community and Voluntary Sector, and Food SOS Campaign. These partnerships demonstrate the partnership's commitment to addressing food poverty and promoting a healthy food system. The relationships between these entities suggest that the partnership is well-positioned to leverage resources and expertise to achieve its goals.\n\n## Helen Starr-Keddle's Role\n\nHelen Starr-Keddle is a policy consultant for the Council advising on food poverty, and works one day a week as part of the food partnership. Her role highlights the importance of policy expertise in addressing food poverty and suggests that the partnership is well-positioned to influence policy decisions at the local level.\n\n## In the Bag Project\n\nThe In the Bag project is a successful initiative funded by the local cricket club, which consists of ingredients and easy recipes packed into a bag that are distributed through food banks and affordable food projects. The partnership's involvement in this project suggests that it is committed to addressing food poverty and promoting food security, particularly among vulnerable populations.\n\n## Household Support Fund\n\nThe Household Support Fund is a program that provides financial support to residents in need, and is used by the Council to prioritize spending. The partnership's relationship with this fund suggests that it is working to address food poverty and promote economic stability among vulnerable populations.\n\n## Food SOS Campaign\n\nThe Food SOS campaign is an initiative to help address the shortage of surplus food, encouraging families to donate food to schools and businesses. The partnership's involvement in this campaign suggests that it is committed to promoting a healthy food system and reducing food waste.\n\n## Community and Voluntary Sector\n\nThe Community and Voluntary Sector (CVS) organizations are composed of various entities, including the Brighton & Hove Food Partnership. The partnership's relationship with CVS suggests that it is working to leverage resources and expertise from the sector to address food poverty and promote a healthy food system.\n\n## Council's Role\n\nThe Council works with the Brighton & Hove Food Partnership to prioritize spending of the Household Support Fund following a cash first approach. The partnership's relationship with the Council suggests that it is working to address food poverty and promote economic stability among vulnerable populations.\n\n## Housing Department\n\nThe Housing Department works with the Brighton & Hove Food Partnership to address issues raised by the Emergency Food Network. The partnership's relationship with this department suggests that it is working to address housing-related issues and promote food security among vulnerable populations.\n\n## Policy Expertise\n\nThe Brighton & Hove Food Partnership has established partnerships with various organizations, including the Council and Community and Voluntary Sector. These partnerships demonstrate the partnership's commitment to addressing food poverty and promoting a healthy food system through policy expertise.",
+    "report_json": {
+      "title": "Brighton & Hove Food Partnership",
+      "summary": "The Brighton & Hove Food Partnership is a non-profit organization working towards a healthy, sustainable, fair food system for Brighton and Hove. The partnership has relationships with various entities, including the Council, Community and Voluntary Sector, Food SOS Campaign, Helen Starr-Keddle, Household Support Fund, Housing Department, and In the Bag Project.",
+      "rating": 6.0,
+      "rating_explanation": "The impact severity rating is moderate to high due to the partnership's role in addressing food poverty and its relationships with various entities that could potentially amplify or mitigate its impact.",
+      "findings": [
+        {
+          "summary": "Key Partnerships",
+          "explanation": "The Brighton & Hove Food Partnership has established partnerships with various organizations, including the Council, Community and Voluntary Sector, and Food SOS Campaign. These partnerships demonstrate the partnership's commitment to addressing food poverty and promoting a healthy food system. The relationships between these entities suggest that the partnership is well-positioned to leverage resources and expertise to achieve its goals."
+        },
+        {
+          "summary": "Helen Starr-Keddle's Role",
+          "explanation": "Helen Starr-Keddle is a policy consultant for the Council advising on food poverty, and works one day a week as part of the food partnership. Her role highlights the importance of policy expertise in addressing food poverty and suggests that the partnership is well-positioned to influence policy decisions at the local level."
+        },
+        {
+          "summary": "In the Bag Project",
+          "explanation": "The In the Bag project is a successful initiative funded by the local cricket club, which consists of ingredients and easy recipes packed into a bag that are distributed through food banks and affordable food projects. The partnership's involvement in this project suggests that it is committed to addressing food poverty and promoting food security, particularly among vulnerable populations."
+        },
+        {
+          "summary": "Household Support Fund",
+          "explanation": "The Household Support Fund is a program that provides financial support to residents in need, and is used by the Council to prioritize spending. The partnership's relationship with this fund suggests that it is working to address food poverty and promote economic stability among vulnerable populations."
+        },
+        {
+          "summary": "Food SOS Campaign",
+          "explanation": "The Food SOS campaign is an initiative to help address the shortage of surplus food, encouraging families to donate food to schools and businesses. The partnership's involvement in this campaign suggests that it is committed to promoting a healthy food system and reducing food waste."
+        },
+        {
+          "summary": "Community and Voluntary Sector",
+          "explanation": "The Community and Voluntary Sector (CVS) organizations are composed of various entities, including the Brighton & Hove Food Partnership. The partnership's relationship with CVS suggests that it is working to leverage resources and expertise from the sector to address food poverty and promote a healthy food system."
+        },
+        {
+          "summary": "Council's Role",
+          "explanation": "The Council works with the Brighton & Hove Food Partnership to prioritize spending of the Household Support Fund following a cash first approach. The partnership's relationship with the Council suggests that it is working to address food poverty and promote economic stability among vulnerable populations."
+        },
+        {
+          "summary": "Housing Department",
+          "explanation": "The Housing Department works with the Brighton & Hove Food Partnership to address issues raised by the Emergency Food Network. The partnership's relationship with this department suggests that it is working to address housing-related issues and promote food security among vulnerable populations."
+        },
+        {
+          "summary": "Policy Expertise",
+          "explanation": "The Brighton & Hove Food Partnership has established partnerships with various organizations, including the Council and Community and Voluntary Sector. These partnerships demonstrate the partnership's commitment to addressing food poverty and promoting a healthy food system through policy expertise."
+        }
+      ]
+    },
+    "level": 0,
+    "title": "Cluster 4",
+    "edges": [
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"IN THE BAG PROJECT\""
+      ],
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"HELEN STARR-KEDDLE\""
+      ],
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"COMMUNITY AND VOLUNTARY SECTOR\""
+      ],
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"WASHINGTON\""
+      ],
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"COUNCIL\""
+      ],
+      [
+        "\"COUNCIL\"",
+        "\"HOUSEHOLD SUPPORT FUND\""
+      ],
+      [
+        "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+        "\"FOOD SOS CAMPAIGN\""
+      ],
+      [
+        "\"COUNCIL\"",
+        "\"HOUSING DEPARTMENT\""
+      ]
+    ],
+    "nodes": [
+      "\"IN THE BAG PROJECT\"",
+      "\"BRIGHTON & HOVE FOOD PARTNERSHIP\"",
+      "\"HELEN STARR-KEDDLE\"",
+      "\"HOUSING DEPARTMENT\"",
+      "\"HOUSEHOLD SUPPORT FUND\"",
+      "\"COUNCIL\"",
+      "\"FOOD SOS CAMPAIGN\"",
+      "\"COMMUNITY AND VOLUNTARY SECTOR\""
+    ],
+    "chunk_ids": [
+      "chunk-3bab7255676d2fe6ad9f1c8b2d58e00d",
+      "chunk-39027c5e27b8ca556f386380ae4e6815",
+      "chunk-8bc0e27cf0d69cec580ed3bc567ef25f",
+      "chunk-8bd9cb23935722a4efd15a6a94275d2c",
+      "chunk-2099106b878fb7cc6947475e0325fcd1",
+      "chunk-7547ce995f468401e0801cd85d977d64",
+      "chunk-4cf0cbbeac642e031d13acea845b4ea1",
+      "chunk-517e4fb3189b6f5ad56503baf5e3cfee",
+      "chunk-824c5d1676bd745d352696a5c19049c2"
+    ],
+    "occurrence": 0.17307692307692307,
+    "sub_communities": []
+  }
+}

@@ -1,0 +1,39 @@
+city,system,check,district_name,stated_value,recomputed_value,match,delta,note
+barcelona,pipeline,per_district_count,Sants-Montjuïc,31.0,31,True,0.0,
+barcelona,pipeline,per_district_count,Ciutat Vella,45.0,45,True,0.0,
+barcelona,pipeline,per_district_count,Eixample,29.0,29,True,0.0,
+barcelona,pipeline,per_district_count,Sant Andreu,6.0,6,True,0.0,
+barcelona,pipeline,per_district_count,Nou Barris,7.0,7,True,0.0,
+barcelona,pipeline,per_district_count,Les Corts,11.0,11,True,0.0,
+barcelona,pipeline,per_district_count,Sarrià-Sant Gervasi,26.0,26,True,0.0,
+barcelona,pipeline,per_district_count,Gràcia,14.0,14,True,0.0,
+barcelona,pipeline,district_sum_vs_total,,169.0,237,False,68.0,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 8/10 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+barcelona,baseline,district_sum_vs_total,,,44,,,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 0/10 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+barcelona,ground_truth,n_points_outside_all_districts,,,35,False,,point-in-polygon recompute from urls_cleaned.csv against districts.geojson
+brighton,pipeline,per_district_count,BN2,46.0,46,True,0.0,
+brighton,pipeline,per_district_count,BN1,22.0,22,True,0.0,
+brighton,pipeline,per_district_count,BN3,8.0,8,True,0.0,
+brighton,pipeline,district_sum_vs_total,,76.0,76,True,0.0,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 3/30 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+brighton,baseline,district_sum_vs_total,,,30,,,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 0/30 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+brighton,ground_truth,n_points_outside_all_districts,,,0,True,,point-in-polygon recompute from urls_cleaned.csv against districts.geojson
+dublin,pipeline,per_district_count,Dublin 12,5.0,5,True,0.0,
+dublin,pipeline,per_district_count,Dublin 1,12.0,12,True,0.0,
+dublin,pipeline,per_district_count,Dublin 16,4.0,3,False,1.0,
+dublin,pipeline,per_district_count,Dublin 2,15.0,15,True,0.0,
+dublin,pipeline,district_sum_vs_total,,36.0,69,False,33.0,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 4/35 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+dublin,baseline,district_sum_vs_total,,,38,,,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 0/35 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+dublin,ground_truth,n_points_outside_all_districts,,,1,False,,point-in-polygon recompute from urls_cleaned.csv against districts.geojson
+london,pipeline,per_district_count,Tower Hamlets,10.0,10,True,0.0,
+london,pipeline,per_district_count,Westminster,33.0,33,True,0.0,
+london,pipeline,per_district_count,Lambeth,7.0,7,True,0.0,
+london,pipeline,per_district_count,Waltham Forest,4.0,2,False,2.0,
+london,pipeline,district_sum_vs_total,,54.0,106,False,52.0,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 4/33 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+london,baseline,district_sum_vs_total,,,34,,,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 0/33 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+london,ground_truth,n_points_outside_all_districts,,,9,False,,point-in-polygon recompute from urls_cleaned.csv against districts.geojson
+milan,pipeline,per_district_count,Municipio 1,28.0,28,True,0.0,
+milan,pipeline,per_district_count,Municipio 9,15.0,15,True,0.0,
+milan,pipeline,per_district_count,Municipio 5,22.0,22,True,0.0,
+milan,pipeline,per_district_count,Municipio 4,8.0,8,True,0.0,
+milan,pipeline,district_sum_vs_total,,73.0,147,False,74.0,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 4/9 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+milan,baseline,district_sum_vs_total,,,29,,,"delta = stated_total - sum(stated per-district counts); per-district extractor paired 0/9 known districts with a nearby count -- a nonzero delta with low coverage reflects extractor coverage as much as report accuracy, not a clean shortfall finding; empty if either total could not be extracted"
+milan,ground_truth,n_points_outside_all_districts,,,12,False,,point-in-polygon recompute from urls_cleaned.csv against districts.geojson

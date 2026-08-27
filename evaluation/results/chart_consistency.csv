@@ -1,0 +1,17 @@
+city,system,stated_total,bar_sum,bar_matches_total,donut_sum,donut_matches_total,prose_pct_matches_chart,n_districts_on_chart,n_donut_categories,NOTE
+barcelona,pipeline,237,202,no,237,yes,yes,10,9,35 FSIs are outside of all polygon districts
+barcelona,b1,237,202,no,237,yes,yes,10,9,"35 FSIs are outside of all polygon districts
+"
+barcelona,baseline_v2,47,47,yes,47,yes,yes,10,5,""
+brighton,pipeline,76,76,yes,76,yes,yes,3,7,
+brighton,b1,76,76,yes,76,yes,yes,3,7,
+brighton,baseline_v2,24,15,no,24,yes,yes,4,5,
+dublin,pipeline,69,68,no,69,yes,yes,18,7,1 FSI is outside polygon districts
+dublin,b1,69,68,no,69,yes,yes,18,7,1 FSI is outside polygon districts
+dublin,baseline_v2,36,36,yes,36,yes,yes,15,4,
+london,pipeline,106,96,no,106,yes,yes,22,9,10 FSIs are outside polygon districts
+london,b1,106,96,no,106,yes,yes,22,9,"10 FSIs are outside polygon districts"
+london,baseline_v2,33,27,no,33,yes,yes,16,5,
+milan,pipeline,147,135,no,147,yes,yes,9,9,12 FSIs are outside polygon districts
+milan,b1,147,135,no,147,yes,yes,9,9,12 FSIs are outside polygon districts
+milan,baseline_v2,34,34,yes,34,yes,yes,8,5,

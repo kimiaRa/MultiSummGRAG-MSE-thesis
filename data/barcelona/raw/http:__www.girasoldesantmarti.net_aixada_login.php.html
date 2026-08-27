@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca-va" lang="ca-va"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> L'Aixada - Inici de sessió i notícies </title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/aixada_main.css?v=1779890620">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ui-themes/smoothness/jqueryui.css">
+
+
+    <script type="text/javascript" src="js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jqueryui/jqueryui.js"></script>
+    <!-- aixada_js_src rootJs='' -->
+        <script src="js/aixadautilities/jquery.aixadaXML2HTML.js?v=20260428_v1"></script>
+        <script src="js/aixadautilities/jquery.aixadaUtilities.js?v=20260428_v1"></script>
+        <script src="js/aixadautilities/i18n/aixadaUtilities-ca-va.js?v=20260428_v1"></script>
+        <script src="js/jquery-ajaxQueue/jQuery.ajaxQueueNo.js?v=20260428_v1"></script>
+
+    <style>
+        p#logonHeader {background-image: url(img/aixada_header800.150Girasols.png);}    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css?v=1779890620">
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $.ajaxSetup({
+                cache: false
+            });
+            /**
+             *    logon stuff
+             */
+            $('#login').submit(function() {
+                var dataSerial = $(this).serialize();
+                //alert(dataSerial);
+                $.ajax({
+                    type: "POST",
+                    url: "php/ctrl/Login.php?oper=login",
+                    data: dataSerial,
+                    success: function() {
+                        top.location.href = 'index.php';
+
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        $.updateTips('#logonMsg', 'error', XMLHttpRequest.responseText);
+
+                    }
+                }); //end ajax retrieve date
+                return false;
+            });
+
+
+
+            /**
+             * forgot pwd dialog
+             */
+            $('#dialog-recuperatePwd').dialog({
+                autoOpen: false,
+                buttons: {
+                    "D'acord": function() {
+                        $.ajax({
+                            type: "POST",
+                            url: '',
+                            success: function(txt) {
+
+                            },
+                            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                                $.showMsg({
+                                    msg: XMLHttpRequest.responseText,
+                                    type: 'error'
+                                });
+
+                            }
+                        });
+
+
+                    },
+
+                    "Tanca": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+
+
+            /**
+             *    incidents
+             */
+            $('#newsWrap').xml2html('init', {
+                url: 'php/ctrl/Incidents.php',
+                params: 'oper=getIncidentsListing&filter=pastWeek&type=3',
+                loadOnInit: true
+            });
+
+
+
+
+
+            /**
+             *    reset different intput fields
+             */
+            $('input').focus(function() {
+                $(this).removeClass('ui-state-error');
+            });
+
+            $('#login_input, #password').focus(function() {
+                $('#logonMsg')
+                    .text('')
+                    .removeClass('ui-state-error');
+            });
+
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="wrap">
+
+        <div id="headwrap">
+            <p id="logonHeader"><span></span></p>
+        </div>
+
+        <div id="stagewrap" class="ui-widget">
+
+            <div class="floatLeft aix-layout-splitW20 aix-layout-widget-left-col hidden">
+                <div class="ui-widget-content ui-corner-all">
+                    <h4 class="ui-widget-header">Global info</h4>
+                </div>
+            </div>
+
+            <div class="floatLeft aix-layout-splitW50 aix-layout-widget-center-col">
+                <div id="newsWrap"></div>
+            </div>
+
+
+            <div id="logonWrap" class="aix-layout-splitW20">
+                <div class="modern-login-box">
+                    <h4 class="modern-login-title">Inici de sessió</h4>
+                    <p id="logonMsg" class="user_tips"></p>
+                    <form id="login" method="post" class="modern-login-form">
+                        <div class="form-group">
+                            <label for="login_input">Usuari</label>
+                            <input type="text" name="login" id="login_input" placeholder="Usuari" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contrasenya</label>
+                            <input type="password" name="password" id="password" placeholder="Contrasenya" autocomplete="current-password" required="">
+                        </div>
+                        <div class="form-actions">
+                            <button name="submitted" id="btn_logon" class="modern-btn">Inicia la sessió</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Llengua</label>
+                            <div class="language-picker">
+                                <div class="lang-option active" data-value="ca-va" title="Català">
+                                    <span class="flag-icon">🌻</span>
+                                    <span class="lang-label">Català</span>
+                                </div>
+                                <div class="lang-option " data-value="es" title="Español">
+                                    <span class="flag-icon">
+                                        <svg width="20" height="14" viewBox="0 0 750 500"><rect width="750" height="500" fill="#c60b1e"></rect><rect width="750" height="250" y="125" fill="#ffc400"></rect></svg>
+                                    </span>
+                                    <span class="lang-label">Español</span>
+                                </div>
+                                <div class="lang-option " data-value="en" title="English">
+                                    <span class="flag-icon">
+                                        <svg width="20" height="14" viewBox="0 0 60 30"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"></path></clipPath><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" clip-path="url(#s)"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#012169" stroke-width="4" clip-path="url(#s)"></path><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path><path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6"></path></svg>
+                                    </span>
+                                    <span class="lang-label">English</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="originating_uri" value="login.php">
+                    </form>
+                    <div class="login-footer">
+                        v20260428_v1                    </div>
+                </div>
+            </div><!-- end logonwrap -->
+
+
+
+        </div><!-- end stagewrap -->
+
+
+
+    </div>
+    <div id="dialog-message" title="">
+        <p class="minPadding ui-corner-all"></p>
+    </div>
+    
+
+    <script type="text/javascript">
+        $(function() {
+            $('.lang-option').click(function() {
+                var new_lang = $(this).data('value');
+                $.ajax({
+                    type: "POST",
+                    url: "php/ctrl/AixadaSession.php",
+                    data: {
+                        change_lang_to: new_lang,
+                        originating_uri: 'login.php'
+                    },
+                    dataType: "xml",
+                    success: function(xml) {
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-aixada_msg" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-aixada_msg">&nbsp;</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="aixada_msg" class="msg_dialog ui-dialog-content ui-widget-content"></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialog-recuperatePwd" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-dialog-recuperatePwd">&nbsp;</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialog-recuperatePwd" class="ui-dialog-content ui-widget-content">
+        <p>Please enter your email address here:</p>
+        <input type="text" name="email" value="">
+    </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">D'acord</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Tanca</span></button></div></div></div></body></html>

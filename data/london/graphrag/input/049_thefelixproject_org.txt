@@ -1,0 +1,90 @@
+# Home
+
+URL: https://thefelixproject.org
+Location: United Kingdom, London, Brent
+Coordinates: 51.53, -0.28
+
+Type: food_bank
+Operational level: ngo_led
+Popularity: medium (score: 2)
+
+Description: London-based food redistribution charity that rescues food surplus from the food industry and delivers it to 1200+ charities, schools and organisations.
+
+Full text:
+This website uses cookies
+We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.
+Details
+- Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.
+- BBC2Learn more about this providerckns_explicitThis opt-out cookie identifies if the visitor has deselected any cookies, trackers or other audience targeting tools.ckns_policyThis opt-out cookie identifies if the visitor has deselected any cookies, trackers or other audience targeting tools.
+- Cookiebot1Learn more about this providerCookieConsentStores the user's cookie consent state for the current domain
+- Donorbox5Learn more about this providercf_clearanceThis cookie is used to distinguish between humans and bots._grecaptchaThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.rc::aThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.rc::bThis cookie is used to distinguish between humans and bots.rc::cThis cookie is used to distinguish between humans and bots.
+- Google1Learn more about this provider
+Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.
+test_cookieUsed to check if the user's browser supports cookies. - LinkedIn2Learn more about this providerbcookieUsed in order to detect spam and improve the website's security.li_gcStores the user's cookie consent state for the current domain
+- Stripe3Learn more about this provider__stripe_midThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.__stripe_sidThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.mDetermines the device used to access the website. This allows the website to be formatted accordingly.
+- api.hcaptcha.com1hmt_idThis cookie is used to distinguish between humans and bots.
+- donorbox.org
+www.paypal.com2_cfuvid [x2]This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators. - forms.cloud.microsoft
+forms.office.com2__RequestVerificationToken [x2]Helps prevent Cross-Site Request Forgery (CSRF) attacks. - m.stripe.com3Learn more about this provider_abThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information._mfThis cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.idPending
+- thefelixproject.org2CRAFT_CSRF_TOKENEnsures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.CraftSessionIdSets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+- www.paypal.com
+donorbox.org2__paypal_storage__ [x2]Used in context with the PayPal payment-function on the website. The cookie is necessary for making a safe transaction through PayPal. - www.recaptcha.net1_GRECAPTCHAThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+- BBC
+- Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.
+- LinkedIn1Learn more about this providerlidcRegisters which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.
+- forms.cloud.microsoft
+forms.office.com2FormsWebSessionId [x2]The cookie is used if the visitor has filled in personal information on a formula. This information will be filled in automatically on other formulas. This process is used to optimize visitor experience.
+- LinkedIn
+- Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.
+- Azure1Learn more about this providermsd365mkttrsRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.
+- Donorbox1Learn more about this providerNRBA_SESSIONCollects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+- Google7Learn more about this provider
+Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.
+_ga [x2]Registers a unique ID that is used to generate statistical data on how the visitor uses the website._ga_# [x2]Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit._gatUsed by Google Analytics to throttle request rate_gidRegisters a unique ID that is used to generate statistical data on how the visitor uses the website.gtmBrowserIdThis cookie is used to determine if the visitor has visited the website before, or if it is a new visitor on the website. - Microsoft4Learn more about this providerc.gifCollects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner._cltkRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator._clckCollects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner._clskRegisters statistical data on users' behaviour on the website. Used for internal analytics by the website operator.
+- YouTube2Learn more about this providerVISITOR_INFO1_LIVETries to estimate the users' bandwidth on pages with integrated YouTube videos.YSCRegisters a unique ID to keep statistics of what videos from YouTube the user has seen.
+- m.stripe.com1Learn more about this provider1Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+- Azure
+- Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.
+- Meta Platforms, Inc.3Learn more about this providerlastExternalReferrerDetects how the user reached the website by registering their last URL-address.lastExternalReferrerTimeDetects how the user reached the website by registering their last URL-address._fbpUsed by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+- Azure1Learn more about this providermsd365mkttrCollects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+- Donorbox1Learn more about this providerrc::fThis cookie is used to distinguish between humans and bots.
+- Google4Learn more about this provider
+Some of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.
+NIDRegisters a unique ID that identifies a returning user's device. The ID is used for targeted ads.pagead/1p-user-list/#Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites._gcl_auUsed to measure the efficiency of the website’s advertisement efforts, by collecting data on the conversion rate of the website’s ads across multiple websites._gcl_lsTracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. - Microsoft5Learn more about this providerMR [x2]Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.SRM_BTracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.ANONCHKRegisters data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.SMRegisters a unique ID that identifies the user's device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+- YouTube8Learn more about this provider__Secure-ROLLOUT_TOKENUsed to track user’s interaction with embedded content.__Secure-YECStores the user's video player preferences using embedded YouTube video__Secure-YNIDUsed to track user’s interaction with embedded content.LAST_RESULT_ENTRY_KEYUsed to track user’s interaction with embedded content.LogsDatabaseV2:V#||LogsRequestsStoreUsed to track user’s interaction with embedded content.ServiceWorkerLogsDatabase#SWHealthLogNecessary for the implementation and functionality of YouTube video-content on the website.yt-icons-last-purgedNecessary for the implementation and functionality of YouTube video-content on the website.YtIdbMeta#databasesUsed to track user’s interaction with embedded content.
+- bing.com
+forms.cloud.microsoft3MUID [x3]Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains. - www.gstatic.com
+www.youtube.com2TESTCOOKIESENABLED [x2]Used to track user’s interaction with embedded content.
+- Meta Platforms, Inc.
+- Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.
+- Azure3Learn more about this providercisession_ddPendingcisession_previousPending_msciPending
+- BBC1Learn more about this provideroptimizely-vuidPending
+- Microsoft2Learn more about this providerMuidSyncDomainPendingMuidSyncTimestampPending
+- forms.cloud.microsoft
+forms.office.com8FormsVersion/ [x2]Pendingmats-telemetry-profile-id [x2]Pendingmsal.cache.encryption [x2]Pendingmsal.version [x2]Pending
+- Azure
+[#IABV2_TITLE#]
+[#IABV2_BODY_INTRO#][#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#]
+[#IABV2_BODY_PREFERENCE_INTRO#]
+[#IABV2_BODY_PURPOSES_INTRO#]
+[#IABV2_BODY_PURPOSES#]
+[#IABV2_BODY_FEATURES_INTRO#]
+[#IABV2_BODY_FEATURES#]
+[#IABV2_BODY_PARTNERS_INTRO#]
+[#IABV2_BODY_PARTNERS#]
+About
+Cookies are small text files that can be used by websites to make a user's experience more efficient.
+The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.
+This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.
+The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.
+This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.
+The Felix Project and FareShare have merged to become the UK's largest food redistribution charity. By coming together we're forming a bigger and more ambitious organisation with a vision of a UK where good food is never wasted, and nobody goes hungry. Learn more about the merger here, or find out how you can get involved below.
+The Felix Project and FareShare rescue high quality, surplus food that would otherwise go to waste. We redistribute food to over 8,000 community organisations across the UK supporting 1.5 million people every year.
+Join us in the fight against hunger this summer. We're asking eateries across London to join our Restaurants Feed London campaign launching on World Hunger Day (28th May).
+By adding an optional £1 to bills, last year's restaurants raised the equivalent of 184,000 meals, and this year we want to go even bigger. Now, we just need you!
+Howden announces new charity partnership with The Felix Project and FareShare
+400 Halal Meals Delivered for Ramadan Celebration
+CEO, Charlotte Hill, appointed to Prime Minister’s new Civil Society Council
+The Felix Project has once again had a record-breaking year, fighting more food waste and feeding more people than ever before.
+
+Images: 10 image(s) available.

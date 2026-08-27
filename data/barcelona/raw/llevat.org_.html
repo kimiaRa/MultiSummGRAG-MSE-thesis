@@ -1,0 +1,814 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",e=>{this.persisted=e.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(e){if(document.hidden){e._triggerListener();return}this.triggerEvents.forEach(t=>window.addEventListener(t,e.userEventHandler,{passive:!0})),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(e=>window.removeEventListener(e,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(e=>{this._isClickPending?this._pendingClickFinished=e:e()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(e,t,i){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(i,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{if(t.hasAttribute("src")){let i=new URL(t.src).origin;i!==location.origin&&e.push({src:i,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}}),e=[...new Map(e.map(e=>[JSON.stringify(e),e])).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){console.error(e)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{e.hasAttribute("data-rocket-src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)})}async _transformScript(e){return await this._littleBreath(),new Promise(t=>{function i(){e.setAttribute("data-rocket-status","executed"),t()}function r(){e.setAttribute("data-rocket-status","failed"),t()}try{let n=e.getAttribute("data-rocket-type"),s=e.getAttribute("data-rocket-src");if(n?(e.type=n,e.removeAttribute("data-rocket-type")):e.removeAttribute("type"),e.addEventListener("load",i),e.addEventListener("error",r),s)e.src=s,e.removeAttribute("data-rocket-src");else if(navigator.userAgent.indexOf("Firefox/")>0){var a=document.createElement("script");[...e.attributes].forEach(e=>{"type"!==e.nodeName&&a.setAttribute("data-rocket-type"===e.nodeName?"type":e.nodeName,e.nodeValue)}),a.text=e.text,e.parentNode.replaceChild(a,e),i()}else e.src="data:text/javascript;base64,"+btoa(e.text)}catch(o){r()}})}async _loadScriptsFromList(e){let t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var i=document.createDocumentFragment();e.forEach(e=>{let r=e.getAttribute&&e.getAttribute("data-rocket-src")||e.src;if(r){let n=document.createElement("link");n.href=r,n.rel=t,"preconnect"!==t&&(n.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),e.crossOrigin&&(n.crossOrigin=e.crossOrigin),e.integrity&&(n.integrity=e.integrity),i.appendChild(n),this.trash.push(n)}}),document.head.appendChild(i)}_delayEventListeners(e){let t={};function i(e,i){!function e(i){!t[i]&&(t[i]={originalFunctions:{add:i.addEventListener,remove:i.removeEventListener},eventsToRewrite:[]},i.addEventListener=function(){arguments[0]=r(arguments[0]),t[i].originalFunctions.add.apply(i,arguments)},i.removeEventListener=function(){arguments[0]=r(arguments[0]),t[i].originalFunctions.remove.apply(i,arguments)});function r(e){return t[i].eventsToRewrite.indexOf(e)>=0?"rocket-"+e:e}}(e),t[e].eventsToRewrite.push(i)}function r(e,t){let i=e[t];Object.defineProperty(e,t,{get:()=>i||function(){},set(r){e["rocket"+t]=i=r}})}i(document,"DOMContentLoaded"),i(window,"DOMContentLoaded"),i(window,"load"),i(window,"pageshow"),i(document,"readystatechange"),r(document,"onreadystatechange"),r(window,"onload"),r(window,"onpageshow"),Object.defineProperty(document,"readyState",{get:()=>e.rocketReadyState,set(t){e.rocketReadyState=t}}),document.readyState="loading"}_delayJQueryReady(e){let t;function i(i){if(i&&i.fn&&!e.allJQueries.includes(i)){i.fn.ready=i.fn.init.prototype.ready=function(t){return e.domReadyFired?t.bind(document)(i):document.addEventListener("rocket-DOMContentLoaded",()=>t.bind(document)(i)),i([])};let r=i.fn.on;i.fn.on=i.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map(e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]})}return r.apply(this,arguments),this},e.allJQueries.push(i)}t=i}i(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>t,set(e){i(e)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,document.readyState="interactive",await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){document.readyState="complete",await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(e=>e(window).trigger("rocket-jquery-load")),await this._littleBreath();let e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let e=new Map;document.write=document.writeln=function(t){let i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+t);let r=document.createRange(),n=i.parentElement,s=e.get(i);void 0===s&&(s=i.nextSibling,e.set(i,s));let a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(e=>setTimeout(e)):new Promise(e=>requestAnimationFrame(e))}_emptyTrash(){this.trash.forEach(e=>e.remove())}static run(){let e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Associació de consum ecològic i de proximitat - El Llevat</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&amp;display=swap" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&#038;display=swap" /></noscript>
+		
+	<!-- This site is optimized with the Yoast SEO plugin v15.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Som una associació de consum agroecològic que té com objectiu apropar a la població de Barcelona productes ecològics i de proximitat.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://llevat.org/">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Associació de consum ecològic i de proximitat - El Llevat">
+	<meta property="og:description" content="Som una associació de consum agroecològic que té com objectiu apropar a la població de Barcelona productes ecològics i de proximitat.">
+	<meta property="og:url" content="https://llevat.org/">
+	<meta property="og:site_name" content="El Llevat">
+	<meta property="article:modified_time" content="2022-02-25T10:23:47+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Tiempo de lectura">
+	<meta name="twitter:data1" content="0 minutos">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+
+<link rel="stylesheet" id="bootstrap-css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css?ver=5.6.17" type="text/css" media="all">
+
+<link rel="stylesheet" id="font-awesome-css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css?ver=5.6.17" type="text/css" media="all">
+<link rel="stylesheet" id="labstrap-style-css" href="https://llevat.org/wp-content/themes/labstrap/style.css?ver=5.6.17" type="text/css" media="all">
+<link rel="stylesheet" id="labstrap-child-style-css" href="https://llevat.org/wp-content/themes/labstrap-child/style.css?ver=1.0.0" type="text/css" media="all">
+<link rel="shortlink" href="https://llevat.org/">
+	</head>
+	<body class="home page-template-default page page-id-2">
+		<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3">
+			<div class="container">
+				<a class="navbar-brand" href="https://llevat.org/">
+					
+															<img class="brand mr-1" src="https://llevat.org/wp-content/uploads/2020/11/llevat-logotip-150x150-1.jpg" alt="">
+															
+				</a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto"><li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-6 active"><a title="Inici" href="https://llevat.org/">Inici</a></li>
+<li id="menu-item-723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-723 dropdown"><a title="Sobre nosaltres" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Sobre nosaltres <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a title="El Llevat" href="https://llevat.org/sobre-nosaltres/">El Llevat</a></li>
+	<li id="menu-item-724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724"><a title="Transparència" href="https://llevat.org/transparencia/">Transparència</a></li>
+	<li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a title="Projectes" href="https://llevat.org/projectes/">Projectes</a></li>
+</ul>
+</li>
+<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a title="Els nostres productes" href="https://llevat.org/els-nostres-productes/">Els nostres productes</a></li>
+<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a title="Fes-te’n soci/sòcia!" href="https://llevat.org/socies-i-socis/">Fes-te’n soci/sòcia!</a></li>
+<li id="menu-item-909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-909"><a title="Campanya #9BarrisEcològic" href="https://llevat.org/socies-i-socis/engeguem-la-campanya-9barrisecologic/">Campanya #9BarrisEcològic</a></li>
+<li id="menu-item-800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800"><a title="Receptes" href="https://llevat.org/receptes-de-cuina/">Receptes</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a title="Contacte" href="https://llevat.org/contacte/">Contacte</a></li>
+</ul></div>			</div>
+		
+	</nav>
+<header style="background: url(https://llevat.org/wp-content/uploads/2020/11/portada-llevat-2c.jpg)" class="text-white bg-dark">
+
+
+
+<div class="container">
+
+
+	
+
+<div class="d-md-flex align-items-center flex-md-row">
+	
+
+
+
+
+
+<div class="col-md-8 offset-md-0">
+
+<h1 class="title mb-4">Associació de consum ecològic i de proximitat</h1>
+<p>Som una associació de consum ecològic i tenim com a objectius: apropar a la població de Barcelona productes ecològics, de comerç just i de proximitat; fomentar el consum responsable, crític, amb criteris socials i laborals dignes i la difusió de la conscienciació mediambiental.</p>
+<h6 class="text-light">Sol·licita el teu full de comanda i prova els serveis de l’associació durant un mes abans d’associar-te!</h6>
+<p><a class="btn btn-primary mt-4" href="https://llevat.org/socies-i-socis/">Ho vull provar!</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</header>
+
+
+<!-- #5 Items (Items) -->
+
+
+<section id="p2s1" class="p2s1 s1  items">
+	<div class="container">
+						<h3>Per què El Llevat és la teva <span class="text-primary">associació de consum</span>?</h3>
+				
+						
+
+
+				<div class="row mt-5 d-md-flex align-items-md-stretch">
+												
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-carrot"></i></h4>
+																														<h3>Gran varietat de productes</h3>
+												
+												<p>Actualment la major part de cooperatives de consum es centren en la producció i distribució de fruites i verdures. A El Llevat disposem d'un full de comanda de centenars de productes per a un canvi substancial de patrons de consum, des de fruites i verdures fins a detergents, passant per carns o precuinats, així com productes de comerç just.
+</p>
+												</div></div>				</div>
+							
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-seedling"></i></h4>
+																														<h3>Ecològic i de proximitat</h3>
+												
+												<p>Tot i que cada cop van més de la mà, no tots els productes de proximitat són ecològics ni tots els productes ecològics són de proximitat. A El Llevat apostem per aquests dos models de consum alhora, ja que conjuguen el respecte pel medi ambient, la preservació del territori, el valor nutricional i el sabor del menjar i el suport a l'economia local.
+</p>
+												</div></div>				</div>
+							
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-house-user"></i></h4>
+																														<h3>Distribució a domicili</h3>
+												
+												<p>A diferència d'altres alternatives, El Llevat ofereix un servei de distribució a domicili setmanal de les comandes que fan les sòcies, oferint-los així la major comoditat i evitant desplaçaments innecesaris. Només has de triar el dia que millor et vagi i t'ho portarem al teu domicili, estalviant-te la comanda mínima.</p>
+												</div></div>				</div>
+							
+			<div class="col-lg-3 col-md-6 item">
+				<div class="card">					<!-- Imagen -->
+										<!-- FINAL Imagen -->
+					<div class="card-body">																		<h4 class="icono"><i class="fas fa-fas fa-shopping-basket"></i></h4>
+																														<h3>Compres quan vols i el que vols</h3>
+												
+												<p>Essent associat/da de El Llevat, cada setmana rebràs el teu full de comanda en excel a on hi tindràs indicat totes les novetats de temporada i hi podràs afegir tot el que vulguis i veure el total. Així i tot, no tindràs cap obligació de fer comanda totes les setmanes. Ens adaptem en tot moment a les teves necessitats.</p>
+												</div></div>				</div>
+											</div>
+			
+
+
+
+
+
+
+
+		</div>
+	</section>
+
+<!-- #2 Texto + Imagen Full (texto_imagen_full) -->
+
+
+<section id="p2s2" class="p2s2 s2 bg-light texto_imagen_full">
+		<div class="d-md-flex align-items-center flex-md-row">
+			
+			<div class="col-md-6">
+
+				<div class="p-5">
+			
+
+
+
+
+				<h3 class="mb-4">
+				Fer-se soci/sòcia de El Llevat és molt fàcil!				</h3>
+				<p>
+					</p><div class="container mt-5">
+	<div class="row">
+		
+		<div class="col-4">
+			<img src="https://llevat.org/wp-content/uploads/2020/11/icono-1.png&quot;" style="max-width: 4.5rem">
+			<h6 class="mt-3">Aportació de 30€ al capital social</h6>
+		</div>
+		<div class="col-4">
+		
+		</div>
+		<div class="col-4">
+			<img src="https://llevat.org/wp-content/uploads/2020/11/icono-2.png" style="max-width: 4.5rem">
+			<h6 class="mt-3">Fes les comandes que vulguis</h6>
+		</div>
+	</div>
+</div>
+
+<p class="mt-4 text-primary">Pots provar la coperativa fent comandes durant <strong><span class="text-primary">un mes sense compromís</span></strong> abans de decidir o no associar-te!</p>
+
+<a class="btn btn-primary mt-4 mb-4" href="#p2s8">Prova-ho!</a> 
+
+<p>També ens pots trucar al <a onclick="return gtag_report_conversion('tel:+34676057072');" href="tel:+34676057072"><i class="fas fa-phone-alt ml-2"></i><strong>+34 676 057 072</strong></a></p>				<p></p>
+			</div>
+
+			</div>
+
+			<div class="col-md-6 text-center">
+								<img src="https://llevat.org/wp-content/uploads/2020/11/el-llevat-e1606344678726.jpg" alt="">
+							</div>
+			
+		</div>
+</section>
+
+
+<!-- #1 Texto + Imagen (texto_imagen)-->
+
+<section id="p2s3" class="p2s3 s3  texto_imagen">
+	<div class="container">
+		<div class="d-md-flex align-items-center row flex-md-row flex-md-row-reverse">
+			
+			<div class="col-md-6">
+
+
+
+				<h5 class="mb-3 introheader">La major varietat en una associació de consum</h5>
+
+				<h3 class="mb-4">
+				Rep el teu full de comanda cada setmana i demana el que vulguis!				</h3>
+				<p>
+					</p><p>Les sòcies de l'associació de consum El Llevat reben cada setmana un full de comanda en excel amb més de 400 productes ecològics, de proximitat i de comerç just, des de fruites i verdures, fins a detergents i productes de cura corporal, carns o plats preparats com croquetes o canelons. Podràs afegir les quantitats i saber el total de la comanda, i fer el pagament per transferència bancària en el moment d'enviar-la. No cal que en facis totes les setmanes, pots triar rebre-les a domicili, i en cas que vagis a recollir-la a un nucli de El Llevat no hi ha un import mínim. </p>				<p></p>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-5 text-center">
+								<img src="https://llevat.org/wp-content/uploads/2020/11/muntatge-full-comanda.png" alt="">
+							</div>
+			
+		</div>
+	</div>
+</section><section id="p2s4" class="p2s4 s4  codigo">
+
+		<div class="container text-lg-center text-left">
+  <h6 class="introheader">Fes comandes durant un mes sense pagar quota!</h6>
+	<h2 class="mb-5 mt-3">Més de <span class="text-primary">400 productes</span> ecològics, de proximitat i de comerç just!</h2>
+	<div class="row d-flex align-items-center">
+		<div class="col-lg-3 text-left order-1">
+			<h5>Verdures i fruites</h5>
+			<ul class="list-unstyled pl-0 small">
+              <li><i class="fas fa-chevron-right text-primary"></i> Maduixots</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Figues</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Albergínia</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Carxofes</li>
+         </ul>
+          
+			<h5>Carns i embotits</h5>
+			<ul class="list-unstyled pl-0 small">
+              <li><i class="fas fa-chevron-right text-primary"></i> Pollastre</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Pernil cuit i curat</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Bull blanc</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Botifarra crua</li>
+         </ul>
+			<h5>Pa i farines</h5>
+			<ul class="list-unstyled pl-0 small">
+              <li><i class="fas fa-chevron-right text-primary"></i> D'espelta</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Integral</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> De blat de moro</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> De cúrcuma</li>
+         </ul>
+		</div>
+		<div class="col-lg-6 pl-lg-5 mt-5 mt-md-0 pr-lg-5 order-lg-2 order-3 text-center">
+			<img src="https://llevat.org/wp-content/uploads/2020/11/vegetales.jpg">
+                        <h6 class="mb-4">I molts productes més!</h6>
+			<div class="text-center mt-3">
+				<a class="btn btn-outline-primary" href="https://llevat.org/els-nostres-productes/">Veure més productes</a>
+			</div>
+		</div>
+		<div class="col-lg-3 text-left order-lg-3 order-2">
+			<h5>Llet i productes làctics</h5>
+			<ul class="list-unstyled pl-0 small">
+              <li><i class="fas fa-chevron-right text-primary"></i> Llet fresca de vaca</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Mató</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Formatges d'ovella curats</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Iogurts naturals</li>
+         </ul>
+			<h5>Productes vegans</h5>
+			<ul class="list-unstyled pl-0 small">
+              <li><i class="fas fa-chevron-right text-primary"></i> Hamburgeses vegetals</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Tofú</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Tempeh</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Seitan</li>
+         </ul>
+			<h5>Begudes</h5>
+			<ul class="list-unstyled pl-0 small">
+              <li><i class="fas fa-chevron-right text-primary"></i> Vins</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Caves</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Cerveses eco</li>
+              <li> <i class="fas fa-chevron-right text-primary"></i> Begudes vegetals</li>
+         </ul>
+		</div>
+	</div>
+</div>	
+</section>
+<!-- #6 Galería (galeria)  -->
+
+<section id="p2s5" class="p2s5 s5  galeria">
+
+<div class="container">
+
+						<h3>Participa a les nostres activitats!</h3>
+				
+		
+
+		
+				
+		<div class="card-columns">
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/120729885_829839547772231_8823875376024524608_n.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/120729885_829839547772231_8823875376024524608_n.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria18.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria18.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/121624467_648198852726897_516057443541993875_n.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/121624467_648198852726897_516057443541993875_n.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria6.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria6.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria2.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria2.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria3.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria3.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria4.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria4.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria1.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria1.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria15.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria15.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria13.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria13.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria16.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria16.jpg" class="card-img" alt="">
+				</a>
+			</div>
+						<div class="card border-0">
+				<a href="https://llevat.org/wp-content/uploads/2020/11/galeria10-e1606505987254.jpg" data-lightbox="p2s5">
+					<img src="https://llevat.org/wp-content/uploads/2020/11/galeria10-e1606505987254.jpg" class="card-img" alt="">
+				</a>
+			</div>
+					</div>
+		
+		
+</div>
+
+</section>
+
+
+<section id="p2s6" class="p2s6 s6  codigo">
+
+		<div id="map-canvas"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<div class="card">
+				<div class="card-body">
+					<h6><span style="text-transform: uppercase;" class="text-primary">Ens trobem a Nou Barris</span></h6>
+					<h3 class="mt-3 h2 card-title">Estem molt a prop teu</h3>
+                  <p class="mt-4 mb-2">A “El Llevat” es pot fer sòci/sòcia qualsevol persona de Barcelona. A més, col·laborem amb diferents entitats de diferents barris de la ciutat.</p>
+						<p class="small mb-2"><i style="color:#80a0b4" class="fas fa-map-marker-alt"></i> Carrer de Miguel Hernández, 6, local 8 (Barcelona)</p>
+					<p class="small mb-2"><i style="color:#80a0b4" class="fas fa-subway"></i> Parada Canyelles </p>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<section id="p2s7" class="p2s7 s7  codigo">
+
+		<div class="container text-center">
+	<h2 class="mb30">Segueix-nos a <a href="https://www.instagram.com/el.llevat/"><span style="color:#b4a822">@Instagram!</span></a></h2>
+	<div class="row">
+		<div class="col-md-4">
+<blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/B4E0tPSoEDN/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B4E0tPSoEDN/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B4E0tPSoEDN/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by El Llevat Cooperativa (@el.llevat)</a></p></div></blockquote> <script type="rocketlazyloadscript" async="" data-rocket-src="//www.instagram.com/embed.js"></script>	</div>
+          <div class="col-md-4">
+<blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/BbEeNBrjWaG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BbEeNBrjWaG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BbEeNBrjWaG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by El Llevat Cooperativa (@el.llevat)</a></p></div></blockquote> <script type="rocketlazyloadscript" async="" data-rocket-src="//www.instagram.com/embed.js"></script>		</div>
+		<div class="col-md-4">
+<blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/CF-JjVlB_TG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CF-JjVlB_TG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CF-JjVlB_TG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by El Llevat Cooperativa (@el.llevat)</a></p></div></blockquote> <script type="rocketlazyloadscript" async="" data-rocket-src="//www.instagram.com/embed.js"></script>		</div>
+	</div>
+</div>	
+</section>
+<section id="p2s8" class="p2s8 s8  codigo">
+
+		<div class="container">
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			<h5 class="mb-3 introheader">Forma part d'un canvi d'hàbits de consum</h5>
+          <h3 class="mb-3"><span class="text-primary">Fes-te soci/sòcia</span> de l'associació de consum (en tràmits de cooperativa) del teu barri</h3>
+			<div class="row">
+				<div class="col-lg-4">
+					<h6 class="mt-3"><span class="font-weight-bold text-primary">1.</span> T'enviarem el full de comanda de la setmana</h6>
+					<p class="small" style="line-height: 1.3rem;">Cada setmana tindràs productes diferents segons temporada, que podràs rebre a domicili i pagar per transferència bancària.</p>
+				</div>
+				<div class="col-lg-4">
+					<h6 class="mt-3"><span class="font-weight-bold text-primary">2.</span> Si et convenç, et dónes d'alta com a soci/sòcia</h6>
+					<p class="small" style="line-height: 1.3rem;">Com a qualsevol associació, hauràs de fer una aportació inicial al capital social, en aquest cas de 30€, que se't retornarà si algun dia en vols marxar.</p>
+				</div>
+				
+			</div>
+			
+		<form accept-charset="UTF-8" action="https://www.formbackend.com/f/bbc5576f0f3aa18d" method="POST">				<div class="form-group mt-4">
+					<label>Nom i cognoms</label>
+					<input type="text" class="form-control" name="Nom" id="Nom" required=""></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" class="form-control" name="Email" id="Email" required=""></div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Telèfon (opcional)</label>
+									<input type="text" class="form-control" name="Telèfon" id="Telèfon"></div>
+								</div>
+							</div>
+							<div class="form-check mt-3">
+								<input class="form-check-input" type="radio" name="soci/socia" id="exampleRadios1" value="option1" checked="">
+								<label class="form-check-label small" for="exampleRadios1">
+									Em vull fer soci/sòcia de El Llevat 
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+								<label class="form-check-label small" for="exampleRadios2">
+									No tinc clar si em vull associar, vull poder comprar productes durant un mes per decidir-me
+								</label>
+							</div>
+							<div class="form-group mt-3">
+								<div class="form-group">
+									<label for="Missatge">Missatge</label>
+									<textarea class="form-control" id="Missatge" rows="3" name="Missatge"></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck" name="Política de privacitat">
+									<label class="form-check-label" for="gridCheck">
+										He llegit i accepto la <span class="text-primary"><a href="http://www.llevat.org/politica-de-galetes/">política de privacitat</a></span>
+									</label>
+								</div>
+							</div>
+							<div class="text-center text-md-left">
+								<button type="submit" class="btn btn-success mt-3"><i class="fa fa-envelope mr-2"></i> Enviar</button>
+								
+								
+								
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>	
+</section>
+
+
+
+
+
+<footer class="pt-4 pt-md-5 pb-4 pb-md-5 border-top" style="background-color: var(--primary); color: #fff!important;">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mb-3">Sobre El Llevat</h5>
+        <p class="small">Som una associació de consum agroecològic de proximitat que té per objectiu apropar a la població de Barcelona productes ecològics, de comerç just i de proximitat, entre d'altres.</p>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://llevat.org/sobre-nosaltres/">Sobre la cooperativa</a></li>
+          <li class="mb-1"><a href="https://llevat.org/">Transparència</a></li>
+          <li class="mb-1"><a href="https://llevat.org/">Política de privacitat</a></li>
+          <li class="mb-4"><a href="https://llevat.org/">Avís legal i política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Membres de El Llevat</h5>
+       <p class="small">Tasta els productes de l'associació durant un mes sense compromís, i si t'agrada, t'hi associes. Ja no podràs tornar a consumir d’una altra manera!</p>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://llevat.org/socies-i-socis/">Prova un mes sense compromís!</a></li>
+          <li class="mb-1"><a href="https://llevat.org/els-nostres-productes/">Els nostres productes</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Contacta'ns!</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-1">Miguel Hernandez 6, Local 2</li>
+          <li class="mb-1">Canyelles, Nou Barris (08042 Barcelona)</li>
+          <li class="mb-1">Telèfon <a onclick="return gtag_report_conversion('tel:+34676057072');" href="tel:+34676057072">+34 676 057 072</a></li>
+        </ul>
+        <p class="mb-0"><strong><a href="mailto:info@llevat.org">info@llevat.org</a></strong></p>
+      </div>
+    </div>
+<hr>
+
+        <div class="row">
+          <div class="col-5 col-md">
+            <small class="d-block mb-3 text-light">© El Llevat - 2026</small>
+          </div>
+           <div class="col-7 col-md text-md-right">
+			<img src="image002" style="width: 309px; height: 67px" alt="Ajuntament de Barcelona: Economia cooperativa, social i solidaria i consum">
+          </div>
+
+        </div>
+        </div>
+  
+      </footer>
+<script type="rocketlazyloadscript" data-rocket-src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+ 
+
+
+
+
+<script type="rocketlazyloadscript" data-rocket-src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;language=ca&amp;key=AIzaSyBp-NAZAb_fLlanTqdAF10BcmOfvjohStE">
+</script>
+<script type="rocketlazyloadscript">
+  var cd = new google.maps.LatLng(41.4424388,2.163849);
+  function initialize() {
+    var mapOptions = {
+      zoom: 15,
+      center: cd,
+      rotateControl: true,
+      mapTypeControl: false,
+      scrollwheel: false
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+    map.set('styles', 
+[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dadada"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#c9c9c9"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  }
+]
+
+      )
+var contentString = '<div id="content">El Llevat<br>Carrer Miguel Hernández 6, Local 2 – Canyelles, Nou Barris (Barcelona)</div>';
+var infowindow = new google.maps.InfoWindow({
+  content: contentString
+});
+var marker = new google.maps.Marker({
+  position: {lat:41.4424388, lng: 2.163849},
+  map: map,
+  title: 'Barcelona'
+});
+marker.addListener('click', function() {
+  infowindow.open(map, marker);
+});
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script type="rocketlazyloadscript" data-rocket-src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" type="text/css" media="all">
+<script type="rocketlazyloadscript">
+lightbox.option({
+'resizeDuration': 200,
+'wrapAround': true,
+'fadeDuration': 0
+})
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="rocketlazyloadscript">
+var el = document.querySelector('.navbar-toggler');
+var menu = document.querySelector('#navbarCollapse');
+el.onclick = function() {
+menu.classList.toggle('show');
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 460646320 -->
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-460646320"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-460646320');
+</script>
+
+  
+
+<!-- Event snippet for Trucada conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script type="rocketlazyloadscript">
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-460646320/7wwZCLeDn-4BELDP09sB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+<!-- Facebook Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1044199606093230');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1044199606093230&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+</body></html>

@@ -1,0 +1,14 @@
+grouping,group_value,n_total,n_genuine_fsi,n_not_an_fsi,n_insufficient_evidence,n_type_evaluable,n_type_match,pct_type_match,n_op_evaluable,n_op_match,pct_op_match,n_not_an_fsi_specific_model_type,n_insufficient_evidence_specific_model_type
+stress_reason,forced_out_of_schema,1,1,0,0,1,0,0.0,1,0,0.0,0,0
+stress_reason,rare_type,6,4,2,0,4,1,25.0,4,1,25.0,2,0
+stress_reason,short_text_specific,2,0,0,2,0,0,,0,0,,0,2
+stress_reason,"short_text_specific,type_specific_op_unknown",2,0,0,2,0,0,,0,0,,0,2
+stress_reason,type_other,5,1,3,1,1,1,100.0,1,0,0.0,3,1
+stress_reason,"type_other,short_text_specific",1,0,0,1,0,0,,0,0,,0,1
+stress_reason,type_specific_op_unknown,4,1,2,1,1,0,0.0,1,1,100.0,2,1
+stress_reason,type_unknown,4,0,0,4,0,0,,0,0,,0,0
+city,barcelona,5,0,2,3,0,0,,0,0,,2,2
+city,brighton,5,1,0,4,1,1,100.0,1,0,0.0,0,3
+city,dublin,5,1,3,1,1,0,0.0,1,0,0.0,3,1
+city,london,5,4,0,1,4,1,25.0,4,2,50.0,0,0
+city,milan,5,1,2,2,1,0,0.0,1,0,0.0,2,1

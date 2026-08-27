@@ -1,0 +1,901 @@
+<!DOCTYPE html><html lang="ca"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productes - Cooperativa Girasols</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/productes.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="leaf-icon">🌻</div>
+    <div>
+      <h1>Els nostres productes</h1>
+      <p>Cooperativa Girasols de Sant Martí</p>
+    </div>
+    <a href="/index.php" class="btn-tornar">← Tornar</a>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Cerca un producte..." oninput="filtrar()">
+    <span class="counter" id="counter">55 productes</span>
+  </div>
+
+  <div class="grid" id="grid">
+    <div class="card" style="animation-delay: 0s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-jzTjQlU9nJERM7qbAmEB7KR4Sth3yk.png" alt="All tendre"></div>
+      <div class="card-body">
+        <div class="card-name">All tendre</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.03s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-jzTjQlU9nJERM7qbAmEB7KR4Sth3yk.png" alt="Alls secs"></div>
+      <div class="card-body">
+        <div class="card-name">Alls secs</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.06s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-dB0Lnna9SnPK6FovcZxwjRtkxgSPBu.png" alt="Alvocat"></div>
+      <div class="card-body">
+        <div class="card-name">Alvocat</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.09s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-v4QqtgUT65fjxf4afTk8FCkybNYAiq.png" alt="Ametlles"></div>
+      <div class="card-body">
+        <div class="card-name">Ametlles</div>
+        <span class="card-tag tag-altre">Altre</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.12s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-TPM0SNGrMP0dC2LwkEJXtheSpyEV30.png" alt="Api (es cobra a pes)"></div>
+      <div class="card-body">
+        <div class="card-name">Api (es cobra a pes)</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.15s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-id2bjNWhceyyEfRKFC99ipUcMSqfio.png" alt="Aranja"></div>
+      <div class="card-body">
+        <div class="card-name">Aranja</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.18s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-emC1BR5ljWANScSXgr4K8nwvA1f0aW.png" alt="Bleda"></div>
+      <div class="card-body">
+        <div class="card-name">Bleda</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.21s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-frBicIvOqd2UwplkxPdk4hRXZZUI5N.png" alt="Bròcoli"></div>
+      <div class="card-body">
+        <div class="card-name">Bròcoli</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.24s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-sldqRei48P7Oro9TRLnO9cCrgL1QSI.png" alt="Carbassa"></div>
+      <div class="card-body">
+        <div class="card-name">Carbassa</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.27s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-vEwrHCppAh1YMVuphJJCv0ELPU5GNi.png" alt="Cacauet (es cobra a pes)"></div>
+      <div class="card-body">
+        <div class="card-name">Cacauet (es cobra a pes)</div>
+        <span class="card-tag tag-llegum">Llegum</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.3s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-OqLZ6aGzYeNW3tFXYIUOTohBKTSwaW.png" alt="Carbassó"></div>
+      <div class="card-body">
+        <div class="card-name">Carbassó</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.32999999999999996s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-1YEICMUBE0cs3ZFWbytrmquTVGWbsK.png" alt="Carxofa"></div>
+      <div class="card-body">
+        <div class="card-name">Carxofa</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.36s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Ee5nKECUBZfTaLG5V0Vmtr1yn1e0Vm.png" alt="Ceba seca"></div>
+      <div class="card-body">
+        <div class="card-name">Ceba seca</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.39s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Ee5nKECUBZfTaLG5V0Vmtr1yn1e0Vm.png" alt="Ceba tendra"></div>
+      <div class="card-body">
+        <div class="card-name">Ceba tendra</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.42s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-45yrSlpcFonj96OytD4ZLWvGpV9Fk2.png" alt="Cigrons"></div>
+      <div class="card-body">
+        <div class="card-name">Cigrons</div>
+        <span class="card-tag tag-llegum">Llegum</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.44999999999999996s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-tK5vlI28NmKvwFsFdF1z704JhQVBJ0.png" alt="Cogombre"></div>
+      <div class="card-body">
+        <div class="card-name">Cogombre</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.48s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-rXyreG0Sz8i9iLVpkX784JgqMjICxP.png" alt="Col Milà"></div>
+      <div class="card-body">
+        <div class="card-name">Col Milà</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.51s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-rXyreG0Sz8i9iLVpkX784JgqMjICxP.png" alt="Col Picuda"></div>
+      <div class="card-body">
+        <div class="card-name">Col Picuda</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.54s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-AXqhyWpNrdtQgGwC1jWTmZhQYghuCf.png" alt="Col Rave"></div>
+      <div class="card-body">
+        <div class="card-name">Col Rave</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.57s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ceSUp8RPCc5EJEpEDSYBu9yH8pjNN5.png" alt="Enciam"></div>
+      <div class="card-body">
+        <div class="card-name">Enciam</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.6s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-5t2FNENaP3SXP3MGLOSOBuatSt6RKU.png" alt="Espàrrec"></div>
+      <div class="card-body">
+        <div class="card-name">Espàrrec</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.63s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-YOHxnWgKxTUQknXCGBBSQmI9XcJ1WN.png" alt="Espinac"></div>
+      <div class="card-body">
+        <div class="card-name">Espinac</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.6599999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ku2a80Q80m0Vhv6RzLIOW70Zlu06zN.png" alt="Faves"></div>
+      <div class="card-body">
+        <div class="card-name">Faves</div>
+        <span class="card-tag tag-llegum">Llegum</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.69s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-eLerAjlyuXl0qTB4eiPNVcK8CRDk7v.png" alt="Herbes pel caldo"></div>
+      <div class="card-body">
+        <div class="card-name">Herbes pel caldo</div>
+        <span class="card-tag tag-altre">Altre</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.72s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-emC1BR5ljWANScSXgr4K8nwvA1f0aW.png" alt="Kale Nero di Toscana"></div>
+      <div class="card-body">
+        <div class="card-name">Kale Nero di Toscana</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.75s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-TVCwuOTeNqH2vGlDuJretqMcHhLHIu.png" alt="Kiwi"></div>
+      <div class="card-body">
+        <div class="card-name">Kiwi</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.78s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-soaagOHsLdKrSP08d7KFAKucpvYiXW.png" alt="Llenties"></div>
+      <div class="card-body">
+        <div class="card-name">Llenties</div>
+        <span class="card-tag tag-llegum">Llegum</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.8099999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-zxHDTN58ruTW0e6TaKl8FnSuwlai3o.png" alt="Llimona"></div>
+      <div class="card-body">
+        <div class="card-name">Llimona</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.84s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Lo6Z6zumG1tr01pDUmtp1bOwDlTeIE.png" alt="Maduixot"></div>
+      <div class="card-body">
+        <div class="card-name">Maduixot</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.87s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-79XLKwCuOZGHdVcOlEApISx6x2nVd2.png" alt="Mandarina"></div>
+      <div class="card-body">
+        <div class="card-name">Mandarina</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.8999999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-79XLKwCuOZGHdVcOlEApISx6x2nVd2.png" alt="Ortanique"></div>
+      <div class="card-body">
+        <div class="card-name">Ortanique</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.9299999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ku2a80Q80m0Vhv6RzLIOW70Zlu06zN.png" alt="Mongeta del Ganxet"></div>
+      <div class="card-body">
+        <div class="card-name">Mongeta del Ganxet</div>
+        <span class="card-tag tag-llegum">Llegum</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.96s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-bFcw4aOrwL0LgKbW6PYUxw8nxPxyqe.png" alt="Moniato"></div>
+      <div class="card-body">
+        <div class="card-name">Moniato</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 0.99s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-09DC2J2e0MKOqQiC4FKaNaERcH1CV1.png" alt="Nap granel"></div>
+      <div class="card-body">
+        <div class="card-name">Nap granel</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.02s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-0wWd0fmMGDqRaxwYng6SmU0su3RmJm.png" alt="Nous"></div>
+      <div class="card-body">
+        <div class="card-name">Nous</div>
+        <span class="card-tag tag-altre">Altre</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.05s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-7uzNN0YrOHMfME1JRXstP9EgkWw5lf.png" alt="Ous (Mitja dotzena)"></div>
+      <div class="card-body">
+        <div class="card-name">Ous (Mitja dotzena)</div>
+        <span class="card-tag tag-altre">Altre</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.08s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SDWokE9iDTl76OZmABSCuDGBtgWNbx.png" alt="Pastanaga (manat)"></div>
+      <div class="card-body">
+        <div class="card-name">Pastanaga (manat)</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.1099999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SDWokE9iDTl76OZmABSCuDGBtgWNbx.png" alt="Pastanaga granel"></div>
+      <div class="card-body">
+        <div class="card-name">Pastanaga granel</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.14s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SxGhEwCGCF6pg0bm8ZqXN8NXOpt7nV.png" alt="Patata Àgria"></div>
+      <div class="card-body">
+        <div class="card-name">Patata Àgria</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.17s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SxGhEwCGCF6pg0bm8ZqXN8NXOpt7nV.png" alt="Patata Rudolph"></div>
+      <div class="card-body">
+        <div class="card-name">Patata Rudolph</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.2s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-QLcSvTeGtIXvxzKceaKAASQPbiEYW3.png" alt="Pera Conference"></div>
+      <div class="card-body">
+        <div class="card-name">Pera Conference</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.23s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-lw7zQS9zQOSLpNXCKfXRnXIRGn9dDC.png" alt="Pèsol"></div>
+      <div class="card-body">
+        <div class="card-name">Pèsol</div>
+        <span class="card-tag tag-llegum">Llegum</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.26s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-mLIzz1a3BcyWlL2gqM5P7hK76WDldX.png" alt="Plàtan"></div>
+      <div class="card-body">
+        <div class="card-name">Plàtan</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.29s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png" alt="Poma Fuji"></div>
+      <div class="card-body">
+        <div class="card-name">Poma Fuji</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.3199999999999998s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png" alt="Poma Golden"></div>
+      <div class="card-body">
+        <div class="card-name">Poma Golden</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.3499999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png" alt="Poma Story"></div>
+      <div class="card-body">
+        <div class="card-name">Poma Story</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.38s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-E0k709x4ZycrFd9xw2SspVkGfjE6Dm.png" alt="Porro (manat)"></div>
+      <div class="card-body">
+        <div class="card-name">Porro (manat)</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.41s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-09DC2J2e0MKOqQiC4FKaNaERcH1CV1.png" alt="Rave (manat)"></div>
+      <div class="card-body">
+        <div class="card-name">Rave (manat)</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.44s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-OKP18GwrnhfovB1vM1t71aUMk1FQFN.png" alt="Remolatxa"></div>
+      <div class="card-body">
+        <div class="card-name">Remolatxa</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.47s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-1kzlhXN3lasEQYBtwdeQrzzhBEwurX.png" alt="Rotlle de 300 bosses compostables 30x40"></div>
+      <div class="card-body">
+        <div class="card-name">Rotlle de 300 bosses compostables 30x40</div>
+        <span class="card-tag tag-altre">Altre</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.5s">
+      <div class="card-img">🍄</div>
+      <div class="card-body">
+        <div class="card-name">Shiitake</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.53s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-id2bjNWhceyyEfRKFC99ipUcMSqfio.png" alt="Taronja"></div>
+      <div class="card-body">
+        <div class="card-name">Taronja</div>
+        <span class="card-tag tag-fruita">Fruita</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.56s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-v4Bz5uvOIDciAdqa3qIpabpC0VrOkp.png" alt="Tomacó"></div>
+      <div class="card-body">
+        <div class="card-name">Tomacó</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.5899999999999999s">
+      <div class="card-img">🍄</div>
+      <div class="card-body">
+        <div class="card-name">Xampinyó</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  
+    <div class="card" style="animation-delay: 1.6199999999999999s">
+      <div class="card-img"><img src="https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-LYcasyzw3AXY5BIbywp0rBWrVqLIIL.png" alt="Xirivia"></div>
+      <div class="card-body">
+        <div class="card-name">Xirivia</div>
+        <span class="card-tag tag-verdura">Verdura</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Cooperativa Girasols de Sant Martí — Productes frescos i de temporada
+  </footer>
+
+  <script>
+    const productes = [{
+        nom: "All tendre",
+        emoji: "🧄",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-jzTjQlU9nJERM7qbAmEB7KR4Sth3yk.png",
+        tag: "verdura",
+        cerca: "all tendre"
+      },
+      {
+        nom: "Alls secs",
+        emoji: "🧄",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-jzTjQlU9nJERM7qbAmEB7KR4Sth3yk.png",
+        tag: "verdura",
+        cerca: "alls secs"
+      },
+      {
+        nom: "Alvocat",
+        emoji: "🥑",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-dB0Lnna9SnPK6FovcZxwjRtkxgSPBu.png",
+        tag: "fruita",
+        cerca: "alvocat"
+      },
+      {
+        nom: "Ametlles",
+        emoji: "🌰",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-v4QqtgUT65fjxf4afTk8FCkybNYAiq.png",
+        tag: "altre",
+        cerca: "ametlles"
+      },
+      {
+        nom: "Api (es cobra a pes)",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-TPM0SNGrMP0dC2LwkEJXtheSpyEV30.png",
+        tag: "verdura",
+        cerca: "api"
+      },
+      {
+        nom: "Aranja",
+        emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-id2bjNWhceyyEfRKFC99ipUcMSqfio.png",
+        tag: "fruita",
+        cerca: "aranja taronja"
+      },
+      {
+        nom: "Bleda",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-emC1BR5ljWANScSXgr4K8nwvA1f0aW.png",
+        tag: "verdura",
+        cerca: "bleda"
+      },
+      {
+        nom: "Bròcoli",
+        emoji: "🥦",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-frBicIvOqd2UwplkxPdk4hRXZZUI5N.png",
+        tag: "verdura",
+        cerca: "brocoli"
+      },
+      {
+        nom: "Carbassa",
+        emoji: "🎃",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-sldqRei48P7Oro9TRLnO9cCrgL1QSI.png",
+        tag: "verdura",
+        cerca: "carbassa"
+      },
+      {
+        nom: "Cacauet (es cobra a pes)",
+        emoji: "🥜",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-vEwrHCppAh1YMVuphJJCv0ELPU5GNi.png",
+        tag: "llegum",
+        cerca: "cacauet"
+      },
+      {
+        nom: "Carbassó",
+        emoji: "🥒",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-OqLZ6aGzYeNW3tFXYIUOTohBKTSwaW.png",
+        tag: "verdura",
+        cerca: "carbasso"
+      },
+      {
+        nom: "Carxofa",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-1YEICMUBE0cs3ZFWbytrmquTVGWbsK.png",
+        tag: "verdura",
+        cerca: "carxofa"
+      },
+      {
+        nom: "Ceba seca",
+        emoji: "🧅",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Ee5nKECUBZfTaLG5V0Vmtr1yn1e0Vm.png",
+        tag: "verdura",
+        cerca: "ceba seca"
+      },
+      {
+        nom: "Ceba tendra",
+        emoji: "🧅",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Ee5nKECUBZfTaLG5V0Vmtr1yn1e0Vm.png",
+        tag: "verdura",
+        cerca: "ceba tendra"
+      },
+      {
+        nom: "Cigrons",
+        emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-45yrSlpcFonj96OytD4ZLWvGpV9Fk2.png",
+        tag: "llegum",
+        cerca: "cigrons"
+      },
+      {
+        nom: "Cogombre",
+        emoji: "🥒",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-tK5vlI28NmKvwFsFdF1z704JhQVBJ0.png",
+        tag: "verdura",
+        cerca: "cogombre"
+      },
+      {
+        nom: "Col Milà",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-rXyreG0Sz8i9iLVpkX784JgqMjICxP.png",
+        tag: "verdura",
+        cerca: "col mila"
+      },
+      {
+        nom: "Col Picuda",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-rXyreG0Sz8i9iLVpkX784JgqMjICxP.png",
+        tag: "verdura",
+        cerca: "col picuda"
+      },
+      {
+        nom: "Col Rave",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-AXqhyWpNrdtQgGwC1jWTmZhQYghuCf.png",
+        tag: "verdura",
+        cerca: "col rave"
+      },
+      {
+        nom: "Enciam",
+        emoji: "🥗",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ceSUp8RPCc5EJEpEDSYBu9yH8pjNN5.png",
+        tag: "verdura",
+        cerca: "enciam"
+      },
+      {
+        nom: "Espàrrec",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-5t2FNENaP3SXP3MGLOSOBuatSt6RKU.png",
+        tag: "verdura",
+        cerca: "esparrec"
+      },
+      {
+        nom: "Espinac",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-YOHxnWgKxTUQknXCGBBSQmI9XcJ1WN.png",
+        tag: "verdura",
+        cerca: "espinac"
+      },
+      {
+        nom: "Faves",
+        emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ku2a80Q80m0Vhv6RzLIOW70Zlu06zN.png",
+        tag: "llegum",
+        cerca: "faves"
+      },
+      {
+        nom: "Herbes pel caldo",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-eLerAjlyuXl0qTB4eiPNVcK8CRDk7v.png",
+        tag: "altre",
+        cerca: "herbes caldo"
+      },
+      {
+        nom: "Kale Nero di Toscana",
+        emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-emC1BR5ljWANScSXgr4K8nwvA1f0aW.png",
+        tag: "verdura",
+        cerca: "kale nero toscana"
+      },
+      {
+        nom: "Kiwi",
+        emoji: "🥝",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-TVCwuOTeNqH2vGlDuJretqMcHhLHIu.png",
+        tag: "fruita",
+        cerca: "kiwi"
+      },
+      {
+        nom: "Llenties",
+        emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-soaagOHsLdKrSP08d7KFAKucpvYiXW.png",
+        tag: "llegum",
+        cerca: "llenties"
+      },
+      {
+        nom: "Llimona",
+        emoji: "🍋",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-zxHDTN58ruTW0e6TaKl8FnSuwlai3o.png",
+        tag: "fruita",
+        cerca: "llimona"
+      },
+      {
+        nom: "Maduixot",
+        emoji: "🍓",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Lo6Z6zumG1tr01pDUmtp1bOwDlTeIE.png",
+        tag: "fruita",
+        cerca: "maduixot"
+      },
+      {
+        nom: "Mandarina",
+        emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-79XLKwCuOZGHdVcOlEApISx6x2nVd2.png",
+        tag: "fruita",
+        cerca: "mandarina"
+      },
+      {
+        nom: "Ortanique",
+        emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-79XLKwCuOZGHdVcOlEApISx6x2nVd2.png",
+        tag: "fruita",
+        cerca: "ortanique"
+      },
+      {
+        nom: "Mongeta del Ganxet",
+        emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ku2a80Q80m0Vhv6RzLIOW70Zlu06zN.png",
+        tag: "llegum",
+        cerca: "mongeta ganxet"
+      },
+      {
+        nom: "Moniato",
+        emoji: "🍠",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-bFcw4aOrwL0LgKbW6PYUxw8nxPxyqe.png",
+        tag: "verdura",
+        cerca: "moniato"
+      },
+      {
+        nom: "Nap granel",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-09DC2J2e0MKOqQiC4FKaNaERcH1CV1.png",
+        tag: "verdura",
+        cerca: "nap"
+      },
+      {
+        nom: "Nous",
+        emoji: "🌰",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-0wWd0fmMGDqRaxwYng6SmU0su3RmJm.png",
+        tag: "altre",
+        cerca: "nous"
+      },
+      {
+        nom: "Ous (Mitja dotzena)",
+        emoji: "🥚",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-7uzNN0YrOHMfME1JRXstP9EgkWw5lf.png",
+        tag: "altre",
+        cerca: "ous"
+      },
+      {
+        nom: "Pastanaga (manat)",
+        emoji: "🥕",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SDWokE9iDTl76OZmABSCuDGBtgWNbx.png",
+        tag: "verdura",
+        cerca: "pastanaga manat"
+      },
+      {
+        nom: "Pastanaga granel",
+        emoji: "🥕",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SDWokE9iDTl76OZmABSCuDGBtgWNbx.png",
+        tag: "verdura",
+        cerca: "pastanaga granel"
+      },
+      {
+        nom: "Patata Àgria",
+        emoji: "🥔",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SxGhEwCGCF6pg0bm8ZqXN8NXOpt7nV.png",
+        tag: "verdura",
+        cerca: "patata agria"
+      },
+      {
+        nom: "Patata Rudolph",
+        emoji: "🥔",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SxGhEwCGCF6pg0bm8ZqXN8NXOpt7nV.png",
+        tag: "verdura",
+        cerca: "patata rudolph"
+      },
+      {
+        nom: "Pera Conference",
+        emoji: "🍐",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-QLcSvTeGtIXvxzKceaKAASQPbiEYW3.png",
+        tag: "fruita",
+        cerca: "pera conference"
+      },
+      {
+        nom: "Pèsol",
+        emoji: "🫛",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-lw7zQS9zQOSLpNXCKfXRnXIRGn9dDC.png",
+        tag: "llegum",
+        cerca: "pesol"
+      },
+      {
+        nom: "Plàtan",
+        emoji: "🍌",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-mLIzz1a3BcyWlL2gqM5P7hK76WDldX.png",
+        tag: "fruita",
+        cerca: "platan"
+      },
+      {
+        nom: "Poma Fuji",
+        emoji: "🍎",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png",
+        tag: "fruita",
+        cerca: "poma fuji"
+      },
+      {
+        nom: "Poma Golden",
+        emoji: "🍎",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png",
+        tag: "fruita",
+        cerca: "poma golden"
+      },
+      {
+        nom: "Poma Story",
+        emoji: "🍎",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png",
+        tag: "fruita",
+        cerca: "poma story"
+      },
+      {
+        nom: "Porro (manat)",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-E0k709x4ZycrFd9xw2SspVkGfjE6Dm.png",
+        tag: "verdura",
+        cerca: "porro"
+      },
+      {
+        nom: "Rave (manat)",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-09DC2J2e0MKOqQiC4FKaNaERcH1CV1.png",
+        tag: "verdura",
+        cerca: "rave"
+      },
+      {
+        nom: "Remolatxa",
+        emoji: "🫚",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-OKP18GwrnhfovB1vM1t71aUMk1FQFN.png",
+        tag: "verdura",
+        cerca: "remolatxa"
+      },
+      {
+        nom: "Rotlle de 300 bosses compostables 30x40",
+        emoji: "♻️",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-1kzlhXN3lasEQYBtwdeQrzzhBEwurX.png",
+        tag: "altre",
+        cerca: "bosses compostables"
+      },
+      {
+        nom: "Shiitake",
+        emoji: "🍄",
+        tag: "verdura",
+        cerca: "shiitake"
+      },
+      {
+        nom: "Taronja",
+        emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-id2bjNWhceyyEfRKFC99ipUcMSqfio.png",
+        tag: "fruita",
+        cerca: "taronja"
+      },
+      {
+        nom: "Tomacó",
+        emoji: "🍅",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-v4Bz5uvOIDciAdqa3qIpabpC0VrOkp.png",
+        tag: "verdura",
+        cerca: "tomaco tomaquet"
+      },
+      {
+        nom: "Xampinyó",
+        emoji: "🍄",
+        tag: "verdura",
+        cerca: "xampinyo"
+      },
+      {
+        nom: "Xirivia",
+        emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-LYcasyzw3AXY5BIbywp0rBWrVqLIIL.png",
+        tag: "verdura",
+        cerca: "xirivia"
+      },
+    ];
+
+    const tagLabels = {
+      verdura: "Verdura",
+      fruita: "Fruita",
+      llegum: "Llegum",
+      altre: "Altre"
+    };
+
+    function renderCards(llista) {
+      const grid = document.getElementById('grid');
+      const counter = document.getElementById('counter');
+      counter.textContent = llista.length + ' productes';
+
+      if (llista.length === 0) {
+        grid.innerHTML = '<div class="no-results">Cap producte trobat 🔍</div>';
+        return;
+      }
+
+      grid.innerHTML = llista.map((p, i) => `
+    <div class="card" style="animation-delay: ${i * 0.03}s">
+      <div class="card-img">${p.icon ? '<img src="' + p.icon + '" alt="' + p.nom + '">' : p.emoji}</div>
+      <div class="card-body">
+        <div class="card-name">${p.nom}</div>
+        <span class="card-tag tag-${p.tag}">${tagLabels[p.tag]}</span>
+      </div>
+    </div>
+  `).join('');
+    }
+
+    function filtrar() {
+      const q = document.getElementById('search').value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const filtrats = productes.filter(p => {
+        const cerca = p.cerca.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const nom = p.nom.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        return cerca.includes(q) || nom.includes(q);
+      });
+      renderCards(filtrats);
+    }
+
+    renderCards(productes);
+  </script>
+
+
+
+
+</body></html>

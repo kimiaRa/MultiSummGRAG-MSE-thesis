@@ -1,0 +1,9 @@
+{
+  "city": "Barcelona",
+  "total_missing": 0,
+  "resolved_strategy1": 0,
+  "resolved_strategy2": 0,
+  "unresolved": 0,
+  "needs_manual_review": [],
+  "resolved": []
+}

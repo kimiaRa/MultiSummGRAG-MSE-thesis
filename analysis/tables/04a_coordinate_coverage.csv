@@ -1,0 +1,6 @@
+city,n_rows,n_complete_pairs,coverage_pct
+barcelona,237,237,100.0
+brighton,76,76,100.0
+dublin,69,69,100.0
+london,106,106,100.0
+milan,147,147,100.0

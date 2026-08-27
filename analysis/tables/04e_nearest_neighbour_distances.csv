@@ -1,0 +1,6 @@
+city,n_distinct_points,median_nn_m,iqr_low_m,iqr_high_m
+barcelona,86,834.1,819.9,1112.0
+brighton,26,702.3,296.4,857.8
+dublin,41,664.1,663.8,1989.4
+london,71,1309.8,673.2,2795.0
+milan,95,780.1,779.5,1112.0

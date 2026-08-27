@@ -1,0 +1,7 @@
+city: Brighton & Hove
+country: United Kingdom
+language: en
+data_dir: data/brighton
+raw_urls_file: data/brighton/raw_urls.csv
+urls_file: data/brighton/urls_cleaned.csv
+districts_file: data/brighton/districts.geojson

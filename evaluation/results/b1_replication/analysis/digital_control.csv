@@ -1,0 +1,6 @@
+city,n_pairs,exact_identity_rate,numeric_overlap_mean,numeric_overlap_median,numeric_overlap_min,numeric_overlap_max,char_similarity_mean,char_similarity_median,char_similarity_min,char_similarity_max,n_unique_texts_among_6,all_6_identical_numeric_claim_sets
+barcelona,15,1.0,100.0,100.0,100.0,100.0,1.0,1.0,1.0,1.0,1,True
+brighton,15,1.0,100.0,100.0,100.0,100.0,1.0,1.0,1.0,1.0,1,True
+dublin,15,1.0,100.0,100.0,100.0,100.0,1.0,1.0,1.0,1.0,1,True
+london,15,1.0,100.0,100.0,100.0,100.0,1.0,1.0,1.0,1.0,1,True
+milan,15,1.0,100.0,100.0,100.0,100.0,1.0,1.0,1.0,1.0,1,True

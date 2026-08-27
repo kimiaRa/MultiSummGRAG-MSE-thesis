@@ -1,0 +1,1495 @@
+{
+  "inventory": [
+    {
+      "city": "barcelona",
+      "path": "data/barcelona/urls.csv",
+      "stage": "RAW_SEED (proxy: no raw_urls.csv on this branch; verified byte-identical to main branch's raw_urls.csv via git history)",
+      "row_count": 261,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lng",
+      "dtypes": "URL:str;Lat:float64;Lng:float64",
+      "mtime": "2026-07-14T14:53:01.778614998",
+      "exists": true
+    },
+    {
+      "city": "barcelona",
+      "path": "data/barcelona/urls_cleaned.csv",
+      "stage": "CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",
+      "row_count": 237,
+      "n_columns": 4,
+      "columns": "URL;Lat;Lng;coords_approx",
+      "dtypes": "URL:str;Lat:float64;Lng:float64;coords_approx:bool",
+      "mtime": "2026-07-14T14:53:01.778785229",
+      "exists": true
+    },
+    {
+      "city": "brighton",
+      "path": "data/brighton/raw_urls.csv",
+      "stage": "RAW_SEED",
+      "row_count": 81,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lng",
+      "dtypes": "URL:str;Lat:float64;Lng:float64",
+      "mtime": "2026-07-03T11:44:55.744644165",
+      "exists": true
+    },
+    {
+      "city": "brighton",
+      "path": "data/brighton/urls.csv",
+      "stage": "SUPERSEDED_INTERMEDIATE (urls.csv writer is dead code in src/phase_0/cleaner.py; not consumed by current pipeline; excluded from the attrition ledger)",
+      "row_count": 81,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lng",
+      "dtypes": "URL:str;Lat:float64;Lng:float64",
+      "mtime": "2026-07-03T11:44:55.744644165",
+      "exists": true
+    },
+    {
+      "city": "brighton",
+      "path": "data/brighton/urls_cleaned.csv",
+      "stage": "CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",
+      "row_count": 76,
+      "n_columns": 4,
+      "columns": "URL;Lat;Lng;coords_approx",
+      "dtypes": "URL:str;Lat:float64;Lng:float64;coords_approx:bool",
+      "mtime": "2026-07-03T11:44:55.744644165",
+      "exists": true
+    },
+    {
+      "city": "dublin",
+      "path": "data/dublin/raw_urls.csv",
+      "stage": "RAW_SEED",
+      "row_count": 83,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lng",
+      "dtypes": "URL:str;Lat:float64;Lng:float64",
+      "mtime": "2026-07-03T11:44:56.923630238",
+      "exists": true
+    },
+    {
+      "city": "dublin",
+      "path": "data/dublin/urls.csv",
+      "stage": "SUPERSEDED_INTERMEDIATE (urls.csv writer is dead code in src/phase_0/cleaner.py; not consumed by current pipeline; excluded from the attrition ledger)",
+      "row_count": 83,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lng",
+      "dtypes": "URL:str;Lat:float64;Lng:float64",
+      "mtime": "2026-07-03T11:44:56.923630238",
+      "exists": true
+    },
+    {
+      "city": "dublin",
+      "path": "data/dublin/urls_cleaned.csv",
+      "stage": "CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",
+      "row_count": 69,
+      "n_columns": 4,
+      "columns": "URL;Lat;Lng;coords_approx",
+      "dtypes": "URL:str;Lat:float64;Lng:float64;coords_approx:bool",
+      "mtime": "2026-07-03T11:44:56.923630238",
+      "exists": true
+    },
+    {
+      "city": "london",
+      "path": "data/london/raw_urls.csv",
+      "stage": "RAW_SEED",
+      "row_count": 115,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lon",
+      "dtypes": "URL:str;Lat:float64;Lon:float64",
+      "mtime": "2026-07-03T11:44:56.923630238",
+      "exists": true
+    },
+    {
+      "city": "london",
+      "path": "data/london/urls_cleaned.csv",
+      "stage": "CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",
+      "row_count": 106,
+      "n_columns": 4,
+      "columns": "URL;Lat;Lng;coords_approx",
+      "dtypes": "URL:str;Lat:float64;Lng:float64;coords_approx:bool",
+      "mtime": "2026-07-14T14:53:03.373380423",
+      "exists": true
+    },
+    {
+      "city": "milan",
+      "path": "data/milan/raw_urls.csv",
+      "stage": "RAW_SEED",
+      "row_count": 163,
+      "n_columns": 3,
+      "columns": "URL;Lat;Lng",
+      "dtypes": "URL:str;Lat:float64;Lng:float64",
+      "mtime": "2026-07-03T11:44:56.923630238",
+      "exists": true
+    },
+    {
+      "city": "milan",
+      "path": "data/milan/urls_cleaned.csv",
+      "stage": "CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",
+      "row_count": 147,
+      "n_columns": 4,
+      "columns": "URL;Lat;Lng;coords_approx",
+      "dtypes": "URL:str;Lat:float64;Lng:float64;coords_approx:bool",
+      "mtime": "2026-07-14T14:53:05.533370256",
+      "exists": true
+    }
+  ],
+  "attrition_ledger": [
+    {
+      "city": "barcelona",
+      "1_raw_seed": 261,
+      "2_cleaned": 237,
+      "3_usable_coords": 237,
+      "4_scraped_files": 912,
+      "5_graphrag_docs": 196,
+      "6_fsi_enriched": 237,
+      "7_reported_fsi_total": 237,
+      "pct_raw_to_cleaned": 90.8,
+      "pct_cleaned_to_coords": 100.0,
+      "pct_cleaned_to_scraped": 384.8,
+      "pct_cleaned_to_graphrag": 82.7,
+      "pct_cleaned_to_enriched": 100.0,
+      "pct_end_to_end_raw_to_enriched": 90.8,
+      "pct_end_to_end_raw_to_reported": 90.8
+    },
+    {
+      "city": "brighton",
+      "1_raw_seed": 81,
+      "2_cleaned": 76,
+      "3_usable_coords": 76,
+      "4_scraped_files": 0,
+      "5_graphrag_docs": 73,
+      "6_fsi_enriched": 76,
+      "7_reported_fsi_total": 76,
+      "pct_raw_to_cleaned": 93.8,
+      "pct_cleaned_to_coords": 100.0,
+      "pct_cleaned_to_scraped": 0.0,
+      "pct_cleaned_to_graphrag": 96.1,
+      "pct_cleaned_to_enriched": 100.0,
+      "pct_end_to_end_raw_to_enriched": 93.8,
+      "pct_end_to_end_raw_to_reported": 93.8
+    },
+    {
+      "city": "dublin",
+      "1_raw_seed": 83,
+      "2_cleaned": 69,
+      "3_usable_coords": 69,
+      "4_scraped_files": 0,
+      "5_graphrag_docs": 58,
+      "6_fsi_enriched": 69,
+      "7_reported_fsi_total": 69,
+      "pct_raw_to_cleaned": 83.1,
+      "pct_cleaned_to_coords": 100.0,
+      "pct_cleaned_to_scraped": 0.0,
+      "pct_cleaned_to_graphrag": 84.1,
+      "pct_cleaned_to_enriched": 100.0,
+      "pct_end_to_end_raw_to_enriched": 83.1,
+      "pct_end_to_end_raw_to_reported": 83.1
+    },
+    {
+      "city": "london",
+      "1_raw_seed": 115,
+      "2_cleaned": 106,
+      "3_usable_coords": 106,
+      "4_scraped_files": 540,
+      "5_graphrag_docs": 106,
+      "6_fsi_enriched": 106,
+      "7_reported_fsi_total": 106,
+      "pct_raw_to_cleaned": 92.2,
+      "pct_cleaned_to_coords": 100.0,
+      "pct_cleaned_to_scraped": 509.4,
+      "pct_cleaned_to_graphrag": 100.0,
+      "pct_cleaned_to_enriched": 100.0,
+      "pct_end_to_end_raw_to_enriched": 92.2,
+      "pct_end_to_end_raw_to_reported": 92.2
+    },
+    {
+      "city": "milan",
+      "1_raw_seed": 163,
+      "2_cleaned": 147,
+      "3_usable_coords": 147,
+      "4_scraped_files": 0,
+      "5_graphrag_docs": 142,
+      "6_fsi_enriched": 147,
+      "7_reported_fsi_total": 147,
+      "pct_raw_to_cleaned": 90.2,
+      "pct_cleaned_to_coords": 100.0,
+      "pct_cleaned_to_scraped": 0.0,
+      "pct_cleaned_to_graphrag": 96.6,
+      "pct_cleaned_to_enriched": 100.0,
+      "pct_end_to_end_raw_to_enriched": 90.2,
+      "pct_end_to_end_raw_to_reported": 90.2
+    }
+  ],
+  "reported_totals": {
+    "barcelona": 237,
+    "brighton": 76,
+    "dublin": 69,
+    "london": 106,
+    "milan": 147
+  },
+  "reported_district_counts": {
+    "barcelona": 10,
+    "brighton": 3,
+    "dublin": 18,
+    "london": 22,
+    "milan": 9
+  },
+  "language_proxy": {
+    "barcelona": {
+      "n": 261,
+      "n_local_tld": 71,
+      "n_generic_tld": 177,
+      "n_other_country_tld": 13,
+      "local_tld_share_pct": 27.2,
+      "generic_tld_share_pct": 67.8,
+      "other_country_tld_share_pct": 5.0,
+      "note": "local TLD set for barcelona: ['cat', 'es', 'eu']"
+    },
+    "brighton": {
+      "n": 81,
+      "n_local_tld": 40,
+      "n_generic_tld": 36,
+      "n_other_country_tld": 5,
+      "local_tld_share_pct": 49.4,
+      "generic_tld_share_pct": 44.4,
+      "other_country_tld_share_pct": 6.2,
+      "note": "local TLD set for brighton: ['co.uk', 'gov.uk', 'org.uk', 'sch.uk', 'uk']"
+    },
+    "dublin": {
+      "n": 83,
+      "n_local_tld": 55,
+      "n_generic_tld": 27,
+      "n_other_country_tld": 1,
+      "local_tld_share_pct": 66.3,
+      "generic_tld_share_pct": 32.5,
+      "other_country_tld_share_pct": 1.2,
+      "note": "local TLD set for dublin: ['ie']"
+    },
+    "london": {
+      "n": 115,
+      "n_local_tld": 54,
+      "n_generic_tld": 56,
+      "n_other_country_tld": 5,
+      "local_tld_share_pct": 47.0,
+      "generic_tld_share_pct": 48.7,
+      "other_country_tld_share_pct": 4.3,
+      "note": "local TLD set for london: ['co.uk', 'gov.uk', 'org.uk', 'sch.uk', 'uk']"
+    },
+    "milan": {
+      "n": 163,
+      "n_local_tld": 93,
+      "n_generic_tld": 61,
+      "n_other_country_tld": 9,
+      "local_tld_share_pct": 57.1,
+      "generic_tld_share_pct": 37.4,
+      "other_country_tld_share_pct": 5.5,
+      "note": "local TLD set for milan: ['it']"
+    }
+  },
+  "per_city_descriptive": [
+    {
+      "city": "barcelona",
+      "n_rows": 261,
+      "n_unique_urls_raw": 261,
+      "n_unique_urls_normalised": 261,
+      "duplicate_urls_raw": 0,
+      "duplicate_urls_normalised": 0,
+      "n_unique_domains": 180,
+      "herfindahl_index_0_1": 0.0192,
+      "herfindahl_index_0_10000": 192.5,
+      "domain_share_top1_pct": 8.0,
+      "domain_share_top3_pct": 19.9,
+      "domain_share_top10_pct": 31.4,
+      "n_singleton_domains": 161,
+      "social_platform_share_pct": 6.1,
+      "pdf_or_nonhtml_share_pct": 0.0,
+      "homepage_share_pct": 39.8,
+      "median_path_depth": 1.0
+    },
+    {
+      "city": "brighton",
+      "n_rows": 81,
+      "n_unique_urls_raw": 81,
+      "n_unique_urls_normalised": 81,
+      "duplicate_urls_raw": 0,
+      "duplicate_urls_normalised": 0,
+      "n_unique_domains": 77,
+      "herfindahl_index_0_1": 0.0136,
+      "herfindahl_index_0_10000": 135.7,
+      "domain_share_top1_pct": 2.5,
+      "domain_share_top3_pct": 7.4,
+      "domain_share_top10_pct": 17.3,
+      "n_singleton_domains": 73,
+      "social_platform_share_pct": 0.0,
+      "pdf_or_nonhtml_share_pct": 0.0,
+      "homepage_share_pct": 21.0,
+      "median_path_depth": 1.0
+    },
+    {
+      "city": "dublin",
+      "n_rows": 83,
+      "n_unique_urls_raw": 83,
+      "n_unique_urls_normalised": 83,
+      "duplicate_urls_raw": 0,
+      "duplicate_urls_normalised": 0,
+      "n_unique_domains": 64,
+      "herfindahl_index_0_1": 0.0367,
+      "herfindahl_index_0_10000": 367.3,
+      "domain_share_top1_pct": 13.3,
+      "domain_share_top3_pct": 25.3,
+      "domain_share_top10_pct": 34.9,
+      "n_singleton_domains": 60,
+      "social_platform_share_pct": 10.8,
+      "pdf_or_nonhtml_share_pct": 0.0,
+      "homepage_share_pct": 28.9,
+      "median_path_depth": 1.0
+    },
+    {
+      "city": "london",
+      "n_rows": 115,
+      "n_unique_urls_raw": 115,
+      "n_unique_urls_normalised": 115,
+      "duplicate_urls_raw": 0,
+      "duplicate_urls_normalised": 0,
+      "n_unique_domains": 111,
+      "herfindahl_index_0_1": 0.0093,
+      "herfindahl_index_0_10000": 93.0,
+      "domain_share_top1_pct": 1.7,
+      "domain_share_top3_pct": 5.2,
+      "domain_share_top10_pct": 12.2,
+      "n_singleton_domains": 107,
+      "social_platform_share_pct": 1.7,
+      "pdf_or_nonhtml_share_pct": 0.0,
+      "homepage_share_pct": 20.9,
+      "median_path_depth": 1.0
+    },
+    {
+      "city": "milan",
+      "n_rows": 163,
+      "n_unique_urls_raw": 163,
+      "n_unique_urls_normalised": 163,
+      "duplicate_urls_raw": 0,
+      "duplicate_urls_normalised": 0,
+      "n_unique_domains": 149,
+      "herfindahl_index_0_1": 0.0084,
+      "herfindahl_index_0_10000": 83.9,
+      "domain_share_top1_pct": 4.3,
+      "domain_share_top3_pct": 7.4,
+      "domain_share_top10_pct": 14.7,
+      "n_singleton_domains": 141,
+      "social_platform_share_pct": 4.3,
+      "pdf_or_nonhtml_share_pct": 0.6,
+      "homepage_share_pct": 43.6,
+      "median_path_depth": 1.0
+    },
+    {
+      "city": "ALL_CITIES_POOLED",
+      "n_rows": 703,
+      "n_unique_urls_raw": 703,
+      "n_unique_urls_normalised": 703,
+      "duplicate_urls_raw": 0,
+      "duplicate_urls_normalised": 0,
+      "n_unique_domains": 563,
+      "herfindahl_index_0_1": 0.0061,
+      "herfindahl_index_0_10000": 61.1,
+      "domain_share_top1_pct": 4.3,
+      "domain_share_top3_pct": 11.1,
+      "domain_share_top10_pct": 16.9,
+      "n_singleton_domains": 522,
+      "social_platform_share_pct": 4.8,
+      "pdf_or_nonhtml_share_pct": 0.1,
+      "homepage_share_pct": 34.1,
+      "median_path_depth": 1.0
+    }
+  ],
+  "coordinate_quality": {
+    "coverage": [
+      {
+        "city": "barcelona",
+        "n_rows": 237,
+        "n_complete_pairs": 237,
+        "coverage_pct": 100.0
+      },
+      {
+        "city": "brighton",
+        "n_rows": 76,
+        "n_complete_pairs": 76,
+        "coverage_pct": 100.0
+      },
+      {
+        "city": "dublin",
+        "n_rows": 69,
+        "n_complete_pairs": 69,
+        "coverage_pct": 100.0
+      },
+      {
+        "city": "london",
+        "n_rows": 106,
+        "n_complete_pairs": 106,
+        "coverage_pct": 100.0
+      },
+      {
+        "city": "milan",
+        "n_rows": 147,
+        "n_complete_pairs": 147,
+        "coverage_pct": 100.0
+      }
+    ],
+    "precision": [
+      {
+        "city": "barcelona",
+        "n_with_coords": 237,
+        "modal_decimal_places": 2,
+        "modal_dp_share_pct": 78.7,
+        "mean_latitude_used_for_conversion": 41.3962,
+        "resolution_m_lat_direction": 1113.2,
+        "resolution_m_lon_direction": 835.1
+      },
+      {
+        "city": "brighton",
+        "n_with_coords": 76,
+        "modal_decimal_places": 2,
+        "modal_dp_share_pct": 48.7,
+        "mean_latitude_used_for_conversion": 50.8265,
+        "resolution_m_lat_direction": 1113.2,
+        "resolution_m_lon_direction": 703.2
+      },
+      {
+        "city": "dublin",
+        "n_with_coords": 69,
+        "modal_decimal_places": 2,
+        "modal_dp_share_pct": 94.2,
+        "mean_latitude_used_for_conversion": 53.3455,
+        "resolution_m_lat_direction": 1113.2,
+        "resolution_m_lon_direction": 664.6
+      },
+      {
+        "city": "london",
+        "n_with_coords": 106,
+        "modal_decimal_places": 2,
+        "modal_dp_share_pct": 49.5,
+        "mean_latitude_used_for_conversion": 51.5039,
+        "resolution_m_lat_direction": 1113.2,
+        "resolution_m_lon_direction": 692.9
+      },
+      {
+        "city": "milan",
+        "n_with_coords": 147,
+        "modal_decimal_places": 2,
+        "modal_dp_share_pct": 85.4,
+        "mean_latitude_used_for_conversion": 45.4683,
+        "resolution_m_lat_direction": 1113.2,
+        "resolution_m_lon_direction": 780.7
+      }
+    ],
+    "granularity": [
+      {
+        "city": "barcelona",
+        "n_rows_with_coords": 237,
+        "n_distinct_coordinate_pairs": 86,
+        "largest_cluster_size": 21,
+        "n_rows_on_a_shared_coordinate": 196,
+        "pct_rows_on_a_shared_coordinate": 82.7
+      },
+      {
+        "city": "brighton",
+        "n_rows_with_coords": 76,
+        "n_distinct_coordinate_pairs": 26,
+        "largest_cluster_size": 28,
+        "n_rows_on_a_shared_coordinate": 60,
+        "pct_rows_on_a_shared_coordinate": 78.9
+      },
+      {
+        "city": "dublin",
+        "n_rows_with_coords": 69,
+        "n_distinct_coordinate_pairs": 41,
+        "largest_cluster_size": 5,
+        "n_rows_on_a_shared_coordinate": 42,
+        "pct_rows_on_a_shared_coordinate": 60.9
+      },
+      {
+        "city": "london",
+        "n_rows_with_coords": 106,
+        "n_distinct_coordinate_pairs": 71,
+        "largest_cluster_size": 28,
+        "n_rows_on_a_shared_coordinate": 41,
+        "pct_rows_on_a_shared_coordinate": 38.7
+      },
+      {
+        "city": "milan",
+        "n_rows_with_coords": 147,
+        "n_distinct_coordinate_pairs": 95,
+        "largest_cluster_size": 7,
+        "n_rows_on_a_shared_coordinate": 85,
+        "pct_rows_on_a_shared_coordinate": 57.8
+      }
+    ],
+    "bboxes": [
+      {
+        "city": "barcelona",
+        "min_lon": 2.008405485572937,
+        "min_lat": 41.27922375631387,
+        "max_lon": 2.271972897970545,
+        "max_lat": 41.50611235847316
+      },
+      {
+        "city": "brighton",
+        "min_lon": -0.944095,
+        "min_lat": 50.6474025,
+        "max_lon": 0.693275,
+        "max_lat": 51.058867500000005
+      },
+      {
+        "city": "dublin",
+        "min_lon": -6.6789374788479865,
+        "min_lat": 53.04725798843552,
+        "max_lon": -5.8597569054773615,
+        "max_lat": 53.783301551882886
+      },
+      {
+        "city": "london",
+        "min_lon": -0.7214993,
+        "min_lat": 51.1854649,
+        "max_lon": 0.5452357,
+        "max_lat": 51.7932055
+      },
+      {
+        "city": "milan",
+        "min_lon": 8.981267056203716,
+        "min_lat": 45.34941933565196,
+        "max_lon": 9.337343084467363,
+        "max_lat": 45.57325224868626
+      }
+    ],
+    "outliers": [
+      {
+        "city": "barcelona",
+        "url": "https://fundacioferrersustainability.org/es/green-for-good/el-jardi-fenix",
+        "lat": 41.51,
+        "lng": 2.36,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "41.51 deg N, 2.36 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "barcelona",
+        "url": "https://www.fundacionausolan.org/project/stop-hambre",
+        "lat": 41.28,
+        "lng": 1.98,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "41.28 deg N, 1.98 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "barcelona",
+        "url": "https://www.kalart.org/es/descubre-nuestro-jardin-comunitario-cerca-de-barcelona",
+        "lat": 41.71,
+        "lng": 2.42,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "41.71 deg N, 2.42 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "barcelona",
+        "url": "https://www.lesrefardes.coop/es/quienes-somos/somos-red",
+        "lat": 41.69,
+        "lng": 1.97,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "41.69 deg N, 1.97 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://transitiontogether.org.uk/eat-grow-share-communities-building-food-resilience",
+        "lat": 50.43,
+        "lng": -3.68,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "50.43 deg N, 3.68 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://www.londonfreedomseedbank.org",
+        "lat": 50.49,
+        "lng": -3.75,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "50.49 deg N, 3.75 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://www.alexandrarose.org.uk/press-release-charity-urges-all-parties-to-commit-to-national-fruit-and-veg-on-prescription-programmes",
+        "lat": 50.82,
+        "lng": -0.14,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": "brighton",
+        "coarse_geo_reasoning": "50.82 deg N, 0.14 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://www.foodmatters.org/projects/food-roots-incubator",
+        "lat": 50.82,
+        "lng": -0.14,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": "brighton",
+        "coarse_geo_reasoning": "50.82 deg N, 0.14 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://www.thrive.org.uk/get-gardening/seans-story-gardening-for-connection",
+        "lat": 51.37,
+        "lng": -1.0,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "51.37 deg N, 1.00 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://www.neighbourly.com/solution/product-surplus",
+        "lat": 51.44,
+        "lng": -2.58,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "51.44 deg N, 2.58 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://www.yourlocalpantry.co.uk",
+        "lat": 52.47,
+        "lng": -2.03,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "52.47 deg N, 2.03 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "london",
+        "url": "https://maps.transitionnetwork.org/group/transition-newham",
+        "lat": 53.33,
+        "lng": -6.24,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": "dublin",
+        "coarse_geo_reasoning": "53.33 deg N, 6.24 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "milan",
+        "url": "https://foodforall.charity/",
+        "lat": 45.59,
+        "lng": 9.33,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "45.59 deg N, 9.33 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+      },
+      {
+        "city": "milan",
+        "url": "https://nondisolopanemagenta.it/",
+        "lat": 45.46,
+        "lng": 8.87,
+        "coords_approx": "False",
+        "falls_inside_bbox_of": NaN,
+        "coarse_geo_reasoning": "45.46 deg N, 8.87 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+      }
+    ],
+    "nearest_neighbour": [
+      {
+        "city": "barcelona",
+        "n_distinct_points": 86,
+        "median_nn_m": 834.1,
+        "iqr_low_m": 819.9,
+        "iqr_high_m": 1112.0
+      },
+      {
+        "city": "brighton",
+        "n_distinct_points": 26,
+        "median_nn_m": 702.3,
+        "iqr_low_m": 296.4,
+        "iqr_high_m": 857.8
+      },
+      {
+        "city": "dublin",
+        "n_distinct_points": 41,
+        "median_nn_m": 664.1,
+        "iqr_low_m": 663.8,
+        "iqr_high_m": 1989.4
+      },
+      {
+        "city": "london",
+        "n_distinct_points": 71,
+        "median_nn_m": 1309.8,
+        "iqr_low_m": 673.2,
+        "iqr_high_m": 2795.0
+      },
+      {
+        "city": "milan",
+        "n_distinct_points": 95,
+        "median_nn_m": 780.1,
+        "iqr_low_m": 779.5,
+        "iqr_high_m": 1112.0
+      }
+    ],
+    "district_membership": [
+      {
+        "city": "barcelona",
+        "n_geocoded_points": 237,
+        "n_districts_in_geojson": 10,
+        "n_distinct_districts_hit_recomputed": 10,
+        "n_points_outside_all_districts": 35,
+        "n_districts_in_final_report": 10,
+        "matches_report": true
+      },
+      {
+        "city": "brighton",
+        "n_geocoded_points": 76,
+        "n_districts_in_geojson": 30,
+        "n_distinct_districts_hit_recomputed": 3,
+        "n_points_outside_all_districts": 0,
+        "n_districts_in_final_report": 3,
+        "matches_report": true
+      },
+      {
+        "city": "dublin",
+        "n_geocoded_points": 69,
+        "n_districts_in_geojson": 35,
+        "n_distinct_districts_hit_recomputed": 18,
+        "n_points_outside_all_districts": 1,
+        "n_districts_in_final_report": 18,
+        "matches_report": true
+      },
+      {
+        "city": "london",
+        "n_geocoded_points": 106,
+        "n_districts_in_geojson": 33,
+        "n_distinct_districts_hit_recomputed": 22,
+        "n_points_outside_all_districts": 9,
+        "n_districts_in_final_report": 22,
+        "matches_report": true
+      },
+      {
+        "city": "milan",
+        "n_geocoded_points": 147,
+        "n_districts_in_geojson": 9,
+        "n_distinct_districts_hit_recomputed": 9,
+        "n_points_outside_all_districts": 12,
+        "n_districts_in_final_report": 9,
+        "matches_report": true
+      }
+    ]
+  },
+  "cross_city": {
+    "urls_exact": [],
+    "urls_normalised": [],
+    "domains": [
+      {
+        "domain": "wordpress.com",
+        "n_cities": 5,
+        "cities": "barcelona;brighton;dublin;london;milan"
+      },
+      {
+        "domain": "facebook.com",
+        "n_cities": 4,
+        "cities": "barcelona;dublin;london;milan"
+      },
+      {
+        "domain": "home.blog",
+        "n_cities": 2,
+        "cities": "barcelona;brighton"
+      },
+      {
+        "domain": "blogspot.com",
+        "n_cities": 2,
+        "cities": "barcelona;brighton"
+      },
+      {
+        "domain": "instagram.com",
+        "n_cities": 2,
+        "cities": "barcelona;dublin"
+      },
+      {
+        "domain": "wearephenix.com",
+        "n_cities": 2,
+        "cities": "barcelona;milan"
+      },
+      {
+        "domain": "santegidio.org",
+        "n_cities": 2,
+        "cities": "barcelona;milan"
+      },
+      {
+        "domain": "communitysupportedagriculture.org.uk",
+        "n_cities": 2,
+        "cities": "brighton;london"
+      },
+      {
+        "domain": "foodmatters.org",
+        "n_cities": 2,
+        "cities": "brighton;london"
+      },
+      {
+        "domain": "foodcycle.org.uk",
+        "n_cities": 2,
+        "cities": "brighton;london"
+      },
+      {
+        "domain": "seedsovereignty.info",
+        "n_cities": 2,
+        "cities": "brighton;dublin"
+      },
+      {
+        "domain": "sustainablefoodplaces.org",
+        "n_cities": 2,
+        "cities": "brighton;london"
+      },
+      {
+        "domain": "ukharvest.org.uk",
+        "n_cities": 2,
+        "cities": "brighton;london"
+      }
+    ],
+    "bbox_overlap": [
+      {
+        "city_of_point": "london",
+        "bbox_of_city": "brighton",
+        "n_points_inside": 2
+      },
+      {
+        "city_of_point": "london",
+        "bbox_of_city": "dublin",
+        "n_points_inside": 1
+      }
+    ]
+  },
+  "ledger_match_rates": {
+    "barcelona": {
+      "n_ledger_urls_extracted": 255,
+      "n_matched_normalised_to_my_raw_seed": 255,
+      "match_rate_pct": 100.0
+    },
+    "brighton": {
+      "n_ledger_urls_extracted": 81,
+      "n_matched_normalised_to_my_raw_seed": 81,
+      "match_rate_pct": 100.0
+    },
+    "dublin": {
+      "n_ledger_urls_extracted": 82,
+      "n_matched_normalised_to_my_raw_seed": 82,
+      "match_rate_pct": 100.0
+    },
+    "london": {
+      "n_ledger_urls_extracted": 111,
+      "n_matched_normalised_to_my_raw_seed": 111,
+      "match_rate_pct": 100.0
+    },
+    "milan": {
+      "n_ledger_urls_extracted": 160,
+      "n_matched_normalised_to_my_raw_seed": 160,
+      "match_rate_pct": 100.0
+    }
+  },
+  "ledger_extraction_summary": [
+    {
+      "city": "barcelona",
+      "n_ledger_rows": 261,
+      "n_retained": 44,
+      "n_discarded": 215,
+      "n_decision_unknown": 2,
+      "n_rows_no_url_extracted": 6,
+      "n_rows_ambiguous_multi_url": 0,
+      "n_raw_seed_urls": 261,
+      "row_count_matches_raw_seed": true
+    },
+    {
+      "city": "brighton",
+      "n_ledger_rows": 81,
+      "n_retained": 30,
+      "n_discarded": 51,
+      "n_decision_unknown": 0,
+      "n_rows_no_url_extracted": 0,
+      "n_rows_ambiguous_multi_url": 0,
+      "n_raw_seed_urls": 81,
+      "row_count_matches_raw_seed": true
+    },
+    {
+      "city": "dublin",
+      "n_ledger_rows": 83,
+      "n_retained": 38,
+      "n_discarded": 45,
+      "n_decision_unknown": 0,
+      "n_rows_no_url_extracted": 1,
+      "n_rows_ambiguous_multi_url": 0,
+      "n_raw_seed_urls": 83,
+      "row_count_matches_raw_seed": true
+    },
+    {
+      "city": "london",
+      "n_ledger_rows": 115,
+      "n_retained": 34,
+      "n_discarded": 80,
+      "n_decision_unknown": 1,
+      "n_rows_no_url_extracted": 4,
+      "n_rows_ambiguous_multi_url": 0,
+      "n_raw_seed_urls": 115,
+      "row_count_matches_raw_seed": true
+    },
+    {
+      "city": "milan",
+      "n_ledger_rows": 163,
+      "n_retained": 29,
+      "n_discarded": 134,
+      "n_decision_unknown": 0,
+      "n_rows_no_url_extracted": 3,
+      "n_rows_ambiguous_multi_url": 0,
+      "n_raw_seed_urls": 163,
+      "row_count_matches_raw_seed": true
+    }
+  ],
+  "ledger_confusion_matrix": [
+    {
+      "city": "barcelona",
+      "my_decision": "kept",
+      "ledger_decision": "Retained",
+      "n": 42
+    },
+    {
+      "city": "barcelona",
+      "my_decision": "kept",
+      "ledger_decision": "Discarded",
+      "n": 190
+    },
+    {
+      "city": "barcelona",
+      "my_decision": "discarded",
+      "ledger_decision": "Retained",
+      "n": 0
+    },
+    {
+      "city": "barcelona",
+      "my_decision": "discarded",
+      "ledger_decision": "Discarded",
+      "n": 23
+    },
+    {
+      "city": "brighton",
+      "my_decision": "kept",
+      "ledger_decision": "Retained",
+      "n": 30
+    },
+    {
+      "city": "brighton",
+      "my_decision": "kept",
+      "ledger_decision": "Discarded",
+      "n": 46
+    },
+    {
+      "city": "brighton",
+      "my_decision": "discarded",
+      "ledger_decision": "Retained",
+      "n": 0
+    },
+    {
+      "city": "brighton",
+      "my_decision": "discarded",
+      "ledger_decision": "Discarded",
+      "n": 5
+    },
+    {
+      "city": "dublin",
+      "my_decision": "kept",
+      "ledger_decision": "Retained",
+      "n": 37
+    },
+    {
+      "city": "dublin",
+      "my_decision": "kept",
+      "ledger_decision": "Discarded",
+      "n": 31
+    },
+    {
+      "city": "dublin",
+      "my_decision": "discarded",
+      "ledger_decision": "Retained",
+      "n": 0
+    },
+    {
+      "city": "dublin",
+      "my_decision": "discarded",
+      "ledger_decision": "Discarded",
+      "n": 14
+    },
+    {
+      "city": "london",
+      "my_decision": "kept",
+      "ledger_decision": "Retained",
+      "n": 31
+    },
+    {
+      "city": "london",
+      "my_decision": "kept",
+      "ledger_decision": "Discarded",
+      "n": 71
+    },
+    {
+      "city": "london",
+      "my_decision": "discarded",
+      "ledger_decision": "Retained",
+      "n": 1
+    },
+    {
+      "city": "london",
+      "my_decision": "discarded",
+      "ledger_decision": "Discarded",
+      "n": 8
+    },
+    {
+      "city": "milan",
+      "my_decision": "kept",
+      "ledger_decision": "Retained",
+      "n": 29
+    },
+    {
+      "city": "milan",
+      "my_decision": "kept",
+      "ledger_decision": "Discarded",
+      "n": 116
+    },
+    {
+      "city": "milan",
+      "my_decision": "discarded",
+      "ledger_decision": "Retained",
+      "n": 0
+    },
+    {
+      "city": "milan",
+      "my_decision": "discarded",
+      "ledger_decision": "Discarded",
+      "n": 15
+    }
+  ],
+  "ledger_reason_breakdown": [
+    {
+      "city": "barcelona",
+      "reason_bucket": "inaccessible_or_directory_generic",
+      "n_urls_i_kept": 163
+    },
+    {
+      "city": "barcelona",
+      "reason_bucket": "archival_or_ended",
+      "n_urls_i_kept": 12
+    },
+    {
+      "city": "barcelona",
+      "reason_bucket": "outside_city_or_region",
+      "n_urls_i_kept": 7
+    },
+    {
+      "city": "barcelona",
+      "reason_bucket": "duplicate",
+      "n_urls_i_kept": 5
+    },
+    {
+      "city": "barcelona",
+      "reason_bucket": "other_or_unclassified",
+      "n_urls_i_kept": 3
+    },
+    {
+      "city": "brighton",
+      "reason_bucket": "other_or_unclassified",
+      "n_urls_i_kept": 24
+    },
+    {
+      "city": "brighton",
+      "reason_bucket": "directory_policy_only",
+      "n_urls_i_kept": 7
+    },
+    {
+      "city": "brighton",
+      "reason_bucket": "inaccessible_only",
+      "n_urls_i_kept": 7
+    },
+    {
+      "city": "brighton",
+      "reason_bucket": "duplicate",
+      "n_urls_i_kept": 6
+    },
+    {
+      "city": "brighton",
+      "reason_bucket": "archival_or_ended",
+      "n_urls_i_kept": 2
+    },
+    {
+      "city": "dublin",
+      "reason_bucket": "other_or_unclassified",
+      "n_urls_i_kept": 27
+    },
+    {
+      "city": "dublin",
+      "reason_bucket": "directory_policy_only",
+      "n_urls_i_kept": 2
+    },
+    {
+      "city": "dublin",
+      "reason_bucket": "inaccessible_only",
+      "n_urls_i_kept": 1
+    },
+    {
+      "city": "dublin",
+      "reason_bucket": "archival_or_ended",
+      "n_urls_i_kept": 1
+    },
+    {
+      "city": "london",
+      "reason_bucket": "directory_policy_only",
+      "n_urls_i_kept": 33
+    },
+    {
+      "city": "london",
+      "reason_bucket": "other_or_unclassified",
+      "n_urls_i_kept": 24
+    },
+    {
+      "city": "london",
+      "reason_bucket": "archival_or_ended",
+      "n_urls_i_kept": 10
+    },
+    {
+      "city": "london",
+      "reason_bucket": "duplicate",
+      "n_urls_i_kept": 4
+    },
+    {
+      "city": "milan",
+      "reason_bucket": "other_or_unclassified",
+      "n_urls_i_kept": 43
+    },
+    {
+      "city": "milan",
+      "reason_bucket": "directory_policy_only",
+      "n_urls_i_kept": 43
+    },
+    {
+      "city": "milan",
+      "reason_bucket": "outside_city_or_region",
+      "n_urls_i_kept": 14
+    },
+    {
+      "city": "milan",
+      "reason_bucket": "duplicate",
+      "n_urls_i_kept": 10
+    },
+    {
+      "city": "milan",
+      "reason_bucket": "archival_or_ended",
+      "n_urls_i_kept": 6
+    }
+  ],
+  "size_vs_findings": [
+    {
+      "city": "barcelona",
+      "seed_urls": 261,
+      "cleaned_urls": 237,
+      "enriched_records": 237,
+      "reported_fsi_total": 237,
+      "reported_district_count": 10,
+      "n_distinct_fsi_types": 9,
+      "ratio_reported_fsi_to_seed_urls": 0.908
+    },
+    {
+      "city": "brighton",
+      "seed_urls": 81,
+      "cleaned_urls": 76,
+      "enriched_records": 76,
+      "reported_fsi_total": 76,
+      "reported_district_count": 3,
+      "n_distinct_fsi_types": 7,
+      "ratio_reported_fsi_to_seed_urls": 0.938
+    },
+    {
+      "city": "dublin",
+      "seed_urls": 83,
+      "cleaned_urls": 69,
+      "enriched_records": 69,
+      "reported_fsi_total": 69,
+      "reported_district_count": 18,
+      "n_distinct_fsi_types": 7,
+      "ratio_reported_fsi_to_seed_urls": 0.831
+    },
+    {
+      "city": "london",
+      "seed_urls": 115,
+      "cleaned_urls": 106,
+      "enriched_records": 106,
+      "reported_fsi_total": 106,
+      "reported_district_count": 22,
+      "n_distinct_fsi_types": 9,
+      "ratio_reported_fsi_to_seed_urls": 0.922
+    },
+    {
+      "city": "milan",
+      "seed_urls": 163,
+      "cleaned_urls": 147,
+      "enriched_records": 147,
+      "reported_fsi_total": 147,
+      "reported_district_count": 9,
+      "n_distinct_fsi_types": 9,
+      "ratio_reported_fsi_to_seed_urls": 0.902
+    }
+  ],
+  "correlations": [
+    {
+      "x": "cleaned_urls",
+      "y": "reported_fsi_total",
+      "n": 5,
+      "pearson_r": 1.0
+    },
+    {
+      "x": "cleaned_urls",
+      "y": "reported_district_count",
+      "n": 5,
+      "pearson_r": -0.182
+    },
+    {
+      "x": "cleaned_urls",
+      "y": "n_distinct_fsi_types",
+      "n": 5,
+      "pearson_r": 0.724
+    }
+  ],
+  "documents_vs_initiatives_evidence": [
+    {
+      "city": "barcelona",
+      "cleaned_urls": 237,
+      "fsi_enriched_records": 237,
+      "urls_equal_records_1to1": true,
+      "n_domains_contributing_gt1_url": 17,
+      "n_urls_on_those_domains": 84
+    },
+    {
+      "city": "brighton",
+      "cleaned_urls": 76,
+      "fsi_enriched_records": 76,
+      "urls_equal_records_1to1": true,
+      "n_domains_contributing_gt1_url": 4,
+      "n_urls_on_those_domains": 8
+    },
+    {
+      "city": "dublin",
+      "cleaned_urls": 69,
+      "fsi_enriched_records": 69,
+      "urls_equal_records_1to1": true,
+      "n_domains_contributing_gt1_url": 3,
+      "n_urls_on_those_domains": 15
+    },
+    {
+      "city": "london",
+      "cleaned_urls": 106,
+      "fsi_enriched_records": 106,
+      "urls_equal_records_1to1": true,
+      "n_domains_contributing_gt1_url": 2,
+      "n_urls_on_those_domains": 4
+    },
+    {
+      "city": "milan",
+      "cleaned_urls": 147,
+      "fsi_enriched_records": 147,
+      "urls_equal_records_1to1": true,
+      "n_domains_contributing_gt1_url": 7,
+      "n_urls_on_those_domains": 15
+    }
+  ],
+  "anomalies": [
+    {
+      "section": "1. Inventory",
+      "summary": "barcelona: no raw_urls.csv on disk on this branch (multilingual)",
+      "evidence": "config/barcelona.yaml declares raw_urls_file: data/barcelona/raw_urls.csv, but that file does not exist in the working tree on this branch. `git show main:data/barcelona/raw_urls.csv` (commit d80cd64) is 0-diff byte-identical to the current data/barcelona/urls.csv (262 lines incl. header). urls.csv is used here as the raw-seed proxy for Barcelona only, per user confirmation."
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "barcelona: count INCREASES from 2_cleaned (237) to 4_scraped_files (912)",
+      "evidence": "analysis/tables/02_attrition_ledger.csv, row city=barcelona"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "barcelona: count INCREASES from 5_graphrag_docs (196) to 6_fsi_enriched (237)",
+      "evidence": "analysis/tables/02_attrition_ledger.csv, row city=barcelona"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "brighton: count INCREASES from 5_graphrag_docs (73) to 6_fsi_enriched (76)",
+      "evidence": "analysis/tables/02_attrition_ledger.csv, row city=brighton"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "brighton: data/brighton/raw/ contains 0 files -- 'successfully scraped' stage is empty",
+      "evidence": "data/brighton/raw/ (directory empty or missing) vs 76 cleaned URLs"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "dublin: count INCREASES from 5_graphrag_docs (58) to 6_fsi_enriched (69)",
+      "evidence": "analysis/tables/02_attrition_ledger.csv, row city=dublin"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "dublin: data/dublin/raw/ contains 0 files -- 'successfully scraped' stage is empty",
+      "evidence": "data/dublin/raw/ (directory empty or missing) vs 69 cleaned URLs"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "london: count INCREASES from 2_cleaned (106) to 4_scraped_files (540)",
+      "evidence": "analysis/tables/02_attrition_ledger.csv, row city=london"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "milan: count INCREASES from 5_graphrag_docs (142) to 6_fsi_enriched (147)",
+      "evidence": "analysis/tables/02_attrition_ledger.csv, row city=milan"
+    },
+    {
+      "section": "2. Attrition ledger",
+      "summary": "milan: data/milan/raw/ contains 0 files -- 'successfully scraped' stage is empty",
+      "evidence": "data/milan/raw/ (directory empty or missing) vs 147 cleaned URLs"
+    },
+    {
+      "section": "4c. Granularity collapse",
+      "summary": "barcelona: 21 rows share one identical coordinate pair",
+      "evidence": "analysis/tables/04c_granularity_collapse.csv, row city=barcelona"
+    },
+    {
+      "section": "4c. Granularity collapse",
+      "summary": "brighton: 28 rows share one identical coordinate pair",
+      "evidence": "analysis/tables/04c_granularity_collapse.csv, row city=brighton"
+    },
+    {
+      "section": "4c. Granularity collapse",
+      "summary": "dublin: 5 rows share one identical coordinate pair",
+      "evidence": "analysis/tables/04c_granularity_collapse.csv, row city=dublin"
+    },
+    {
+      "section": "4c. Granularity collapse",
+      "summary": "london: 28 rows share one identical coordinate pair",
+      "evidence": "analysis/tables/04c_granularity_collapse.csv, row city=london"
+    },
+    {
+      "section": "4c. Granularity collapse",
+      "summary": "milan: 7 rows share one identical coordinate pair",
+      "evidence": "analysis/tables/04c_granularity_collapse.csv, row city=milan"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "barcelona: out-of-bbox point at (41.51, 2.36) -- url=https://fundacioferrersustainability.org/es/green-for-good/el-jardi-fenix",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 41.51 deg N, 2.36 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "barcelona: out-of-bbox point at (41.28, 1.98) -- url=https://www.fundacionausolan.org/project/stop-hambre",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 41.28 deg N, 1.98 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "barcelona: out-of-bbox point at (41.71, 2.42) -- url=https://www.kalart.org/es/descubre-nuestro-jardin-comunitario-cerca-de-barcelona",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 41.71 deg N, 2.42 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "barcelona: out-of-bbox point at (41.69, 1.97) -- url=https://www.lesrefardes.coop/es/quienes-somos/somos-red",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 41.69 deg N, 1.97 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (50.43, -3.68) -- url=https://transitiontogether.org.uk/eat-grow-share-communities-building-food-resilience",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 50.43 deg N, 3.68 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (50.49, -3.75) -- url=https://www.londonfreedomseedbank.org",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 50.49 deg N, 3.75 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (50.82, -0.14) -- url=https://www.alexandrarose.org.uk/press-release-charity-urges-all-parties-to-commit-to-national-fruit-and-veg-on-prescription-programmes",
+      "evidence": "falls_inside_bbox_of=brighton; 50.82 deg N, 0.14 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (50.82, -0.14) -- url=https://www.foodmatters.org/projects/food-roots-incubator",
+      "evidence": "falls_inside_bbox_of=brighton; 50.82 deg N, 0.14 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (51.37, -1.0) -- url=https://www.thrive.org.uk/get-gardening/seans-story-gardening-for-connection",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 51.37 deg N, 1.00 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (51.44, -2.58) -- url=https://www.neighbourly.com/solution/product-surplus",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 51.44 deg N, 2.58 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (52.47, -2.03) -- url=https://www.yourlocalpantry.co.uk",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 52.47 deg N, 2.03 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "london: out-of-bbox point at (53.33, -6.24) -- url=https://maps.transitionnetwork.org/group/transition-newham",
+      "evidence": "falls_inside_bbox_of=dublin; 53.33 deg N, 6.24 deg W -- high-latitude latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "milan: out-of-bbox point at (45.59, 9.33) -- url=https://foodforall.charity/",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 45.59 deg N, 9.33 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4d. Plausibility",
+      "summary": "milan: out-of-bbox point at (45.46, 8.87) -- url=https://nondisolopanemagenta.it/",
+      "evidence": "falls_inside_bbox_of=none of the other 4 listed cities' bboxes; 45.46 deg N, 8.87 deg E -- temperate latitude band, Europe/North Africa/Middle East longitudes"
+    },
+    {
+      "section": "4f. District polygon membership",
+      "summary": "barcelona: 35 geocoded point(s) fall outside every polygon in districts.geojson",
+      "evidence": "data/barcelona/districts.geojson"
+    },
+    {
+      "section": "4f. District polygon membership",
+      "summary": "dublin: 1 geocoded point(s) fall outside every polygon in districts.geojson",
+      "evidence": "data/dublin/districts.geojson"
+    },
+    {
+      "section": "4f. District polygon membership",
+      "summary": "london: 9 geocoded point(s) fall outside every polygon in districts.geojson",
+      "evidence": "data/london/districts.geojson"
+    },
+    {
+      "section": "4f. District polygon membership",
+      "summary": "milan: 12 geocoded point(s) fall outside every polygon in districts.geojson",
+      "evidence": "data/milan/districts.geojson"
+    },
+    {
+      "section": "6. Ledger validation",
+      "summary": "barcelona: 2 ledger row(s) with neither 'Retained' nor 'Discarded' detected",
+      "evidence": "appendix_reports/report_barcelona_baseline.pdf, row_id in [238, 253]"
+    },
+    {
+      "section": "6. Ledger validation",
+      "summary": "barcelona: 6 ledger row(s) had no extractable candidate-column hyperlink",
+      "evidence": "appendix_reports/report_barcelona_baseline.pdf, row_id in [75, 100, 112, 187, 238, 253]"
+    },
+    {
+      "section": "6. Ledger validation",
+      "summary": "dublin: 1 ledger row(s) had no extractable candidate-column hyperlink",
+      "evidence": "appendix_reports/report_dublin_baseline.pdf, row_id in [27]"
+    },
+    {
+      "section": "6. Ledger validation",
+      "summary": "london: 1 ledger row(s) with neither 'Retained' nor 'Discarded' detected",
+      "evidence": "appendix_reports/report_london_baseline.pdf, row_id in [36]"
+    },
+    {
+      "section": "6. Ledger validation",
+      "summary": "london: 4 ledger row(s) had no extractable candidate-column hyperlink",
+      "evidence": "appendix_reports/report_london_baseline.pdf, row_id in [5, 36, 41, 67]"
+    },
+    {
+      "section": "6. Ledger validation",
+      "summary": "milan: 3 ledger row(s) had no extractable candidate-column hyperlink",
+      "evidence": "appendix_reports/report_milan_baseline.pdf, row_id in [79, 99, 135]"
+    }
+  ],
+  "n_anomalies": 39
+}

@@ -1,0 +1,6 @@
+city,n_rows_with_coords,n_distinct_coordinate_pairs,largest_cluster_size,n_rows_on_a_shared_coordinate,pct_rows_on_a_shared_coordinate
+barcelona,237,86,21,196,82.7
+brighton,76,26,28,60,78.9
+dublin,69,41,5,42,60.9
+london,106,71,28,41,38.7
+milan,147,95,7,85,57.8

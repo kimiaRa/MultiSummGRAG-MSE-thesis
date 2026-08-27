@@ -1,0 +1,13 @@
+city,system,surviving,seed,coverage_rate,ci95_lower,ci95_upper
+barcelona,pipeline,237,261,0.908,,
+barcelona,baseline_v2,47,261,0.1801,,
+brighton,pipeline,76,81,0.9383,,
+brighton,baseline_v2,24,81,0.2963,,
+dublin,pipeline,69,83,0.8313,,
+dublin,baseline_v2,36,83,0.4337,,
+london,pipeline,106,115,0.9217,,
+london,baseline_v2,33,115,0.287,,
+milan,pipeline,147,163,0.9018,,
+milan,baseline_v2,34,163,0.2086,,
+ALL_POOLED,pipeline,635,703,0.9033,0.8742,0.9225
+ALL_POOLED,baseline_v2,174,703,0.2475,0.1988,0.3454

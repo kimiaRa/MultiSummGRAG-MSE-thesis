@@ -1,0 +1,28 @@
+venv/
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.log
+*.bak
+cache/
+logs/
+
+# Large downloaded website image cache; not used by final evaluation
+data/*/output/images/
+
+# Regenerable GraphRAG caches; not read by final artefact analysis
+data/*/graphrag/vdb_entities.json
+data/*/graphrag/kv_store_full_docs.json
+data/*/graphrag/kv_store_llm_response_cache.json
+
+# Do NOT ignore (frozen evidence used by the final GraphRAG audit):
+# data/*/graphrag/input/
+# data/*/graphrag/kv_store_text_chunks.json
+# data/*/graphrag/graph_chunk_entity_relation.graphml
+# data/*/graphrag/kv_store_community_reports.json
+# data/*/output/phase3_answers.json
+.claude/

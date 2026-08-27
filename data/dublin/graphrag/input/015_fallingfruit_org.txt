@@ -1,0 +1,722 @@
+# Falling Fruit
+
+URL: https://fallingfruit.org/sharing?locale=en
+Location: Ireland, Dublin, Dublin 2
+Coordinates: 53.34, -6.25
+
+Type: food_sharing
+Operational level: community_led
+Popularity: high (score: 3)
+
+Description: A massive, collaborative map of the urban harvest uniting the efforts of foragers, freegans, and foresters around the world. Explore and share information about the sources of free food in your neighborhood.
+
+Full text:
+Grow · Pick · Distribute
+Listed below are organizations that grow food in public spaces (food forests, public orchards), pick food (urban foraging, farm gleaning), or distribute food (exchanges, donations). Organizations are listed by country, state (if applicable), and city. Those with crossed-out names are believed to be inactive. If you know of others that should be on this list, contact us!
+- Global
+- Australia
+- Belgium
+- Brazil
+- Canada
+- Chile
+- Czechia
+- Fiji
+- Finland
+- France
+- Germany
+- Greece
+- Ireland
+- Italy
+- New Zealand
+- Portugal
+- Spain
+- Sweden
+- Switzerland
+- United Kingdom
+- United States
+- Tasmania
+- Urban Farming Tasmania
+- Victoria
+- Castlemaine Community House (Growing Abundance)
+- Melbourne Freegan Co-op
+- Sharing Abundance
+- Castlemaine
+- Melbourne
+- Western Australia
+- Food is Free Coolbellup
+- Coolbellup
+- Bruxelles (Brussel)
+- Dégustation de Bon Sens Bruxelles-Flagey
+- Dégustation de Bon Sens Forest
+- VZW-ASBL Corvia (FREE GO)
+- Bruxelles (Brussel)
+- Forest (Vorst)
+- Schaerbeek (Schaarbeek)
+- Vlaanderen (Flandre)
+- Goedgeplukt
+- Antwerpen Plukt
+- Pluk de stad
+- Antwerp
+- Mechelen
+- Wallonie
+- Co une rawette
+- Dégustation de bon sens Louvain la neuve
+- Charleroi
+- Louvain-la-Neuve
+- Espírito Santo
+- Piatan Lube (Cidades Comestíveis)
+- Alberta
+- Operation Fruit Rescue Edmonton
+- Edmonton
+- British Columbia
+- Fraser Valley Gleaners
+- Okanagan Fruit Tree Project
+- Earth Matters (Harvest Rescue Project)
+- Edible Garden Project
+- North Shore Fruit Tree Project
+- Penticton Fruit Tree Project
+- Sunshine Coast Fruit Tree Project
+- Summerland Fruit Tree Project
+- Abbotsford
+- Kelowna
+- Nelson
+- North Vancouver
+- Penticton
+- Roberts Creek
+- Summerland
+- Manitoba
+- Fruit Share Brandon
+- Brandon
+- Newfoundland & Labrador
+- Ontario
+- Hamilton Fruit Tree Project
+- The Garden of Eating - Niagara
+- Hidden Harvest Ottawa
+- Fruit for All Sudbury
+- Gleaners Guild
+- Kitchener-Waterloo Urban Harvester
+- Hamilton
+- Niagara Falls
+- Ottawa
+- Sudbury
+- Waterloo
+- Wilfred Laurier University
+- Quebec
+- Santiago
+- RecuperaLab
+- Santiago
+- Uusimaa (Nyland)
+- Satokartta
+- Helsinki (Helsingfors)
+- Bourgogne-Franche-Comté
+- Panier du Coin (Les Écureuils du Panier)
+- Montceau-les-Mines
+- Bretagne
+- Courgettes et Compagnie
+- Quimper
+- Île-de-France
+- Arcueil Comestible
+- Massyculteurs
+- Les Fruits du Voisin
+- Arcueil
+- Massy
+- Paris
+- Normandie
+- La Caentine
+- Caen
+- Nouvelle-Aquitaine
+- Ville d'Aytré (Paysage à croquer)
+- Aytré
+- Occitanie
+- Ville de Castries (Verger Partagé)
+- Les Glaneureuses
+- Castries
+- Sommières
+- Pays de la Loire
+- Re-bon
+- Nantes
+- Provence-Alpes-Côte d'Azur
+- Renouer (La cueillette solidaire)
+- Grasse
+- Μακεδονία
+- Fruits4Free
+- Θεσσαλονίκη
+- Lazio
+- Frutta Urbana
+- Roma
+- Liguria
+- Frutta Urbana Genova
+- Genova
+- Auckland
+- Community Fruit Harvesting Mangere Bridge
+- Community Fruit Picking Warkworth & Snells Beach
+- Mangere Bridge
+- Warkworth & Snells Beach
+- Bay of Plenty
+- Community Fruit Tauranga
+- Tauranga
+- Canterbury
+- Gisborne
+- Tairawhiti Community Fruit Harvest
+- Tairawhiti
+- Manawatu-Wanganui
+- Transition Feilding
+- Community Fruit Harvest Manawatu
+- Community Fruit Taihape
+- Community Fruit Whanganui
+- Feilding
+- Manawatu
+- Taihape
+- Whanganui
+- Marlborough
+- Community Fruit Marlborough
+- Blenheim
+- Nelson
+- Northland
+- Community Harvesting Whangarei
+- Whangarei
+- Otago
+- Community Fruit Wanaka
+- Wanaka
+- Waikato
+- Community Fruit Hamilton
+- Hamilton
+- Wellington
+- Community Fruit Wellington
+- Wellington
+- Grande Porto
+- Lipor (Horta à Porta)
+- Álava (Araba)
+- Nevera Solidaria Vitoria-Gasteiz
+- Vitoria (Gasteiz)
+- Bizkaia (Vizcaya)
+- Nevera Solidaria Bizkaia
+- Gipuzkoa
+- Nevera Solidaria Gipuzkoa
+- San Sebastián (Donostia)
+- Murcia
+- Nevera Solidaria Murcia
+- Murcia
+- Toledo
+- Valencia
+- Nevera Solidaria Galileo
+- Valencia
+- Skåne
+- Fruktsam
+- Lund
+- Luzern
+- Neugarten (Food Save Luzern)
+- Luzern
+- Schaffhausen
+- RestEssBar Schaffhausen
+- Schaffhausen
+- Solothurn
+- Olten im Wandel (RestEssBar Olten)
+- Olten
+- Thurgau
+- RestEssBar Frauenfeld
+- VerwertBar Kreuzlingen
+- Frauenfeld
+- Kreuzlingen
+- Vaud
+- Cultive toi
+- SOS Fruits
+- Lausanne
+- Yverdon-les-Bains
+- Zürich
+- RestEssBar 8406
+- RestEssBar Winti Altstadt
+- Winterthur
+- England
+- Fruitful Durham
+- Transition Cambridge (Food Group)
+- Organic Lea
+- Incredible Edible Dunstable
+- Henley Harvesters
+- Abundance East Herefordshire
+- Incredible Edible Hitchin
+- Orchards of Husthwaite Co-Operative
+- Incredible Edible Ipswich
+- Abundance Keyworth
+- Leeds Urban Harvest
+- Abundance London
+- Abundance South East London (SEplentyFREE)
+- Crystal Palace Transition Town
+- Edible Landscapes London
+- Hackney Harvest
+- Hoi Polloi
+- Incredible Edible Lambeth
+- Incredible Edible Southwark
+- Mapesbury Residents Association (Harvesting Group)
+- Priory Common Orchard
+- The Orchard Project
+- Transition Belsize (Abundance Belsize)
+- Transition Kensal to Kilburn (Fruit Harvesters)
+- Transition Kingston (Abundance Kingston)
+- Transition Willesden (Willesden Harvesters)
+- Union Street Urban Orchard
+- Urban Harvest
+- West Ealing Neighbors (West Ealing Abundance)
+- Abundance Manchester
+- Fruitful Union Abundance Northampton
+- Abundance Nottingham
+- Abundance Sherwood
+- Abundance Reading
+- Grow Sheffield (Sheffield Abundance)
+- Transition Stratford (Harvest Share)
+- Abundance Trafford
+- Incredible Edible Ulverston
+- West Bridgford in Transition
+- Abundance Wimbledon
+- Brighton Permaculture Trust (Fruit Factory)
+- Edible York (Abundance York)
+- Bearpark
+- Cambridge
+- Chingford
+- Dunstable
+- Henley-in-Arden
+- Hereford
+- Hitchin
+- Husthwaite
+- Ipswich
+- Keyworth
+- Leeds
+- London
+- Manchester
+- Northampton
+- Nottingham
+- Reading
+- Sheffield
+- Stratford-upon-Avon
+- Trafford
+- Ulverston
+- West Bridgford
+- Wimbledon
+- Worthing
+- York
+- Scotland
+- Wales
+- Bangor Forest Garden
+- Orchard Cardiff
+- Transition Haverfordwest (Orchard Mawr)
+- Gwyrddio Penarth Greening (Harvest Penarth)
+- Bangor
+- Cardiff
+- Haverfordwest
+- Penarth
+- Alabama
+- Magic City Harvest
+- Feeding the Gulf Coast (Gleaning)
+- Birmingham
+- Theodore
+- Arizona
+- Association of Arizona Food Banks (Arizona Statewide Gleaning Project)
+- Borderlands Foodbank
+- Waste Not
+- Nogales
+- Scotsdale
+- Arkansas
+- Potluck Food Rescue
+- Arkansas Hunger Relief Alliance (Gleaning Project)
+- Little Rock
+- California
+- Mongol Tribe
+- Fruitful Gather
+- North Berkeley Harvest
+- Spiral Gardens (Community Harvest Project)
+- The Berkeley Gleaners
+- Tree People (Fruit Tree Program)
+- The Lemon Lady Foundation
+- Hidden Harvest
+- White Pony Express (Food Rescue Program)
+- Donate Don't Dump
+- Black Urban Farmers Association
+- Food for People (Gleaning Program)
+- Neighborhood Fruit 90806
+- SoCal Harvest
+- Fallen Fruit
+- Food Forward (Bakyard Harvesting)
+- L.A. Community Fridges
+- L.A. Kitchen (Impact L.A.)
+- Mamadonnas
+- Extra Food
+- Marin Open Garden Project (Fruit Tree Harvesting)
+- Gold Country Gleaners
+- California Association of Food Banks (Farm to Family)
+- Edible Parks Task Force
+- Food Shift
+- Forage Oakland
+- Growing Together (Oakland Fruit)
+- PUEBLO (Youth Greening Oakland)
+- Harvest OB
+- Harvest Fairvale
+- Petaluma Bounty (Bounty Hunters)
+- Marin Organic
+- Ag Against Hunger (Gleaning Program)
+- Backyard Produce Project (Tree Picking Team)
+- CropSwap
+- Dumpster Diving San Diego
+- Harvest CROPS
+- Housing Opportunities Collaborative (Harvesting Opportunities Collaborative)
+- ProduceGood (CropSwap)
+- San Diego Roots Sustainable Food Project (Harvesting San Diego)
+- San Diego Senior Gleaners
+- Food Runners
+- Forage SF
+- Free Farm Stand
+- Produce to the People
+- San Francisco Department of Public Works (Urban Harvesting Program)
+- San Francisco Department of the Environment (Urban Orchards Project)
+- The Urban Farmers
+- Village Harvest
+- GleanSLO
+- Peninsula Food Runners
+- Foodbank Santa Barbara County (Backyard Bounty)
+- Santa Cruz Fruit Tree Project
+- Farm to Pantry (Gleaning)
+- Stanford Gleaning Project
+- Bread of Life
+- Emergency Food Bank
+- Harvester Farms
+- PUENTES
+- University of the Pacific (Garden Program)
+- Gleanings for the Hungry
+- Be Healthy Tulare (Harvesting Hope)
+- Food Rescue
+- Berkeley
+- Beverly Hills
+- Clayton
+- Coachella
+- Contra Costa County
+- Encinitas
+- French Camp
+- Humboldt County
+- Long Beach
+- Los Angeles
+- Marin County
+- Mill Valley
+- Nevada County
+- Oakland
+- Ocean Beach
+- Orangevale
+- Petaluma
+- Point Reyes Station
+- Salinas
+- San Diego
+- San Francisco
+- San Jose
+- San Luis Obispo
+- San Mateo & Santa Clara Counties
+- Santa Barbara
+- Santa Cruz
+- Sonoma County
+- Stanford University
+- Stockton
+- Sultana
+- Tulare
+- Vallejo
+- Colorado
+- La Puente (Food Bank Network)
+- Food to Power
+- Denver Food Rescue
+- Denver Yard Harvest
+- Foraged Feast
+- Produce for Pantries
+- Slow Food Denver (Preserve the Harvest)
+- Urbiculture Community Farms
+- We Don't Waste
+- Bear Smart Durango (Fruit Gleaning Program)
+- The Growing Project (Food Finders)
+- Foodshed Productions
+- Pikes Peak Permaculture (Crystal Valley Permaculture Food Forest Demonstration Garden)
+- Heritage Fruit Tree Project
+- Alamosa
+- Colorado Springs
+- Denver
+- Durango
+- Fort Collins
+- Longmont
+- Manitou Springs
+- Roaring Fork Valley
+- Connecticut
+- Foodshare
+- Bloomfield
+- District of Columbia
+- Florida
+- Farm Share
+- Feeding Florida (Farmers Feeding Florida)
+- Destin Harvest
+- CROS Ministries (CROS Gleaning)
+- Transition Sarasota (Suncoast Gleaning Project)
+- Destin
+- Lake Worth
+- Sarasota
+- Hawai‘i
+- One Island (No Fruit Left Behind)
+- Kaua'i Food Forest
+- Aloha Harvest
+- Captain Cook
+- Kilauea
+- O'ahu
+- Hawaii
+- Kohala Gleaning
+- Hawaii
+- Idaho
+- Idaho Foodbank (Food Rescue)
+- Western Idaho Community Action Partnership (WICAP) (Gleaning Project)
+- Backyard Harvest (Community Orchard)
+- Moscow
+- Illinois
+- Mindful Waste (Food Recovery)
+- Community Keepers
+- Barrington
+- Prospect Heights
+- Indiana
+- Indy Hunger Network (Glean Team)
+- Indianapolis
+- Iowa
+- Food at First (Gleaning)
+- Quad City Food Forest
+- Eat Greater Des Moines (Food Rescue)
+- Backyard Abundance
+- Table to Table
+- Ames
+- Davenport
+- Des Moines
+- Iowa City
+- Kansas
+- Kentucky
+- Faith Feeds
+- GleanKY
+- Lexington
+- Louisiana
+- City Citrus
+- Second Harvest Food Bank (New Orleans Fruit Tree Project)
+- Baton Rouge
+- New Orleans
+- Maine
+- Good Shepherd Food Bank of Maine (Donated and Purchased Food Distribution)
+- Healthy Acadia (Gleaning)
+- ReTreeUS
+- University of Main Cooperative Extension (Maine Harvest for Hunger)
+- Maryland
+- Community Food Rescue
+- Nourish Now
+- Montgomery County
+- Massachusetts
+- Boston Area Gleaners
+- Boston Food Forest
+- Boston Natural Areas Network (Urban Orchards)
+- Boston Tree Party
+- Earth Works Boston
+- League of Urban Canners
+- Lovin' Spoonfuls
+- Food for Free
+- Fair Foods
+- Help Yourself
+- Rachel's Table (Gleaning Project)
+- Boston
+- Cambridge
+- Dorchester
+- Northampton
+- Springfield
+- Michigan
+- Food Gatherers
+- Heartside Gleaning Initiative
+- Ann Arbor
+- Grand Rapids
+- Minnesota
+- Mill City Farmers Market (Greens for Good)
+- The Food Group (Fruits of the City)
+- Minneapolis
+- Missouri
+- After the Harvest
+- Ozarks Food Harvest (Glean Team)
+- Kansas City
+- Springfield
+- Montana
+- Great Bear Foundation (Bears & Apples Program)
+- Missoula
+- Nebraska
+- Produce from the Heart (Produce Rescue)
+- Lincoln
+- Nevada
+- New Hampshire
+- NH Gleans
+- University of New Hampshire Extension (Veggie Volunteer Program)
+- Willing Hands
+- Hillsborough County Gleaners
+- Lebanon
+- Milford
+- New Jersey
+- America's Grow-a-Row
+- New Jersey Agricultural Society (Farmers Against Hunger)
+- Table to Table
+- New Mexico
+- Seed2Need
+- Roadrunner Foodbank of New Mexico (Food Rescue)
+- Corrales
+- Las Cruces
+- New York
+- City Harvest (Emergency Food Rescue)
+- Lots of Food
+- UlsterCorps (Glean Team)
+- Alchemical Nursery
+- Capital Roots
+- New York
+- Rochester
+- Stone Ridge
+- Syracuse
+- Troy
+- North Carolina
+- Bountiful Cities (George Washington Carver Edible Park)
+- Buncome Fruit and Nut Club
+- Center for Holistic Medicine (Urban Plant Walk)
+- No Taste Like Home
+- Haywood Gleaners
+- Inter-Faith Food Shuttle
+- Asheville
+- Haywood County
+- Raleigh
+- Ohio
+- Oregon
+- Neighborhood Harvest
+- Spiral Living Center (IV Gleaners)
+- The Gleaning Network
+- Mary's River Gleaners
+- Lebanon Gleaners
+- Gleaners of Clackamas County
+- B-Line (B-Shares)
+- Hollywood Senior Center (Hollywood Gleaners)
+- Portland Fruit Tree Project
+- Urban Edibles
+- Urban Gleaners
+- Tualatin Valley Gleaners
+- Ashland
+- Cave Junction
+- Central Point
+- Corvallis
+- Lebanon
+- Oregon City
+- Portland
+- Tualatin Valley
+- Pennsylvania
+- Project Share (Gleaning)
+- Channels Food Rescue
+- Rolling Harvest Food Rescue
+- Philabundance (Gleaning)
+- Philadelphia Orchard Project
+- 412 Food Rescue
+- Hidden Harvest Pittsburgh
+- Carlisle
+- Harrisburg
+- New Hope
+- Philadelphia
+- Pittsburgh
+- Rhode Island
+- Rhode Island Center Assisting those in Need
+- Charlestown
+- South Carolina
+- The Generous Garden Project
+- Greenville
+- South Dakota
+- Rapid City Urban Orchard
+- Rapid City
+- Tennessee
+- Urban Land Scouts
+- Second Harvest Food Bank (Food Rescue)
+- Knoxville
+- Maryville
+- Texas
+- Fruit Share Houston
+- Houston
+- Utah
+- Vermont
+- Vermont Foodbank (Gleaning Program)
+- Intervale Center (Gleaning & Food Rescue)
+- HOPE
+- Salvation Farms (Vermont Gleaning Collective)
+- Rutland Area Farm & Food Link (Glean Team)
+- Healthy Roots Vermont (Gleaning Program)
+- Barre
+- Burlington
+- Middlebury
+- Morrisville
+- Rutland
+- Saint Albans
+- Virginia
+- Food Bus
+- Food for Others
+- Plenty! Food Bank
+- Arlington
+- Fairfax
+- Floyd
+- Washington
+- Food Lifeline
+- Rotary First Harvest (Harvest Against Hunger)
+- Bellingham Food Bank (Small Potatoes Gleaning Project)
+- N.E.W. Hunger Coalition (Gleaning)
+- FISH Community Food Bank (Gleaners)
+- City of Issaquah (Gilman Blvd Edible Landscape Tour)
+- Issaquah Food & Clothing Bank (Harvest Issaquah)
+- Kitsap Harvest
+- Evergreen Food & Goods Rescue
+- Upper Valley Mend (Community Harvest)
+- Community Action of Skagit County (Harvest for Hope)
+- Evergreen State College Organic Farm (Demeter's Garden)
+- NE Neighborhood Association (Joy Ave Pathway)
+- Thurston County Food Bank (Gleaning Program)
+- Olympic Gleaners
+- Local 20/20 (Community Harvest)
+- Hopelink (Hopelink Harvest)
+- Fields of Grace
+- Beacon Food Forest
+- Brandon Street Orchard
+- City Fruit
+- Community Harvest of Southwest Seattle
+- Community Orchard of West Seattle
+- Freeway Estates Community Orchard
+- Seattle Food Rescue
+- Solid Ground
+- Cascade Gleaning Association
+- Spokane Edible Tree Project
+- Good Cheer Food Bank (Gleeful Gleaners)
+- Imagine Permaculture Forest
+- Rainbow Valley Gleaners Harvest Project
+- Whitman County Historical Society (Lost Apple Project)
+- Bellingham
+- Colville
+- Ellensburg
+- Issaquah
+- Kitsap County
+- Lake Stevens
+- Leavenworth
+- Mount Vernon
+- Olympia
+- Port Angeles
+- Port Townsend
+- Redmond
+- Richland
+- Seattle
+- Snohomish County
+- Spokane
+- Whidbey Island
+- White Salmon
+- Whitman County
+- Wisconsin
+- Community Action Coalition for South Central Wisconsin (CAC Gleaners Perishable Food Recovery Program)
+- Madison Fruits and Nuts
+- Glean Milwaukee
+- Tikkun Ha-Ir (Surplus Harvest)
+- Glean Central Wisconsin
+- Madison
+- Milwaukee
+- Stevens Point
+- Wyoming
+- Hole Food Rescue
+- Jackson
+Food banks
+Foragers and private tree owners are encouraged to donate their surplus produce to charity. Consider partnering with groups like those listed above, or donating directly to organizations feeding the hungry in your community. The major food bank networks are listed below; homeless shelters, schools, and senior centers are also worth considering.
+Copyleft © 2026 Falling Fruit
+
+Images: 10 image(s) available.

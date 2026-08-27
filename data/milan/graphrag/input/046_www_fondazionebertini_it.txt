@@ -1,0 +1,71 @@
+# Fondazione Bertini Malgarini Onlus
+
+URL: https://www.fondazionebertini.it/
+Location: Italy, Milan, Municipio 2
+Coordinates: 45.5, 9.23
+
+Type: other
+Operational level: ngo_led
+Popularity: high (score: 1)
+
+Description: sono una descrizione
+
+Full text:
+Mission
+La Fondazione, che nasce il 13 dicembre 2007, è la continuazione, nel mondo del legame sociale, del lavoro di un editore e imprenditore italiano e la realizzazione di un progetto da lui fortemente voluto. Essa ha come mandato e orizzonte di azione il collegamento possibile fra i soggetti con disagio e il mondo del lavoro, della tecnologia, dell’impresa. Dalla formazione all’inserimento lavorativo, dalla ricerca applicata alla costruzione di strumenti utili, dalla riattivazione di spazi alla creazione di imprese sociali, la Fondazione ha negli anni definito la propria vocazione in una chiara linea di condotta e innovazione sociale, che qui è esposta. Essa si rivolge innanzitutto ai soggetti con disagio psichico oltre che ai minori in condizione di difficoltà, ai rifugiati politici, ai detenuti, perchè disagio psichico e disagio sociale hanno radici profonde e comuni.
+Nur um der hoffnungslosen willen ist uns die hoffnung gegeben
+It is only for the sake of those without hope that hope is given to us
+Seulement autour des désespérés, l’espoir nous est donné
+Franz KafkaSoltanto per chi non spera, ci è data la speranza
+Framework
+G.EN.TE.
+G.EN.TE., Giovani e Nuove Tecnologie, è il titolo del piano di indirizzo elaborato per la riqualificazione del comprensorio dell’ex-oratorio di Via Caroli 12 a Milano, affidato alla Fondazione in diritto di superficie dalla Curia di Milano, con atto notarile del 3 settembre 2010. Ad oggi la Fondazione ha quasi terminato la ristrutturazione degli interni, con il contributo di Fondazione Cariplo, Fondazione Banca del Monte e donatori privati. All’interno del piano di indirizzo, sono state avviate molteplici attività e progettualità nello spazio, nonché sinergie con diversi soggetti capaci di coniugare imprenditorialità e solidarietà. L’oratorio di Via Caroli diventa così sede di quello che può essere chiamato “Centro risorse multitarget”. Per approfondire sia il piano di indirizzo, sia le modalità di partecipazione, sia le varie attività presenti, si veda il sito di riferimento.
+Area lavoro
+From Head To Hands
+From Head To Hands (FH2H), percorsi di transizione al lavoro, è stato il primo, fortunato progetto operativo promosso da Fondazione Bertini. Ispirato al motto ‘imparare facendo’, il progetto, iniziato nel 2008, ha visto avvicendarsi numerose sessioni formative, su materie che vanno dalla computer grafica alla cucina, dalla serigrafia all’archiviazione digitale. Vi hanno partecipato centinaia di utenti, e sono state avviate decine di contratti con aziende di diversi settori.
+Ristorante Buono
+La cucina e l’area ristorante di Via Caroli, allestite inizialmente per consentire lo svolgimento dei nostri corsi di cucina, sono diventate protagoniste di iniziative ed eventi capaci di far incontrare il mondo del sociale con quello dell’alta cucina e degli chef d’autore. Questo progetto innovativo ha avuto un notevole riscontro sui media nazionali:
+Gli orti che fanno bene
+Dal 2009 Fondazione Bertini Onlus è attiva, di concerto con l’UOP Corberi, negli spazi dismessi dell’ex o.p. di Mombello, il più grande ex manicomio nel territorio lombardo. Qui ha, con la supervisione della Fondazione Minoprio, promosso la costruzione di un orto terapeutico, all’interno del quale si sono ad oggi svolte diverse stagioni di corsi di ortofloricultura, sia per gli utenti interni sia per soggetti in carico ai servizi territoriali. Tale attività è stata recentemente affiancata da un analogo progetto in Via Caroli, dove è stato realizzato un orto giardino su una superficie di 300 mq.
+La carota viola
+A partire dall’esperienza maturata a Mombello, nel 2013 Fondazione Bertini ha dato vita a un nuovo progetto di innovazione sociale, questa volta a Milano: “La Carota Viola: orto sperimentale per l’agricoltura urbana”. Un orto biologico, interamente dedicato alla didattica e alla solidarietà sociale, all’interno di un ex oratorio che sta riprendendo vita, nella zona più multietnica di Milano. Questo progetto si pone due importanti obiettivi: facilitare l’inclusione lavorativa di persone a rischio di emarginazione sociale, attraverso corsi di formazione e transizione al lavoro; promuovere l’agricoltura urbana e stili di vita sostenibili attraverso un ambizioso progetto di e-learnig, rivolto al grande pubblico e nato dalla partnership con i media Giardinaggio e YouTube.
+Area ricerche
+RRA, Ricerca sulla Risposta Abitativa in Lombardia
+Commissionata dal Comitato Tecnico Innovazione in Psichiatria della DG Salute di Regione Lombardia, presentata il 10 ottobre 2012 all’Auditorium Gaber, durante il 46° congresso della Società Italiana di Psichiatria, documentata da un rapporto di 292 pagine, supportata da un database geografico con più di duemila schede, RRA, che ha avuto per oggetto le Comunità riabilitative a Media Protezione, CRM, e le Residenzialità Leggere, RL, sul territorio lombardo, è ad oggi l’output più avanzato dell’area ricerche di Fondazione Bertini, per la sua coniugazione unica di progettazione partecipata, impatto istituzionale e innovazione informatica e statistica.
+Open Fondo Sociale
+Nell’ambito del passaggio della gestione del Fondo Sociale della Salute Mentale dall’ASL al Comune di Milano, è stato chiesto a Fondazione Bertini di realizzare il supporto informatico alla standardizzazione delle procedure di gestione del Fondo stesso. Il progetto è attualmente in corso di sviluppo.
+We care - Crescere nella citta metropolitana
+Si tratta di un progetto promosso da Associazione Consorzio Cascina Cuccagna e Fondazione Bertini con l’obiettivo di intervenire sul tema del rapporto tra città metropolitana e infanzia. L’area ricerche della Fondazione ha costruito l’applicazione con la quale integrare i primi set di dati su quartieri e NIL (Nuclei d’identità locale), generati dagli open data disponibili sull’infanzia milanese, con la distribuzione geografica dei servizi, divisi per target. Il progetto, finanziato dal Comune di Milano legge ex 285, è in corso.
+Francis Dashboard
+In co-progettazione con Assifero e con il sostegno economico di Fondazione UMANA MENTE, Fondazione Bertini ha sviluppato un dashboard per la progettazione in grado di mettere a disposizione degli enti no profit uno strumento semplice, intuitivo ed efficace che unisca:
+- la compilazione guidata di una matrice normalizzata;
+- la generazione di output automatici;
+- GANNT e Pert. Francis Dashboard è stato sviluppato sia su Google Spreadsheet che su MS Excel.
+Rane Volanti
+Rane Volanti è un progetto triennale di coesione sociale (2010 - 2013) finanziato da Fondazione Cariplo che coinvolge 14 associazioni operanti nell’area di via Padova e quartiere Adriano a Milano. Nell’ambito di tale progetto, Fondazione Bertini ha sviluppato la piattaforma in grado di mappare e mettere in relazione tutte le realtà non profit, i servizi, le istituzioni e i singoli che a diversi livelli operano per l’inclusione sociale di soggetti fragili e persone a forte rischio di emarginazione nei due quartieri.
+Sistema Milano
+Nel 2011 Fondazione Bertini ha ottenuto, tramite bando di gara dei Servizi per Adulti in Difficoltà del Comune di Milano, l’incarico di progettare e realizzare la piattaforma web impiegata nell’ambito di “Sistema Milano”, progetto promosso dal Comune per la messa a sistema dei dati relativi a senza fissa dimora, immigrati, Rom e Sinti e dei servizi, delle associazioni e delle risorse ad essi dedicati sul proprio territorio.
+Menteinsalute
+Primo progetto realizzato nel 2008 dall’area ricerche di Fondazione Bertini, Menteinsalute è un portale che contiene al suo interno la più completa mappatura disponibile sul web dei servizi, che afferiscono al settore pubblico ed al privato sociale, attivi nell’ambito della Salute Mentale, categorizzati per aree geografiche e settori di intervento, e correlati di tutti i contatti disponibili.
+Area cultura
+FUORI DOVE?
+Nato in occasione dei trent’anni dalla chiusura dei manicomi in Italia, FUORI DOVE? è una manifestazione annuale promossa da Fondazione Bertini nella seconda metà di Maggio, in concomitanza con l’anniversario della scomparsa di Gaetano. Dopo le prime tre edizioni in Piazza dei Mercanti, con netta focalizzazione sulla Salute Mentale, l’evento si è spostato in Via Caroli, aprendosi a nuove strategie culturali e forme artistiche.
+2008 Abitare il Disagio
+2009 Il protagonismo degli utenti
+2010 Dare voce al disagio
+2011 Nuovi usi per vecchie funzioni
+2012 Empowerment e agenticità
+2013 Teatro degli Incontri presenta ‘La Festa di Antigone’
+Mind the Difference
+Con il progetto Mind the Difference, la Fondazione ha promosso una piattaforma di concorsi 2.0 sulla differenza e la lotta allo stigma, rivolta a creativi, appassionati, intellettuali, utilizzatori di strumenti di varia natura. Mind the Difference ha visto sedere nella propria giuria: Gianni Berengo Gardin, Antonio Rezza e Flavia Mastrella, Italo Rota, Luca Enoch.
+2010 Video contest sul tema “Follia”
+2011 “Abitare lo spazio del disagio: nuovi usi per vecchie funzioni”
+2012 “Le strisce della differenza”
+Franco Basaglia e la filosofia del '900
+Il 12 dicembre 2008, nell’Aula Magna dell’Università degli Studi di Milano, sotto un’incessante nevicata, la Fondazione ha presieduto un memorabile convegno a cui hanno partecipato Eugenio Borgna, Mario Colucci, Pier Aldo Rovatti, Massimo Recalcati, Romolo Rossi, Carlo Sini. Gli atti sono stati raccolti in una pubblicazione, accompagnata da un dvd in cui l’attrice Laura Curino ricostruisce in modo unico il filo rosso della giornata.
+Works
+- “Franco Basaglia e la filosofia del ‘900”, libro e dvd. Atti del convegno svoltosi all’Università di Milano in occasione del trentennale della legge 180. Milano, 2008.
+- “In nascita di G.EN.TE.”, un manifesto. Milano, 2010.
+- Report finale “RRA, Ricerca Risposta Abitativa regione Lombardia”. Milano, 2012.
+
+Images: 10 image(s) available.

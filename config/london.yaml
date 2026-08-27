@@ -1,0 +1,7 @@
+city: London
+country: United Kingdom
+language: en
+data_dir: data/london
+raw_urls_file: data/london/raw_urls.csv
+urls_file: data/london/urls_cleaned.csv
+districts_file: data/london/districts.geojson

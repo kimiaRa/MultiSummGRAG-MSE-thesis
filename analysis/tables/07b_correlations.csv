@@ -1,0 +1,4 @@
+x,y,n,pearson_r
+cleaned_urls,reported_fsi_total,5,1.0
+cleaned_urls,reported_district_count,5,-0.182
+cleaned_urls,n_distinct_fsi_types,5,0.724

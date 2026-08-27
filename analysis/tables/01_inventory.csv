@@ -1,0 +1,13 @@
+city,path,stage,row_count,n_columns,columns,dtypes,mtime,exists
+barcelona,data/barcelona/urls.csv,RAW_SEED (proxy: no raw_urls.csv on this branch; verified byte-identical to main branch's raw_urls.csv via git history),261,3,URL;Lat;Lng,URL:str;Lat:float64;Lng:float64,2026-07-14T14:53:01.778614998,True
+barcelona,data/barcelona/urls_cleaned.csv,"CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",237,4,URL;Lat;Lng;coords_approx,URL:str;Lat:float64;Lng:float64;coords_approx:bool,2026-07-14T14:53:01.778785229,True
+brighton,data/brighton/raw_urls.csv,RAW_SEED,81,3,URL;Lat;Lng,URL:str;Lat:float64;Lng:float64,2026-07-03T11:44:55.744644165,True
+brighton,data/brighton/urls.csv,SUPERSEDED_INTERMEDIATE (urls.csv writer is dead code in src/phase_0/cleaner.py; not consumed by current pipeline; excluded from the attrition ledger),81,3,URL;Lat;Lng,URL:str;Lat:float64;Lng:float64,2026-07-03T11:44:55.744644165,True
+brighton,data/brighton/urls_cleaned.csv,"CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",76,4,URL;Lat;Lng;coords_approx,URL:str;Lat:float64;Lng:float64;coords_approx:bool,2026-07-03T11:44:55.744644165,True
+dublin,data/dublin/raw_urls.csv,RAW_SEED,83,3,URL;Lat;Lng,URL:str;Lat:float64;Lng:float64,2026-07-03T11:44:56.923630238,True
+dublin,data/dublin/urls.csv,SUPERSEDED_INTERMEDIATE (urls.csv writer is dead code in src/phase_0/cleaner.py; not consumed by current pipeline; excluded from the attrition ledger),83,3,URL;Lat;Lng,URL:str;Lat:float64;Lng:float64,2026-07-03T11:44:56.923630238,True
+dublin,data/dublin/urls_cleaned.csv,"CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",69,4,URL;Lat;Lng;coords_approx,URL:str;Lat:float64;Lng:float64;coords_approx:bool,2026-07-03T11:44:56.923630238,True
+london,data/london/raw_urls.csv,RAW_SEED,115,3,URL;Lat;Lon,URL:str;Lat:float64;Lon:float64,2026-07-03T11:44:56.923630238,True
+london,data/london/urls_cleaned.csv,"CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",106,4,URL;Lat;Lng;coords_approx,URL:str;Lat:float64;Lng:float64;coords_approx:bool,2026-07-14T14:53:03.373380423,True
+milan,data/milan/raw_urls.csv,RAW_SEED,163,3,URL;Lat;Lng,URL:str;Lat:float64;Lng:float64,2026-07-03T11:44:56.923630238,True
+milan,data/milan/urls_cleaned.csv,"CLEANED (post dedup + dead-link/social-wall removal, combined -- no intermediate file on disk separates these two sub-stages)",147,4,URL;Lat;Lng;coords_approx,URL:str;Lat:float64;Lng:float64;coords_approx:bool,2026-07-14T14:53:05.533370256,True

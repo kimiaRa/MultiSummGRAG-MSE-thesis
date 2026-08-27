@@ -1,0 +1,782 @@
+<!DOCTYPE html><html class="lg-SP"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+        <meta charset="utf-8">        
+        <title>Inicio</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="Parroquia Santa Agnès :: Carrer de Sant Elies, 23 - Barcelon, 08006 ">
+		<meta property="og:title" content="Parroquia Santa Agnès :: Inicio">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.santaagnes.com/EsglesiaCatolica.php?pg=Inicio&amp;lg=SP">
+		<meta property="og:description" content="Parroquia Santa Agnès :: Carrer de Sant Elies, 23 - Barcelon,  08006 ">
+							<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/Br0hYqpfWeFzYCAXLD4UuCIV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-os1oE9riCJnxvhNQ7O/WqU9GwWx5mE1SEyqiRc2BLb3uEMbNuxEJKZIGYbcNwpF3"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-94ZC3JDTT5"></script>
+					<script>
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+
+					  gtag('config', 'G-94ZC3JDTT5');
+					</script>        <script src="library/js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="library/js/smartmenus-1.1.0/css/sm-core-css.css">
+		<script src="library/js/smartmenus-1.1.0/jquery.smartmenus.min.js"></script>
+		
+		<!-- HTML EDITOR -->
+		<script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js"></script>
+
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://platform.atimo.us/ctm/31000/structure.css?v=1779891262">
+        <link href="ctm/31271/projects/sagnes/layout01/css/main.css?v=3" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Lora&amp;family=Montserrat:wght@500&amp;display=swap" rel="stylesheet"> 
+
+<link rel="apple-touch-icon" sizes="180x180" href="ctm/31271/projects/sagnes/layout01/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="ctm/31271/projects/sagnes/layout01/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="ctm/31271/projects/sagnes/layout01/images/favicons/favicon-16x16.png">
+
+<script type="text/javascript">
+    $(function() {
+        var window_width = $(window).width();
+
+        /* MAIN MENU --------------------*/
+        $('#main-menu').smartmenus({
+            markCurrentItem: true,
+            markCurrentTree: true,
+            hideDuration: 100,
+			subMenusSubOffsetY: 10            
+        });       
+    });
+
+</script>
+    			<script src="https://www.google.com/recaptcha/api.js?render=6Ld8fGscAAAAAA7ZK5NXfNzJ40mROA0vZfDFKGs4"></script>    			
+    			<script>
+					$(document).on("ajaxComplete", function() {
+						$('form .atimo-recaptcha-response').closest('form').find(':submit').addClass("g-recaptcha");	
+					});
+					
+					$(function() {
+						$('form .atimo-recaptcha-response').closest('form').find(':submit').addClass("g-recaptcha");	
+					});					
+					
+					$(document).on('click', 'form .g-recaptcha:submit', function(event){
+						event.preventDefault();	
+						let thisForm = $(this).closest('form');	
+					
+						let currentTime = new Date();				
+						let recaptcha_timeout = (thisForm.find('input[name="sys_recaptcha_timeout"]').length) ? new Date(thisForm.find('input[name="sys_recaptcha_timeout"]').val()) : '';
+						
+						if ((recaptcha_timeout == '') || (currentTime > recaptcha_timeout)) {
+							grecaptcha.execute('6Ld8fGscAAAAAA7ZK5NXfNzJ40mROA0vZfDFKGs4', {action: 'homepage'})
+							.then(function(token) {	
+								let new_recaptcha_timeout = new Date();
+								new_recaptcha_timeout.setMinutes(new_recaptcha_timeout.getMinutes() + 2);			
+								if (thisForm.find('input[name="sys_recaptcha_timeout"]').length) {
+									thisForm.find('input[name="sys_recaptcha_timeout"]').val(new_recaptcha_timeout);
+								} else {
+									thisForm.prepend('<input name="sys_recaptcha_timeout" type="hidden" value="'+new_recaptcha_timeout+'">');
+								} 								
+								thisForm.find('.atimo-recaptcha-response').val(token);
+								thisForm.submit();
+							});
+						} else {
+							thisForm.submit();
+						}
+					});									
+					$(function() {
+						if ($("input[name='g-recaptcha-response']").length == 0) {
+							$(".grecaptcha-badge").css('visibility', 'hidden');
+						}											  
+					});
+				</script>
+			        
+        <script src="library/js/components.js?v=2"></script>
+        <link rel="stylesheet" href="library/fontawesome-free-5.15.4-web/css/all.css">
+        <link rel="stylesheet" href="library/fontawesome-free-7.1.0-web/css/all.css">
+        <link href="ctm/31271/projects/sagnes/layout01/css/inicio.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script src="ctm/31271/projects/sagnes/layout01/home/news_rotator01.js"></script>
+
+<style type="text/css">
+#wrap_top {
+	background-image: url(ctm/31271/projects/sagnes/gallery/2021/06/inicio.jpg);
+}
+
+.advertising {
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top center;
+	padding: 30px 0;
+	border-top: 1px solid var(--color2000);
+}
+
+.advertising .content { background-color: transparent; }
+
+.advertising img.imgC {
+	max-width: 900px;
+	width: 100%;
+}
+
+.advertising h2 {
+	text-align: center;
+	color: var(--color2000);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.8em;
+}
+
+.advertising h2 sup { font-size: 16px; }
+
+.advertising .flexC { margin-top:  30px; }
+
+.advertising .fx_3 {
+	margin: 0 0 10px;
+	padding: 0 15px 20px;
+}
+
+.advertising h3 {
+	font-size: 1.1em;
+	color: var(--gray3);
+	font-weight: 500;
+}
+
+.advertising p { color: white; }
+
+.advertising ul li {
+	color: white;
+	font-size: 15px;
+}
+
+.advertising ul li::before {
+	color: var(--color2000);
+}
+</style>		
+    <style type="text/css">
+/* Matheus Ramos CSS - Ultra Smooth Version */
+#future {
+  --bg-main: rgba(26, 42, 68, 0.98);
+  --accent: #FFD700;
+  
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 20px;
+  background: var(--bg-main);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  font-family: 'Inter', sans-serif;
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.8s ease;
+  transition-delay: 0.2s;
+  transform: translateX(calc(100% - 45px));
+}
+
+#future.open {
+  transform: translateX(0) !important;
+  opacity: 1;
+  transition: transform 0.5s cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition-delay: 0s;
+}
+
+#future form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#url_now {
+  color: var(--accent) !important;
+  font-size: 20px;
+  text-decoration: none;
+  order: -1;
+  cursor: pointer;
+  /* Garante que o ícone fique parado enquanto a barra corre */
+  flex-shrink: 0;
+}
+
+#future input[type="datetime-local"] {
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 14px;
+    outline: none;
+    color: black;
+}
+
+#future input[type="submit"] {
+  background: var(--accent);
+  color: #1a2a44;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#future a#url_reset {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-size: 11px;
+}
+</style><script>
+  function convertNowToUrlFormat(form) {
+    const local = form.elements['now_local']; // datetime-local
+    const out   = form.elements['now'];       // hidden field (URL format)
+
+    if (!local || !local.value || !out) return true;
+
+    const [datePart, timePart] = local.value.split('T');
+    if (!datePart || !timePart) return true;
+
+    let [hour24, minute] = timePart.split(':');
+    hour24 = parseInt(hour24, 10);
+    minute = parseInt(minute, 10);
+    if (Number.isNaN(hour24) || Number.isNaN(minute)) return true;
+
+    const ampm = hour24 >= 12 ? 'PM' : 'AM';
+    let hour12 = hour24 % 12;
+    if (hour12 === 0) hour12 = 12;
+
+    const hh = String(hour12).padStart(2, '0');
+    const mm = String(minute).padStart(2, '0');
+
+    out.value = `${datePart}-${hh}-${mm}-${ampm}`; // YYYY-MM-DD-HH-MM-AM|PM
+    return true;
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const future = document.getElementById("future");
+    const trigger = document.getElementById("url_now");
+
+    if (!future || !trigger) return;
+
+    // Toggle ao clicar no ícone
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      future.classList.toggle("open");
+    });
+
+    // Evita fechar ao clicar dentro
+    future.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+
+    // Clique fora fecha
+    document.addEventListener("click", function () {
+      future.classList.remove("open");
+    });
+  });
+</script></head>  
+	
+
+
+
+
+	<body><aside id="pgLayerCompose"></aside>  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+	<header>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+		<section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+			<nav id="main-nav" class="hmenu01">	<input id="main-menu-state" type="checkbox">
+									<label class="main-menu-btn" for="main-menu-state">
+										<span class="main-menu-btn-icon"></span>
+									</label>
+									<ul id="main-menu" class="sm" data-smartmenus-id="1779891264041517"><li><a href="EsglesiaCatolica.php?pg=Inicio&amp;lg=SP" class="selected current">Inicio                                                                                                                                                                                                                                                                                                      </a></li><li><a class="has-submenu" id="sm-1779891264041517-1" aria-haspopup="true" aria-controls="sm-1779891264041517-2" aria-expanded="false">Parroquia                                                                                                                                                                                                                                                                                                   <span class="sub-arrow"></span></a><ul id="sm-1779891264041517-2" role="group" aria-hidden="true" aria-labelledby="sm-1779891264041517-1" aria-expanded="false"><li><a href="EsglesiaCatolica.php?pg=Tu+Casa&amp;lg=SP">Esta es tu casa                                                                                                                                                                                                                                                                                             </a></li><li><a href="EsglesiaCatolica.php?pg=Historia&amp;lg=SP">Historia                                                                                                                                                                                                                                                                                                    </a></li><li><a href="EsglesiaCatolica.php?pg=santa_agnes&amp;lg=SP">Santa Inés                                                                                                                                                                                                                                                                                                 </a></li><li><a href="EsglesiaCatolica.php?pg=Benvinguts&amp;lg=SP">Bienvenidos                                                                                                                                                                                                                                                                                                 </a></li><li><a href="EsglesiaCatolica.php?pg=Nuestro+Equipo&amp;lg=SP">Nuestro Equipo                                                                                                                                                                                                                                                                                              </a></li><li><a href="EsglesiaCatolica.php?pg=Registre&amp;lg=SP">Regístrate                                                                                                                                                                                                                                                                                                 </a></li></ul></li><li><a class="has-submenu" id="sm-1779891264041517-3" aria-haspopup="true" aria-controls="sm-1779891264041517-4" aria-expanded="false">Misas y Oraciones                                                                                                                                                                                                                                                                                           <span class="sub-arrow"></span></a><ul id="sm-1779891264041517-4" role="group" aria-hidden="true" aria-labelledby="sm-1779891264041517-3" aria-expanded="false"><li><a href="EsglesiaCatolica.php?pg=Horari+de+Misses&amp;lg=SP">Horario de misas                                                                                                                                                                                                                                                                                            </a></li><li><a href="EsglesiaCatolica.php?pg=Peticio+de+Pregaries&amp;lg=SP">Petición de oraciones                                                                                                                                                                                                                                                                                      </a></li><li><a href="EsglesiaCatolica.php?pg=Evangeli+del+dia&amp;lg=SP">Evangelio del Día                                                                                                                                                                                                                                                                                          </a></li><li><a href="EsglesiaCatolica.php?pg=Sant+del+Dia&amp;lg=SP">Santo del día                                                                                                                                                                                                                                                                                              </a></li></ul></li><li><a class="has-submenu" id="sm-1779891264041517-5" aria-haspopup="true" aria-controls="sm-1779891264041517-6" aria-expanded="false">Sacramentos                                                                                                                                                                                                                                                                                                 <span class="sub-arrow"></span></a><ul id="sm-1779891264041517-6" role="group" aria-hidden="true" aria-labelledby="sm-1779891264041517-5" aria-expanded="false"><li><a href="EsglesiaCatolica.php?pg=Baptisme&amp;lg=SP">Bautismo                                                                                                                                                                                                                                                                                                    </a></li><li><a href="EsglesiaCatolica.php?pg=Primera+Comunio&amp;lg=SP">Primera Comunión                                                                                                                                                                                                                                                                                           </a></li><li><a href="EsglesiaCatolica.php?pg=Reconciliacio&amp;lg=SP">Reconciliación                                                                                                                                                                                                                                                                                             </a></li><li><a href="EsglesiaCatolica.php?pg=Confirmacio&amp;lg=SP">Confirmación                                                                                                                                                                                                                                                                                               </a></li><li><a href="EsglesiaCatolica.php?pg=Matrimoni&amp;lg=SP">Matrimonio                                                                                                                                                                                                                                                                                                  </a></li><li><a href="EsglesiaCatolica.php?pg=Uncio+Malalts&amp;lg=SP">Unción de Enfermos                                                                                                                                                                                                                                                                                         </a></li><li><a href="EsglesiaCatolica.php?pg=Funerals&amp;lg=SP">Funerales                                                                                                                                                                                                                                                                                                   </a></li></ul></li><li><a class="has-submenu" id="sm-1779891264041517-7" aria-haspopup="true" aria-controls="sm-1779891264041517-8" aria-expanded="false">Qué hacemos                                                                                                                                                                                                                                                                                                <span class="sub-arrow"></span></a><ul id="sm-1779891264041517-8" role="group" aria-hidden="true" aria-labelledby="sm-1779891264041517-7" aria-expanded="false"><li><a href="EsglesiaCatolica.php?pg=Directori&amp;lg=SP">Directorio                                                                                                                                                                                                                                                                                                  </a></li><li><a href="EsglesiaCatolica.php?pg=Liturgia&amp;lg=SP">Liturgia                                                                                                                                                                                                                                                                                                    </a></li><li><a href="EsglesiaCatolica.php?pg=Evangelitzacio&amp;lg=SP">Evangelización                                                                                                                                                                                                                                                                                             </a></li><li><a href="EsglesiaCatolica.php?pg=Discipulat&amp;lg=SP">Discipulado                                                                                                                                                                                                                                                                                                 </a></li><li><a href="EsglesiaCatolica.php?pg=Accio+Social&amp;lg=SP">Acción Social                                                                                                                                                                                                                                                                                              </a></li><li><a href="EsglesiaCatolica.php?pg=Serveis&amp;lg=SP">Servicios                                                                                                                                                                                                                                                                                                   </a></li></ul></li><li><a class="has-submenu" id="sm-1779891264041517-9" aria-haspopup="true" aria-controls="sm-1779891264041517-10" aria-expanded="false">Notícias y Eventos                                                                                                                                                                                                                                                                                         <span class="sub-arrow"></span></a><ul id="sm-1779891264041517-10" role="group" aria-hidden="true" aria-labelledby="sm-1779891264041517-9" aria-expanded="false"><li><a href="EsglesiaCatolica.php?pg=Aquesta+Setmana&amp;lg=SP">Esta Semana                                                                                                                                                                                                                                                                                                 </a></li><li><a href="EsglesiaCatolica.php?pg=Carta+del+Rector&amp;lg=SP">Carta pastoral                                                                                                                                                                                                                                                                                              </a></li><li><a href="EsglesiaCatolica.php?pg=Full+Dominical&amp;lg=SP">Full parroquial                                                                                                                                                                                                                                                                                             </a></li><li><a href="EsglesiaCatolica.php?pg=Agenda&amp;lg=SP">Agenda                                                                                                                                                                                                                                                                                                      </a></li></ul></li></ul></nav>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+			<div id="languages"><a class="sp selected" href="?pg=Inicio&amp;lg=SP" title="Español"></a><a class="ca" href="?pg=Inicio&amp;lg=CA" title="Catalan"></a></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+			<div class="social">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+				<a target="_blank" href="https://www.facebook.com/Santaagnesbcn/"><i class="fab fa-facebook-f"></i></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+				<a target="_blank" href="https://www.instagram.com/santainesbcn/?hl=es"><i class="fab fa-instagram"></i></a>
+				<a target="_blank" href="https://www.youtube.com/@parroquiasantaagnes"><i class="fab fa-youtube"></i></a>   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+			<!-- <a id="school" href="https://www.saintgreg.org/school">School</a> -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+		</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+	</header>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+	<div class="general_wrap">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+		<div class="wrap_blue">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+			<section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+				<a href="/EsglesiaCatolica.php?pg=Inicio" class="logo"></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+				<div id="pg_title"><h1 class="lg-SP">bienvenidos a casa</h1><h1 class="lg-CA">benvinguts a casa</h1></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+			</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+		</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+		<div class="barcurve-yellow"></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+	</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+	<main><div><div id="hm_news">
+	<section>
+		<div class="content">
+			<h2 class="lg-CA">Notícies I Esdeveniments</h2><h2 class="lg-SP">Noticias Y Eventos</h2>
+			<div id="news_rotator">
+<div id="news-rotator01" class="swiper-container-horizontal"><div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1102px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="9" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Evangeli+del+dia">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2021/12/evangeli_del_dia.jpg">
+                    <p class="title">Evangeli del dia</p>
+                    <p class="subtitle">Posted on Thursday, Jun 16, 2022</p>
+					<div class="summary"></div>
+                </a>
+            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="10" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#col%C2%B7labora">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2021/11/suport_parroquia_3.jpg">
+                    <p class="title">col·labora</p>
+                    <p class="subtitle">Posted on Thursday, Sep 16, 2021</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#%C2%A1Grandes+bendiciones+en+el+II+Retiro+de+Nicodemo%21">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2026/02/nicodemo_jovenes_OK.jpg">
+                    <p class="title">¡Grandes bendiciones en el II Retiro de Nicodemo!</p>
+                    <p class="subtitle">Posted on Wednesday, May 13, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Mercadillo%3A+Gracias+a+todos">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2023/05/gracias_mercadillo(1).jpg">
+                    <p class="title">Mercadillo: Gracias a todos</p>
+                    <p class="subtitle">Posted on Wednesday, May 20, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="2" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Barcelona+se+prepara+para+recibir+al+Papa+Le%C3%B3n">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2026/05/bcn_papa.jpg">
+                    <p class="title">Barcelona se prepara para recibir al Papa León</p>
+                    <p class="subtitle">Posted on Wednesday, May 13, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="3" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Club+de+lectura">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2026/05/club_lectura_maria.jpg">
+                    <p class="title">Club de lectura</p>
+                    <p class="subtitle">Posted on Thursday, May 7, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="4" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Convenio+Matrimonial">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2026/05/romeria2.jpg">
+                    <p class="title">Convenio Matrimonial</p>
+                    <p class="subtitle">Posted on Thursday, May 7, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="5" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Campa%C3%B1a+de+la+Renta">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2024/05/X_RENTA.jpg">
+                    <p class="title">Campaña de la Renta</p>
+                    <p class="subtitle">Posted on Thursday, Apr 23, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="6" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Mes+de+Maria">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2024/05/mayo_mes_de_maria.jpg">
+                    <p class="title">Mes de Maria</p>
+                    <p class="subtitle">Posted on Tuesday, Apr 28, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="7" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Intenciones+Mayo">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2026/04/Papa_junio26.jpg">
+                    <p class="title">Intenciones Mayo</p>
+                    <p class="subtitle">Posted on Friday, Nov 5, 2021</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="8" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Retiros+2026">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2024/10/retiros_otoño.jpg">
+                    <p class="title">Retiros 2026</p>
+                    <p class="subtitle">Posted on Monday, May 18, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide" data-swiper-slide-index="9" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Evangeli+del+dia">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2021/12/evangeli_del_dia.jpg">
+                    <p class="title">Evangeli del dia</p>
+                    <p class="subtitle">Posted on Thursday, Jun 16, 2022</p>
+					<div class="summary"></div>
+                </a>
+            </div>            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="10" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#col%C2%B7labora">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2021/11/suport_parroquia_3.jpg">
+                    <p class="title">col·labora</p>
+                    <p class="subtitle">Posted on Thursday, Sep 16, 2021</p>
+					<div class="summary"></div>
+                </a>
+            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#%C2%A1Grandes+bendiciones+en+el+II+Retiro+de+Nicodemo%21">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2026/02/nicodemo_jovenes_OK.jpg">
+                    <p class="title">¡Grandes bendiciones en el II Retiro de Nicodemo!</p>
+                    <p class="subtitle">Posted on Wednesday, May 13, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 551px;">
+                <a href="EsglesiaCatolica.php?pg=Aquesta Setmana#Mercadillo%3A+Gracias+a+todos">
+                    <img src="/ctm/31271/projects/sagnes/gallery/2023/05/gracias_mercadillo(1).jpg">
+                    <p class="title">Mercadillo: Gracias a todos</p>
+                    <p class="subtitle">Posted on Wednesday, May 20, 2026</p>
+					<div class="summary"></div>
+                </a>
+            </div></div><div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div><div class="swiper-button-prev hide" tabindex="0" role="button" aria-label="Previous slide"></div>
+            <div class="swiper-button-next hide" tabindex="0" role="button" aria-label="Next slide"></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> 
+
+
+
+
+
+</div>
+		</div>
+	</section>
+</div></div><div><style>
+	.confessions { text-align: center; }
+</style>
+
+<div class="welcome-2">
+	<section>
+		<div class="content">
+
+			<div id="mass_schedule">
+				<h1>Horario de Misas</h1>
+
+                                <div id="sn_content" class="js-parent"><h3 style="text-align: center;">
+	<span class="lg-CA">setembre / juliol</span>
+	<span class="lg-SP">Septiembre / Julio</span></h3>
+<div class="weekdays-masses">		
+<table class="default color_a" style="max-width: 600px;">
+			<caption>
+				<span class="lg-CA">FEINERS</span>
+				<span class="lg-SP">LABORABLES</span>
+			</caption>
+
+			<thead>
+				<tr>
+					<th style="width: 40%;"></th>
+					<th style="width: 30%;">Hora</th>
+					<th style="width: 30%;">
+						<span class="lg-CA">llengua</span>
+						<span class="lg-SP">lengua</span></th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<th rowspan="3">
+						<span class="lg-CA">DE DILLUNS A DIVENDRES</span>
+						<span class="lg-SP">DE LUNES A VIERNES</span></th>
+					<td>9:00</td>
+					<td>CAT</td>
+				</tr>
+				<tr>
+					<td>13:00</td>
+					<td>CAST</td>
+				</tr>
+				<tr>
+					<td>20:00</td>
+					<td>CAT/CAST</td>
+				</tr>
+				<tr>
+					<th>
+						<span class="lg-CA">DISSABTE</span>
+						<span class="lg-SP">SÁBADO</span></th>
+					<td>9:00</td>
+					<td>CAT</td>
+				</tr>
+			</tbody>
+
+		</table>
+</div>
+
+
+<div class="weekend-masses">
+		<table class="default color_a" style="max-width: 600px;">
+			<caption>
+				<span class="lg-CA">FESTIUS</span>
+				<span class="lg-SP">FESTIVOS</span>
+			</caption>
+
+			<thead>
+				<tr>
+					<th style="width: 40%;"></th>
+					<th style="width: 30%;">Hora</th>
+					<th style="width: 30%;">
+						<span class="lg-CA">llengua</span>
+						<span class="lg-SP">lengua</span></th>
+				</tr>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<th rowspan="2">
+						<span class="lg-CA">MISSES DE VIGÍLIA</span>
+						<span class="lg-SP">MISAS DE VIGILIA</span></th>
+					<td>17:30</td>
+					<td>CAST</td>
+				</tr>
+
+				<tr>
+					<td>20:00</td>
+					<td>CAT</td>
+				</tr>
+
+				<tr>
+					<th rowspan="6">
+						<span class="lg-CA">DIUMENGES</span>
+						<span class="lg-SP">DOMINGOS</span></th>
+					<td>9:00</td>
+					<td>CAT</td>
+				</tr>
+
+				<!--<tr>
+					<td>11:00</td>
+					<td>CAT</td>
+				</tr>-->
+
+				<tr>
+					<td>12:00</td>
+					<td>CAST</td>
+				</tr>
+
+				<tr>
+					<td>13:00</td>
+					<td>CAT</td>
+				</tr>
+
+				<!--<tr>
+					<td>18:00</td>
+					<td>CAST</td>
+				</tr>-->
+
+				<tr>
+					<td>19:00</td>
+					<td>CAT/CAST<br>
+						<span class="lg-CA">(Missa de les famílies)</span>
+						<span class="lg-SP">(Misa de las familias)</span></td>
+				</tr>
+
+				<tr>
+					<td>20:00</td>
+					<td>CAT</td>
+				</tr>
+
+				<tr>
+					<td>21:00</td>
+					<td>CAST</td>
+				</tr>
+
+			</tbody>
+		</table>
+</div>
+
+
+<div class="Confessions">
+				<h4 style="text-align:center;">
+					<span class="lg-CA">Confessions</span>
+					<span class="lg-SP">Confesiones</span>
+				</h4>
+
+				<p style="text-align:center;">
+					<span class="lg-CA">Diumenges 1/4 d'hora abans de les misses<br>
+					De dilluns a divendres de les 19:00h. a les 19:45h.</span>
+					<span class="lg-SP">Domingos 1/4 de hora antes de las misas<br>
+					De lunes a viernes de las 19:00h a las 19:45h</span>
+				</p>
+</div></div>
+
+<!-- Maria, when you want to replace the tables, change what is inside () to (mass_schedule,regular-schedule_bilingual) or (mass_schedule,july-schedule_bilingual) or (mass_schedule,august-schedule_bilingual) -->
+
+			</div>
+
+		</div>
+	</section>
+</div>
+</div><div><div class="directorio">
+	<section>
+		<div class="content">
+			<h2>Directorio</h2>
+			<div class="hm-directorio-tables">
+				<div class="js-parent"><div class="box-list-ministries flexC">
+	<div class="fx_4">
+		<h2>Liturgia</h2>
+		<ul>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Lectores">Lectores de Santa Agnès</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Musica">Música</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Acogida">Acogida y bienvenida</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Monaguillos">Monaguillos</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#MinistrosExtraordinarios">Ministros extraordinarios de la Eucaristía</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Sacristia">Sacristía</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#AdoracionEucaristica">Adoración eucarística diaria</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#AdoracionesAdultos">Adoraciones de adultos</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#AdoracionesJovenes">Adoraciones de jóvenes</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Cofradia">Cofradía del Santo Cristo de la Agonía</a></li>
+			<li><a href="?pg=Liturgia&amp;lg=SP#Vocaciones">Vocaciones</a></li>
+		</ul>
+	</div>
+
+	<div class="fx_4">
+		<h2>Evangelización</h2>
+		<ul>
+			<li><a href="?pg=Evangelitzacio&amp;lg=SP#AlphaAdultos">Alpha – Adultos</a></li>
+			<li><a href="?pg=Evangelitzacio&amp;lg=SP#Emaus">Emaús</a></li>
+                        <li><a href="?pg=Evangelitzacio&amp;lg=SP#Conveniomatrimonial">Convenio matrimonial</a></li>
+			<li><a href="?pg=Evangelitzacio&amp;lg=SP#Effeta">Effeta</a></li>
+                        <li><a href="?pg=Evangelitzacio&amp;lg=SP#Bartimeo">Bartimeo</a></li>
+		        <li><a href="?pg=Evangelitzacio&amp;lg=SP#Nicodemo">Nicodemo</a></li></ul>
+	
+		<h2>Servicios</h2>
+	
+		<ul>
+
+			<li><a href="?pg=Serveis&amp;lg=SP#ConsejoParroquial">Consejo Parroquial</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#PermanenteConsejo">Permanente del Consejo</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#DespachoParroquial">Despacho Parroquial</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#AreaEconomica">Área Económica</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#Comunicacion">Comunicación</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#OrdenConcierto">Orden y concierto</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#Mantenimiento">Mantenimiento</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#Peregrinaciones">Peregrinaciones</a></li>
+			<li><a href="?pg=Serveis&amp;lg=SP#Voluntarios">Voluntariado</a></li>
+		<ul>
+	</ul></ul></div>
+
+
+	<div class="fx_4">
+		<h2>Discipulado</h2>
+		<ul>
+
+			<li><a href="?pg=Discipulat&amp;lg=SP#EstudioEscrituras">Estudio de las escrituras (Biblia)</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#GruposPequenos">Grupos Pequeños</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#TallerOracion">Taller de Oración y Vida</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#CursoCatecismo">Curso de catecismo</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#AmorConyugal">Proyecto Amor Conyugal</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#CatequesisInfantil">Catequesis infantil</a></li>
+                        <li><a href="?pg=Discipulat&amp;lg=SP#CatequesisAdultos">Catequesis de adultos</a></li>
+                        <li><a href="?pg=Discipulat&amp;lg=SP#catequesisAdolescentes">Catequesis Jóvenes</a></li>
+                        <li><a href="?pg=Discipulat&amp;lg=SP#cateqadaptada">Catequesis Adaptada Talita</a></li>
+                        <li><a href="?pg=Discipulat&amp;lg=SP#CatequesisColegio">Catequesis en Colegio</a></li>
+                        <li><a href="?pg=Discipulat&amp;lg=SP#EdgeJunior">Edge Junior</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#EdgeSenior">Edge Senior</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#Lifeteen">Lifeteen</a></li>
+                        <li><a href="?pg=Discipulat&amp;lg=SP#jovenesprofesionales">Formacion jovenes profesionales</a></li>
+
+			<li><a href="?pg=Discipulat&amp;lg=SP#CasalVerano">Casal de Verano</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#Rosario">Rosario diario (12:30 h)</a></li>
+			
+			<li><a href="?pg=Discipulat&amp;lg=SP#DireccionEspiritual">Dirección espiritual</a></li>
+			<li><a href="?pg=Discipulat&amp;lg=SP#HorasBiblia">XII horas de Biblia</a></li>
+		<ul>
+	</ul></ul></div>
+
+
+	<div class="fx_4">
+		<h2>Acción Social</h2>
+		<ul>
+
+			<li><a href="?pg=Accio+Social&amp;lg=SP#Kilo">Operación Kilo</a></li>
+			<li><a href="?pg=Accio+Social&amp;lg=SP#Ropero">Ropero</a></li>
+			<li><a href="?pg=Accio+Social&amp;lg=SP#Corazones">Corazones fuertes, corazones sabios</a></li>
+			<li><a href="?pg=Accio+Social&amp;lg=SP#SanJose">Servidoras de San José</a></li>
+			<!--<li><a href="?pg=Accio+Social&lg=SP#HogarMaria">Hogar de María</a></li>-->
+			<li><a href="?pg=Accio+Social&amp;lg=SP#SantaCruz">Taller de la Santa Cruz</a></li>
+			<li><a href="?pg=Accio+Social&amp;lg=SP#Mercadillo">Mercadillo Solidario</a></li>
+		        <li><a href="?pg=Accio+Social&amp;lg=SP#Voluntariado_CA">FOOT 4 YOU</a></li>
+                        <li><a href="?pg=Accio+Social&amp;lg=SP#SanDimas">San Dimas</a></li>
+			<li><a href="?pg=Accio+Social&amp;lg=SP#Salud">Pastoral de la Salud</a></li>
+			<li><a href="?pg=Accio+Social&amp;lg=SP#Caritas">Caritas</a></li>
+
+		<ul>
+	</ul></ul></div>
+</div></div>
+			</div>
+		</div>
+	</section>
+</div></div><div class="clear"></div></main>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+	<div class="barcurve-blue"></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+	<!--                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+	<svg id="f_shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+		<polygon fill="#b3bfd5" points="0,100 100,0 100,100"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+	</svg>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+	-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+	<footer id="ft_adom">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+		<section class="hide_full">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+			<div id="subscribe">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+				<h1>Newsletter</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+				<p class="lg-SP">Suscríbete para estar informado!</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+				<p class="lg-CA">subscriu-te per a estar informat</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+				<form class="default" action="/library/php/ml/add_to_ml.php" method="POST" onsubmit="return default_validation(this);">                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+					<input class="atimo-recaptcha-response" type="hidden" name="g-recaptcha-response" value=""> 
+					<input type="hidden" name="this_lg" value="SP">                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+					<input class="js-email js-required" type="email" name="email_address" placeholder="Email">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+					<input type="submit" value="Enviar" class="g-recaptcha">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+				</form>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+			<div class="social">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+				<h1>Puedes seguirnos en</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+				<a target="_blank" href="https://www.facebook.com/Santaagnesbcn/"><i class="fab fa-facebook-f"></i></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+				<a target="_blank" href="https://www.instagram.com/santainesbcn/?hl=es"><i class="fab fa-instagram"></i></a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+				<!-- <a target="_blank" href="https://www.youtube.com/channel/UCXkqP4u65IDbrMNvEuHB12A"><i class="fab fa-youtube"></i></a> -->                                                                                                                                                                                                                                                                                                                                                                                                                                               
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+		</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+		<section style="padding: 30px 0; position: relative;">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+			<div class="org_info">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+				<h1 class="lg-CA">Contacte</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+				<h1 class="lg-SP">Contacto</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+				<div class="contact">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+					<p>Parroquia Santa Agnès<br>Carrer de Sant Elies, 23, Barcelon,   08006</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+					<p><i class="fas fa-phone"></i> 932 002 916<br><i class="far fa-envelope"></i> <a href="mailto:parroquia@santaagnes.com">parroquia@santaagnes.com</a></p>                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+					<h1 style="margin-top: 20px;" class="lg-SP">Despacho</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+					<h1 style="margin-top: 20px;" class="lg-CA">Despatx</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+					<p class="lg-CA">Dimarts i Dijous<br>de 18.00h a 20.00h</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+					<p class="lg-SP">Martes y jueves<br>de 18.00h a 20.00h</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+					<p><i class="far fa-envelope"></i> <a href="mailto:despatx@santaagnes.com">despatx@santaagnes.com</a></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+					                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+					<figure style="margin-top: 20px;" class="hide_full">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+						<a href="?pg=Home"><img src="ctm/31271/projects/sagnes/layout01/images/SANTA_AGNES_logo_footer.png" style="max-width: 160px;" alt=""></a>                                                                                                                                                                                                                                                                                                                                                                                                                            
+					</figure>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+				</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+			<div id="subscribe" class="subs-computer hide_tablet">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+				<h1>Newsletter</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+				<p class="lg-SP">Suscríbete para estar informado!</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+				<p class="lg-CA">Subscriu-te per a estar informat</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+				<form class="default" action="/library/php/ml/add_to_ml.php" method="POST" onsubmit="return default_validation(this);">                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+					<input class="atimo-recaptcha-response" type="hidden" name="g-recaptcha-response" value="">    
+					<input type="hidden" name="this_lg" value="SP">                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+					<input class="js-email js-required" type="email" name="email_address" placeholder="Email">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+					<input type="submit" value="Enviar" class="g-recaptcha">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+				</form>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+				<p>
+					<a target="_blank" href="https://www.facebook.com/Santaagnesbcn/"><i class="fab fa-facebook-f"></i></a>
+					<a target="_blank" href="https://www.instagram.com/santainesbcn/?hl=es"><i class="fab fa-instagram"></i></a>
+					<a target="_blank" href="https://www.youtube.com/@parroquiasantaagnes"><i class="fab fa-youtube"></i></a></p>                                                                                                                                                                                                                                                                                                                                                   
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+			<div class="adom_news">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+				<iframe src="/ctm/31271/projects/sagnes/layout01/php/rss_home.php" scrolling="no" style="margin:10px auto; display:block" width="560" height="213" frameborder="0"></iframe>                                                                                                                                                                                                                                                                                                                                                                                                 
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+			<div class="clear"></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+		</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+		<section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+			<div class="wrap_admin flex">
+				<div class="fx_2">
+					<p>Powered by <a href="http://www.parishmate.com" target="_blank"><img src="ctm/31000/template/images/footer/mate-icon.svg" id="mate-icon"><img src="ctm/31000/template/images/footer/mate-typo-white.svg" id="mate-typo" alt="Parish Mate"></a> | <a href="cm.php?pg=Inicio&amp;project_id=4ED3D3B5-9BDB-467D-85CC-76AF38B61863">Admin (31271)</a></p>
+				</div>
+				<div class="fx_2">
+					<p class="lg-SP">Este sitio está protegido por reCAPTCHA y se aplican la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad </a> y los <a href="https://policies.google.com/terms" target="_blank">Términos de servicio</a> de Google.</p>
+					<p class="lg-CA">Aquest lloc web està protegit per reCAPTCHA i s'apliquen la <a href="https://policies.google.com/privacy" target="_blank">Política de privadesa </a> i les <a href="https://policies.google.com/terms" target="_blank">Condicions del servei</a>de Google.</p>									      
+				</div>                                                                                                                                                                                                                                                                                                               
+			</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+		</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+	</footer>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	<div id="scrollToTop"><i class="fas fa-chevron-circle-up"></i></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-afe5io6j3zr0" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld8fGscAAAAAA7ZK5NXfNzJ40mROA0vZfDFKGs4&amp;co=aHR0cHM6Ly93d3cuc2FudGFhZ25lcy5jb206NDQz&amp;hl=en&amp;v=Br0hYqpfWeFzYCAXLD4UuCIV&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=wn6e2uaqh6f7"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>

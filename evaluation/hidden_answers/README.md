@@ -1,0 +1,3 @@
+# Do not open until after annotating
+
+This directory holds the automated labels for evaluation/results/e5_set_b.csv (Set A's hidden file, e5_set_a_hidden.csv, was removed during the final-repository cleanup along with Set A itself, which is not part of the final thesis evaluation), withheld so annotation can be genuinely blind. Fill in MY_DECISION/MY_NOTE (Set B) in the results/ file first. evaluation/scripts/score_annotation.py, which used to score this, was removed during the final-repository cleanup (never used for any final thesis number); evaluation/scripts/e5_final_stats.py now scores Set B. Opening these files before annotating defeats the point of the exercise.

@@ -1,0 +1,16 @@
+# 
+
+URL: https://www.foodandfriendship.org.uk/food
+Location: United Kingdom, Brighton & Hove, BN3
+Coordinates: 50.8330341, -0.1817209
+
+Type: food_sharing
+Operational level: community_led
+Popularity: low (score: 0)
+
+Description: 
+
+Full text:
+
+
+Images: 0 image(s) available.

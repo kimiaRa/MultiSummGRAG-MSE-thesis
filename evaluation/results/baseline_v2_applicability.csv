@@ -1,0 +1,6 @@
+city,n_words_prose,has_percent,n_percent_chars,has_population_or_capita
+barcelona,1764,True,5,False
+brighton,1929,True,5,False
+dublin,2037,True,4,False
+london,1726,False,0,False
+milan,1639,True,5,False

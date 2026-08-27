@@ -1,0 +1,15 @@
+human_label,model_label,n
+community_garden,community_garden,6
+community_garden,other,1
+food_bank,food_bank,1
+food_education,community_garden,1
+food_education,food_bank,1
+food_gifting,food_bank,1
+food_gifting,food_gifting,1
+food_gifting,food_sharing,2
+food_gifting,meals_service,2
+food_gifting,other,1
+food_sharing,community_garden,1
+food_sharing,food_sharing,2
+meals_service,food_sharing,2
+other,food_sharing,1

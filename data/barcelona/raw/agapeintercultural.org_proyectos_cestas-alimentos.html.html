@@ -1,0 +1,669 @@
+<!DOCTYPE html><html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entrega Semanal de Cestas de Alimentos - Apoyo alimentario cada lunes a familias vulnerables">
+    <title>Entrega de Cestas de Alimentos - Ágape</title>
+    <link rel="canonical" href="https://agapeintercultural.org/proyectos/cestas-alimentos">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Entrega Semanal de Cestas de Alimentos",
+      "description": "Distribución semanal de alimentos frescos y nutritivos a familias vulnerables en Barcelona. Colaboramos con ALDI, Consum, Bonpreu y Fundación Aurea.",
+      "provider": {
+        "@type": "NGO",
+        "name": "Asociación Ágape Intercultural de Barcelona"
+      },
+      "serviceType": "Ayuda alimentaria",
+      "areaServed": "Barcelona",
+      "serviceOutput": "Cestas de alimentos",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Monday",
+        "opens": "14:00",
+        "closes": "17:00"
+      },
+      "url": "https://agapeintercultural.org/proyectos/cestas-alimentos"
+    }
+    </script>
+
+    <!-- Sistema de Cookies RGPD -->
+    <script src="../assets/js/templates/shared-cookies.js"></script>
+
+</head>
+<body>
+        <div id="cookie-banner" class="show">
+            <div class="cookie-container">
+                <div class="cookie-content">
+                    <h3>🍪 Uso de Cookies</h3>
+                    <p>
+                        Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación y analizar el uso de nuestra web. 
+                        Si aceptas, utilizaremos <strong>Microsoft Clarity</strong> para análisis estadísticos. 
+                        Consulta nuestra <a href="../politicas/politica-cookies.html">Política de Cookies</a> y 
+                        <a href="../politicas/politica-privacidad.html">Política de Privacidad</a> para más información.
+                    </p>
+                </div>
+                <div class="cookie-buttons">
+                    <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Aceptar Todas</button>
+                    <button id="cookie-reject" class="cookie-btn cookie-btn-reject">Rechazar</button>
+                    <button id="cookie-settings" class="cookie-btn cookie-btn-settings">Configurar</button>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Menú de Navegación (cargado automáticamente) -->
+    <div id="menu-container">
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index" class="nav-logo">
+            <img src="../assets/images/logo-agape.svg" alt="Logo Ágape" class="logo-img">
+            <span class="logo-text">ÁGAPE</span>
+        </a>
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="../index#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="../index#nosotros" class="nav-link">Nosotros</a></li>
+            
+            <!-- MENÚ DESPLEGABLE DE PROYECTOS -->
+            <li class="dropdown">
+                <a href="../index#proyectos" class="nav-link active">Proyectos ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="cestas-alimentos">🥬 Cestas de Alimentos</a></li>
+                    <li><a href="ayudando-restaurar">❤️ Ayudando a Restaurar</a></li>
+                    <li><a href="casal-de-verano">🎪 Casal de Verano</a></li>
+                    <li><a href="reyes-magos">🎁 Campaña Reyes Magos</a></li>
+                    <li><a href="formacion-integral">📚 Formación Integral</a></li>
+                    <li><a href="asesoria-migrantes">🌍 Asesoría Migrantes</a></li>
+                    <li><a href="podcast-consumo">🎙️ Podcast</a></li>
+                </ul>
+            </li>
+            
+            <!-- MENÚ DESPLEGABLE DE MEMORIA E IMPACTO -->
+            <li class="dropdown">
+                <a href="../index#impacto" class="nav-link">Memoria ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../memorias/memoria-2024">📄 Memoria 2024</a></li>
+                    <li><a href="../memorias/memoria-2023">📄 Memoria 2023</a></li>
+                    <li><a href="../index#impacto">📊 Nuestro Impacto</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="../index#colabora" class="nav-link">Colabora</a></li>
+            <li><a href="../index#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index">Inicio</a>
+            <span class="separator">›</span>
+            <a href="../index#proyectos">Proyectos</a>
+            <span class="separator">›</span>
+            <span class="current">Entrega de Cestas de Alimentos</span>
+        </div>
+    </div>
+
+    <!-- Hero del Proyecto -->
+    <section class="proyecto-hero">
+        <div class="proyecto-hero-overlay"></div>
+        <div class="proyecto-hero-content">
+            <span class="proyecto-badge">Alimentación</span>
+            <h1>Entrega Semanal de Cestas de Alimentos</h1>
+            <p class="proyecto-hero-subtitle">
+                Cada lunes, llevamos alimentos frescos y nutritivos a familias que más lo necesitan
+            </p>
+        </div>
+    </section>
+
+    <!-- Descripción Principal -->
+    <section class="proyecto-descripcion">
+        <div class="container">
+            <div class="descripcion-grid">
+                <div class="descripcion-content">
+                    <h2>Nutrición y Dignidad Cada Semana</h2>
+                    <p>
+                        Todos los lunes, en Ágape llevamos a cabo uno de nuestros proyectos más importantes y emblemáticos: 
+                        la <strong>entrega semanal de cestas de alimentos frescos</strong> a familias en riesgo de exclusión social.
+                    </p>
+                    <p>
+                        Este programa va más allá de simplemente proporcionar comida. Es un compromiso constante con la 
+                        <strong>seguridad alimentaria y la dignidad</strong> de entre 40 y 65 familias cada semana. 
+                        Sabemos que detrás de cada cesta hay personas reales, historias de superación y familias que 
+                        luchan por salir adelante.
+                    </p>
+                    <p>
+                        Lo que hace especial este proyecto es la <strong>calidad y variedad de los alimentos</strong>. 
+                        No entregamos productos de segunda categoría o caducados. Cada cesta contiene vegetales frescos, 
+                        lácteos, frutas de temporada, y productos nutritivos que cambian semana a semana para asegurar 
+                        una dieta equilibrada y variada.
+                    </p>
+                    <p>
+                        Este proyecto es posible gracias al apoyo logístico y los donativos constantes de nuestros aliados: 
+                        <strong>Fundación Aurea, Almacenes ALDI, Consum, Alimentos sin Fronteras y Bonpreu</strong>, que confían en nuestra labor 
+                        y nos ayudan a hacer realidad este sueño cada semana.
+                    </p>
+                </div>
+                <div class="descripcion-stats">
+                    <div class="stat-box">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-info">
+                            <div class="stat-number">40-65</div>
+                            <div class="stat-label">Cestas semanales</div>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">📅</div>
+                        <div class="stat-info">
+                            <div class="stat-number">Lunes</div>
+                            <div class="stat-label">Día de entrega</div>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">🥬</div>
+                        <div class="stat-info">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Productos frescos</div>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">🤝</div>
+                        <div class="stat-info">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Aliados colaboradores</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué Incluyen las Cestas -->
+    <section class="proyecto-actividades">
+        <div class="container">
+            <h2>¿Qué Incluyen Nuestras Cestas?</h2>
+            <p class="intro-cestas-variadas">
+                Cada semana las cestas son diferentes, pero siempre nos aseguramos de que sean nutritivas, 
+                variadas y de calidad. Adaptamos el contenido según la disponibilidad y las temporadas.
+            </p>
+            <div class="actividades-grid">
+                <div class="actividad-card">
+                    <div class="actividad-icon">🥬</div>
+                    <h3>Vegetales Frescos</h3>
+                    <p>Verduras de temporada siempre frescas: lechugas, tomates, pimientos, calabacines, berenjenas, brócoli, coliflor y más.</p>
+                </div>
+                <div class="actividad-card">
+                    <div class="actividad-icon">🍎</div>
+                    <h3>Frutas de Temporada</h3>
+                    <p>Manzanas, naranjas, plátanos, peras, fresas, sandía, melón y otras frutas según la época del año.</p>
+                </div>
+                <div class="actividad-card">
+                    <div class="actividad-icon">🥛</div>
+                    <h3>Lácteos</h3>
+                    <p>Leche, yogures, queso fresco y otros productos lácteos para asegurar el aporte de calcio y proteínas.</p>
+                </div>
+                <div class="actividad-card">
+                    <div class="actividad-icon">💊</div>
+                    <h3>Suplementos Nutricionales</h3>
+                    <p>Vitaminas y complementos alimenticios cuando están disponibles, especialmente importantes para niños y mayores.</p>
+                </div>
+                <div class="actividad-card">
+                    <div class="actividad-icon">🥖</div>
+                    <h3>Pan Fresco</h3>
+                    <p>Pan del día, bollería básica y productos de panadería para complementar las comidas diarias.</p>
+                </div>
+                <div class="actividad-card">
+                    <div class="actividad-icon">🥫</div>
+                    <h3>Productos Básicos</h3>
+                    <p>Arroz, pasta, legumbres, aceite, conservas y otros alimentos de despensa que completan la cesta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Aliados -->
+    <section class="proyecto-video">
+        <div class="container">
+            <h2>Nuestros Aliados Estratégicos</h2>
+            <p class="intro-aliados">
+                Este proyecto solo es posible gracias al compromiso y generosidad de nuestros aliados, 
+                que nos proporcionan apoyo logístico y donativos constantes de alimentos frescos de calidad.
+            </p>
+            <div class="aliados-grid">
+                <div class="aliado-card">
+                    <div class="aliado-logo">
+                        <h3>🌟 Fundación Aurea</h3>
+                    </div>
+                    <p>
+                        Nos proporciona apoyo logístico fundamental y coordinación con otras entidades. 
+                        Su red de distribución nos permite llegar a más familias cada semana.
+                    </p>
+                    <div class="aliado-aporte">
+                        <strong>Aportan:</strong> Coordinación logística, transporte y gestión de almacén
+                    </div>
+                </div>
+                <div class="aliado-card">
+                    <div class="aliado-logo">
+                        <h3>🛒 Almacenes ALDI</h3>
+                    </div>
+                    <p>
+                        Donaciones regulares de productos frescos, lácteos y alimentos de primera calidad. 
+                        Su compromiso social hace posible que más familias tengan acceso a comida nutritiva.
+                    </p>
+                    <div class="aliado-aporte">
+                        <strong>Aportan:</strong> Frutas, verduras, lácteos y productos básicos
+                    </div>
+                </div>
+                <div class="aliado-card">
+                    <div class="aliado-logo">
+                        <h3>🏪 Consum</h3>
+                    </div>
+                    <p>
+                        Supermercados cooperativos comprometidos con la acción social. Nos donan productos 
+                        de excelente calidad que de otro modo no llegarían a nuestras familias.
+                    </p>
+                    <div class="aliado-aporte">
+                        <strong>Aportan:</strong> Productos frescos, pan, conservas y artículos varios
+                    </div>
+                </div>
+                <div class="aliado-card">
+                    <div class="aliado-logo">
+                        <h3>🛍️ Bonpreu</h3>
+                    </div>
+                    <p>
+                        Red de supermercados catalana que colabora activamente con entidades sociales. 
+                        Sus donaciones nos ayudan a completar las cestas con productos de temporada.
+                    </p>
+                    <div class="aliado-aporte">
+                        <strong>Aportan:</strong> Vegetales frescos, frutas y productos de primera necesidad
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona el Programa -->
+    <section class="proyecto-descripcion" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">¿Cómo Funciona Nuestro Programa Semanal?</h2>
+            <div class="proceso-semanal">
+                <div class="dia-proceso">
+                    <div class="dia-numero">Lunes</div>
+                    <h3>Recepción de Donativos</h3>
+                    <p>Recibimos en la mañana los productos frescos de nuestros aliados. Verificamos calidad y cantidad.</p>
+                </div>
+                <div class="dia-proceso">
+                    <div class="dia-numero">Lunes</div>
+                    <h3>Clasificación</h3>
+                    <p>Los voluntarios clasifican y organizan los alimentos por categorías y estado.</p>
+                </div>
+                <div class="dia-proceso">
+                    <div class="dia-numero">Lunes</div>
+                    <h3>Preparación de Cestas</h3>
+                    <p>Armamos cada cesta de forma personalizada según el tamaño y necesidades de cada familia.</p>
+                </div>
+                <div class="dia-proceso">
+                    <div class="dia-numero">Lunes</div>
+                    <h3>Entrega</h3>
+                    <p>Las familias recogen sus cestas en horario establecido. Entrega a domicilio para casos muy especiales.</p>
+                </div>
+                <div class="dia-proceso">
+                    <div class="dia-numero">Jueves</div>
+                    <h3>Seguimiento</h3>
+                    <p>Contactamos con familias que no recogieron su cesta y planificamos la siguiente semana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Variedad y Sorpresa -->
+    <section class="proyecto-info-practica">
+        <div class="container">
+            <h2>Variedad y Sorpresa Cada Semana</h2>
+            <p class="intro-variedad">
+                <strong>Cada semana las cestas son diferentes</strong> porque dependen de los productos que 
+                recibimos de nuestros aliados. No sabemos exactamente qué llegará hasta el mismo lunes, lo que 
+                hace que cada cesta sea una sorpresa para las familias.
+            </p>
+            <p class="intro-variedad">
+                Lo importante es que <strong>siempre garantizamos variedad, frescura y calidad</strong>. 
+                Trabajamos para que las cestas sean equilibradas nutricionalmente y contengan diferentes 
+                tipos de alimentos según la temporada y disponibilidad.
+            </p>
+            <div class="variedad-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="info-card">
+                    <h3>🥬 Vegetales Variados</h3>
+                    <p>Verduras frescas de temporada</p>
+                    <p>Diferentes cada semana</p>
+                    <p>Según disponibilidad</p>
+                </div>
+                <div class="info-card">
+                    <h3>🍎 Frutas Frescas</h3>
+                    <p>Frutas del tiempo</p>
+                    <p>Cambian semana a semana</p>
+                    <p>Siempre de calidad</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎁 ¡Sorpresa!</h3>
+                    <p>Cada cesta es diferente</p>
+                    <p>Productos variados</p>
+                    <p>Según lo que recibimos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios de Entrega -->
+    <section class="proyecto-descripcion">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Información de Entrega</h2>
+            <div class="info-practica-grid">
+                <div class="info-card">
+                    <h3>📅 Día de Entrega</h3>
+                    <p><strong>Todos los Lunes</strong></p>
+                    <p>Durante todo el año</p>
+                    <p>52 semanas sin parar</p>
+                </div>
+                <div class="info-card">
+                    <h3>🕐 Horario</h3>
+                    <p><strong>14:00 - 17:00h</strong></p>
+                    <p>Recogida en sede</p>
+                    <p>Llevar DNI y tarjeta de beneficiario</p>
+                </div>
+                <div class="info-card">
+                    <h3>🏠 Entrega a Domicilio</h3>
+                    <p><strong>Martes 14:00 - 17:00h</strong></p>
+                    <p>Solo muy casos especiales</p>
+                    <p>Personas con movilidad reducida y documentados</p>
+                </div>
+                <div class="info-card">
+                    <h3>📞 Contacto</h3>
+                    <p><strong>+34 696 00 49 75</strong></p>
+                    <p>info@agapeintercultural.org</p>
+                    <p>Contactanos para ser evaluado tu caso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="proyecto-testimonios">
+        <div class="container">
+            <h2>Lo Que Significan las Cestas para Nuestras Familias</h2>
+            <div class="testimonios-proyecto-grid">
+                <div class="testimonio-proyecto-card">
+                    <div class="testimonio-comillas">"</div>
+                    <p>
+                        Cada lunes espero con ilusión la cesta de Ágape. No solo porque me ayuda económicamente, 
+                        sino porque sé que siempre habrá algo diferente, algo fresco. Mis hijos comen verduras 
+                        frescas todas las semanas gracias a ustedes. Es un alivio enorme.
+                    </p>
+                    <div class="testimonio-autor">
+                        <strong>Ana M.</strong>
+                        <span>Madre de 3 hijos, beneficiaria 2 años</span>
+                    </div>
+                </div>
+                <div class="testimonio-proyecto-card">
+                    <div class="testimonio-comillas">"</div>
+                    <p>
+                        Lo que más valoro es que los alimentos son de calidad. No nos dan sobras ni productos 
+                        a punto de caducar. Son frutas y verduras frescas, igual que las que compraría en el 
+                        supermercado. Eso me hace sentir digna, no como una carga.
+                    </p>
+                    <div class="testimonio-autor">
+                        <strong>Carmen L.</strong>
+                        <span>Jubilada, beneficiaria 1 año</span>
+                    </div>
+                </div>
+                <div class="testimonio-proyecto-card">
+                    <div class="testimonio-comillas">"</div>
+                    <p>
+                        Desde que recibo las cestas semanales, puedo ahorrar un poco de dinero para otras necesidades. 
+                        La variedad me permite cocinar cosas diferentes cada día. Y lo mejor: mis hijos están más sanos 
+                        porque comen más frutas y verduras.
+                    </p>
+                    <div class="testimonio-autor">
+                        <strong>Mohammed K.</strong>
+                        <span>Padre de familia, beneficiario 18 meses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto del Programa -->
+    <section class="proyecto-descripcion" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Nuestro Impacto Semanal y Anual</h2>
+            <div class="impacto-numeros">
+                <div class="impacto-item">
+                    <div class="impacto-numero">40-65</div>
+                    <div class="impacto-label">Cestas por semana</div>
+                </div>
+                <div class="impacto-item">
+                    <div class="impacto-numero">2,500+</div>
+                    <div class="impacto-label">Cestas al año</div>
+                </div>
+                <div class="impacto-item">
+                    <div class="impacto-numero">400+</div>
+                    <div class="impacto-label">Familias beneficiadas</div>
+                </div>
+                <div class="impacto-item">
+                    <div class="impacto-numero">60,000kg</div>
+                    <div class="impacto-label">Alimentos distribuidos/año</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="proyecto-galeria">
+        <div class="container">
+            <h2>El Programa en Imágenes</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="../assets/images/galeria/cestas-1.jpg" alt="Recepción de alimentos">
+                    <div class="galeria-overlay">
+                        <p>Recepción de donativos</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../assets/images/galeria/cestas-2.jpg" alt="Clasificación de productos">
+                    <div class="galeria-overlay">
+                        <p>Clasificando productos frescos</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../assets/images/galeria/cestas-3.jpg" alt="Preparación de cestas">
+                    <div class="galeria-overlay">
+                        <p>Preparando las cestas</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../assets/images/galeria/cestas-4.jpg" alt="Cestas listas">
+                    <div class="galeria-overlay">
+                        <p>Cestas listas para entregar</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../assets/images/galeria/cestas-5.jpg" alt="Día de entrega">
+                    <div class="galeria-overlay">
+                        <p>Día de entrega - Lunes</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../assets/images/galeria/cestas-6.jpg" alt="Familias recogiendo">
+                    <div class="galeria-overlay">
+                        <p>Familias felices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Solicitar Ayuda -->
+    <section class="proyecto-inscripcion">
+        <div class="container">
+            <div class="inscripcion-content">
+                <h2>¿Necesitas Recibir las Cestas Semanales?</h2>
+                <p>
+                    Si tu familia está atravesando dificultades económicas y necesitas apoyo alimentario semanal, 
+                    contacta con nosotros. Evaluamos cada caso con confidencialidad y respeto.
+                </p>
+                <div class="inscripcion-requisitos">
+                    <h3>¿Cómo Solicitar las Cestas?</h3>
+                    <ul>
+                        <li>✓ Contacta por teléfono o email</li>
+                        <li>✓ Agenda una entrevista personal</li>
+                        <li>✓ Presenta documentación de tu situación económica</li>
+                        <li>✓ Informe social (si lo tienes) de Servicios Sociales</li>
+                        <li>✓ Te asignamos día y hora de recogida</li>
+                    </ul>
+                </div>
+                <div class="inscripcion-buttons">
+                    <a href="../index#contacto" class="btn btn-primary btn-large">Solicitar Ayuda</a>
+                    <a href="tel:+34696004975" class="btn btn-secondary btn-large">Llamar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colabora -->
+    <section class="proyecto-colabora">
+        <div class="container">
+            <div class="colabora-proyecto-content">
+                <h2>Ayúdanos a Mantener Este Programa</h2>
+                <p>
+                    Aunque contamos con el apoyo de nuestros aliados estratégicos, siempre necesitamos más ayuda 
+                    para llegar a más familias y garantizar la calidad y variedad de las cestas.
+                </p>
+                <div class="colabora-proyecto-opciones">
+                    <div class="colabora-opcion">
+                        <div class="colabora-opcion-icon">💰</div>
+                        <h3>Donación Económica</h3>
+                        <p>Nos permite comprar alimentos complementarios y productos de higiene</p>
+                    </div>
+                    <div class="colabora-opcion">
+                        <div class="colabora-opcion-icon">🛒</div>
+                        <h3>Donación de Alimentos</h3>
+                        <p>Aceptamos productos no perecederos y productos de higiene personal</p>
+                    </div>
+                    <div class="colabora-opcion">
+                        <div class="colabora-opcion-icon">🙋</div>
+                        <h3>Voluntariado</h3>
+                        <p>Necesitamos ayuda cada fin de semana para clasificar y preparar cestas</p>
+                    </div>
+                </div>
+                <a href="../index#colabora" class="btn btn-primary btn-large">Quiero Colaborar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Otros Proyectos -->
+    <div id="otros-proyectos-container">
+            <section class="otros-proyectos">
+                <div class="container">
+                    <h2>Otros Proyectos de Ágape</h2>
+                    <div class="otros-proyectos-grid">
+                        
+                            <a href="reyes-magos.html" class="otro-proyecto-card">
+                                <img src="../assets/images/reyes-magos.svg" alt="Campaña de Reyes Magos">
+                                <div class="otro-proyecto-content">
+                                    <h4>Campaña de Reyes Magos</h4>
+                                    <span class="ver-mas">Ver más →</span>
+                                </div>
+                            </a>
+                        
+                            <a href="casal-de-verano.html" class="otro-proyecto-card">
+                                <img src="../assets/images/casal-verano.svg" alt="Casal de Verano">
+                                <div class="otro-proyecto-content">
+                                    <h4>Casal de Verano</h4>
+                                    <span class="ver-mas">Ver más →</span>
+                                </div>
+                            </a>
+                        
+                            <a href="asesoria-migrantes.html" class="otro-proyecto-card">
+                                <img src="../assets/images/asesoria-migrantes.svg" alt="Asesoria Integral para Migrantes">
+                                <div class="otro-proyecto-content">
+                                    <h4>Asesoria Integral para Migrantes</h4>
+                                    <span class="ver-mas">Ver más →</span>
+                                </div>
+                            </a>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <!-- Footer -->
+    <div id="footer-container">
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Ágape</h4>
+                <p>Ágape significa amor incondicional. En Ágape Intercultural practicamos este amor restaurando vidas y apoyando a todos sin distinción, guiados por la inclusión, el respeto y la solidaridad.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Útiles</h4>
+                <ul class="footer-links">
+                    <li><a href="../index#nosotros">Quiénes Somos</a></li>
+                    <li><a href="../index#proyectos">Proyectos</a></li>
+                    <li><a href="../index#colabora">Colabora</a></li>
+                    <li><a href="../index#contacto">Contacto</a></li>
+                    <li><a href="../politica-privacidad">Política de Privacidad</a></li>
+                    <li><a href="../politica-cookies">Política de Cookies</a></li>
+                    <li><a href="#" id="reopen-cookie-banner">⚙️ Configurar Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Proyectos Destacados</h4>
+                <ul class="footer-links">
+                    <li><a href="ayudando-restaurar">Ayudando a Restaurar</a></li>
+                    <li><a href="cestas-alimentos">Cestas de Alimentos</a></li>
+                    <li><a href="casal-de-verano">Casal de Verano</a></li>
+                    <li><a href="formacion-integral">Formación Integral</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul class="footer-contact">
+                    <li>📧 info@agapeintercultural.org</li>
+                    <li>📱 +34 696 00 49 75</li>
+                    <li>📍 Riereta 4 bajos, Raval, Barcelona</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ágape - Todos los derechos reservados</p>
+            <p class="footer-credits">Asociación sin ánimo de lucro | Con el apoyo del Ayuntamiento</p>
+        </div>
+    </div>
+</footer>
+
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">↑</button>
+</div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/templates/shared-proyectos.js"></script>
+    <script src="../assets/js/templates/shared-otros-proyectos.js"></script>
+    <script src="../assets/js/core/main.js"></script>
+
+
+</body></html>

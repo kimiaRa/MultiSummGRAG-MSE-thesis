@@ -1,0 +1,6 @@
+city,n_with_coords,modal_decimal_places,modal_dp_share_pct,mean_latitude_used_for_conversion,resolution_m_lat_direction,resolution_m_lon_direction
+barcelona,237,2,78.7,41.3962,1113.2,835.1
+brighton,76,2,48.7,50.8265,1113.2,703.2
+dublin,69,2,94.2,53.3455,1113.2,664.6
+london,106,2,49.5,51.5039,1113.2,692.9
+milan,147,2,85.4,45.4683,1113.2,780.7

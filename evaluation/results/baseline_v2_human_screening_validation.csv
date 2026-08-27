@@ -1,0 +1,41 @@
+item_id,city,url,MY_DECISION,MY_NOTE,baseline_v2_decision,match_type,included_in_agreement
+B001,milan,https://ortopedagogicoresistente.wordpress.com/,Retained,NOT_FSI,Retained,exact,True
+B002,london,https://www.methodist.org.uk/about/our-stories/addressing-food-poverty-one-community-at-a-time-kensal-rise-methodist-churchs-inspiring-initiative,Retained,OK,Retained,exact,True
+B003,london,https://www.sustainablemerton.org/communityfridge,Retained,OK,Retained,exact,True
+B004,dublin,https://www.facebook.com/Taplinsfields/,UNREACHABLE_NOW,social media wall ,Discarded,exact,False
+B005,milan,https://associazionerecup.org/,Retained,OK,Retained,exact,True
+B006,milan,https://www.fratellisanfrancesco.it/,Discarded,NOT_FSI,Retained,exact,True
+B007,barcelona,https://fonttrobada.wordpress.com/,Retained,OK,Retained,exact,True
+B008,barcelona,https://canbatllo.org/cb/horts-i-jardins-comunitaris/,Retained,OK,Discarded,exact,True
+B009,london,https://www.friendsofruskinpark.org.uk/communitygarden,Retained,OK,Retained,exact,True
+B010,london,https://www.sustainablefoodplaces.org/blogs/jan24-find-a-seed-swap-near-you,Retained,OK,Discarded,exact,True
+B011,milan,https://panequotidiano.eu/chi-siamo/,Retained,OK,Retained,exact,True
+B012,barcelona,https://laescocesa.org/ca/programa/casa%20de%20llavors,Discarded,NOT_FSI,Retained,exact,True
+B013,barcelona,https://www.boncor.org/,UNREACHABLE_NOW,page will not load,Discarded,exact,False
+B014,dublin,https://www.dublincommunitygrowers.ie/all-gardens/featured-gardens/muck-and-magic-community-garden/,Retained,OK,Retained,exact,True
+B015,brighton,https://bmecp.org.uk/bmecp-food-bank,UNREACHABLE_NOW,page not found,Discarded,exact,False
+B016,brighton,https://womenscentre.org.uk/bwcs-foodbank-moves-location,Retained,OK,Retained,exact,True
+B017,dublin,https://clareville.net/pages/about.htm,Retained,OK,Discarded,exact,True
+B018,dublin,https://orionecareireland.ie/,Discarded,NOT_FSI,Discarded,exact,True
+B019,dublin,https://www.dublincommunitygrowers.ie/all-gardens/featured-gardens/serenity-community-garden/,Retained,OK,Retained,exact,True
+B020,brighton,https://restaurantsbrighton.co.uk/jobs/blog/the-real-junk-food-project,Retained,OK,Retained,exact,True
+B021,brighton,https://bucfp.org/,Retained,OK,Retained,exact,True
+B022,london,https://apps.apple.com/gb/app/too-good-to-go-end-food-waste/id1060683933,Discarded,COMMERCIAL - it is an app for saving food ,Discarded,exact,True
+B023,brighton,https://www.foodmatters.org/blog/food-waste-to-food-use,Discarded,COMMERCIAL - an act to reduce food waste,Discarded,exact,True
+B024,brighton,https://faresharesussexandsurrey.org.uk/contact,Retained,OK,Discarded,exact,True
+B025,barcelona,https://pamapam.org/directori/arrels-cooperativa-consum-critic-dreta-eixample/,Discarded,DIRECTORY ,Discarded,exact,True
+B026,milan,https://www.granaidellamemoria.it/index.php/it/archivi/nutrire-milano-una-rete-di-produttori-locali-offrire-cibo-alla-citta,Discarded,NOT_FSI,Discarded,exact,True
+B027,brighton,https://nurturethroughnature.org/,Retained,OK,Discarded,exact,True
+B028,dublin,https://hardwickestreetgardenclub.wordpress.com/,Retained,OK,Retained,exact,True
+B029,london,https://outofmyshed.co.uk/2012/09/23/collecting-seeds-pros-and-cons,Discarded,NOT_FSI,Discarded,exact,True
+B030,dublin,https://mourneroad.ie/parish-history/mother-mcauley-centre,UNCLEAR,NOT_FSI,Retained,exact,False
+B031,brighton,https://womeninthefoodindustry.com/women-in-food-design-collaborate-to-support-nhs-lewes,Discarded,NOT_FSI,Discarded,exact,True
+B032,milan,https://www.fondazionebertini.it/,Discarded,NOT_FSI,Discarded,exact,True
+B033,dublin,https://globalactionplan.ie/programmes/community-garden,Retained,OK,Discarded,exact,True
+B034,barcelona,https://9bacull.org/festival-de-sopes-del-mon-2/,Discarded,NOT_FSI,Discarded,exact,True
+B035,milan,https://www.belladentro.org/,UNCLEAR,transforming food waste to usable food -  no indication if they share it,Discarded,exact,False
+B036,milan,https://isolapepeverde.org/,Retained,OK,Discarded,exact,True
+B037,barcelona,https://www.restaurantlapau.com/en/,Discarded,NOT_FSI,Discarded,exact,True
+B038,london,https://www.tck.org.uk,Retained,OK,Retained,exact,True
+B039,london,https://www.in-deep.org.uk/community-dinners,Discarded,NOT_FSI,Retained,exact,True
+B040,barcelona,https://slowfood.barcelona/index.php,Discarded,NOT_FSI,Discarded,exact,True

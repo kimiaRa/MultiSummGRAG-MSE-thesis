@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",e=>{this.persisted=e.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(e){if(document.hidden){e._triggerListener();return}this.triggerEvents.forEach(t=>window.addEventListener(t,e.userEventHandler,{passive:!0})),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(e=>window.removeEventListener(e,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(e=>{this._isClickPending?this._pendingClickFinished=e:e()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(e,t,i){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(i,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{if(t.hasAttribute("src")){let i=new URL(t.src).origin;i!==location.origin&&e.push({src:i,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}}),e=[...new Map(e.map(e=>[JSON.stringify(e),e])).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){console.error(e)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{e.hasAttribute("data-rocket-src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)})}async _transformScript(e){return await this._littleBreath(),new Promise(t=>{function i(){e.setAttribute("data-rocket-status","executed"),t()}function r(){e.setAttribute("data-rocket-status","failed"),t()}try{let n=e.getAttribute("data-rocket-type"),s=e.getAttribute("data-rocket-src");if(n?(e.type=n,e.removeAttribute("data-rocket-type")):e.removeAttribute("type"),e.addEventListener("load",i),e.addEventListener("error",r),s)e.src=s,e.removeAttribute("data-rocket-src");else if(navigator.userAgent.indexOf("Firefox/")>0){var a=document.createElement("script");[...e.attributes].forEach(e=>{"type"!==e.nodeName&&a.setAttribute("data-rocket-type"===e.nodeName?"type":e.nodeName,e.nodeValue)}),a.text=e.text,e.parentNode.replaceChild(a,e),i()}else e.src="data:text/javascript;base64,"+btoa(e.text)}catch(o){r()}})}async _loadScriptsFromList(e){let t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var i=document.createDocumentFragment();e.forEach(e=>{let r=e.getAttribute&&e.getAttribute("data-rocket-src")||e.src;if(r){let n=document.createElement("link");n.href=r,n.rel=t,"preconnect"!==t&&(n.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),e.crossOrigin&&(n.crossOrigin=e.crossOrigin),e.integrity&&(n.integrity=e.integrity),i.appendChild(n),this.trash.push(n)}}),document.head.appendChild(i)}_delayEventListeners(e){let t={};function i(e,i){!function e(i){!t[i]&&(t[i]={originalFunctions:{add:i.addEventListener,remove:i.removeEventListener},eventsToRewrite:[]},i.addEventListener=function(){arguments[0]=r(arguments[0]),t[i].originalFunctions.add.apply(i,arguments)},i.removeEventListener=function(){arguments[0]=r(arguments[0]),t[i].originalFunctions.remove.apply(i,arguments)});function r(e){return t[i].eventsToRewrite.indexOf(e)>=0?"rocket-"+e:e}}(e),t[e].eventsToRewrite.push(i)}function r(e,t){let i=e[t];Object.defineProperty(e,t,{get:()=>i||function(){},set(r){e["rocket"+t]=i=r}})}i(document,"DOMContentLoaded"),i(window,"DOMContentLoaded"),i(window,"load"),i(window,"pageshow"),i(document,"readystatechange"),r(document,"onreadystatechange"),r(window,"onload"),r(window,"onpageshow"),Object.defineProperty(document,"readyState",{get:()=>e.rocketReadyState,set(t){e.rocketReadyState=t}}),document.readyState="loading"}_delayJQueryReady(e){let t;function i(i){if(i&&i.fn&&!e.allJQueries.includes(i)){i.fn.ready=i.fn.init.prototype.ready=function(t){return e.domReadyFired?t.bind(document)(i):document.addEventListener("rocket-DOMContentLoaded",()=>t.bind(document)(i)),i([])};let r=i.fn.on;i.fn.on=i.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map(e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]})}return r.apply(this,arguments),this},e.allJQueries.push(i)}t=i}i(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>t,set(e){i(e)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,document.readyState="interactive",await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){document.readyState="complete",await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(e=>e(window).trigger("rocket-jquery-load")),await this._littleBreath();let e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let e=new Map;document.write=document.writeln=function(t){let i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+t);let r=document.createRange(),n=i.parentElement,s=e.get(i);void 0===s&&(s=i.nextSibling,e.set(i,s));let a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(e=>setTimeout(e)):new Promise(e=>requestAnimationFrame(e))}_emptyTrash(){this.trash.forEach(e=>e.remove())}static run(){let e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Projectes el Llevat - El Llevat</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&amp;display=swap" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans%3A400%2C700%2C800%7CRoboto%3A400%2C700&#038;display=swap" /></noscript>
+		
+	<!-- This site is optimized with the Yoast SEO plugin v15.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="A el Llevat organitzem diferents activitats per tal d’apropar a les consumidores tot allò que no es veu del qual posem a taula.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://llevat.org/projectes/">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Projectes el Llevat - El Llevat">
+	<meta property="og:description" content="A el Llevat organitzem diferents activitats per tal d’apropar a les consumidores tot allò que no es veu del qual posem a taula.">
+	<meta property="og:url" content="https://llevat.org/projectes/">
+	<meta property="og:site_name" content="El Llevat">
+	<meta property="article:modified_time" content="2020-12-11T12:25:44+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Tiempo de lectura">
+	<meta name="twitter:data1" content="0 minutos">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+
+<link rel="stylesheet" id="bootstrap-css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css?ver=5.6.17" type="text/css" media="all">
+
+<link rel="stylesheet" id="font-awesome-css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css?ver=5.6.17" type="text/css" media="all">
+<link rel="stylesheet" id="labstrap-style-css" href="https://llevat.org/wp-content/themes/labstrap/style.css?ver=5.6.17" type="text/css" media="all">
+<link rel="stylesheet" id="labstrap-child-style-css" href="https://llevat.org/wp-content/themes/labstrap-child/style.css?ver=1.0.0" type="text/css" media="all">
+<link rel="shortlink" href="https://llevat.org/?p=807">
+	</head>
+	<body class="page-template-default page page-id-807">
+		<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3">
+			<div class="container">
+				<a class="navbar-brand" href="https://llevat.org/">
+					
+															<img class="brand mr-1" src="https://llevat.org/wp-content/uploads/2020/11/llevat-logotip-150x150-1.jpg" alt="">
+															
+				</a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="navbarCollapse" class="navbar-collapse collapse"><ul id="menu-top" class="navbar-nav ml-auto"><li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6"><a title="Inici" href="https://llevat.org/">Inici</a></li>
+<li id="menu-item-723" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-723 dropdown"><a title="Sobre nosaltres" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Sobre nosaltres <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249"><a title="El Llevat" href="https://llevat.org/sobre-nosaltres/">El Llevat</a></li>
+	<li id="menu-item-724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724"><a title="Transparència" href="https://llevat.org/transparencia/">Transparència</a></li>
+	<li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-807 current_page_item menu-item-818 active"><a title="Projectes" href="https://llevat.org/projectes/">Projectes</a></li>
+</ul>
+</li>
+<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a title="Els nostres productes" href="https://llevat.org/els-nostres-productes/">Els nostres productes</a></li>
+<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a title="Fes-te’n soci/sòcia!" href="https://llevat.org/socies-i-socis/">Fes-te’n soci/sòcia!</a></li>
+<li id="menu-item-909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-909"><a title="Campanya #9BarrisEcològic" href="https://llevat.org/socies-i-socis/engeguem-la-campanya-9barrisecologic/">Campanya #9BarrisEcològic</a></li>
+<li id="menu-item-800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800"><a title="Receptes" href="https://llevat.org/receptes-de-cuina/">Receptes</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a title="Contacte" href="https://llevat.org/contacte/">Contacte</a></li>
+</ul></div>			</div>
+		
+	</nav>
+<header style="background: url(https://llevat.org/wp-content/uploads/2020/12/360_F_335745675_MaxYxSsadrviZdThITuHB2oCohYOiwEu.jpg)" class="text-white bg-dark">
+
+
+
+<div class="container">
+
+
+	
+
+<div class="d-md-flex align-items-center flex-md-row">
+	
+
+
+
+
+
+<div class="col-md-6 offset-md-0">
+
+<h1 class="title mb-4">Projectes el Llevat</h1>
+<p class="text-dark">A el Llevat per tal d’apropar a les consumidores tot allò que no es veu del qual posem a taula i, alhora, enfortir el lligam entre les sòcies, organitzem diferents activitats, com per exemple sortides per conèixer el dia a dia de les nostres pageses, foment d’horts urbans, tast de vins o cerveses, calçotades i xerrades sobre diferents aspectes de la sobirania alimentària. </p>
+<p><a class="btn btn-primary mt-4" href="http://104.131.38.146/llevat/contacte/">Més informació</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</header>
+
+
+
+
+<!-- #1 Texto + Imagen (texto_imagen)-->
+
+<section id="p807s1" class="p807s1 s1  texto_imagen">
+	<div class="container">
+		<div class="d-md-flex align-items-center row flex-md-row flex-md-row-reverse">
+			
+			<div class="col-md-6">
+
+
+
+				<h5 class="mb-3 introheader">Ciutats verdes</h5>
+
+				<h3 class="mb-4">
+				Foment d'horts urbans				</h3>
+				<p>
+					</p><p>El Llevat promou entre  les seves sòcies i els seus socis la creació d’horts urbans a les terrasses, jardins i terrats de les cases per tal de contribuir a una ciutat més verda, sostenible i ecològica. Donem suport tècnic a través dels pagesos proveïdors de El Llevat  i ens organitzem per fer les compres col·lectives de tots els materials i planters que necessitem.</p>				<p></p>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-5 text-center">
+								<img src="https://llevat.org/wp-content/uploads/2020/12/horts-urbans.jpeg" alt="">
+							</div>
+			
+		</div>
+	</div>
+</section>
+
+<!-- #1 Texto + Imagen (texto_imagen)-->
+
+<section id="p807s2" class="p807s2 s2  texto_imagen">
+	<div class="container">
+		<div class="d-md-flex align-items-center row flex-md-row flex-md-row-reverse">
+			
+			<div class="col-md-6">
+
+
+
+				<h5 class="mb-3 introheader">Educació i consum</h5>
+
+				<h3 class="mb-4">
+				Foment del cooperativisme ecològic i de proximitat a les escoles				</h3>
+				<p>
+					Des de fa dos anys el Llevat col·labora amb escoles de Barcelona pel foment del cooperativisme ecològic i de proximitat. Com a matèria optativa a quart d’ESO donem suport a la mestre per organitzar un projecte de gestió cooperativa. Els alumnes gestionen les comandes amb les seves famílies de productes ecològics de proximitat, recullen les comandes, nosaltres les servim i elles i ells les distribueixen entre les famílies. Tot gestionant les comandes aprenen l’emprenedoria cooperativa. 				</p>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-5 text-center">
+								<img src="https://llevat.org/wp-content/uploads/2020/12/consum-eco-escoles.jpeg" alt="">
+							</div>
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+<footer class="pt-4 pt-md-5 pb-4 pb-md-5 border-top" style="background-color: var(--primary); color: #fff!important;">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mb-3">Sobre El Llevat</h5>
+        <p class="small">Som una associació de consum agroecològic de proximitat que té per objectiu apropar a la població de Barcelona productes ecològics, de comerç just i de proximitat, entre d'altres.</p>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://llevat.org/sobre-nosaltres/">Sobre la cooperativa</a></li>
+          <li class="mb-1"><a href="https://llevat.org/projectes/">Transparència</a></li>
+          <li class="mb-1"><a href="https://llevat.org/projectes/">Política de privacitat</a></li>
+          <li class="mb-4"><a href="https://llevat.org/projectes/">Avís legal i política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Membres de El Llevat</h5>
+       <p class="small">Tasta els productes de l'associació durant un mes sense compromís, i si t'agrada, t'hi associes. Ja no podràs tornar a consumir d’una altra manera!</p>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://llevat.org/socies-i-socis/">Prova un mes sense compromís!</a></li>
+          <li class="mb-1"><a href="https://llevat.org/els-nostres-productes/">Els nostres productes</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Contacta'ns!</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-1">Miguel Hernandez 6, Local 2</li>
+          <li class="mb-1">Canyelles, Nou Barris (08042 Barcelona)</li>
+          <li class="mb-1">Telèfon <a onclick="return gtag_report_conversion('tel:+34676057072');" href="tel:+34676057072">+34 676 057 072</a></li>
+        </ul>
+        <p class="mb-0"><strong><a href="mailto:info@llevat.org">info@llevat.org</a></strong></p>
+      </div>
+    </div>
+<hr>
+
+        <div class="row">
+          <div class="col-5 col-md">
+            <small class="d-block mb-3 text-light">© El Llevat - 2026</small>
+          </div>
+           <div class="col-7 col-md text-md-right">
+			<img src="image002" style="width: 309px; height: 67px" alt="Ajuntament de Barcelona: Economia cooperativa, social i solidaria i consum">
+          </div>
+
+        </div>
+        </div>
+  
+      </footer>
+<script type="rocketlazyloadscript" data-rocket-src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+ <script type="rocketlazyloadscript" data-rocket-src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="rocketlazyloadscript">
+var el = document.querySelector('.navbar-toggler');
+var menu = document.querySelector('#navbarCollapse');
+el.onclick = function() {
+menu.classList.toggle('show');
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 460646320 -->
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-460646320"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-460646320');
+</script>
+
+  
+
+<!-- Event snippet for Trucada conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script type="rocketlazyloadscript">
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-460646320/7wwZCLeDn-4BELDP09sB',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+<!-- Facebook Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1044199606093230');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1044199606093230&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+</body></html>

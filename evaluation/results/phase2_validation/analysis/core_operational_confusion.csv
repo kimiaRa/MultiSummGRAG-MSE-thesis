@@ -1,0 +1,14 @@
+human_label,model_label,n
+community_led,community_led,6
+community_led,council_supported,1
+community_led,government_funded,1
+community_led,ngo_led,1
+community_led,unknown,1
+council_supported,community_led,2
+council_supported,ngo_led,1
+ngo_led,ngo_led,1
+unknown,community_led,1
+unknown,council_supported,1
+unknown,government_funded,1
+unknown,ngo_led,5
+unknown,unknown,1

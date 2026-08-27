@@ -1,0 +1,729 @@
+city,condition,section_key,section_title,raw_number,presence_count,presence_category,cross_condition_note
+barcelona,full,geographic,Geographic Distribution,7,1,in_exactly_1_of_3,n/a
+barcelona,full,operational,Operational and Funding Models,237,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,3.4%,3,in_all_3,stable_full_absent_from_all_b1
+barcelona,full,reach,Reach and Activity,8,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,3.4%,2,in_exactly_2_of_3,n/a
+barcelona,full,geographic,Geographic Distribution,45,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,47,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,114,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,5.5%,2,in_exactly_2_of_3,n/a
+barcelona,full,digital,Digital Presence and Accessibility,237,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,11,1,in_exactly_1_of_3,n/a
+barcelona,full,digital,Digital Presence and Accessibility,35,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,2.5%,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,51.9%,3,in_all_3,n/a
+barcelona,full,geographic,Geographic Distribution,6,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,4.2%,2,in_exactly_2_of_3,n/a
+barcelona,full,notable,Notable Initiatives,53%,3,in_all_3,stable_full_absent_from_all_b1
+barcelona,full,types,Types of Food Sharing Initiatives,8,3,in_all_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,41,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,8,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,105,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,17,2,in_exactly_2_of_3,n/a
+barcelona,full,operational,Operational and Funding Models,9,3,in_all_3,stable_in_both
+barcelona,full,digital,Digital Presence and Accessibility,18,3,in_all_3,stable_in_both
+barcelona,full,notable,Notable Initiatives,29,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,1,3,in_all_3,n/a
+barcelona,full,geographic,Geographic Distribution,31,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,62,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,0.8%,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,13,2,in_exactly_2_of_3,n/a
+barcelona,full,geographic,Geographic Distribution,237,3,in_all_3,stable_in_both
+barcelona,full,reach,Reach and Activity,125,3,in_all_3,stable_in_both
+barcelona,full,reach,Reach and Activity,30,3,in_all_3,stable_in_both
+barcelona,full,notable,Notable Initiatives,125,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,227,3,in_all_3,stable_in_both
+barcelona,full,reach,Reach and Activity,112,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,123,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,26,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,26.2%,3,in_all_3,stable_in_both
+barcelona,full,reach,Reach and Activity,2087,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,16,2,in_exactly_2_of_3,n/a
+barcelona,full,operational,Operational and Funding Models,6,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,31.2%,2,in_exactly_2_of_3,n/a
+barcelona,full,notable,Notable Initiatives,45,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,5.1%,1,in_exactly_1_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,12,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,20.7%,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,1.3%,3,in_all_3,n/a
+barcelona,full,geographic,Geographic Distribution,10,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,2,3,in_all_3,n/a
+barcelona,full,operational,Operational and Funding Models,19.4%,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,17,3,in_all_3,n/a
+barcelona,full,reach,Reach and Activity,23,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,49,3,in_all_3,stable_in_both
+barcelona,full,reach,Reach and Activity,3,3,in_all_3,stable_in_both
+barcelona,full,notable,Notable Initiatives,12,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,24,3,in_all_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,48.1%,2,in_exactly_2_of_3,n/a
+barcelona,full,operational,Operational and Funding Models,74,3,in_all_3,stable_in_both
+barcelona,full,notable,Notable Initiatives,105,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,7.2%,3,in_all_3,stable_full_absent_from_all_b1
+barcelona,full,operational,Operational and Funding Models,20.0%,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,17.3%,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,237,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,95.8%,2,in_exactly_2_of_3,n/a
+barcelona,full,operational,Operational and Funding Models,0.4%,2,in_exactly_2_of_3,n/a
+barcelona,full,geographic,Geographic Distribution,29,3,in_all_3,stable_in_both
+barcelona,full,types,Types of Food Sharing Initiatives,33,3,in_all_3,stable_in_both
+barcelona,full,notable,Notable Initiatives,31,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,3.8%,2,in_exactly_2_of_3,n/a
+barcelona,full,geographic,Geographic Distribution,44%,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,3,3,in_all_3,n/a
+barcelona,full,operational,Operational and Funding Models,3,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,1.3%,2,in_exactly_2_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,105,3,in_all_3,stable_in_both
+barcelona,full,notable,Notable Initiatives,237,3,in_all_3,stable_in_both
+barcelona,full,reach,Reach and Activity,36,3,in_all_3,stable_in_both
+barcelona,full,geographic,Geographic Distribution,14,1,in_exactly_1_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,44.3%,3,in_all_3,n/a
+barcelona,full,geographic,Geographic Distribution,73,1,in_exactly_1_of_3,n/a
+barcelona,full,types,Types of Food Sharing Initiatives,13.9%,3,in_all_3,stable_in_both
+barcelona,full,operational,Operational and Funding Models,10,3,in_all_3,n/a
+barcelona,full,operational,Operational and Funding Models,46,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,11,3,in_all_3,stable_b1_absent_from_all_full
+barcelona,b1,types,Types of Food Sharing Initiatives,26.2%,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,219,2,in_exactly_2_of_3,n/a
+barcelona,b1,reach,Reach and Activity,2087,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,7,3,in_all_3,n/a
+barcelona,b1,operational,Operational and Funding Models,237,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,16,3,in_all_3,n/a
+barcelona,b1,reach,Reach and Activity,8,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,6,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,45,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,45,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,44.3%,3,in_all_3,stable_b1_absent_from_all_full
+barcelona,b1,types,Types of Food Sharing Initiatives,5.1%,1,in_exactly_1_of_3,n/a
+barcelona,b1,geographic,Geographic Distribution,10%,2,in_exactly_2_of_3,n/a
+barcelona,b1,geographic,Geographic Distribution,42,1,in_exactly_1_of_3,n/a
+barcelona,b1,operational,Operational and Funding Models,60%,2,in_exactly_2_of_3,n/a
+barcelona,b1,types,Types of Food Sharing Initiatives,12,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,47,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,20.7%,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,1.3%,1,in_exactly_1_of_3,n/a
+barcelona,b1,geographic,Geographic Distribution,10,3,in_all_3,stable_in_both
+barcelona,b1,digital,Digital Presence and Accessibility,237,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,11,1,in_exactly_1_of_3,n/a
+barcelona,b1,operational,Operational and Funding Models,2,1,in_exactly_1_of_3,n/a
+barcelona,b1,digital,Digital Presence and Accessibility,35,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,17,2,in_exactly_2_of_3,n/a
+barcelona,b1,types,Types of Food Sharing Initiatives,51.9%,1,in_exactly_1_of_3,n/a
+barcelona,b1,geographic,Geographic Distribution,6,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,52.7%,3,in_all_3,stable_b1_absent_from_all_full
+barcelona,b1,reach,Reach and Activity,23,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,49,3,in_all_3,stable_in_both
+barcelona,b1,reach,Reach and Activity,3,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,8,2,in_exactly_2_of_3,n/a
+barcelona,b1,notable,Notable Initiatives,12,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,41,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,24,1,in_exactly_1_of_3,n/a
+barcelona,b1,operational,Operational and Funding Models,8,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,74,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,105,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,105,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,17.3%,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,237,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,95.8%,2,in_exactly_2_of_3,n/a
+barcelona,b1,geographic,Geographic Distribution,17,2,in_exactly_2_of_3,n/a
+barcelona,b1,operational,Operational and Funding Models,9,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,78,3,in_all_3,stable_b1_absent_from_all_full
+barcelona,b1,digital,Digital Presence and Accessibility,18,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,29,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,33,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,1,1,in_exactly_1_of_3,n/a
+barcelona,b1,notable,Notable Initiatives,29,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,31,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,31,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,62,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,44%,3,in_all_3,n/a
+barcelona,b1,types,Types of Food Sharing Initiatives,3,1,in_exactly_1_of_3,n/a
+barcelona,b1,operational,Operational and Funding Models,3,3,in_all_3,stable_in_both
+barcelona,b1,reach,Reach and Activity,237,3,in_all_3,stable_b1_absent_from_all_full
+barcelona,b1,types,Types of Food Sharing Initiatives,105,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,13,2,in_exactly_2_of_3,n/a
+barcelona,b1,geographic,Geographic Distribution,237,3,in_all_3,stable_in_both
+barcelona,b1,notable,Notable Initiatives,237,3,in_all_3,stable_in_both
+barcelona,b1,reach,Reach and Activity,125,3,in_all_3,stable_in_both
+barcelona,b1,reach,Reach and Activity,36,3,in_all_3,stable_in_both
+barcelona,b1,reach,Reach and Activity,30,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,92.4%,2,in_exactly_2_of_3,n/a
+barcelona,b1,types,Types of Food Sharing Initiatives,4.6%,1,in_exactly_1_of_3,n/a
+barcelona,b1,notable,Notable Initiatives,125,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,227,3,in_all_3,stable_in_both
+barcelona,b1,reach,Reach and Activity,112,3,in_all_3,stable_in_both
+barcelona,b1,types,Types of Food Sharing Initiatives,44.3%,1,in_exactly_1_of_3,n/a
+barcelona,b1,reach,Reach and Activity,2,3,in_all_3,stable_b1_absent_from_all_full
+barcelona,b1,types,Types of Food Sharing Initiatives,123,3,in_all_3,stable_in_both
+barcelona,b1,geographic,Geographic Distribution,26,3,in_all_3,n/a
+barcelona,b1,types,Types of Food Sharing Initiatives,13.9%,3,in_all_3,stable_in_both
+barcelona,b1,operational,Operational and Funding Models,10,1,in_exactly_1_of_3,n/a
+barcelona,b1,operational,Operational and Funding Models,46,3,in_all_3,stable_in_both
+brighton,full,digital,Digital Presence and Accessibility,76,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,15,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,6,3,in_all_3,stable_in_both
+brighton,full,digital,Digital Presence and Accessibility,61,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,36,3,in_all_3,stable_in_both
+brighton,full,geographic,Geographic Distribution,29%,1,in_exactly_1_of_3,n/a
+brighton,full,geographic,Geographic Distribution,8,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,8%,1,in_exactly_1_of_3,n/a
+brighton,full,reach,Reach and Activity,18,3,in_all_3,stable_in_both
+brighton,full,notable,Notable Initiatives,8,3,in_all_3,stable_in_both
+brighton,full,geographic,Geographic Distribution,10%,1,in_exactly_1_of_3,n/a
+brighton,full,operational,Operational and Funding Models,14,3,in_all_3,stable_in_both
+brighton,full,notable,Notable Initiatives,20,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,52.6%,3,in_all_3,stable_in_both
+brighton,full,geographic,Geographic Distribution,46,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,38%,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,notable,Notable Initiatives,46,3,in_all_3,stable_in_both
+brighton,full,digital,Digital Presence and Accessibility,15,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,2,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,27,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,76,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,26%,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,digital,Digital Presence and Accessibility,35,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,1%,1,in_exactly_1_of_3,n/a
+brighton,full,types,Types of Food Sharing Initiatives,34,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,8,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,36%,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,operational,Operational and Funding Models,18,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,40,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,76,3,in_all_3,stable_in_both
+brighton,full,geographic,Geographic Distribution,76,3,in_all_3,stable_in_both
+brighton,full,notable,Notable Initiatives,76,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,3%,1,in_exactly_1_of_3,n/a
+brighton,full,operational,Operational and Funding Models,9,3,in_all_3,n/a
+brighton,full,reach,Reach and Activity,38,3,in_all_3,stable_in_both
+brighton,full,geographic,Geographic Distribution,22,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,29,3,in_all_3,stable_in_both
+brighton,full,notable,Notable Initiatives,22,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,20,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,1,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,reach,Reach and Activity,46,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,28,2,in_exactly_2_of_3,n/a
+brighton,full,geographic,Geographic Distribution,59.2%,2,in_exactly_2_of_3,n/a
+brighton,full,types,Types of Food Sharing Initiatives,44.7%,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,67.1%,3,in_all_3,stable_in_both
+brighton,full,notable,Notable Initiatives,40,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,83%,1,in_exactly_1_of_3,n/a
+brighton,full,reach,Reach and Activity,"10,000",3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,types,Types of Food Sharing Initiatives,10.5%,3,in_all_3,stable_in_both
+brighton,full,notable,Notable Initiatives,36,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,76,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,60%,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,reach,Reach and Activity,47,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,63,3,in_all_3,stable_in_both
+brighton,full,geographic,Geographic Distribution,60%,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,notable,Notable Initiatives,60%,3,in_all_3,stable_full_absent_from_all_b1
+brighton,full,reach,Reach and Activity,"7,214",3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,51,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,26,3,in_all_3,stable_in_both
+brighton,full,operational,Operational and Funding Models,29,3,in_all_3,stable_in_both
+brighton,full,types,Types of Food Sharing Initiatives,47.4%,3,in_all_3,stable_in_both
+brighton,full,reach,Reach and Activity,27,3,in_all_3,stable_in_both
+brighton,b1,digital,Digital Presence and Accessibility,76,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,100%,1,in_exactly_1_of_3,n/a
+brighton,b1,operational,Operational and Funding Models,24%,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,operational,Operational and Funding Models,15,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,6,3,in_all_3,stable_in_both
+brighton,b1,digital,Digital Presence and Accessibility,61,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,36,3,in_all_3,stable_in_both
+brighton,b1,geographic,Geographic Distribution,8,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,8%,1,in_exactly_1_of_3,n/a
+brighton,b1,reach,Reach and Activity,18,3,in_all_3,stable_in_both
+brighton,b1,notable,Notable Initiatives,8,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,4,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,operational,Operational and Funding Models,18%,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,operational,Operational and Funding Models,20%,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,operational,Operational and Funding Models,14,3,in_all_3,stable_in_both
+brighton,b1,notable,Notable Initiatives,20,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,52.6%,3,in_all_3,stable_in_both
+brighton,b1,geographic,Geographic Distribution,46,3,in_all_3,stable_in_both
+brighton,b1,notable,Notable Initiatives,46,3,in_all_3,stable_in_both
+brighton,b1,digital,Digital Presence and Accessibility,15,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,12.5%,1,in_exactly_1_of_3,n/a
+brighton,b1,operational,Operational and Funding Models,2,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,27,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,76,3,in_all_3,stable_in_both
+brighton,b1,digital,Digital Presence and Accessibility,35,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,34,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,8,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,18,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,40,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,76,3,in_all_3,stable_in_both
+brighton,b1,geographic,Geographic Distribution,76,3,in_all_3,stable_in_both
+brighton,b1,notable,Notable Initiatives,76,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,38%,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,operational,Operational and Funding Models,3%,1,in_exactly_1_of_3,n/a
+brighton,b1,operational,Operational and Funding Models,9,1,in_exactly_1_of_3,n/a
+brighton,b1,reach,Reach and Activity,38,3,in_all_3,stable_in_both
+brighton,b1,geographic,Geographic Distribution,22,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,29,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,12%,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,notable,Notable Initiatives,22,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,20,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,18.4%,1,in_exactly_1_of_3,n/a
+brighton,b1,types,Types of Food Sharing Initiatives,14,1,in_exactly_1_of_3,n/a
+brighton,b1,reach,Reach and Activity,46,3,in_all_3,stable_in_both
+brighton,b1,geographic,Geographic Distribution,59%,2,in_exactly_2_of_3,n/a
+brighton,b1,types,Types of Food Sharing Initiatives,44.7%,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,67.1%,3,in_all_3,stable_in_both
+brighton,b1,notable,Notable Initiatives,40,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,2,2,in_exactly_2_of_3,n/a
+brighton,b1,operational,Operational and Funding Models,36%,3,in_all_3,stable_b1_absent_from_all_full
+brighton,b1,operational,Operational and Funding Models,83%,3,in_all_3,n/a
+brighton,b1,types,Types of Food Sharing Initiatives,5.3%,1,in_exactly_1_of_3,n/a
+brighton,b1,types,Types of Food Sharing Initiatives,10.5%,3,in_all_3,stable_in_both
+brighton,b1,notable,Notable Initiatives,36,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,76,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,47,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,63,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,"7,214",3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,51,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,26,3,in_all_3,stable_in_both
+brighton,b1,operational,Operational and Funding Models,29,3,in_all_3,stable_in_both
+brighton,b1,types,Types of Food Sharing Initiatives,47.4%,3,in_all_3,stable_in_both
+brighton,b1,reach,Reach and Activity,27,3,in_all_3,stable_in_both
+dublin,full,reach,Reach and Activity,22,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,15,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,7,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,16,3,in_all_3,n/a
+dublin,full,types,Types of Food Sharing Initiatives,1,1,in_exactly_1_of_3,n/a
+dublin,full,geographic,Geographic Distribution,8,1,in_exactly_1_of_3,n/a
+dublin,full,reach,Reach and Activity,42,3,in_all_3,stable_in_both
+dublin,full,reach,Reach and Activity,43,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,18,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,54%,1,in_exactly_1_of_3,n/a
+dublin,full,types,Types of Food Sharing Initiatives,2.9%,3,in_all_3,n/a
+dublin,full,geographic,Geographic Distribution,7.4,1,in_exactly_1_of_3,n/a
+dublin,full,geographic,Geographic Distribution,11,1,in_exactly_1_of_3,n/a
+dublin,full,types,Types of Food Sharing Initiatives,69,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,13,3,in_all_3,stable_in_both
+dublin,full,digital,Digital Presence and Accessibility,4,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,1,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,1,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,0.6,1,in_exactly_1_of_3,n/a
+dublin,full,reach,Reach and Activity,28,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,34,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,22,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,4,3,in_all_3,n/a
+dublin,full,types,Types of Food Sharing Initiatives,88.4%,2,in_exactly_2_of_3,n/a
+dublin,full,geographic,Geographic Distribution,12,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,12,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,31,3,in_all_3,stable_in_both
+dublin,full,digital,Digital Presence and Accessibility,27,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,25,3,in_all_3,stable_in_both
+dublin,full,reach,Reach and Activity,69,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,7.2%,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,69,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,69,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,37,3,in_all_3,stable_in_both
+dublin,full,reach,Reach and Activity,7,3,in_all_3,stable_in_both
+dublin,full,digital,Digital Presence and Accessibility,39,3,in_all_3,stable_in_both
+dublin,full,reach,Reach and Activity,"1,718",3,in_all_3,stable_full_absent_from_all_b1
+dublin,full,types,Types of Food Sharing Initiatives,49.3%,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,22,2,in_exactly_2_of_3,n/a
+dublin,full,notable,Notable Initiatives,22,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,33,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,5,3,in_all_3,stable_in_both
+dublin,full,reach,Reach and Activity,20,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,31,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,1.4%,1,in_exactly_1_of_3,n/a
+dublin,full,operational,Operational and Funding Models,21,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,2,3,in_all_3,n/a
+dublin,full,operational,Operational and Funding Models,3,1,in_exactly_1_of_3,n/a
+dublin,full,reach,Reach and Activity,15,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,37,3,in_all_3,n/a
+dublin,full,notable,Notable Initiatives,37,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,15,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,15,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,69,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,7,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,36.2%,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,10,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,5,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,5,3,in_all_3,stable_in_both
+dublin,full,types,Types of Food Sharing Initiatives,61,2,in_exactly_2_of_3,n/a
+dublin,full,reach,Reach and Activity,27,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,3,3,in_all_3,n/a
+dublin,full,digital,Digital Presence and Accessibility,69,3,in_all_3,stable_in_both
+dublin,full,geographic,Geographic Distribution,2,3,in_all_3,stable_in_both
+dublin,full,notable,Notable Initiatives,2,3,in_all_3,stable_in_both
+dublin,full,operational,Operational and Funding Models,46,3,in_all_3,stable_in_both
+dublin,b1,reach,Reach and Activity,1718,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,geographic,Geographic Distribution,68%,2,in_exactly_2_of_3,n/a
+dublin,b1,reach,Reach and Activity,22,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,23%,2,in_exactly_2_of_3,n/a
+dublin,b1,operational,Operational and Funding Models,15,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,7,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,16,2,in_exactly_2_of_3,n/a
+dublin,b1,types,Types of Food Sharing Initiatives,1,1,in_exactly_1_of_3,n/a
+dublin,b1,geographic,Geographic Distribution,8,3,in_all_3,n/a
+dublin,b1,notable,Notable Initiatives,8,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,reach,Reach and Activity,42,3,in_all_3,stable_in_both
+dublin,b1,reach,Reach and Activity,43,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,18,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,10,1,in_exactly_1_of_3,n/a
+dublin,b1,notable,Notable Initiatives,10,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,types,Types of Food Sharing Initiatives,2.9%,1,in_exactly_1_of_3,n/a
+dublin,b1,reach,Reach and Activity,19,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,geographic,Geographic Distribution,11,3,in_all_3,n/a
+dublin,b1,types,Types of Food Sharing Initiatives,69,3,in_all_3,stable_in_both
+dublin,b1,operational,Operational and Funding Models,13,3,in_all_3,stable_in_both
+dublin,b1,digital,Digital Presence and Accessibility,4,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,1,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,1,3,in_all_3,stable_in_both
+dublin,b1,reach,Reach and Activity,28,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,34,3,in_all_3,stable_in_both
+dublin,b1,operational,Operational and Funding Models,22,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,4,1,in_exactly_1_of_3,n/a
+dublin,b1,notable,Notable Initiatives,4,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,geographic,Geographic Distribution,12,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,12,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,28%,2,in_exactly_2_of_3,n/a
+dublin,b1,types,Types of Food Sharing Initiatives,31,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,3,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,digital,Digital Presence and Accessibility,27,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,25,3,in_all_3,stable_in_both
+dublin,b1,reach,Reach and Activity,69,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,7.2%,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,69,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,69,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,37,3,in_all_3,stable_in_both
+dublin,b1,reach,Reach and Activity,7,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,1.4,1,in_exactly_1_of_3,n/a
+dublin,b1,reach,Reach and Activity,40%,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,geographic,Geographic Distribution,32%,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,digital,Digital Presence and Accessibility,39,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,7,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,types,Types of Food Sharing Initiatives,49.3%,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,22,3,in_all_3,n/a
+dublin,b1,notable,Notable Initiatives,22,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,34,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,types,Types of Food Sharing Initiatives,33,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,5,3,in_all_3,stable_in_both
+dublin,b1,reach,Reach and Activity,20,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,14,2,in_exactly_2_of_3,n/a
+dublin,b1,notable,Notable Initiatives,31,3,in_all_3,stable_in_both
+dublin,b1,operational,Operational and Funding Models,23,1,in_exactly_1_of_3,n/a
+dublin,b1,operational,Operational and Funding Models,21,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,2,1,in_exactly_1_of_3,n/a
+dublin,b1,operational,Operational and Funding Models,3,3,in_all_3,n/a
+dublin,b1,reach,Reach and Activity,15,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,37,1,in_exactly_1_of_3,n/a
+dublin,b1,notable,Notable Initiatives,37,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,15,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,15,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,20.3%,2,in_exactly_2_of_3,n/a
+dublin,b1,notable,Notable Initiatives,9,3,in_all_3,stable_b1_absent_from_all_full
+dublin,b1,operational,Operational and Funding Models,69,3,in_all_3,stable_in_both
+dublin,b1,operational,Operational and Funding Models,7,3,in_all_3,stable_in_both
+dublin,b1,types,Types of Food Sharing Initiatives,36.2%,3,in_all_3,stable_in_both
+dublin,b1,operational,Operational and Funding Models,10,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,47,2,in_exactly_2_of_3,n/a
+dublin,b1,geographic,Geographic Distribution,5,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,5,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,14%,2,in_exactly_2_of_3,n/a
+dublin,b1,reach,Reach and Activity,27,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,3,2,in_exactly_2_of_3,n/a
+dublin,b1,digital,Digital Presence and Accessibility,69,3,in_all_3,stable_in_both
+dublin,b1,geographic,Geographic Distribution,2,3,in_all_3,stable_in_both
+dublin,b1,notable,Notable Initiatives,2,3,in_all_3,stable_in_both
+dublin,b1,operational,Operational and Funding Models,46,3,in_all_3,stable_in_both
+london,full,reach,Reach and Activity,106,3,in_all_3,stable_in_both
+london,full,digital,Digital Presence and Accessibility,52,3,in_all_3,stable_in_both
+london,full,digital,Digital Presence and Accessibility,45,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,15,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,7,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,6,1,in_exactly_1_of_3,n/a
+london,full,reach,Reach and Activity,"14,896",3,in_all_3,stable_in_both
+london,full,notable,Notable Initiatives,52,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,12,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,4,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,33,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,5,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,10,3,in_all_3,stable_in_both
+london,full,notable,Notable Initiatives,10,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,"1,000",1,in_exactly_1_of_3,n/a
+london,full,geographic,Geographic Distribution,3%,2,in_exactly_2_of_3,n/a
+london,full,types,Types of Food Sharing Initiatives,52%,1,in_exactly_1_of_3,n/a
+london,full,geographic,Geographic Distribution,10.2%,1,in_exactly_1_of_3,n/a
+london,full,operational,Operational and Funding Models,2,3,in_all_3,stable_in_both
+london,full,reach,Reach and Activity,72,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,106,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,63,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,17,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,106,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,17,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,22,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,2.5,1,in_exactly_1_of_3,n/a
+london,full,reach,Reach and Activity,62,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,39,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,4,1,in_exactly_1_of_3,n/a
+london,full,geographic,Geographic Distribution,0.004,1,in_exactly_1_of_3,n/a
+london,full,types,Types of Food Sharing Initiatives,52.8%,1,in_exactly_1_of_3,n/a
+london,full,operational,Operational and Funding Models,18,1,in_exactly_1_of_3,n/a
+london,full,operational,Operational and Funding Models,43,3,in_all_3,stable_in_both
+london,full,digital,Digital Presence and Accessibility,106,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,"220,000",1,in_exactly_1_of_3,n/a
+london,full,notable,Notable Initiatives,27,3,in_all_3,stable_in_both
+london,full,reach,Reach and Activity,63,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,106,3,in_all_3,stable_in_both
+london,full,digital,Digital Presence and Accessibility,16,3,in_all_3,stable_in_both
+london,full,notable,Notable Initiatives,106,3,in_all_3,stable_in_both
+london,full,notable,Notable Initiatives,63,3,in_all_3,stable_in_both
+london,full,notable,Notable Initiatives,7,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,22,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,49.1%,1,in_exactly_1_of_3,n/a
+london,full,reach,Reach and Activity,29,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,59.4%,1,in_exactly_1_of_3,n/a
+london,full,types,Types of Food Sharing Initiatives,56,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,5,2,in_exactly_2_of_3,n/a
+london,full,geographic,Geographic Distribution,54.7%,1,in_exactly_1_of_3,n/a
+london,full,reach,Reach and Activity,46,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,16.0%,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,17.0%,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,4.7%,2,in_exactly_2_of_3,n/a
+london,full,reach,Reach and Activity,25,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,20.8%,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,28,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,1.5,1,in_exactly_1_of_3,n/a
+london,full,geographic,Geographic Distribution,40.5%,1,in_exactly_1_of_3,n/a
+london,full,operational,Operational and Funding Models,26,3,in_all_3,stable_in_both
+london,full,operational,Operational and Funding Models,104,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,5.7%,1,in_exactly_1_of_3,n/a
+london,full,reach,Reach and Activity,33,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,49.1%,1,in_exactly_1_of_3,n/a
+london,full,geographic,Geographic Distribution,15%,2,in_exactly_2_of_3,n/a
+london,full,types,Types of Food Sharing Initiatives,52,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,33,3,in_all_3,stable_in_both
+london,full,notable,Notable Initiatives,33,3,in_all_3,stable_in_both
+london,full,types,Types of Food Sharing Initiatives,18,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,"330,000",1,in_exactly_1_of_3,n/a
+london,full,types,Types of Food Sharing Initiatives,11.3%,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,62%,2,in_exactly_2_of_3,n/a
+london,full,reach,Reach and Activity,27,3,in_all_3,stable_in_both
+london,full,geographic,Geographic Distribution,2,3,in_all_3,stable_full_absent_from_all_b1
+london,b1,reach,Reach and Activity,106,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,57%,1,in_exactly_1_of_3,n/a
+london,b1,digital,Digital Presence and Accessibility,52,3,in_all_3,stable_in_both
+london,b1,digital,Digital Presence and Accessibility,45,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,15,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,7,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,6,3,in_all_3,n/a
+london,b1,reach,Reach and Activity,"14,896",3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,52,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,12,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,4,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,33,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,5,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,10,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,10,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,11,1,in_exactly_1_of_3,n/a
+london,b1,operational,Operational and Funding Models,2,3,in_all_3,stable_in_both
+london,b1,reach,Reach and Activity,72,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,19,3,in_all_3,stable_b1_absent_from_all_full
+london,b1,types,Types of Food Sharing Initiatives,106,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,63,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,12%,1,in_exactly_1_of_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,17,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,106,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,17,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,1,2,in_exactly_2_of_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,22,3,in_all_3,stable_in_both
+london,b1,reach,Reach and Activity,62,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,39,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,4,2,in_exactly_2_of_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,52.8%,3,in_all_3,n/a
+london,b1,operational,Operational and Funding Models,18,3,in_all_3,n/a
+london,b1,operational,Operational and Funding Models,43,3,in_all_3,stable_in_both
+london,b1,digital,Digital Presence and Accessibility,106,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,27,3,in_all_3,stable_in_both
+london,b1,reach,Reach and Activity,63,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,106,3,in_all_3,stable_in_both
+london,b1,digital,Digital Presence and Accessibility,16,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,106,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,63,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,7,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,22,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,49.1%,3,in_all_3,n/a
+london,b1,reach,Reach and Activity,29,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,59.4%,3,in_all_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,56,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,5,3,in_all_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,6.6%,2,in_exactly_2_of_3,n/a
+london,b1,reach,Reach and Activity,46,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,16.0%,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,17.0%,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,4.7%,3,in_all_3,n/a
+london,b1,reach,Reach and Activity,25,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,20.8%,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,28,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,71%,2,in_exactly_2_of_3,n/a
+london,b1,operational,Operational and Funding Models,26,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,104,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,15,1,in_exactly_1_of_3,n/a
+london,b1,geographic,Geographic Distribution,71,2,in_exactly_2_of_3,n/a
+london,b1,geographic,Geographic Distribution,9,2,in_exactly_2_of_3,n/a
+london,b1,geographic,Geographic Distribution,50,3,in_all_3,stable_b1_absent_from_all_full
+london,b1,types,Types of Food Sharing Initiatives,7,2,in_exactly_2_of_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,5.7%,3,in_all_3,n/a
+london,b1,reach,Reach and Activity,33,3,in_all_3,stable_in_both
+london,b1,operational,Operational and Funding Models,40%,1,in_exactly_1_of_3,n/a
+london,b1,types,Types of Food Sharing Initiatives,52,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,33,3,in_all_3,stable_in_both
+london,b1,notable,Notable Initiatives,33,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,18,3,in_all_3,stable_in_both
+london,b1,types,Types of Food Sharing Initiatives,11.3%,3,in_all_3,stable_in_both
+london,b1,reach,Reach and Activity,27,3,in_all_3,stable_in_both
+london,b1,geographic,Geographic Distribution,3,2,in_exactly_2_of_3,n/a
+milan,full,types,Types of Food Sharing Initiatives,71%,2,in_exactly_2_of_3,n/a
+milan,full,operational,Operational and Funding Models,141,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,"31,308",3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,65,2,in_exactly_2_of_3,n/a
+milan,full,geographic,Geographic Distribution,7,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,48.3%,3,in_all_3,n/a
+milan,full,types,Types of Food Sharing Initiatives,17.7%,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,8,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,6,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,92,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,8,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,42,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,43,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,24,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,16.3%,3,in_all_3,n/a
+milan,full,operational,Operational and Funding Models,5,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,14,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,62.6%,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,147,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,11,3,in_all_3,n/a
+milan,full,types,Types of Food Sharing Initiatives,30%,2,in_exactly_2_of_3,n/a
+milan,full,notable,Notable Initiatives,24%,3,in_all_3,stable_full_absent_from_all_b1
+milan,full,types,Types of Food Sharing Initiatives,34.0%,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,17,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,6,3,in_all_3,n/a
+milan,full,geographic,Geographic Distribution,1,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,1,3,in_all_3,stable_in_both
+milan,full,digital,Digital Presence and Accessibility,5,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,92,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,48,3,in_all_3,stable_in_both
+milan,full,digital,Digital Presence and Accessibility,147,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,4,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,28,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,12,2,in_exactly_2_of_3,n/a
+milan,full,notable,Notable Initiatives,24,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,71,3,in_all_3,stable_in_both
+milan,full,digital,Digital Presence and Accessibility,70,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,50,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,22,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,22,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,34,3,in_all_3,stable_full_absent_from_all_b1
+milan,full,types,Types of Food Sharing Initiatives,147,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,26,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,34%,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,3,3,in_all_3,stable_full_absent_from_all_b1
+milan,full,operational,Operational and Funding Models,21,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,3,3,in_all_3,stable_in_both
+milan,full,digital,Digital Presence and Accessibility,19,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,15,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,15,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,9,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,9,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,11.6%,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,63,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,14,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,5,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,14,3,in_all_3,stable_full_absent_from_all_b1
+milan,full,notable,Notable Initiatives,5,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,16.3%,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,147,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,32,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,28,3,in_all_3,stable_in_both
+milan,full,notable,Notable Initiatives,147,3,in_all_3,stable_in_both
+milan,full,types,Types of Food Sharing Initiatives,62.6%,3,in_all_3,n/a
+milan,full,reach,Reach and Activity,2,3,in_all_3,stable_in_both
+milan,full,reach,Reach and Activity,104,3,in_all_3,stable_in_both
+milan,full,operational,Operational and Funding Models,31,3,in_all_3,stable_in_both
+milan,full,geographic,Geographic Distribution,2,3,in_all_3,stable_full_absent_from_all_b1
+milan,full,notable,Notable Initiatives,104,3,in_all_3,stable_in_both
+milan,b1,operational,Operational and Funding Models,141,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,11,1,in_exactly_1_of_3,n/a
+milan,b1,reach,Reach and Activity,"31,308",3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,65,3,in_all_3,n/a
+milan,b1,geographic,Geographic Distribution,7,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,48.3%,1,in_exactly_1_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,17.7%,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,1,3,in_all_3,stable_b1_absent_from_all_full
+milan,b1,operational,Operational and Funding Models,6,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,92,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,8,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,8,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,42,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,43,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,24,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,16.3%,1,in_exactly_1_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,7.5%,1,in_exactly_1_of_3,n/a
+milan,b1,operational,Operational and Funding Models,5,3,in_all_3,stable_in_both
+milan,b1,operational,Operational and Funding Models,14,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,62.6%,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,10.3,1,in_exactly_1_of_3,n/a
+milan,b1,operational,Operational and Funding Models,147,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,11,1,in_exactly_1_of_3,n/a
+milan,b1,notable,Notable Initiatives,11,3,in_all_3,stable_b1_absent_from_all_full
+milan,b1,types,Types of Food Sharing Initiatives,34.0%,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,17,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,6,2,in_exactly_2_of_3,n/a
+milan,b1,geographic,Geographic Distribution,1,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,1,3,in_all_3,stable_in_both
+milan,b1,digital,Digital Presence and Accessibility,5,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,92,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,12.3,1,in_exactly_1_of_3,n/a
+milan,b1,operational,Operational and Funding Models,48,3,in_all_3,stable_in_both
+milan,b1,digital,Digital Presence and Accessibility,147,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,4,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,0.7%,3,in_all_3,stable_b1_absent_from_all_full
+milan,b1,notable,Notable Initiatives,28,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,12,2,in_exactly_2_of_3,n/a
+milan,b1,notable,Notable Initiatives,24,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,70.7%,3,in_all_3,stable_b1_absent_from_all_full
+milan,b1,operational,Operational and Funding Models,96%,2,in_exactly_2_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,71,3,in_all_3,stable_in_both
+milan,b1,digital,Digital Presence and Accessibility,70,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,50,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,22,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,22,3,in_all_3,stable_in_both
+milan,b1,operational,Operational and Funding Models,43%,1,in_exactly_1_of_3,n/a
+milan,b1,geographic,Geographic Distribution,29,2,in_exactly_2_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,14,2,in_exactly_2_of_3,n/a
+milan,b1,geographic,Geographic Distribution,21.7,1,in_exactly_1_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,9.5%,2,in_exactly_2_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,147,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,1.4%,1,in_exactly_1_of_3,n/a
+milan,b1,types,Types of Food Sharing Initiatives,26,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,34%,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,3,1,in_exactly_1_of_3,n/a
+milan,b1,operational,Operational and Funding Models,21,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,2,1,in_exactly_1_of_3,n/a
+milan,b1,operational,Operational and Funding Models,3,3,in_all_3,stable_in_both
+milan,b1,digital,Digital Presence and Accessibility,19,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,37,3,in_all_3,stable_b1_absent_from_all_full
+milan,b1,geographic,Geographic Distribution,15,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,15,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,9,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,9,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,11.6%,3,in_all_3,stable_in_both
+milan,b1,operational,Operational and Funding Models,63,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,14,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,5,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,5,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,147,3,in_all_3,stable_b1_absent_from_all_full
+milan,b1,notable,Notable Initiatives,16.3%,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,147,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,32,3,in_all_3,stable_in_both
+milan,b1,geographic,Geographic Distribution,28,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,147,3,in_all_3,stable_in_both
+milan,b1,types,Types of Food Sharing Initiatives,62.6%,1,in_exactly_1_of_3,n/a
+milan,b1,reach,Reach and Activity,2,3,in_all_3,stable_in_both
+milan,b1,reach,Reach and Activity,104,3,in_all_3,stable_in_both
+milan,b1,operational,Operational and Funding Models,31,3,in_all_3,stable_in_both
+milan,b1,notable,Notable Initiatives,104,3,in_all_3,stable_in_both

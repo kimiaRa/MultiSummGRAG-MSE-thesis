@@ -1,0 +1,6 @@
+city,seed_urls,cleaned_urls,enriched_records,reported_fsi_total,reported_district_count,n_distinct_fsi_types,ratio_reported_fsi_to_seed_urls
+barcelona,261,237,237,237,10,9,0.908
+brighton,81,76,76,76,3,7,0.938
+dublin,83,69,69,69,18,7,0.831
+london,115,106,106,106,22,9,0.922
+milan,163,147,147,147,9,9,0.902

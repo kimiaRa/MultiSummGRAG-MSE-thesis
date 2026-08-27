@@ -1,0 +1,724 @@
+<!DOCTYPE html><html lang="es"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ágape - Asociación sin ánimo de lucro dedicada a ayudar a personas en riesgo de exclusión social. Ayudando a restaurar al caído.">
+    <meta name="keywords" content="ONG, asociación, ayuda social, exclusión social, Barcelona, el Raval">
+    <title>Asociación Ágape Intercultural de Barcelona</title>
+    <link rel="canonical" href="https://agapeintercultural.org/">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    
+    <!-- Schema.org -->
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/Br0hYqpfWeFzYCAXLD4UuCIV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-os1oE9riCJnxvhNQ7O/WqU9GwWx5mE1SEyqiRc2BLb3uEMbNuxEJKZIGYbcNwpF3"></script><script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Asociación Ágape Intercultural de Barcelona",
+      "url": "https://agapeintercultural.org",
+      "logo": "https://agapeintercultural.org/assets/images/logo.png",
+      "description": "Asociación sin ánimo de lucro dedicada a ayudar a personas en riesgo de exclusión social en Barcelona",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riereta 4 bajos",
+        "addressLocality": "Barcelona",
+        "postalCode": "08001",
+        "addressCountry": "ES"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer service",
+        "email": "info@agapeintercultural.org",
+        "availableLanguage": ["es", "en"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/infoagapebcn"
+      ]
+    }
+    </script>
+
+    <!-- Sistema de Cookies RGPD -->
+    <script src="assets/js/templates/shared-cookies.js"></script>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+</head>
+<body>
+        <div id="cookie-banner" class="show">
+            <div class="cookie-container">
+                <div class="cookie-content">
+                    <h3>🍪 Uso de Cookies</h3>
+                    <p>
+                        Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación y analizar el uso de nuestra web. 
+                        Si aceptas, utilizaremos <strong>Microsoft Clarity</strong> para análisis estadísticos. 
+                        Consulta nuestra <a href="../politicas/politica-cookies.html">Política de Cookies</a> y 
+                        <a href="../politicas/politica-privacidad.html">Política de Privacidad</a> para más información.
+                    </p>
+                </div>
+                <div class="cookie-buttons">
+                    <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Aceptar Todas</button>
+                    <button id="cookie-reject" class="cookie-btn cookie-btn-reject">Rechazar</button>
+                    <button id="cookie-settings" class="cookie-btn cookie-btn-settings">Configurar</button>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div id="menu-container">
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#inicio" class="nav-logo">
+            <img src="assets/images/logo-agape.svg" alt="Logo Ágape" class="logo-img">
+            <span class="logo-text">ÁGAPE</span>
+        </a>
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+            <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+            
+            <!-- MENÚ DESPLEGABLE DE PROYECTOS -->
+            <li class="dropdown">
+                <a href="#proyectos" class="nav-link">Proyectos ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="proyectos/cestas-alimentos.html">🥬 Cestas de Alimentos</a></li>
+                    <li><a href="proyectos/ayudando-restaurar.html">❤️ Ayudando a Restaurar</a></li>
+                    <li><a href="proyectos/casal-de-verano.html">🎪 Casal de Verano</a></li>
+                    <li><a href="proyectos/reyes-magos.html">🎁 Campaña Reyes Magos</a></li>
+                    <li><a href="proyectos/formacion-integral.html">📚 Formación Integral</a></li>
+                    <li><a href="proyectos/asesoria-migrantes.html">🌍 Asesoría Migrantes</a></li>
+                    <li><a href="proyectos/podcast-consumo.html">🎙️ Podcast</a></li>
+                </ul>
+            </li>
+            
+            <!-- MENÚ DESPLEGABLE DE MEMORIA E IMPACTO -->
+            <li class="dropdown">
+                <a href="#impacto" class="nav-link">Memoria ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="memorias/memoria-2024.html">📄 Memoria 2024</a></li>
+                    <li><a href="memorias/memoria-2023.html">📄 Memoria 2023</a></li>
+                    <li><a href="#impacto">📊 Nuestro Impacto</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#colabora" class="nav-link">Colabora</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Asociación Ágape Intercultural</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Ayudando a Restaurar al Caído</p>
+            <p class="hero-description animate-fade-in-delay-2">
+                Asociación sin ánimo de lucro comprometida con las personas en riesgo de exclusión social
+            </p>
+            <div class="hero-buttons animate-fade-in-delay-3">
+                <a href="#proyectos" class="btn btn-primary">Nuestros Proyectos</a>
+                <a href="#colabora" class="btn btn-secondary">Colabora con Nosotros</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section nosotros">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quiénes Somos</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="nosotros-grid">
+                <!-- Columna izquierda: Texto principal -->
+                <div class="nosotros-main">
+                    <div class="nosotros-text">
+                        <h3>Nuestra Misión</h3>
+                        <p>
+                            Ágape es una asociación sin ánimo de lucro que nace del compromiso y la solidaridad 
+                            hacia las personas que más lo necesitan. Nuestro lema, <strong>"Ayudando a Restaurar al Caído"</strong>, 
+                            refleja nuestra filosofía de trabajo.
+                        </p>
+                        
+                        <h3>Nuestra Visión</h3>
+                        <p>
+                            Nos esforzamos por ser un centro de referencia en el Raval para la comunidad filipina 
+                            y para todas aquellas personas que requieran apoyo en cuestiones de inclusión social.
+                        </p>
+                    </div>
+                    
+                    <!-- Video/Imagen -->
+                    <div class="nosotros-media">
+                        <div class="video-placeholder">
+                            <div class="video-container">
+                                <img src="assets/images/nosotros-placeholder.svg" alt="Equipo Ágape" class="placeholder-img">
+                                <div class="video-overlay">
+                                    <p>Agape</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha: Valores -->
+                <div class="nosotros-valores">
+                    <h3>Nuestros Valores</h3>
+                    <div class="valores-grid-compact">
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">❤️</div>
+                            <div class="valor-text">
+                                <h4>Solidaridad</h4>
+                                <p>Comprometidos con el bienestar de nuestra comunidad</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">🤝</div>
+                            <div class="valor-text">
+                                <h4>Inclusión</h4>
+                                <p>Creemos en la dignidad de cada persona</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">💪</div>
+                            <div class="valor-text">
+                                <h4>Empoderamiento</h4>
+                                <p>Ayudamos a recuperar la autonomía personal</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">🌟</div>
+                            <div class="valor-text">
+                                <h4>Transparencia</h4>
+                                <p>Apertura y honestidad en nuestros procesos</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">🫂</div>
+                            <div class="valor-text">
+                                <h4>Igualdad</h4>
+                                <p>Igualdad de oportunidades para todos</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">🙏</div>
+                            <div class="valor-text">
+                                <h4>Respeto</h4>
+                                <p>Valoramos la diversidad de cada persona</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">⭐</div>
+                            <div class="valor-text">
+                                <h4>Compromiso</h4>
+                                <p>Dedicados al bienestar de la comunidad</p>
+                            </div>
+                        </div>
+                        <div class="valor-item-compact">
+                            <div class="valor-icon">💎</div>
+                            <div class="valor-text">
+                                <h4>Honestidad</h4>
+                                <p>Actuamos con integridad en todas nuestras acciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section proyectos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Proyectos</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">
+                    Desarrollamos múltiples iniciativas para atender las necesidades de nuestra comunidad
+                </p>
+            </div>
+
+            <!-- Proyecto Principal -->
+            <div class="proyecto-destacado">
+                <div class="proyecto-destacado-content">                    
+                    <div class="proyecto-destacado-text">                        
+                        <span class="badge badge-principal">Proyecto Principal</span>
+                        <h3>Ayudando a Restaurar al Caído</h3>
+                        <p class="proyecto-intro">
+                            Nuestro proyecto insignia, que recibe el apoyo del Ayuntamiento, es el corazón de nuestra labor social.
+                        </p>
+                        
+                        <!-- ESTADÍSTICAS CON FONDO VERDE -->
+                        <div class="proyecto-stats-container">
+                            <div class="proyecto-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">+40</div>
+                                    <div class="stat-label">Personas atendidas</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label">Años ejecutando el proyecto</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">+200</div>
+                                    <div class="stat-label">Pruebas de seguimiento</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            Nuestro programa ofrece una ruta de salida basada en el acompañamiento, el soporte comunitario 
+                            y la fe cristiana como fuente de poder para el cambio.
+                        </p>
+                        <a href="proyectos/ayudando-restaurar" class="btn btn-primary">Ver más detalles →</a>
+                    </div>
+                    <div class="proyecto-destacado-img">
+                        <img src="assets/images/ayudando-restaurar.svg" alt="Entrega de cestas de alimentos cada lunes" class="proyecto-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Proyectos -->
+            <div class="proyectos-grid">
+                <a href="proyectos/casal-de-verano" class="proyecto-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="proyecto-card-img">
+                        <img src="assets/images/casal-verano.svg" alt="Casal de Verano">
+                        <div class="proyecto-card-overlay">
+                            <span class="proyecto-tag">Infancia</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-card-content">
+                        <h4>Casal de Verano</h4>
+                        <p>
+                            Programa de actividades recreativas y educativas para niños durante el periodo estival, 
+                            ofreciendo un espacio seguro y enriquecedor mientras sus familias trabajan. Con el apoyo del Ayuntamiento de Barcelona.
+                        </p>
+                        <ul class="proyecto-features">
+                            <li>Actividades lúdicas y deportivas</li>
+                            <li>Talleres educativos</li>
+                            <li>Salidas a Museos</li>
+                        </ul>
+                        <div class="ver-proyecto">Ver más detalles →</div>
+                    </div>
+                </a>
+
+                <a href="proyectos/cestas-alimentos" class="proyecto-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="proyecto-card-img">
+                        <img src="assets/images/cestas-alimentos.svg" alt="Entrega de Cestas de Alimentos">
+                        <div class="proyecto-card-overlay">
+                            <span class="proyecto-tag">Alimentación</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-card-content">
+                        <h4>Entrega Semanal de Cestas</h4>
+                        <p>
+                            Cada lunes entregamos entre 40 y 65 cestas con productos frescos a familias vulnerables. 
+                            Vegetales, frutas, lácteos y vitaminas con el apoyo de Fundación Aurea, ALDI, Consum y Bonpreu.
+                        </p>
+                        <ul class="proyecto-features">
+                            <li>40-65 cestas cada lunes</li>
+                            <li>Productos 100% frescos</li>
+                            <li>4 aliados estratégicos</li>
+                        </ul>
+                        <div class="ver-proyecto">Ver más detalles →</div>
+                    </div>
+                </a>
+
+                <a href="proyectos/reyes-magos" class="proyecto-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="proyecto-card-img">
+                        <img src="assets/images/reyes-magos.svg" alt="Campaña Reyes Magos">
+                        <div class="proyecto-card-overlay">
+                            <span class="proyecto-tag">Solidaridad</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-card-content">
+                        <h4>Campaña de Reyes Magos</h4>
+                        <p>
+                            Cada año, llevamos ilusión a los hogares más necesitados con la entrega de regalos en la 
+                            época de Reyes Magos, asegurando que ningún niño se quede sin la magia de estas fechas.
+                        </p>
+                        <ul class="proyecto-features">
+                            <li>Recogida de juguetes</li>
+                            <li>Distribución personalizada</li>
+                            <li>Entrega de juguetes a niños</li>
+                        </ul>
+                        <div class="ver-proyecto">Ver más detalles →</div>
+                    </div>
+                </a>
+
+                <a href="proyectos/formacion-integral" class="proyecto-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="proyecto-card-img">
+                        <img src="assets/images/formacion-idiomas.svg" alt="Formación Integral">
+                        <div class="proyecto-card-overlay">
+                            <span class="proyecto-tag">Formación</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-card-content">
+                        <h4>Formación Integral</h4>
+                        <p>
+                            Clases de español, catalán y alfabetización digital para facilitar la integración social 
+                            y laboral. Desarrollamos competencias lingüísticas y digitales esenciales.
+                        </p>
+                        <ul class="proyecto-features">
+                            <li>Español y catalán</li>
+                            <li>Alfabetización digital</li>
+                            <li>Grupos reducidos</li>
+                        </ul>
+                        <div class="ver-proyecto">Ver más detalles →</div>
+                    </div>
+                </a>
+
+                <a href="proyectos/podcast-consumo" class="proyecto-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="proyecto-card-img">
+                        <img src="assets/images/podcast.svg" alt="Podcast Consumo Responsable">
+                        <div class="proyecto-card-overlay">
+                            <span class="proyecto-tag">Comunicación</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-card-content">
+                        <h4>Podcast: Consumo Responsable</h4>
+                        <p>
+                            Espacio de diálogo y reflexión sobre hábitos de consumo sostenibles, promoviendo una 
+                            conciencia crítica sobre nuestras decisiones cotidianas. Con el apoyo del Ayuntamiento de Barcelona.
+                        </p>
+                        <ul class="proyecto-features">
+                            <li>Episodios semanales</li>
+                            <li>Entrevistas con expertos</li>
+                            <li>Consejos prácticos</li>
+                        </ul>
+                        <div class="ver-proyecto">Ver más detalles →</div>
+                    </div>
+                </a>
+
+                <a href="proyectos/asesoria-migrantes" class="proyecto-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="proyecto-card-img">
+                        <img src="assets/images/asesoria-migrantes.svg" alt="Asesoría para Migrantes">
+                        <div class="proyecto-card-overlay">
+                            <span class="proyecto-tag">Integración Social</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-card-content">
+                        <h4>Asesoría Integral para Migrantes</h4>
+                        <p>
+                            Apoyo legal y administrativo en trámites de extranjería, documentación y orientación 
+                            para personas migrantes. Acompañamiento en tu proceso de integración en España.
+                        </p>
+                        <ul class="proyecto-features">
+                            <li>Renovación de permisos</li>
+                            <li>Arraigo social, familiar y por formación</li>
+                            <li>Orientación legal gratuita</li>
+                        </ul>
+                        <div class="ver-proyecto">Ver más detalles →</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Impacto -->
+    <section id="impacto" class="section impacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Impacto</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="impacto-stats">
+                <div class="impacto-stat" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="impacto-icon">🛒</div>
+                    <div class="impacto-number counter" data-target="2000">0</div>
+                    <div class="impacto-label">Cestas entregadas anualmente</div>
+                </div>
+                <div class="impacto-stat" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="impacto-icon">👨‍👩‍👧‍👦</div>
+                    <div class="impacto-number counter" data-target="400">0</div>
+                    <div class="impacto-label">Familias atendidas</div>
+                </div>
+                <div class="impacto-stat" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="impacto-icon">👶</div>
+                    <div class="impacto-number counter" data-target="120">0</div>
+                    <div class="impacto-label">Niños en casal de verano</div>
+                </div>
+                <div class="impacto-stat" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="impacto-icon">🎓</div>
+                    <div class="impacto-number counter" data-target="100">0</div>
+                    <div class="impacto-label">Personas formadas</div>
+                </div>
+            </div>
+            
+            <div class="testimonios">
+                <h3 class="testimonios-title">Historias que nos Motivan</h3>
+                <div class="testimonios-slider">
+                    <div class="testimonio-item">
+                        <div class="testimonio-content">
+                            <p class="testimonio-text">
+                                "Gracias a Ágape, mi familia pudo superar los momentos más difíciles. 
+                                No solo recibimos alimentos, sino también apoyo emocional y la oportunidad 
+                                de aprender español, lo que me ayudó a encontrar trabajo."
+                            </p>
+                            <p class="testimonio-author">- María, beneficiaria</p>
+                        </div>
+                    </div>
+                    <div class="testimonio-item active">
+                        <div class="testimonio-content">
+                            <p class="testimonio-text">
+                                "El casal de verano fue una bendición para nuestra familia. Mis hijos 
+                                disfrutaron de un verano increíble mientras yo podía trabajar tranquila, 
+                                sabiendo que estaban bien cuidados."
+                            </p>
+                            <p class="testimonio-author">- Carmen, madre de dos niños</p>
+                        </div>
+                    </div>
+                    <div class="testimonio-item">
+                        <div class="testimonio-content">
+                            <p class="testimonio-text">
+                                "Colaborar con Ágape como voluntario me ha cambiado la vida. 
+                                Ver la sonrisa de las familias cuando reciben ayuda es lo más gratificante 
+                                que he experimentado."
+                            </p>
+                            <p class="testimonio-author">- Hurry, voluntario</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonios-dots">
+                    <span class="dot" data-slide="0"></span>
+                    <span class="dot active" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Colabora -->
+    <section id="colabora" class="section colabora">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Colabora con Nosotros</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Tu apoyo es fundamental para seguir ayudando a quienes más lo necesitan</p>
+            </div>
+
+            <div class="colabora-opciones">
+                <div class="colabora-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="colabora-icon">💰</div>
+                    <h3>Donación Económica</h3>
+                    <p>Cada contribución, por pequeña que sea, nos permite continuar con nuestra labor.</p>
+                    <a href="#contacto" class="btn btn-outline">Donar Ahora</a>
+                </div>
+
+                <div class="colabora-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="colabora-icon">🤲</div>
+                    <h3>Voluntariado</h3>
+                    <p>Únete a nuestro equipo de voluntarios y dedica tu tiempo a hacer del mundo un lugar mejor.</p>
+                    <a href="#contacto" class="btn btn-outline">Quiero ser Voluntario</a>
+                </div>
+
+                <div class="colabora-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="colabora-icon">📦</div>
+                    <h3>Donación de Alimentos</h3>
+                    <p>Ayúdanos con alimentos no perecederos para nuestras cestas semanales.</p>
+                    <a href="#contacto" class="btn btn-outline">Más Información</a>
+                </div>
+
+                <div class="colabora-card" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="colabora-icon">🏢</div>
+                    <h3>Colaboración Empresarial</h3>
+                    <p>Tu empresa puede formar parte del cambio mediante convenios de colaboración.</p>
+                    <a href="#contacto" class="btn btn-outline">Colaborar</a>
+                </div>
+            </div>
+
+            <div class="colabora-info">
+                <div class="info-box">
+                    <h4>Transparencia y Confianza</h4>
+                    <p>
+                        Como asociación sin ánimo de lucro, garantizamos que el 100% de las donaciones 
+                        se destinan íntegramente a nuestros proyectos sociales. Publicamos informes 
+                        anuales detallando el uso de los recursos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3>¿Tienes alguna pregunta?</h3>
+                    <p>Estamos aquí para ayudarte. Contáctanos a través de cualquiera de estos medios:</p>
+                    
+                    <div class="contacto-details">
+                        <div class="contacto-item">
+                            <div class="contacto-item-icon">📧</div>
+                            <div class="contacto-item-text">
+                                <strong>Email</strong>
+                                <p>info@agapeintercultural.org</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <div class="contacto-item-icon">📱</div>
+                            <div class="contacto-item-text">
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <div class="contacto-item-icon">📍</div>
+                            <div class="contacto-item-text">
+                                <strong>Dirección</strong>
+                                <p>Riereta 4 bajos 08001 Raval, Barcelona, Cataluña, España</p>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="contacto-social">
+                        <h4>Síguenos en redes sociales</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/infoagapebcn" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="blue">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Youtube" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                                </svg>
+                            </a>                       
+                            <a href="#" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                                </svg>
+                            </a>                                                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacto-form-container">
+                    <form class="contacto-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required="">
+                                <option value="">Selecciona un asunto</option>
+                                <option value="voluntariado">Quiero ser voluntario</option>
+                                <option value="donacion">Información sobre donaciones</option>
+                                <option value="colaboracion">Colaboración empresarial</option>
+                                <option value="ayuda">Necesito ayuda</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required=""></textarea>
+                        </div>
+                        
+                        <!-- Checkbox de consentimiento RGPD -->
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="privacidad" name="privacidad" required="">
+                                <span class="checkmark"></span>
+                                He leído y acepto la <a href="politica-privacidad" target="_blank">Política de Privacidad</a> y el tratamiento de mis datos personales. *
+                            </label>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6Lev7OwrAAAAAEpY909VlGasJp-kezhq5ZyDgNuD"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-3fnc004odbxy" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lev7OwrAAAAAEpY909VlGasJp-kezhq5ZyDgNuD&amp;co=aHR0cHM6Ly9hZ2FwZWludGVyY3VsdHVyYWwub3JnOjQ0Mw..&amp;hl=en&amp;v=Br0hYqpfWeFzYCAXLD4UuCIV&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=6je4r1m241q1"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                            <small class="form-help">Protección anti-spam</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="footer-container">
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Ágape</h4>
+                <p>Ágape significa amor incondicional. En Ágape Intercultural practicamos este amor restaurando vidas y apoyando a todos sin distinción, guiados por la inclusión, el respeto y la solidaridad.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Útiles</h4>
+                <ul class="footer-links">
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#colabora">Colabora</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    <li><a href="#" id="reopen-cookie-banner">⚙️ Configurar Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Proyectos Destacados</h4>
+                <ul class="footer-links">
+                    <li><a href="proyectos/ayudando-restaurar.html">Ayudando a Restaurar</a></li>
+                    <li><a href="proyectos/cestas-alimentos.html">Cestas de Alimentos</a></li>
+                    <li><a href="proyectos/casal-de-verano.html">Casal de Verano</a></li>
+                    <li><a href="proyectos/formacion-integral.html">Formación Integral</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul class="footer-contact">
+                    <li>📧 info@agapeintercultural.org</li>
+                    <li>📱 +34 696 00 49 75</li>
+                    <li>📍 Riereta 4 bajos, Raval, Barcelona</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ágape 💚 - Todos los derechos reservados</p>
+            <p class="footer-credits">Asociación sin ánimo de lucro | Con el apoyo del Ayuntamiento de Barcelona</p>
+        </div>
+    </div>
+</footer>
+
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">↑</button>
+</div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">↑</button>
+
+    <script src="assets/js/templates/shared-home.js"></script>
+    <script src="assets/js/core/main.js"></script>   
+
+</body></html>
